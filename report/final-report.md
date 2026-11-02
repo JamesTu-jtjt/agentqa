@@ -1,12 +1,12 @@
-# Beyond the Repaired Example
+# Testing the Evidence Behind Agent Improvement
 
-## Metamorphic validation of agent repairs: a controlled pilot
+## A controlled repair pilot and native evaluation-integrity study
 
 James Tu | Cornell University | Sakana AI research exercise | 2 November 2026
 
 **AI assistance.** Codex implemented the prototype, ran the recorded experiments, analyzed outcomes and assisted report writing. James supplied research direction and resource constraints. No independent human review is claimed.
 
-**Abstract.** Self-improving coding systems need to distinguish a repair that fixes one example from a repair that preserves the underlying reliability obligation. We investigate whether test families organized around stale verification evidence improve selection among model-generated repairs. AgentQA records actual execution, binds passing evidence to a declared content footprint, and grades functional correctness separately from freshness. A three-call GPT-6.1 Sol feasibility pilot produced two source-conditioned policies, but neither failed the development family. We therefore prospectively froze a separately labeled controlled transfer audit rather than searching indefinitely for a favorable pool. Both unchanged repairs passed all nine new cases; the authored parent passed three. All three matched selectors had selected the same repair, yielding zero observed selector advantage. Separately, six authored fault/reuse scenarios reproduced three stale or mixed result attributions through an unchanged pinned ShinkaEvolve scheduler. An authored attempt-bound adapter rejected incomplete evidence in subsequent qualification. The deliverable is a runnable QA prototype, reproducible evidence and an explicitly inconclusive selection result; it is not a completed native-agent evolution study.
+**Abstract.** Self-improving agents depend on evaluation results to decide which changes to retain. We study the trustworthiness of that evidence through a controlled repair pilot and a native ShinkaEvolve case study. The three-call GPT-6.1 Sol pilot produced two repairs that both passed nine controlled transfer cases; every selector chose the same repair, leaving the selection hypothesis unresolved. A prospectively frozen follow-up executed 56 native initialization/restart cells, including interruption before the first program insert. Under five authored invalid-publication conditions, restart and interruption retries each stored five target programs as correct and admitted them to the native archive and best-program state. Exit-only, schema-only and fresh-directory-only defenses left failures; fresh directories combined with exit and schema checks prevented all five, matching bound receipts and preserving positive and negative controls. A second frozen 24-cell study used the exact standard evaluation helper and a previously proposed upstream helper repair, crediting its protection inside helper entry while exposing the separate before-entry boundary. These deterministic fault-injection results establish bounded native consequences and repair scope, not natural failure rates, a new bug class or selector superiority.
 
 ## 1. Research question and scope
 
@@ -14,9 +14,9 @@ Can valid metamorphic families built around a known failure mechanism select rep
 
 The initial failure class is **stale verification evidence**: passing tests for one source/test/configuration state are used to justify completion after a relevant change. The QA target is the connection between a claim and its execution evidence. A function can be correct while the evidence supporting completion is stale; conversely, a fresh weak test can pass while the function is wrong.
 
-This pilot targets the reliability infrastructure around agent improvement. It aligns with empirical agent evolution and automated research [1-3], while holding the model-generated candidate pool fixed to isolate selection. The completed controlled audit evaluates cached completion policies after authored repairs. It does not test models autonomously repairing new repositories, discover natural model failure rates, or run a complete Sakana evolutionary search.
+This pilot targets the reliability infrastructure around agent improvement. It aligns with empirical agent evolution and automated research [1-3], while holding the model-generated candidate pool fixed to isolate selection. The controlled audit evaluates cached completion policies after authored repairs. The native follow-up evaluates initialization, persistence and restart through the unchanged Shinka runner. Neither study tests models autonomously repairing new repositories, natural failure rates or a complete sampled evolutionary search.
 
-**Delivered.** An execution/replay core, isolated generated-program workers, frozen candidate/attempt registries, matched selectors, a bounded editable coding workflow, a real pinned scheduler bridge, source-grounded publication diagnostics, a completed controlled audit, and a self-contained demonstration. No positive result is required or claimed.
+**Delivered.** An executable QA prototype, a preserved null selector result, native restart/interruption counterexamples with database evidence, a six-defense comparison, an exact prior-helper comparison, and reproducible source, traces, figures and demonstrations. The strongest result concerns evaluation acceptance rather than generated repair selection.
 
 <!-- page -->
 
@@ -30,7 +30,9 @@ AgentAssay already studies agent metamorphic relations and regression testing [4
 
 HarnessFix connects failed traces to scoped harness repairs [7]. Self-Harness combines failure mining, candidate harness changes and regression validation [8]. A recent failure-feedback study distinguishes directed repair, transfer and net held-out change [9]. These precedents motivate a common-pool comparison with separate source, selection and audit roles. Agentic Scientist documentation also describes provenance consistency checks [10]. A freshness architecture alone is not a first-in-field claim.
 
-The remaining research hypothesis is that **mechanism-directed, applicability-validated families improve which generated repair is selected**, beyond source-only or generic checks. The present pool does not supply evidence for that hypothesis. The review is targeted, not an exhaustive novelty certification.
+The remaining research hypothesis is that **mechanism-directed, applicability-validated families improve which generated repair is selected**, beyond source-only or generic checks. The present pool does not supply evidence for that hypothesis. N1/N2 add an empirical study of native acceptance consequences and a real prior repair's scope; they do not retroactively validate the selector claim.
+
+The narrower positioning also has precedents. Public Shinka PR #150 already discusses generation-zero resume detection and result crash consistency [11]. Statistical metamorphic testing of genetic algorithms predates this work [12]; recent agent-harness benchmarks separate execution reliability from task success [13,14]. We therefore claim a reproducible case study and bounded defense comparison, not the first use of metamorphic testing for evolution, harness QA, provenance or cache invalidation. The review is targeted, not an exhaustive novelty certification.
 
 ## Executable contract
 
@@ -101,7 +103,7 @@ All 36 trials were retained, with no retries, exclusions or infrastructure-incon
 
 <!-- page -->
 
-# 5. Grounded result-attribution case
+# 5. Native evaluation-integrity study
 
 ## Existing scheduler behavior, a separate endpoint
 
@@ -122,7 +124,7 @@ The upstream diagnostic uses unchanged ShinkaEvolve code at revision **8adc053a2
 
 Result files are loaded independently and lack an attempt binding at this public scheduler boundary. A return-code-only guard would address exit 7 but miss zero-exit nonpublication and partial publication. The scenarios demonstrate mechanism-level counterexamples to a narrow guard; they are not model-generated repair comparisons.
 
-Three of six deliberately selected scenarios violated the attribution contract. This is not a prevalence estimate, an observed model reasoning error, a security exploit, or evidence that published Sakana results are invalid. Normal exclusive proposal directories reduce exposure. Full native evolution, restart reachability and database promotion were not reproduced. Source copies, hashes and license attribution are preserved.
+Three of six deliberately selected scenarios violated the attribution contract. This is not a prevalence estimate, an observed model reasoning error, a security exploit, or evidence that published Sakana results are invalid. Normal exclusive proposal directories reduce exposure. The later N1 study below tests native initialization/restart reachability and database consequences; long-run sampled evolution remains unperformed. Source copies, hashes and license attribution are preserved.
 
 ## Authored attempt-bound adapter
 
@@ -132,19 +134,59 @@ Four real scheduler checks matched their contracts. A broader fixed qualificatio
 
 The adapter is a local proof of concept, not an upstream merged fix or a sandbox for arbitrary evaluators. Before/after hashing cannot prove the absence of transient changes that are restored, and undeclared inputs remain outside the guarantee. This diagnostic motivates stronger acceptance contracts but does not turn the null selector result into a positive one.
 
+## Native reachability and simple defenses: N1
+
+N1 froze 56 target cells, authored programs/evaluator, defenses and analysis in commit **1c6a88d** before execution. The exact public main revision was independently checked and matched the tested pin on 2 November 2026. Each native run used `ShinkaEvolveRunner.run()` with a supplied initial program, one generation and one island, with models, embeddings, novelty, meta evolution and W&B disabled. Actual evaluation, database insertion, archive maintenance, best tracking and termination ran; no upstream source was patched. A transparent submit observer captured process exits. Authored defenses interposed only at the scheduler run boundary.
+
+Seven targets cover nonzero/no output, zero/no output, metrics only, correctness only, full publication followed by exit 7, complete positive and complete negative. The strict contract requires zero exit and complete finite/schema-valid output from the current attempt. In particular, full publication followed by nonzero exit is invalid under this declared contract; accepting durably committed output despite later failure would be a different contract.
+
+The 21 reachability cells cross those targets with a fresh run, restart after completed generation zero, and retry after an actual process-group interruption before the initial database insert. For interruption, the primer publishes genuine output, emits a barrier marker and blocks; the controller terminates it and verifies an empty native program table before retry. No database rows are edited or deleted. A changed seed is then supplied. This is a controlled restart condition, not a naturally observed run or proof that all ordinary resumes are exposed.
+
+All five invalid targets were stored with `correct=True`, archived and tracked as best in both restart histories. Fresh runs accepted two of the five: correctness-only output with default score zero, and full output followed by nonzero exit. The difference identifies retained-output dependence for the other three conditions while separating independent schema/status omissions. Normal exclusive proposal directories mitigate retained-output exposure; no sampled post-initialization evolution was run.
+
+![Native consequences and minimal defenses](figures/native-initialization-013/native-consequences.png)
+
+**Native figure.** Counts are qualification outcomes among five deliberately chosen invalid conditions, not estimated failure rates. Both legitimate controls were preserved by every defense. N1 includes 56 distinct target cells and 49 primers: 105 evaluator processes, seven deliberately interrupted, with zero new inference calls.
+
+| Defense | Incorrectly accepted / 5 invalid attempts | Invalid target archived | Invalid target best | Positive / negative preserved |
+| --- | ---: | ---: | ---: | --- |
+| Upstream | 5/5 | 5 | 5 | 1/1; 1/1 |
+| Exit only | 3/5 | 3 | 3 | 1/1; 1/1 |
+| Schema only | 5/5 | 5 | 5 | 1/1; 1/1 |
+| Fresh directory | 2/5 | 2 | 1 | 1/1; 1/1 |
+| Fresh + exit + schema | 0/5 | 0 | 0 | 1/1; 1/1 |
+| Bound receipts | 0/5 | 0 | 0 | 1/1; 1/1 |
+
+The six-defense comparison shares the seven upstream/completed cells with reachability and adds 35 target cells with their own native primers. Exit-only checks miss zero-exit stale or mixed results; schema-only checks accept well-formed historical files; fresh directories leave independent incomplete-output and process-status cases. **Fresh directory plus exit plus schema matches bound receipts on every tested condition.** Receipts add replayable attribution here, without a demonstrated acceptance-accuracy benefit over the simple combined guard. Invalid score retention without positive acceptance is reported separately in the machine-readable analysis.
+
+## Standard producer and prior-repair boundary: N2
+
+To address the custom-publisher limitation, N2 froze 24 additional cells in commit **9799639**, using the exact standard `run_shinka_eval` helper from the main pin and from PR #150 head `7f6b67e20cd44821dd9d7df0d15d5905cefe43d8`. The PR is closed and unmerged. Its helper invalidates prior correctness markers at entry; that repair belongs to upstream contributors. We test only those isolated helper modules, not the complete PR, its resume guard or shutdown changes.
+
+Each helper runs through the real local scheduler, with an actual successful primer, a changed authored program, and either the raw consumer or the simple combined guard. Authored exits 7 and 0 occur either inside the sequential experiment or before helper entry. Complete positive and negative evaluations are controls. Moving the same failed termination across helper entry preserves the requirement not to attribute a prior success to the changed attempt and probes the repair's applicability boundary.
+
+| Producer and consumer | Invalid accepted inside helper / 2 | Invalid accepted before entry / 2 | Positive / negative preserved |
+| --- | ---: | ---: | --- |
+| Main helper; raw consumer | 2/2 | 2/2 | 1/1; 1/1 |
+| Prior PR helper; raw consumer | 0/2 | 2/2 | 1/1; 1/1 |
+| Main helper; combined guard | 0/2 | 0/2 | 1/1; 1/1 |
+| Prior PR helper; combined guard | 0/2 | 0/2 | 1/1; 1/1 |
+
+The prior helper repair works within its entry boundary. It cannot invalidate a marker before it executes; consumer-side checks protect that separate boundary in these cases. This is a precise scope result, not evidence that the complete PR is defective or that its authors promised broader protection. N2 used 48 evaluator processes and no inference. Neither N1 nor N2 is a generated-repair selection audit or an estimate of spontaneous failures.
+
 <!-- page -->
 
 # 6. Interpretation, resources and conclusion
 
 ## What the evidence supports
 
-The prototype can separate functional failure, stale evidence, refusal and infrastructure uncertainty; execute cached generated policies in isolation; preserve candidate ancestry and all attempts; and freeze/replay a complete selection-to-audit chain. The controlled audit shows that the two generated policies transfer across these small authored templates. The pinned scheduler diagnostic demonstrates an existing public-API attribution behavior under specified fault/reuse conditions, and the authored adapter qualifies one concrete remedy.
+N1 connects result-attribution faults to actual native persistence, archive membership and best-program tracking. N2 confirms the mechanism through the standard producer and identifies the applicability boundary of an existing producer repair. These are concrete, reproducible QA findings at a self-improvement acceptance boundary. The minimal combined consumer guard matches receipts on the tested conditions; no accuracy advantage for receipts is established. The controlled policy audit remains a separate, inconclusive selector experiment.
 
 **The original selection hypothesis remains inconclusive.** Explicit fingerprints make the completion decision easy, both repairs reach the ceiling, and every selector chooses the same candidate. Neither more deterministic repetitions nor relabeling authored controls as generated repairs would resolve this limitation. No source-conditioned native-agent pool with useful behavioral variation was obtained within the allowance.
 
 ## Limits and conditions for a larger study
 
-The pilot has one authored source, one model backbone and generated programs making deterministic actions. Fixtures, repairs to task implementations and audit templates are authored. It lacks natural semantic source failures, live model reasoning per tool step, multiple real repositories, independent human diagnosis, long-run evolution and a complete native Sakana run. Strong functional oracles here do not solve test adequacy in realistic projects. The recorded audit is now opened and cannot be reused for tuning while retaining a held-out claim.
+The repair pilot has one authored source, one model backbone and generated programs making deterministic actions. N1 runs the native one-generation initialization lifecycle, including interruption and restart; it does not sample mutations or measure long-run search quality. N2 isolates two producer helpers and does not test the complete prior PR. All new process faults are authored. Natural failure prevalence, live model reasoning per tool step, multiple real repositories and independent human review remain absent. Strong functional oracles here do not solve test adequacy in realistic projects. C1 is opened and cannot be reused for tuning while retaining a held-out claim.
 
 A larger study would need a separately bounded discovery/generation allowance, realistic qualified source failures, unchanged common repair pools, all three matched selectors and a new audit sealed before selection. Generation failures and unsuccessful candidates must remain; no positive result is required. This is future work, not silently completed work or additional spending authorization.
 
@@ -159,9 +201,11 @@ A larger study would need a separately bounded discovery/generation allowance, r
 | C1 controlled audit | 36 trials; 57 workers; 59.54 worker seconds |
 | Retained replay coverage | 179 coding traces; 28 publication receipts |
 
+N1 added 105 evaluator processes and N2 added 48, with zero new model calls. All declared target cells completed; seven N1 primers were deliberately interrupted. Offline replay reads 56 actual native databases plus WAL files and seven additional bound receipts. The first replay updated volatile SQLite shared-memory read marks; the original manifest and explicit replay amendment are preserved. Durable database/WAL hashes remained unchanged, and replay now uses temporary copies. No experimental cell was rerun to repair verification.
+
 Worker sums exclude orchestration/fixture/analysis time. Original infrastructure-inconclusive attempts remain. Offline tests and clean noneditable wheel reproduction validate implementation; they are not independent scientific replications. Exact package versions, image digest, upstream revision, input/output/code hashes, scripts and recorded evidence accompany the private repository.
 
-**Conclusion.** This completed pilot delivers a reproducible QA apparatus and a concrete result-attribution diagnostic. Its central comparison found no observed selector advantage. The appropriate next scientific question is whether mechanism-directed selection adds value on realistic, behaviorally diverse agent repairs; the present evidence does not answer it.
+**Conclusion.** Evaluation evidence can cross an attempt boundary and alter a native self-improvement archive under controlled faults. The strongest practical result is that fresh attempts, actual exit checks and complete schema validation jointly handle all tested native conditions while preserving valid negative evidence. A published producer repair works within its tested entry boundary, reinforcing the value of testing where a repair applies. This is a bounded empirical QA contribution, not a new cache-invalidation principle, a first harness-testing method, or evidence of improved model-repair selection.
 
 <!-- page -->
 
@@ -188,6 +232,14 @@ Primary sources checked 2 November 2026. Versioned papers are cited where availa
 [9] He. **Does Failure Feedback Direct Agent Self-Modification?** arXiv:2610.14662v1. [Paper](https://arxiv.org/html/2610.14662v1).
 
 [10] Sakana AI. **AI-Scientist-v3 usage guide.** Source-evidence consistency and review handling; accessed 2 November 2026. [Official documentation](https://github.com/SakanaAI/AI-Scientist-v3/blob/main/docs/usage.md).
+
+[11] ShinkaEvolve contributors. **Public PR #150: correctness and concurrency findings from deep review.** Closed, unmerged; helper head `7f6b67e20cd44821dd9d7df0d15d5905cefe43d8`. [Prior fix](https://github.com/SakanaAI/ShinkaEvolve/pull/150).
+
+[12] Rounds and Kanewala. **Systematic Testing of Genetic Algorithms: A Metamorphic Testing based Approach.** arXiv:1808.01033v1. [Paper](https://arxiv.org/abs/1808.01033v1).
+
+[13] Cao et al. **Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution.** arXiv:2610.32285v1. [Paper](https://arxiv.org/abs/2610.32285v1).
+
+[14] Zhang et al. **When Agents Fail: Model or Harness--Who's to Blame?** arXiv:2610.32483v1. [Paper](https://arxiv.org/abs/2610.32483v1).
 
 ## Implementation source and attribution
 
@@ -241,12 +293,14 @@ These commands verify saved evidence and package files; the tests use authored f
 
 | Artifact | Repository path |
 | --- | --- |
+| Native plan, 56 cells and databases | `evidence/native-initialization-013/` |
+| Standard helper / prior-repair boundary | `evidence/standard-wrapper-014/` |
 | Controlled plan, snapshots, full grid | `evidence/controlled-transfer-012/` |
 | Development selection and frozen pool | `evidence/development-comparison-001/` |
 | Source diagnostic and adapter checks | `evidence/upstream-source-006/`, `evidence/bound-shinka-008/` |
 | Broader publication qualification | `evidence/publication-qualification-011/` |
 | Measured figures, CSV and tables | `report/figures/` |
-| Final recorded demonstration | `report/demo-final/index.html` |
+| Final recorded demonstration | `report/demo-native/index.html` |
 | Full procedure and accounting | `docs/reproduction.md`, `docs/budget.md` |
 
 Private repository: [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa). The original native-agent main study remains unperformed.

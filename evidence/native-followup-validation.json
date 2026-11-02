@@ -1,0 +1,321 @@
+{
+  "schema": "agentqa.final-reproduction.v1",
+  "archive_sha256": "bb855ab966427daf26768cba7fb9fbbad786d6de3056b9718dcc920c3bc5fb22",
+  "wheel_sha256": "8c76dd04ef26e5fc0fa987657edcff691202f47bfe616c5f8e83d00b5872571d",
+  "steps": [
+    {
+      "step": "dependencies",
+      "returncode": 0
+    },
+    {
+      "step": "wheel_install",
+      "returncode": 0
+    },
+    {
+      "step": "installed_location",
+      "returncode": 0
+    },
+    {
+      "step": "tests",
+      "returncode": 0
+    },
+    {
+      "step": "evidence",
+      "returncode": 0
+    },
+    {
+      "step": "audit_replay",
+      "returncode": 0
+    },
+    {
+      "step": "audit_analysis",
+      "returncode": 0
+    },
+    {
+      "step": "html_replay",
+      "returncode": 0
+    }
+  ],
+  "isolated_noneditable_wheel": true,
+  "tests": "145 passed, 3 skipped in 17.93s",
+  "evidence": {
+    "schema": "agentqa.evidence-verification.v1",
+    "coding_traces": 179,
+    "publication_bundles": 28,
+    "upstream_source_cases": 6,
+    "frozen_candidates": 3,
+    "broader_qualification": {
+      "cases": 20,
+      "contract_matches": 20,
+      "renaming_pairs": 10,
+      "renaming_pairs_invariant": 10,
+      "model_calls": 0,
+      "independent_audit": false
+    },
+    "controlled_transfer_audit": {
+      "trials": 36,
+      "source_pools": 1,
+      "plan_hash": "fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3",
+      "native_agent_main_study": false
+    },
+    "native_initialization_study": {
+      "schema": "agentqa.native-initialization.v1",
+      "cells": 56,
+      "evaluator_processes": 105,
+      "interrupted_primers": 7,
+      "native_databases": 56,
+      "bound_receipts": 7,
+      "model_calls": 0,
+      "plan_hash": "fc55f4e1c1ada0c79ce61bc7ebc33ff03f2b170bd3592d7804c68e486d7ce139",
+      "files_hash": "5419eb520c3a504e4dc8a0e9f6a3a38962a3d09e30aa89610d312c18c5479f0a",
+      "volatile_sqlite_shared_memory_excluded": [
+        "cells/interrupted--upstream--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--schema_only--positive/native/programs.sqlite-shm",
+        "cells/completed--exit_only--positive/native/programs.sqlite-shm",
+        "cells/interrupted--upstream--positive/native/programs.sqlite-shm",
+        "cells/completed--exit_only--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--upstream--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/completed--schema_only--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--upstream--negative/native/programs.sqlite-shm",
+        "cells/completed--bound--correct_only/native/programs.sqlite-shm",
+        "cells/completed--upstream--correct_only/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--correct_only/native/programs.sqlite-shm",
+        "cells/completed--bound--zero_empty/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--exit_only--negative/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/interrupted--upstream--negative/native/programs.sqlite-shm",
+        "cells/fresh--upstream--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/fresh--upstream--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--upstream--positive/native/programs.sqlite-shm",
+        "cells/completed--schema_only--negative/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--zero_empty/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--exit_only--zero_empty/native/programs.sqlite-shm",
+        "cells/interrupted--upstream--correct_only/native/programs.sqlite-shm",
+        "cells/completed--bound--negative/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--negative/native/programs.sqlite-shm",
+        "cells/completed--exit_only--nonzero_empty/native/programs.sqlite-shm",
+        "cells/interrupted--upstream--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/completed--schema_only--correct_only/native/programs.sqlite-shm",
+        "cells/completed--schema_only--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/completed--schema_only--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--exit_only--correct_only/native/programs.sqlite-shm",
+        "cells/fresh--upstream--negative/native/programs.sqlite-shm",
+        "cells/completed--upstream--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--negative/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--upstream--metrics_only/native/programs.sqlite-shm",
+        "cells/interrupted--upstream--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--bound--metrics_only/native/programs.sqlite-shm",
+        "cells/completed--exit_only--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/interrupted--upstream--zero_empty/native/programs.sqlite-shm",
+        "cells/completed--bound--full_then_nonzero/native/programs.sqlite-shm",
+        "cells/fresh--upstream--correct_only/native/programs.sqlite-shm",
+        "cells/fresh--upstream--positive/native/programs.sqlite-shm",
+        "cells/completed--fresh_exit_schema--positive/native/programs.sqlite-shm",
+        "cells/completed--bound--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--positive/native/programs.sqlite-shm",
+        "cells/completed--bound--positive/native/programs.sqlite-shm",
+        "cells/fresh--upstream--zero_empty/native/programs.sqlite-shm",
+        "cells/completed--upstream--zero_empty/native/programs.sqlite-shm",
+        "cells/completed--schema_only--zero_empty/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--zero_empty/native/programs.sqlite-shm",
+        "cells/fresh--upstream--nonzero_empty/native/programs.sqlite-shm",
+        "cells/completed--fresh_only--correct_only/native/programs.sqlite-shm"
+      ],
+      "replay_note": "Database and WAL hashes verified; SQLite read-mark files excluded. See native-replay-amendment-013.json.",
+      "analysis": {
+        "schema": "agentqa.native-initialization.v1",
+        "model_calls": 0,
+        "independent_source_pools": 0,
+        "native": {
+          "fresh": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 2,
+            "invalid_nonzero_score": 2,
+            "incorrect_archive": 2,
+            "incorrect_best": 2,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "completed": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 5,
+            "invalid_nonzero_score": 5,
+            "incorrect_archive": 5,
+            "incorrect_best": 5,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "interrupted": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 5,
+            "invalid_nonzero_score": 5,
+            "incorrect_archive": 5,
+            "incorrect_best": 5,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          }
+        },
+        "defenses": {
+          "upstream": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 5,
+            "invalid_nonzero_score": 5,
+            "incorrect_archive": 5,
+            "incorrect_best": 5,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "exit_only": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 3,
+            "invalid_nonzero_score": 3,
+            "incorrect_archive": 3,
+            "incorrect_best": 3,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "schema_only": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 5,
+            "invalid_nonzero_score": 5,
+            "incorrect_archive": 5,
+            "incorrect_best": 5,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "fresh_only": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 2,
+            "invalid_nonzero_score": 2,
+            "incorrect_archive": 2,
+            "incorrect_best": 1,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "fresh_exit_schema": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 0,
+            "invalid_nonzero_score": 0,
+            "incorrect_archive": 0,
+            "incorrect_best": 0,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          },
+          "bound": {
+            "cells": 7,
+            "invalid_cells": 5,
+            "incorrect_acceptance": 0,
+            "invalid_nonzero_score": 0,
+            "incorrect_archive": 0,
+            "incorrect_best": 0,
+            "positive_preserved": 1,
+            "negative_preserved": 1
+          }
+        },
+        "rows_hash": "944a25c99ec2a85f175f04eb263e481e138ac8b410b06ac46d6f295c9891be2f",
+        "confidence_interval": null,
+        "scope": "Authored deterministic native initialization/restart and defense comparison; not generated repair selection"
+      }
+    },
+    "standard_helper_boundary": {
+      "schema": "agentqa.standard-wrapper-replay.v1",
+      "cells": 24,
+      "evaluator_processes": 48,
+      "model_calls": 0,
+      "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+      "files_hash": "6db1ec2572b1c5f4906b66d2edcd19cbcf159206b2f0ee6453998de1ab1f8bce",
+      "groups": {
+        "pinned--raw": {
+          "cells": 6,
+          "invalid_cells": 4,
+          "incorrect_acceptance": 4,
+          "positive_preserved": 1,
+          "negative_preserved": 1,
+          "inside_invalid_accepted": 2,
+          "before_invalid_accepted": 2
+        },
+        "pinned--fresh_exit_schema": {
+          "cells": 6,
+          "invalid_cells": 4,
+          "incorrect_acceptance": 0,
+          "positive_preserved": 1,
+          "negative_preserved": 1,
+          "inside_invalid_accepted": 0,
+          "before_invalid_accepted": 0
+        },
+        "pr150_helper--raw": {
+          "cells": 6,
+          "invalid_cells": 4,
+          "incorrect_acceptance": 2,
+          "positive_preserved": 1,
+          "negative_preserved": 1,
+          "inside_invalid_accepted": 0,
+          "before_invalid_accepted": 2
+        },
+        "pr150_helper--fresh_exit_schema": {
+          "cells": 6,
+          "invalid_cells": 4,
+          "incorrect_acceptance": 0,
+          "positive_preserved": 1,
+          "negative_preserved": 1,
+          "inside_invalid_accepted": 0,
+          "before_invalid_accepted": 0
+        }
+      },
+      "complete_pr_tested": false,
+      "scope": "Exact isolated producer helpers with authored faults; public scheduler endpoint, not an independent repair audit"
+    },
+    "new_execution_or_model_calls": 0,
+    "independent_audit": false,
+    "scope": "Integrity/replay checks of retained evidence; controlled transfer is distinct from a native-agent main audit; no authenticity against full-store replacement"
+  },
+  "audit_table_csv_match": true,
+  "html_byte_identical": true,
+  "google_doc_source_and_native_readback_match": true,
+  "google_doc_live_rechecked_by_this_offline_run": false,
+  "final_pdf": false,
+  "new_model_or_candidate_executions": 0,
+  "core_file_hashes": {
+    "__init__.py": "e35a5c9731f32a7cbd29fcb1de72d2c4b1ad95367c936a70ef4b0b8c8997dc51",
+    "agent.py": "b9cec15d9fbadde4894bab59cd5a191f5b08f4c9fb7be5cd7727cd889bae327f",
+    "analysis.py": "c77f294939ffc20a590a80f8ec4ddb90b42859a587bb3c264a6345af74639de6",
+    "bundles.py": "6b766fbc70392ad8d76226264c512b4d2275fdf40e7fabb0cc911323357e4b89",
+    "cli.py": "348dbc64076a1705426b46ba8be84a92e1d08015a3bda53f75d49bcfecd70e21",
+    "codex_backend.py": "2a604b10048b8616fb5c2506b0af04111e9484d9c892c4f7c8f675e0a3a6d671",
+    "comparison.py": "4e5f10ca06c9bff88b41ee856a620ad4fbe2738f4bbd6f5e7b8228c8cdc230bf",
+    "contracts.py": "3e72c0442ef4112c8e107e99e1fad19e1f04b7d9e4cc1b3c0408c3554c5ac4cf",
+    "controlled_audit.py": "6328eafdb5b6e131d994acb8cacfb5e7bb70a6a4343b968a1378906b923671d3",
+    "demo.py": "e473731dc20a0f3c5b0f307dbf21c7662e4f4a9546b41ba0153aef7c3b76e962",
+    "distribution.py": "59ddeb9c52a4a5541ed6bfa26e98d6e367d59c2c98477dcd9b82feee2cdac92c",
+    "environment.py": "0faf96695695e2e8ee7a8e5c218145dc36a964fafa4760ec5fe80f0f7cfb4cce",
+    "evaluation.py": "5f6ee9276a9439264e6f60d328e4630f03244f3556ef3a913f829ae86b5cc177",
+    "evidence.py": "be7e79677acfb20040070760f22559284aa2dfff0d2fd1af85a71e12e4dde714",
+    "families.py": "617b1521397382e50c7e7a1f3febe44a96b9141ea37836621b9005d80e88a4fc",
+    "generated_policy.py": "f55fe85ff81fe4ffa136de37f4497d8eec5242dab3d007234b154fde09e77399",
+    "ledger.py": "6438977f1b923c3ce8ba35b54ab50139ab32cefbba5df7a49a2e4fecd341ae28",
+    "native_replay.py": "af59161235625d32c207b6c12204e19c5c40d107d9fea6412bb49698f81decac",
+    "native_study.py": "e65a839722ac0b261fcd239e41bdcc1eacec0072238b23e1f4e2f2cafd43d53d",
+    "publication_qualification.py": "17a46edee256fb29db11b2a47bea9ee9b321a9a81112eae46c1f906dba74854b",
+    "recorder.py": "1438edfdc0ea102b1ff7b453e6057f214d8ca52cbc07ad7ed0b99ee68bad0095",
+    "registry.py": "ed914a68549b3da97aec4d8b2520678606867e4f639afa1cae8261c39ae893ae",
+    "sandbox.py": "7705a6fb56c171179780b1993170255b4535741ed1c6038897aaa92c7382debf",
+    "selection.py": "5724b0271830a1b44b0c6ffba507433af126c91853f07d2b40587d94b1a99f89",
+    "shinka_bridge.py": "72e053a0331eea18c87b343df435d438fe7782ecd528c7c5ea17bbf26ecc1dc7",
+    "standard_replay.py": "0d2c2757608d1d453470bea779eca1957d602c6cce884ea8bb00e1e9e4d7b7ac",
+    "workflow.py": "641148fdaccc23af3cb5bbfcfcfd0bedb2a9745c2732bb6107a31e6ff101effe"
+  },
+  "scope": "C1 pilot plus N1 native initialization and N2 isolated helper boundary; generated-repair main study unperformed"
+}

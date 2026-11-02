@@ -1,0 +1,26 @@
+{
+  "schema": "agentqa.replay-page.v1",
+  "model_calls": 0,
+  "executes_candidates": false,
+  "inputs": {
+    "evidence/upstream-source-006/summary.json": "5f0116650a947c090c50d92c92912b64f4b6b5e3a145edf59efceaa5a5edd468",
+    "evidence/bound-shinka-008/summary.json": "1c303020acad8cdd775a7398fb5a964c852a5405a21dfd5f4c87c3d8fabb2fa5",
+    "evidence/stateful-controller-005/summary.json": "e7e1b1bb155782d480fdc106b64a6ac3a888165feca383a19a4f0e7799be30d3",
+    "evidence/publication-qualification-011/summary.json": "f581fba9d187ed164f39bc55a5542d2d5ff5107b04fda23907804be5a95c8e1c",
+    "evidence/stateful-controller-005/traces/generated-config.jsonl": "cc79da1a92d78fdf40b7dd9a9671d6707810323649cad80c8259232f12108a76",
+    "evidence/controlled-transfer-012/plan.json": "9a9a1ae1797060fdf979e58cb3c75800fc746dfd187172f8c7b0e42c703d6094",
+    "evidence/controlled-transfer-012/summary.json": "03bd7b6f2313cd77f3cabc385f397d168fe4c5a1e0f20897288dce3bbf05589c",
+    "evidence/controlled-transfer-012/analysis.json": "1a6d65891e4f65a3e110897a0a75dbea5995117bbf9a109bdf4282607e8ae3aa",
+    "evidence/controlled-transfer-012/trials/72a2d7ddee4d35fb05b5369de82aad771a697f669ebbcf27b9855459e5aad867/trace.jsonl": "9beffd5c526c2b01e54ef0fd39e9819ede6a77618adc965338dc0cd8b0188668",
+    "evidence/controlled-transfer-012/trials/6cc61586df02694e2ea2b2f871d1f1da7a2c8b91cc7dbc1740a12f300a6ab289/trace.jsonl": "bcbce29dae17b27078862ed9edeaa7a2b79769bc05bd99767b2e11efb449305b",
+    "evidence/controlled-transfer-012/trials/253fe74988e41a5769cc93c55b331949f15b03aded56cc6f96f3a6a171c6b584/trace.jsonl": "1016a1e79c54221ab3d8e419a0f1864c4feeff3a7b892b550c0a295a49d90776",
+    "evidence/controlled-transfer-012/trials/acd9369cf2362cbb4a408fda6600d0f7778916e21ea8e0e5edf0839426e0a633/trace.jsonl": "a6a7953a71bf5bbbc7445768589ad130eead31b0d36fbf33e17d58aaedaab535",
+    "evidence/controlled-transfer-012/trials/f354ac7d7c62ddfc5f15db545b9171d67df98043487e4810f2e37d13df81e559/trace.jsonl": "27f0cd95c764dc9196d72b278f5eef7e7fe1acfe74391d5f5384f3e2e93654d2",
+    "evidence/controlled-transfer-012/trials/52294e592ce0d0b63cc4dc421e70eeb7c59ffa57124b0432afe1d153b6b9d8c0/trace.jsonl": "402560a651612ab0a408d17621a39aa02ed52f60990e21a55e30153f57ee15b8",
+    "evidence/native-initialization-013/outcomes.json": "f568f87e121213c3a39534230abd52aa0c7de61fb497808289e3ca4e339ddfd4",
+    "evidence/standard-wrapper-014/outcomes.json": "39c7aac3e242607da623f47905e340c54c14e77b05f3f60317386a048d7f6d26"
+  },
+  "script_sha256": "b4995b1dd29348c59b4da440b391e0488f70413a125c5ea5ffe3802bb679e90c",
+  "html_sha256": "157722b7ff6f2f842a06b93714026028dd1657226a5f4c7e56f011ef7ccd2473",
+  "scope": "Recorded C1 pilot, N1 native initialization and N2 isolated helper boundary; generated-repair main study unperformed"
+}

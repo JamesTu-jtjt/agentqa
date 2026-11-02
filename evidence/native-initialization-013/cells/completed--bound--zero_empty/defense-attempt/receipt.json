@@ -1,0 +1,25 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "attempt_id": "d36110106baa4d339e864a7a36103f3c",
+  "request_hash": "1a523e300ac697ab4dfb846b3e426912ce9feabe7222399b15a08bd8b926cbaa",
+  "status": "completed",
+  "returncode": 0,
+  "inputs_after": {
+    "evaluator": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/native-initialization-013/cells/completed--bound--zero_empty/evaluate.py",
+      "sha256": "9d3cc011a4159f4fa1ae99bf4634cc12d6e9be81b46e25b605b6e72be0af10ca",
+      "bytes": 897
+    },
+    "program": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/native-initialization-013/cells/completed--bound--zero_empty/native/gen_0/main.py",
+      "sha256": "0f1fa752ebad01fae5b4b63b9a1af99b88522136217d250d969b7cf504505c18",
+      "bytes": 138
+    }
+  },
+  "artifact_hashes": {},
+  "result_hash": null,
+  "publication_error": "FileNotFoundError",
+  "execution_error": null,
+  "launch_command_hash_after": "8a845303e7a03a609ffb0e500ccbed69b45b367e5541f6751091d977a88fa3d9",
+  "duration_seconds": 0.044011125108227134
+}

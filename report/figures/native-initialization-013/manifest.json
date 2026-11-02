@@ -1,0 +1,12 @@
+{
+  "plan_hash": "fc55f4e1c1ada0c79ce61bc7ebc33ff03f2b170bd3592d7804c68e486d7ce139",
+  "files": {
+    "native-consequences.svg": "d442e61dde9fe87eeee827a256be383f0463fbcc12d03a10e3023f109f8446c2",
+    "native-consequences.png": "e93ebf6f09cbc15868f8411e8181f1dcbfc123446215888f0875df2e5d32f347",
+    "table.md": "8d8e6c8123c9032aa3e5f120ce2cd22fee46bdca252ad63afd598b9f28db2fd1",
+    "verification.json": "8c30c9ea54bcbbedbe9ee5c1ba7aef50e3ed336b3b3fb8b058b5de4a93d10c88",
+    "defenses.csv": "40bcf8bc169fa7ca89e33ebc434498e9ddf7b294d7c556ffb1dfc1f6a3ba8bbb"
+  },
+  "script_sha256": "e12d3d034ff2b48a172586ef6f60a2ca99cced2b1440f2fff76b4ca204637b88",
+  "pdf_generated": false
+}

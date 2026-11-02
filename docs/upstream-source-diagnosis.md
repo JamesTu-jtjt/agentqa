@@ -1,5 +1,7 @@
 # Grounded source case: result attribution after a failed rerun
 
+**Later follow-up:** This original API diagnostic is preserved. N1 now reproduces native initialization/restart/interruption archive and best-state consequences; N2 tests the standard helper and a credited prior repair. See `native-followup-results.md`. Public PR #150 already discussed related resume/crash-consistency issues, so the bug class is not claimed as new. Statements below about unreproduced native reachability describe the earlier diagnostic stage.
+
 2 November 2026. [Predeclared six-case probe](upstream-discovery-protocol.md), [actual results](../evidence/upstream-source-006/summary.json), [unchanged source and license](../evidence/upstream-source-006/upstream-source/).
 
 ## Finding and scope

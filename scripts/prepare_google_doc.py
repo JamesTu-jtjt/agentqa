@@ -56,7 +56,7 @@ def main():
         elif line.startswith('# '):
             raw=line[2:];kind='title' if first else 'h1';first=False
         elif line.startswith('## '):
-            raw=line[3:];kind='subtitle' if raw.startswith('Metamorphic validation') else ('h1' if raw.startswith('1. ') else 'h2')
+            raw=line[3:];kind='subtitle' if raw.startswith(('Metamorphic validation','A controlled repair pilot')) else ('h1' if raw.startswith('1. ') else 'h2')
         text,styles=inline(raw)
         blocks.append({'kind':kind,'text':text,'styles':styles})
         index+=1

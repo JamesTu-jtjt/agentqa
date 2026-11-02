@@ -1,0 +1,15 @@
+{
+  "interrupted": true,
+  "worker_returncode": -15,
+  "database": {
+    "programs": [],
+    "archive": [],
+    "metadata": {
+      "last_iteration": "0",
+      "best_program_id": null,
+      "beam_search_parent_id": null
+    }
+  },
+  "marker": "complete output published; evaluator deliberately blocked",
+  "fault": "external process-group SIGTERM"
+}

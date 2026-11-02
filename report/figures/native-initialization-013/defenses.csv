@@ -1,0 +1,7 @@
+policy,label,cells,invalid_cells,incorrect_acceptance,invalid_nonzero_score,incorrect_archive,incorrect_best,positive_preserved,negative_preserved
+upstream,Upstream,7,5,5,5,5,5,1,1
+exit_only,Exit only,7,5,3,3,3,3,1,1
+schema_only,Schema only,7,5,5,5,5,5,1,1
+fresh_only,Fresh directory,7,5,2,2,2,1,1,1
+fresh_exit_schema,Fresh + exit + schema,7,5,0,0,0,0,1,1
+bound,Bound receipts,7,5,0,0,0,0,1,1

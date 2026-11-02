@@ -1,0 +1,48 @@
+{
+  "schema": "agentqa.standard-wrapper-replay.v1",
+  "cells": 24,
+  "evaluator_processes": 48,
+  "model_calls": 0,
+  "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+  "files_hash": "6db1ec2572b1c5f4906b66d2edcd19cbcf159206b2f0ee6453998de1ab1f8bce",
+  "groups": {
+    "pinned--raw": {
+      "cells": 6,
+      "invalid_cells": 4,
+      "incorrect_acceptance": 4,
+      "positive_preserved": 1,
+      "negative_preserved": 1,
+      "inside_invalid_accepted": 2,
+      "before_invalid_accepted": 2
+    },
+    "pinned--fresh_exit_schema": {
+      "cells": 6,
+      "invalid_cells": 4,
+      "incorrect_acceptance": 0,
+      "positive_preserved": 1,
+      "negative_preserved": 1,
+      "inside_invalid_accepted": 0,
+      "before_invalid_accepted": 0
+    },
+    "pr150_helper--raw": {
+      "cells": 6,
+      "invalid_cells": 4,
+      "incorrect_acceptance": 2,
+      "positive_preserved": 1,
+      "negative_preserved": 1,
+      "inside_invalid_accepted": 0,
+      "before_invalid_accepted": 2
+    },
+    "pr150_helper--fresh_exit_schema": {
+      "cells": 6,
+      "invalid_cells": 4,
+      "incorrect_acceptance": 0,
+      "positive_preserved": 1,
+      "negative_preserved": 1,
+      "inside_invalid_accepted": 0,
+      "before_invalid_accepted": 0
+    }
+  },
+  "complete_pr_tested": false,
+  "scope": "Exact isolated producer helpers with authored faults; public scheduler endpoint, not an independent repair audit"
+}

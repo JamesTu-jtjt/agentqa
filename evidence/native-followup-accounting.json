@@ -1,0 +1,19 @@
+{
+  "schema": "agentqa.native-followup-accounting.v1",
+  "native_cells": 56,
+  "helper_cells": 24,
+  "new_experimental_inference_calls": 0,
+  "lifetime_experimental_calls": 3,
+  "remaining_experimental_calls": 0,
+  "native_evaluator_processes": 105,
+  "standard_helper_processes": 48,
+  "deliberately_interrupted_primers": 7,
+  "infrastructure_inconclusive_target_cells": 0,
+  "retries": 0,
+  "exclusions": 0,
+  "original_selector_result": "all selectors choose repair-00; no advantage shown",
+  "upstream_main_verified": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+  "pr150_status": "closed, unmerged",
+  "pr150_scope_tested": "isolated helper only, not complete PR",
+  "upstream_head_check_date_utc": "2026-11-02"
+}

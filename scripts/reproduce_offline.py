@@ -71,7 +71,7 @@ def main():
         if (output / "figure" / name).read_bytes() != (source / "report/figures/controlled-transfer-012" / name).read_bytes():
             raise ValueError("Regenerated audit CSV/table differs")
     run("html_replay", [python, "-I", source / "scripts/build_replay.py", "--output", output / "replay/index.html"])
-    if (output / "replay/index.html").read_bytes() != (source / "report/demo-final/index.html").read_bytes():
+    if (output / "replay/index.html").read_bytes() != (source / "report/demo-native/index.html").read_bytes():
         raise ValueError("Final replay did not regenerate identically")
     doc_source = json.loads((source / "report/google-doc-source.json").read_text())
     doc_qa = json.loads((source / "docs/google-doc-qa.json").read_text())
@@ -88,7 +88,7 @@ def main():
               "google_doc_live_rechecked_by_this_offline_run": False,
               "final_pdf": False, "new_model_or_candidate_executions": 0,
               "core_file_hashes": {p.name: sha(p) for p in sorted((source / "src/agentqa").glob("*.py"))},
-              "scope": "Completed bounded controlled-pilot delivery; original native-agent main study unperformed"}
+              "scope": "C1 pilot plus N1 native initialization and N2 isolated helper boundary; generated-repair main study unperformed"}
     (output / "result.json").write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({"result": str(output / "result.json"), "google_doc_source_matches": True,
                       "html_matches": True, "new_inference_calls": 0}))

@@ -1,26 +1,29 @@
 {
   "document_id": "1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU",
   "url": "https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk",
-  "main_paragraphs_verified": 95,
-  "native_tables": 5,
-  "table_cells_verified": 84,
+  "report_tab": "t.5mrxuo1ck2bn",
+  "archive_tab": "t.0",
+  "document_title": "Sakana Part 2 - AgentQA: Evaluation Integrity for Self-Improving Agents",
+  "main_paragraphs_verified": 112,
+  "native_tables": 7,
+  "table_cells_verified": 143,
   "inline_figures": [
     {
-      "id": "kix.204ltmxxl1xa",
+      "id": "kix.c07d00ntsoj9",
       "size": {
         "height": {
-          "magnitude": 166.1211225997046,
+          "magnitude": 268.0421052631579,
           "unit": "PT"
         },
         "width": {
-          "magnitude": 432.00000000000006,
+          "magnitude": 432,
           "unit": "PT"
         }
       },
       "has_image": true
     },
     {
-      "id": "kix.c0bbjyh36ur5",
+      "id": "kix.fh9b8mgs47rt",
       "size": {
         "height": {
           "magnitude": 238.9787234042553,
@@ -34,41 +37,53 @@
       "has_image": true
     },
     {
-      "id": "kix.yklczikfnp07",
+      "id": "kix.k91obqflamb",
       "size": {
         "height": {
-          "magnitude": 268.0421052631579,
+          "magnitude": 172.8,
           "unit": "PT"
         },
         "width": {
-          "magnitude": 432,
+          "magnitude": 432.00000000000006,
+          "unit": "PT"
+        }
+      },
+      "has_image": true
+    },
+    {
+      "id": "kix.nuvhf8k32epx",
+      "size": {
+        "height": {
+          "magnitude": 166.1211225997046,
+          "unit": "PT"
+        },
+        "width": {
+          "magnitude": 432.00000000000006,
           "unit": "PT"
         }
       },
       "has_image": true
     }
   ],
-  "caption_count": 3,
+  "caption_count": 4,
   "source_text_matches": true,
   "table_cells_match": true,
-  "revision": "AHj4eMTf4ZSfrwrA87B6r2YYyBuaoLW62DatinR9vztulkxhcxBwfgljSonFbfpj0Nsu0xHM6oJGypgv1HUdiBNarGhnjXR-82prvykjDPs",
+  "archive_body_unchanged": true,
+  "archive_inline_object_ids_unchanged": true,
+  "revision": "AHj4eMR0rdwh88aF2xcPtYcdK7CodvUFKL0mNsX8U7brFq5KnQtQloUSl3yQId1zKhUKuBKpB2YBx4U4giqARZSZI_haFQszyswyIsUE8Lg",
   "final_pdf": false,
-  "document_title": "Sakana Part 2 - AgentQA: Metamorphic Validation of Agent Repairs",
+  "owner_only": true,
+  "folder_verified": true,
   "layout_review": {
     "native_google_docs_browser": true,
     "areas": [
       "Opening title, disclosure and abstract",
-      "Results table kept on one page",
-      "All three measured figures and captions"
+      "N1 figure and caption",
+      "N1 complete defense table",
+      "N2 complete producer-boundary table"
     ],
-    "native_pages_observed": 12,
+    "native_pages_observed": 19,
     "no_clipping_observed_in_reviewed_areas": true,
-    "page_break_headings": [
-      "4. Controlled transfer results",
-      "5. Grounded result-attribution case"
-    ],
     "pdf_export": false
-  },
-  "owner_only": true,
-  "folder_verified": true
+  }
 }

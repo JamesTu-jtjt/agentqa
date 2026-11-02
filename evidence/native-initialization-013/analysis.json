@@ -1,0 +1,102 @@
+{
+  "schema": "agentqa.native-initialization.v1",
+  "model_calls": 0,
+  "independent_source_pools": 0,
+  "native": {
+    "fresh": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 2,
+      "invalid_nonzero_score": 2,
+      "incorrect_archive": 2,
+      "incorrect_best": 2,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "completed": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 5,
+      "invalid_nonzero_score": 5,
+      "incorrect_archive": 5,
+      "incorrect_best": 5,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "interrupted": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 5,
+      "invalid_nonzero_score": 5,
+      "incorrect_archive": 5,
+      "incorrect_best": 5,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    }
+  },
+  "defenses": {
+    "upstream": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 5,
+      "invalid_nonzero_score": 5,
+      "incorrect_archive": 5,
+      "incorrect_best": 5,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "exit_only": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 3,
+      "invalid_nonzero_score": 3,
+      "incorrect_archive": 3,
+      "incorrect_best": 3,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "schema_only": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 5,
+      "invalid_nonzero_score": 5,
+      "incorrect_archive": 5,
+      "incorrect_best": 5,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "fresh_only": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 2,
+      "invalid_nonzero_score": 2,
+      "incorrect_archive": 2,
+      "incorrect_best": 1,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "fresh_exit_schema": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 0,
+      "invalid_nonzero_score": 0,
+      "incorrect_archive": 0,
+      "incorrect_best": 0,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    },
+    "bound": {
+      "cells": 7,
+      "invalid_cells": 5,
+      "incorrect_acceptance": 0,
+      "invalid_nonzero_score": 0,
+      "incorrect_archive": 0,
+      "incorrect_best": 0,
+      "positive_preserved": 1,
+      "negative_preserved": 1
+    }
+  },
+  "rows_hash": "944a25c99ec2a85f175f04eb263e481e138ac8b410b06ac46d6f295c9891be2f",
+  "confidence_interval": null,
+  "scope": "Authored deterministic native initialization/restart and defense comparison; not generated repair selection"
+}

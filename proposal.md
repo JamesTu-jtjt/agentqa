@@ -177,3 +177,8 @@ The main unresolved novelty question is whether validated, mechanism-directed fa
 ## Implementation closeout, 2 November 2026
 
 The original proposal above remains the research rationale. Within the small three-call allowance, generated repairs did not produce a discriminating pool. Amendment C1 therefore completed a separately frozen controlled template-transfer pilot; all selectors tied. The final report is the [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), with local source in `report/final-report.md`. This closes the bounded prototype/report deliverable, not the larger native-agent study or a confirmed selector-benefit claim. See `docs/handover.md` for preserved limitations and deferred work.
+
+
+## Post-pilot native follow-up: N1/N2
+
+After the controlled pilot's null selector result, James requested substantive improvement. The prospectively frozen native follow-up establishes initialization/restart/interruption consequences in a real Shinka runner and compares simple defenses. A second frozen study tests the standard helper and an existing public PR helper's entry boundary. See `docs/native-followup-results.md` and the revised Google Doc/report. The resulting submission is positioned as a bounded evaluation-integrity case study with a preserved inconclusive repair-selection pilot. This does not retroactively modify the original hypothesis, turn authored faults into natural model failures, or claim general selector benefit. Related upstream fixes and harness-testing literature are credited. No additional inference allowance was used.

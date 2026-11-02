@@ -1,0 +1,7 @@
+# N1 replay amendment: SQLite shared memory
+
+The first offline replay successfully compared all 56 native database states and seven bound receipts, then failed at final bookkeeping because a Python variable holding the artifact manifest had been shadowed by a receipt manifest. This did not execute or repeat an experimental case. The variable was renamed.
+
+A second replay detected that the first read-only SQLite connections had updated WAL shared-memory read marks in `programs.sqlite-shm` files. SQLite `mode=ro` protects database content but not those volatile coordination bytes. The originally recorded file manifest is preserved. `evidence/native-replay-amendment-013.json` identifies the affected shared-memory files and original/current hashes. Original database and WAL hashes still match; the target rows, outcomes and analysis are unchanged.
+
+Replay now verifies all durable artifacts against their original hashes, copies each database plus its WAL into a fresh temporary directory, excludes the volatile `-shm` file, and reconstructs the native state there. This avoids further writes to source evidence. Shared-memory file contents are explicitly excluded from scientific evidence authentication; primary database and WAL files remain authenticated against the preserved manifest. Tests verify source artifacts remain unchanged across replay and reject changed durable data. No new native runs, candidates or inference calls were used to repair verification.

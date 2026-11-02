@@ -1,30 +1,26 @@
 # AgentQA handover
 
-2 November 2026. The bounded controlled-pilot package is complete. This is a research prototype with an inconclusive selector result, not a claim that the original native-agent main study was completed.
+2 November 2026. The native follow-up strengthens the completed controlled pilot; the original generated-repair selection hypothesis remains unresolved.
 
 ## Start here
 
-1. Read the [final Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk); `report/final-report.md` preserves the local source.
-2. Open `report/demo-final/index.html` locally. Its source-publication tabs and three controlled audit examples use verified saved records. No local server is required for viewing.
-3. Review `evidence/controlled-transfer-012/analysis.json` and `report/figures/controlled-transfer-012/` for the full measured result.
-4. Follow `docs/reproduction.md` to verify the evidence or regenerate artifacts. The final clean-export result is `evidence/final-validation.json`.
+1. Read the existing [Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.5mrxuo1ck2bn). The revised report is first; the original C1 tab is preserved unchanged. `report/final-report.md` and `report/google-doc-source.json` match native readback: 112 text blocks, seven tables/143 cells, four embedded figures. Sharing remains owner-only. No final PDF was generated/exported.
+2. Open `report/demo-native/index.html` locally. It replays the actual native database consequences and simple-defense comparison, alongside preserved publication, workflow and C1 cases. It performs no network/model/task execution. Earlier `demo/` and `demo-final/` remain historical.
+3. Read `docs/native-followup-results.md`, N1/N2 frozen protocols and source/PR attribution. Run the installed `agentqa verify-evidence --root .` to replay all saved records without Shinka, Docker or model calls.
+4. Follow `docs/reproduction.md`. `evidence/native-followup-validation.json` records clean noneditable-wheel verification. The earlier `evidence/final-validation.json` verifies the prior C1 package only.
 
-## Findings and claim boundaries
+## Findings and limits
 
-The parent passed 3/9 controlled cases; both unchanged generated repairs and the nonselectable authored reference passed 9/9. All three matched selectors had already selected repair 00. The observed selector difference is zero. One authored source pool and ceiling-level repairs cannot establish equivalence or realistic selector benefit. No natural semantic model failure was confirmed.
+N1: 56 native target cells, 49 primers, 105 evaluator processes, seven deliberate interrupted primers. Under five invalid restart conditions, upstream stores all five target programs as correct and admits them to archive/best tracking. Exit-only leaves three invalid acceptances; schema-only five; fresh-only two. Fresh directory + actual exit + complete schema, and bound receipts, leave zero and preserve both complete positive and negative controls. Receipts have no demonstrated accuracy advantage over the simple combined guard.
 
-The separate pinned Shinka scheduler diagnostic reproduced stale/mixed attribution in three of six authored fault/reuse scenarios. Twenty broader authored adapter checks matched their contracts. These are public-API diagnostic/qualification results, not population rates or model-generated repair comparisons. Nothing was submitted upstream.
+N2: 24 target cells, 48 processes, exact main and public PR #150 evaluation helpers. The prior helper prevents both inside-helper stale-success cases, but both before-entry cases remain under the raw consumer. The combined consumer guard prevents both sets. Only isolated helper modules were tested; this is not a test of the complete PR or its resume/shutdown changes. The known bug class/repair principles are not claimed as new.
 
-## Resources and reproducibility
+These are deterministic authored fault-injection studies. They establish native initialization consequences and bounded repair scope, not natural incidence, model reasoning failures, sampled long-run evolution or published scientific harm. C1 still has both generated repairs 9/9, parent 3/9 and identical selected repair IDs. No selector benefit is established. Existing audits are opened; new tuning requires a new audit.
 
-All three experimental Codex calls remain accounted for: 27,232 input / 2,458 output tokens; subscription dollars unavailable. No new inference or separate API billing was used after the three-call pilot. Do not delete/recreate the ledger to reset the allowance.
+## Verification and resources
 
-The offline suite passes 131 tests with three opt-in Docker checks skipped. Actual C1 execution used 57 completed Docker workers and retained every trial; all were cleaned up. The installed verifier replays 179 coding traces and 28 publication receipts. Exact package/source hashes, frozen plan, preserved source snapshots, and Google Doc source/readback and final HTML provenance manifests accompany the package. The final clean export installs a noneditable wheel, regenerates the audit table and final replay, and verifies the local Google Doc source against its recorded native readback. Live Google Docs verification is performed separately through the authenticated connector.
+Clean installation: **145 passed, 3 optional Docker checks skipped**. Replays 179 coding traces, 28 original publication receipts, 56 actual native databases/WALs, seven additional receipts and all 24 helper cells. The C1 CSV/table and updated HTML regenerate identically; native Google Doc text/table/image readback and browser layout were checked separately. Replay uses temporary SQLite/WAL copies; volatile shared-memory read marks are excluded under an explicit preserved amendment. Durable hashes/outcomes were unchanged and no experimental cell was resampled to fix replay.
 
-Publication is authorized only to the private [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa) repository. The report is a Google Doc, with no PDF report in final deliverables. Source/evidence packaging excludes credentials, environments, transient runs, the vendor checkout and Neuroevolution. No public release, collaborator invitation, upstream message or external exercise submission was performed.
+All three experimental Codex invocations remain accounted for: 27,232 input / 2,458 output tokens, subscription dollars unavailable. N1/N2 add zero inference. Do not reset the ledger or silently increase its allowance. Original native generated-repair discovery/diversity/selection and a new sealed audit remain deferred.
 
-## What remains outside this completed scope
-
-The original B51/B52/B54 and X60-R73 main-study TODOs remain deferred: realistic qualified model-agent sources, a useful source-conditioned repair pool, native matched selection and a fresh unopened audit, under a separately authorized feasible allowance. The same C1 cases cannot be tuned on and then relabeled held out. Long-run evolution and multiple real repositories were not run.
-
-No background process or automation continues. The final source and private remote are checked at closeout; resume only if James requests additional work.
+Private publication is authorized only to [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa), branch `james-tu/agentqa`. No upstream message, issue, public release, collaborator invitation or external submission is authorized. Neuroevolution is preserved. No model task, automation or temporary QA server continues after closeout.

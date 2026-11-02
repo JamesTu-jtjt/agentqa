@@ -1,0 +1,166 @@
+{
+  "schema": "agentqa.native-initialization.v1",
+  "phase": "target",
+  "policy": "bound",
+  "duration_seconds": 0.5534874580334872,
+  "total_proposals_generated": 0,
+  "recorded_api_cost": 0.0,
+  "llm_models": [],
+  "network": "Internet socket connect blocked",
+  "events": [
+    {
+      "command_hash": "8bf2173f2aae987f09e112ab3eae894e4832397a554a79ffa623f8577a8daa47",
+      "results_dir": "defense-attempt/results",
+      "started_monotonic": 1860586.289893041,
+      "returncode": 0,
+      "completed": true,
+      "duration_seconds": 0.551518167136237
+    }
+  ],
+  "adapters": [
+    {
+      "policy": "bound",
+      "manifest": {
+        "schema": "agentqa.evaluation-bundle.v1",
+        "request_hash": "252f3b4ef5eb4c319ab2e024b89bbd0e78257520c030f337ee73bc9b22f351f4",
+        "receipt_hash": "22a2f8649d0d98566af845a6c72eae0eef251e89172556ae876ff73928e5fbb7",
+        "verdict": {
+          "valid": true,
+          "correct": true,
+          "score": 0.9,
+          "reason": "bound_result"
+        }
+      },
+      "valid_publication": true,
+      "returned": {
+        "correct": {
+          "correct": true
+        },
+        "metrics": {
+          "combined_score": 0.9
+        }
+      }
+    }
+  ],
+  "database": {
+    "programs": [
+      {
+        "id": "72bc080e-bcf5-4bcb-956a-b3cb5b372ba4",
+        "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'positive', 'score': 0.1, 'correct': True, 'phase': 'primer'}\n",
+        "generation": 0,
+        "correct": true,
+        "combined_score": 0.1,
+        "metadata": {
+          "embed_cost": 0.0,
+          "novelty_cost": 0.0,
+          "stdout_log": "{\"mode\": \"positive\", \"score\": 0.1, \"correct\": true, \"phase\": \"primer\"}\n",
+          "stderr_log": "",
+          "timeline_lane_mode": "pool_slots",
+          "sampling_worker_capacity": 1,
+          "evaluation_worker_capacity": 1,
+          "postprocess_worker_capacity": 1,
+          "api_costs": 0.0,
+          "patch_type": "init",
+          "patch_name": "initial_program",
+          "patch_description": "Initial program setup",
+          "pipeline_started_at": 1793661171.349382,
+          "sampling_started_at": 1793661171.349382,
+          "sampling_finished_at": 1793661171.349382,
+          "evaluation_started_at": 1793661171.349845,
+          "evaluation_finished_at": 1793661171.8638148,
+          "postprocess_started_at": 1793661171.8638148,
+          "postprocess_finished_at": 1793661171.877394,
+          "sampling_seconds": 0.0,
+          "evaluation_seconds": 0.513969898223877,
+          "postprocess_seconds": 0.013579130172729492,
+          "pipeline_seconds": 0.5280120372772217,
+          "post_eval_queue_wait_seconds": 0.0,
+          "pipeline_accounted_seconds": 0.5275490283966064,
+          "pipeline_unaccounted_seconds": 0.0004630088806152344,
+          "compute_time": 0.513969898223877,
+          "code_analysis_metrics": {
+            "cyclomatic_complexity": 1,
+            "average_cyclomatic_complexity": 1.0,
+            "halstead_volume": 0,
+            "halstead_difficulty": 0,
+            "halstead_effort": 0,
+            "lines_of_code": 3,
+            "logical_lines_of_code": 3,
+            "comments": 1,
+            "maintainability_index": 145.09360748831728,
+            "max_nesting_depth": 1,
+            "complexity_score": 0.08
+          },
+          "postprocess_db_maintenance_applied": true,
+          "postprocess_db_maintenance_started_at": 1793661171.874145,
+          "postprocess_db_maintenance_finished_at": 1793661171.876745,
+          "postprocess_db_maintenance_seconds": 0.002599954605102539
+        }
+      },
+      {
+        "id": "8ec01f4c-29e9-462c-ae1b-f21dc8c38610",
+        "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'positive', 'score': 0.9, 'correct': True, 'phase': 'target'}\n",
+        "generation": 0,
+        "correct": true,
+        "combined_score": 0.9,
+        "metadata": {
+          "embed_cost": 0.0,
+          "novelty_cost": 0.0,
+          "stdout_log": "",
+          "stderr_log": "",
+          "timeline_lane_mode": "pool_slots",
+          "sampling_worker_capacity": 1,
+          "evaluation_worker_capacity": 1,
+          "postprocess_worker_capacity": 1,
+          "api_costs": 0.0,
+          "patch_type": "init",
+          "patch_name": "initial_program",
+          "patch_description": "Initial program setup",
+          "pipeline_started_at": 1793661174.3218791,
+          "sampling_started_at": 1793661174.3218791,
+          "sampling_finished_at": 1793661174.3218791,
+          "evaluation_started_at": 1793661174.322274,
+          "evaluation_finished_at": 1793661174.364643,
+          "postprocess_started_at": 1793661174.364643,
+          "postprocess_finished_at": 1793661174.366761,
+          "sampling_seconds": 0.0,
+          "evaluation_seconds": 0.04236912727355957,
+          "postprocess_seconds": 0.0021178722381591797,
+          "pipeline_seconds": 0.04488182067871094,
+          "post_eval_queue_wait_seconds": 0.0,
+          "pipeline_accounted_seconds": 0.04448699951171875,
+          "pipeline_unaccounted_seconds": 0.0003948211669921875,
+          "compute_time": 0.04236912727355957,
+          "code_analysis_metrics": {
+            "cyclomatic_complexity": 1,
+            "average_cyclomatic_complexity": 1.0,
+            "halstead_volume": 0,
+            "halstead_difficulty": 0,
+            "halstead_effort": 0,
+            "lines_of_code": 3,
+            "logical_lines_of_code": 3,
+            "comments": 1,
+            "maintainability_index": 145.09360748831728,
+            "max_nesting_depth": 1,
+            "complexity_score": 0.08
+          },
+          "postprocess_db_maintenance_applied": true,
+          "postprocess_db_maintenance_started_at": 1793661174.366472,
+          "postprocess_db_maintenance_finished_at": 1793661174.366636,
+          "postprocess_db_maintenance_seconds": 0.000164031982421875
+        }
+      }
+    ],
+    "archive": [
+      "72bc080e-bcf5-4bcb-956a-b3cb5b372ba4",
+      "8ec01f4c-29e9-462c-ae1b-f21dc8c38610"
+    ],
+    "metadata": {
+      "best_program_id": "8ec01f4c-29e9-462c-ae1b-f21dc8c38610",
+      "best_score_generation": "0",
+      "best_score_ever": "0.9",
+      "last_iteration": "0",
+      "beam_search_parent_id": null
+    }
+  }
+}

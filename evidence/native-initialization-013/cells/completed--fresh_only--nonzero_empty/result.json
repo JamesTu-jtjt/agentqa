@@ -1,0 +1,450 @@
+{
+  "cell": {
+    "history": "completed",
+    "policy": "fresh_only",
+    "mode": "nonzero_empty"
+  },
+  "plan_hash": "fc55f4e1c1ada0c79ce61bc7ebc33ff03f2b170bd3592d7804c68e486d7ce139",
+  "current": {
+    "id": "ce712f0a-e59a-461d-9891-56104a969c01",
+    "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'nonzero_empty', 'score': 0.9, 'correct': True, 'phase': 'target'}\n",
+    "generation": 0,
+    "correct": false,
+    "combined_score": 0.0,
+    "metadata": {
+      "embed_cost": 0.0,
+      "novelty_cost": 0.0,
+      "stdout_log": "{\"mode\": \"nonzero_empty\", \"score\": 0.9, \"correct\": true, \"phase\": \"target\"}\n",
+      "stderr_log": "",
+      "timeline_lane_mode": "pool_slots",
+      "sampling_worker_capacity": 1,
+      "evaluation_worker_capacity": 1,
+      "postprocess_worker_capacity": 1,
+      "api_costs": 0.0,
+      "patch_type": "init",
+      "patch_name": "initial_program",
+      "patch_description": "Initial program setup",
+      "pipeline_started_at": 1793661070.2823858,
+      "sampling_started_at": 1793661070.2823858,
+      "sampling_finished_at": 1793661070.2823858,
+      "evaluation_started_at": 1793661070.282788,
+      "evaluation_finished_at": 1793661070.796098,
+      "postprocess_started_at": 1793661070.796098,
+      "postprocess_finished_at": 1793661070.8035462,
+      "sampling_seconds": 0.0,
+      "evaluation_seconds": 0.5133099555969238,
+      "postprocess_seconds": 0.0074481964111328125,
+      "pipeline_seconds": 0.521160364151001,
+      "post_eval_queue_wait_seconds": 0.0,
+      "pipeline_accounted_seconds": 0.5207581520080566,
+      "pipeline_unaccounted_seconds": 0.00040221214294433594,
+      "compute_time": 0.5133099555969238,
+      "code_analysis_metrics": {
+        "cyclomatic_complexity": 1,
+        "average_cyclomatic_complexity": 1.0,
+        "halstead_volume": 0,
+        "halstead_difficulty": 0,
+        "halstead_effort": 0,
+        "lines_of_code": 3,
+        "logical_lines_of_code": 3,
+        "comments": 1,
+        "maintainability_index": 145.09360748831728,
+        "max_nesting_depth": 1,
+        "complexity_score": 0.08
+      },
+      "postprocess_db_maintenance_applied": true,
+      "postprocess_db_maintenance_started_at": 1793661070.802956,
+      "postprocess_db_maintenance_finished_at": 1793661070.8029828,
+      "postprocess_db_maintenance_seconds": 2.6702880859375e-05
+    }
+  },
+  "database": {
+    "programs": [
+      {
+        "id": "f83b382c-5f87-4f18-8e0a-480c68522820",
+        "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'positive', 'score': 0.1, 'correct': True, 'phase': 'primer'}\n",
+        "generation": 0,
+        "correct": true,
+        "combined_score": 0.1,
+        "metadata": {
+          "embed_cost": 0.0,
+          "novelty_cost": 0.0,
+          "stdout_log": "{\"mode\": \"positive\", \"score\": 0.1, \"correct\": true, \"phase\": \"primer\"}\n",
+          "stderr_log": "",
+          "timeline_lane_mode": "pool_slots",
+          "sampling_worker_capacity": 1,
+          "evaluation_worker_capacity": 1,
+          "postprocess_worker_capacity": 1,
+          "api_costs": 0.0,
+          "patch_type": "init",
+          "patch_name": "initial_program",
+          "patch_description": "Initial program setup",
+          "pipeline_started_at": 1793661067.383369,
+          "sampling_started_at": 1793661067.383369,
+          "sampling_finished_at": 1793661067.383369,
+          "evaluation_started_at": 1793661067.383861,
+          "evaluation_finished_at": 1793661067.896325,
+          "postprocess_started_at": 1793661067.896325,
+          "postprocess_finished_at": 1793661067.904746,
+          "sampling_seconds": 0.0,
+          "evaluation_seconds": 0.5124640464782715,
+          "postprocess_seconds": 0.008420944213867188,
+          "pipeline_seconds": 0.5213770866394043,
+          "post_eval_queue_wait_seconds": 0.0,
+          "pipeline_accounted_seconds": 0.5208849906921387,
+          "pipeline_unaccounted_seconds": 0.000492095947265625,
+          "compute_time": 0.5124640464782715,
+          "code_analysis_metrics": {
+            "cyclomatic_complexity": 1,
+            "average_cyclomatic_complexity": 1.0,
+            "halstead_volume": 0,
+            "halstead_difficulty": 0,
+            "halstead_effort": 0,
+            "lines_of_code": 3,
+            "logical_lines_of_code": 3,
+            "comments": 1,
+            "maintainability_index": 145.09360748831728,
+            "max_nesting_depth": 1,
+            "complexity_score": 0.08
+          },
+          "postprocess_db_maintenance_applied": true,
+          "postprocess_db_maintenance_started_at": 1793661067.904098,
+          "postprocess_db_maintenance_finished_at": 1793661067.9044192,
+          "postprocess_db_maintenance_seconds": 0.0003211498260498047
+        }
+      },
+      {
+        "id": "ce712f0a-e59a-461d-9891-56104a969c01",
+        "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'nonzero_empty', 'score': 0.9, 'correct': True, 'phase': 'target'}\n",
+        "generation": 0,
+        "correct": false,
+        "combined_score": 0.0,
+        "metadata": {
+          "embed_cost": 0.0,
+          "novelty_cost": 0.0,
+          "stdout_log": "{\"mode\": \"nonzero_empty\", \"score\": 0.9, \"correct\": true, \"phase\": \"target\"}\n",
+          "stderr_log": "",
+          "timeline_lane_mode": "pool_slots",
+          "sampling_worker_capacity": 1,
+          "evaluation_worker_capacity": 1,
+          "postprocess_worker_capacity": 1,
+          "api_costs": 0.0,
+          "patch_type": "init",
+          "patch_name": "initial_program",
+          "patch_description": "Initial program setup",
+          "pipeline_started_at": 1793661070.2823858,
+          "sampling_started_at": 1793661070.2823858,
+          "sampling_finished_at": 1793661070.2823858,
+          "evaluation_started_at": 1793661070.282788,
+          "evaluation_finished_at": 1793661070.796098,
+          "postprocess_started_at": 1793661070.796098,
+          "postprocess_finished_at": 1793661070.8035462,
+          "sampling_seconds": 0.0,
+          "evaluation_seconds": 0.5133099555969238,
+          "postprocess_seconds": 0.0074481964111328125,
+          "pipeline_seconds": 0.521160364151001,
+          "post_eval_queue_wait_seconds": 0.0,
+          "pipeline_accounted_seconds": 0.5207581520080566,
+          "pipeline_unaccounted_seconds": 0.00040221214294433594,
+          "compute_time": 0.5133099555969238,
+          "code_analysis_metrics": {
+            "cyclomatic_complexity": 1,
+            "average_cyclomatic_complexity": 1.0,
+            "halstead_volume": 0,
+            "halstead_difficulty": 0,
+            "halstead_effort": 0,
+            "lines_of_code": 3,
+            "logical_lines_of_code": 3,
+            "comments": 1,
+            "maintainability_index": 145.09360748831728,
+            "max_nesting_depth": 1,
+            "complexity_score": 0.08
+          },
+          "postprocess_db_maintenance_applied": true,
+          "postprocess_db_maintenance_started_at": 1793661070.802956,
+          "postprocess_db_maintenance_finished_at": 1793661070.8029828,
+          "postprocess_db_maintenance_seconds": 2.6702880859375e-05
+        }
+      }
+    ],
+    "archive": [
+      "f83b382c-5f87-4f18-8e0a-480c68522820"
+    ],
+    "metadata": {
+      "best_program_id": "f83b382c-5f87-4f18-8e0a-480c68522820",
+      "best_score_generation": "0",
+      "best_score_ever": "0.1",
+      "last_iteration": "0",
+      "beam_search_parent_id": null
+    }
+  },
+  "target_report": {
+    "schema": "agentqa.native-initialization.v1",
+    "phase": "target",
+    "policy": "fresh_only",
+    "duration_seconds": 1.0303478750865906,
+    "total_proposals_generated": 0,
+    "recorded_api_cost": 0.0,
+    "llm_models": [],
+    "network": "Internet socket connect blocked",
+    "events": [
+      {
+        "command_hash": "40cfa6c7c7cc26b6c029c49ba6075e8a011d87c904d7808ea1ab80b6b599a520",
+        "results_dir": "defense-attempt/results",
+        "started_monotonic": 1860482.250652,
+        "returncode": 7,
+        "completed": true,
+        "duration_seconds": 1.0285944158677012
+      }
+    ],
+    "adapters": [
+      {
+        "policy": "fresh_only",
+        "returncode": 7,
+        "raw": {
+          "correct": {
+            "correct": false
+          },
+          "metrics": {},
+          "stdout_log": "{\"mode\": \"nonzero_empty\", \"score\": 0.9, \"correct\": true, \"phase\": \"target\"}\n",
+          "stderr_log": ""
+        },
+        "returned": {
+          "correct": {
+            "correct": false
+          },
+          "metrics": {},
+          "stdout_log": "{\"mode\": \"nonzero_empty\", \"score\": 0.9, \"correct\": true, \"phase\": \"target\"}\n",
+          "stderr_log": ""
+        },
+        "valid_publication": null,
+        "results_dir": "defense-attempt/results"
+      }
+    ],
+    "database": {
+      "programs": [
+        {
+          "id": "f83b382c-5f87-4f18-8e0a-480c68522820",
+          "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'positive', 'score': 0.1, 'correct': True, 'phase': 'primer'}\n",
+          "generation": 0,
+          "correct": true,
+          "combined_score": 0.1,
+          "metadata": {
+            "embed_cost": 0.0,
+            "novelty_cost": 0.0,
+            "stdout_log": "{\"mode\": \"positive\", \"score\": 0.1, \"correct\": true, \"phase\": \"primer\"}\n",
+            "stderr_log": "",
+            "timeline_lane_mode": "pool_slots",
+            "sampling_worker_capacity": 1,
+            "evaluation_worker_capacity": 1,
+            "postprocess_worker_capacity": 1,
+            "api_costs": 0.0,
+            "patch_type": "init",
+            "patch_name": "initial_program",
+            "patch_description": "Initial program setup",
+            "pipeline_started_at": 1793661067.383369,
+            "sampling_started_at": 1793661067.383369,
+            "sampling_finished_at": 1793661067.383369,
+            "evaluation_started_at": 1793661067.383861,
+            "evaluation_finished_at": 1793661067.896325,
+            "postprocess_started_at": 1793661067.896325,
+            "postprocess_finished_at": 1793661067.904746,
+            "sampling_seconds": 0.0,
+            "evaluation_seconds": 0.5124640464782715,
+            "postprocess_seconds": 0.008420944213867188,
+            "pipeline_seconds": 0.5213770866394043,
+            "post_eval_queue_wait_seconds": 0.0,
+            "pipeline_accounted_seconds": 0.5208849906921387,
+            "pipeline_unaccounted_seconds": 0.000492095947265625,
+            "compute_time": 0.5124640464782715,
+            "code_analysis_metrics": {
+              "cyclomatic_complexity": 1,
+              "average_cyclomatic_complexity": 1.0,
+              "halstead_volume": 0,
+              "halstead_difficulty": 0,
+              "halstead_effort": 0,
+              "lines_of_code": 3,
+              "logical_lines_of_code": 3,
+              "comments": 1,
+              "maintainability_index": 145.09360748831728,
+              "max_nesting_depth": 1,
+              "complexity_score": 0.08
+            },
+            "postprocess_db_maintenance_applied": true,
+            "postprocess_db_maintenance_started_at": 1793661067.904098,
+            "postprocess_db_maintenance_finished_at": 1793661067.9044192,
+            "postprocess_db_maintenance_seconds": 0.0003211498260498047
+          }
+        },
+        {
+          "id": "ce712f0a-e59a-461d-9891-56104a969c01",
+          "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'nonzero_empty', 'score': 0.9, 'correct': True, 'phase': 'target'}\n",
+          "generation": 0,
+          "correct": false,
+          "combined_score": 0.0,
+          "metadata": {
+            "embed_cost": 0.0,
+            "novelty_cost": 0.0,
+            "stdout_log": "{\"mode\": \"nonzero_empty\", \"score\": 0.9, \"correct\": true, \"phase\": \"target\"}\n",
+            "stderr_log": "",
+            "timeline_lane_mode": "pool_slots",
+            "sampling_worker_capacity": 1,
+            "evaluation_worker_capacity": 1,
+            "postprocess_worker_capacity": 1,
+            "api_costs": 0.0,
+            "patch_type": "init",
+            "patch_name": "initial_program",
+            "patch_description": "Initial program setup",
+            "pipeline_started_at": 1793661070.2823858,
+            "sampling_started_at": 1793661070.2823858,
+            "sampling_finished_at": 1793661070.2823858,
+            "evaluation_started_at": 1793661070.282788,
+            "evaluation_finished_at": 1793661070.796098,
+            "postprocess_started_at": 1793661070.796098,
+            "postprocess_finished_at": 1793661070.8035462,
+            "sampling_seconds": 0.0,
+            "evaluation_seconds": 0.5133099555969238,
+            "postprocess_seconds": 0.0074481964111328125,
+            "pipeline_seconds": 0.521160364151001,
+            "post_eval_queue_wait_seconds": 0.0,
+            "pipeline_accounted_seconds": 0.5207581520080566,
+            "pipeline_unaccounted_seconds": 0.00040221214294433594,
+            "compute_time": 0.5133099555969238,
+            "code_analysis_metrics": {
+              "cyclomatic_complexity": 1,
+              "average_cyclomatic_complexity": 1.0,
+              "halstead_volume": 0,
+              "halstead_difficulty": 0,
+              "halstead_effort": 0,
+              "lines_of_code": 3,
+              "logical_lines_of_code": 3,
+              "comments": 1,
+              "maintainability_index": 145.09360748831728,
+              "max_nesting_depth": 1,
+              "complexity_score": 0.08
+            },
+            "postprocess_db_maintenance_applied": true,
+            "postprocess_db_maintenance_started_at": 1793661070.802956,
+            "postprocess_db_maintenance_finished_at": 1793661070.8029828,
+            "postprocess_db_maintenance_seconds": 2.6702880859375e-05
+          }
+        }
+      ],
+      "archive": [
+        "f83b382c-5f87-4f18-8e0a-480c68522820"
+      ],
+      "metadata": {
+        "best_program_id": "f83b382c-5f87-4f18-8e0a-480c68522820",
+        "best_score_generation": "0",
+        "best_score_ever": "0.1",
+        "last_iteration": "0",
+        "beam_search_parent_id": null
+      }
+    }
+  },
+  "prior_artifacts": {
+    "metrics.json": "151696ff52a0de829f8bf198a32b6c421c14b40c0174ea3aa9784c0589ec2a06",
+    "correct.json": "cf7e8d6eabdc6561a6dd059035a777f1c42e3c3c68bcf66cad6db99eeb26a582"
+  },
+  "current_artifacts": {
+    "metrics.json": "151696ff52a0de829f8bf198a32b6c421c14b40c0174ea3aa9784c0589ec2a06",
+    "correct.json": "cf7e8d6eabdc6561a6dd059035a777f1c42e3c3c68bcf66cad6db99eeb26a582"
+  },
+  "primer": {
+    "schema": "agentqa.native-initialization.v1",
+    "phase": "primer",
+    "policy": "fresh_only",
+    "duration_seconds": 1.0322147498372942,
+    "total_proposals_generated": 0,
+    "recorded_api_cost": 0.0,
+    "llm_models": [],
+    "network": "Internet socket connect blocked",
+    "events": [
+      {
+        "command_hash": "f248f10b35dfc9b4322a0cab32904767b7d46b5aa89e37384b3564c5399e3f8b",
+        "results_dir": "native/gen_0/results",
+        "started_monotonic": 1860479.351626625,
+        "returncode": 0,
+        "completed": true,
+        "duration_seconds": 1.029739541001618
+      }
+    ],
+    "adapters": [],
+    "database": {
+      "programs": [
+        {
+          "id": "f83b382c-5f87-4f18-8e0a-480c68522820",
+          "code": "# Fixed authored native study fixture\ndef evaluate():\n    return {'mode': 'positive', 'score': 0.1, 'correct': True, 'phase': 'primer'}\n",
+          "generation": 0,
+          "correct": true,
+          "combined_score": 0.1,
+          "metadata": {
+            "embed_cost": 0.0,
+            "novelty_cost": 0.0,
+            "stdout_log": "{\"mode\": \"positive\", \"score\": 0.1, \"correct\": true, \"phase\": \"primer\"}\n",
+            "stderr_log": "",
+            "timeline_lane_mode": "pool_slots",
+            "sampling_worker_capacity": 1,
+            "evaluation_worker_capacity": 1,
+            "postprocess_worker_capacity": 1,
+            "api_costs": 0.0,
+            "patch_type": "init",
+            "patch_name": "initial_program",
+            "patch_description": "Initial program setup",
+            "pipeline_started_at": 1793661067.383369,
+            "sampling_started_at": 1793661067.383369,
+            "sampling_finished_at": 1793661067.383369,
+            "evaluation_started_at": 1793661067.383861,
+            "evaluation_finished_at": 1793661067.896325,
+            "postprocess_started_at": 1793661067.896325,
+            "postprocess_finished_at": 1793661067.904746,
+            "sampling_seconds": 0.0,
+            "evaluation_seconds": 0.5124640464782715,
+            "postprocess_seconds": 0.008420944213867188,
+            "pipeline_seconds": 0.5213770866394043,
+            "post_eval_queue_wait_seconds": 0.0,
+            "pipeline_accounted_seconds": 0.5208849906921387,
+            "pipeline_unaccounted_seconds": 0.000492095947265625,
+            "compute_time": 0.5124640464782715,
+            "code_analysis_metrics": {
+              "cyclomatic_complexity": 1,
+              "average_cyclomatic_complexity": 1.0,
+              "halstead_volume": 0,
+              "halstead_difficulty": 0,
+              "halstead_effort": 0,
+              "lines_of_code": 3,
+              "logical_lines_of_code": 3,
+              "comments": 1,
+              "maintainability_index": 145.09360748831728,
+              "max_nesting_depth": 1,
+              "complexity_score": 0.08
+            },
+            "postprocess_db_maintenance_applied": true,
+            "postprocess_db_maintenance_started_at": 1793661067.904098,
+            "postprocess_db_maintenance_finished_at": 1793661067.9044192,
+            "postprocess_db_maintenance_seconds": 0.0003211498260498047
+          }
+        }
+      ],
+      "archive": [
+        "f83b382c-5f87-4f18-8e0a-480c68522820"
+      ],
+      "metadata": {
+        "best_program_id": "f83b382c-5f87-4f18-8e0a-480c68522820",
+        "best_score_generation": "0",
+        "best_score_ever": "0.1",
+        "last_iteration": "0",
+        "beam_search_parent_id": null
+      }
+    }
+  },
+  "grade": {
+    "valid_attempt": false,
+    "incorrect_acceptance": false,
+    "invalid_nonzero_score": false,
+    "incorrect_archive": false,
+    "incorrect_best": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  }
+}

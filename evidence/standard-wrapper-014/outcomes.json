@@ -1,0 +1,1518 @@
+[
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "inside_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.501803338527679e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29924787511117756
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.501803338527679e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2937914577778429
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 7.501803338527679e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--raw--inside_nonzero/results",
+    "incorrect_acceptance": true,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "inside_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29888491588644683
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29882720788009465
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 5.830079317092896e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--raw--inside_zero/results",
+    "incorrect_acceptance": true,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "before_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.08969309926033e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2968912918586284
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.08969309926033e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.04152670898474753
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 7.08969309926033e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--raw--before_nonzero/results",
+    "incorrect_acceptance": true,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "before_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.909256964921951e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2988245419692248
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.909256964921951e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.04141704109497368
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 7.909256964921951e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--raw--before_zero/results",
+    "incorrect_acceptance": true,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "positive"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.920898497104645e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2984299170784652
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 6.2515027821064e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2984851668588817
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 6.2515027821064e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--raw--positive/results",
+    "incorrect_acceptance": false,
+    "positive_preserved": true,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "negative"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.499475032091141e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.3562987500336021
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false,
+          "error": "Validation failed: authored negative"
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 6.2515027821064e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 0,
+          "num_invalid_runs": 1,
+          "all_validation_errors": [
+            "authored negative"
+          ]
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.3490740831475705
+    },
+    "returned": {
+      "correct": {
+        "correct": false,
+        "error": "Validation failed: authored negative"
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 6.2515027821064e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 0,
+        "num_invalid_runs": 1,
+        "all_validation_errors": [
+          "authored negative"
+        ]
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--raw--negative/results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": true
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 9.578652679920197e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.3559684590436518
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.41835162485949695
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pinned--fresh_exit_schema--inside_nonzero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.66128471493721e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29889883287250996
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.33978470880538225
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pinned--fresh_exit_schema--inside_zero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "before_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.08969309926033e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.3526382080744952
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.038794416934251785
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pinned--fresh_exit_schema--before_nonzero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "before_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2982736669946462
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.041229499969631433
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pinned--fresh_exit_schema--before_zero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "positive"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2982747498899698
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 7.499475032091141e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29379370785318315
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 7.499475032091141e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--fresh_exit_schema--positive/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": true,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "negative"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.499475032091141e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29833008302375674
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false,
+          "error": "Validation failed: authored negative"
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 0,
+          "num_invalid_runs": 1,
+          "all_validation_errors": [
+            "authored negative"
+          ]
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.35038779210299253
+    },
+    "returned": {
+      "correct": {
+        "correct": false,
+        "error": "Validation failed: authored negative"
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 5.830079317092896e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 0,
+        "num_invalid_runs": 1,
+        "all_validation_errors": [
+          "authored negative"
+        ]
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pinned--fresh_exit_schema--negative/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": true
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "inside_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.668269634246826e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.3488862500526011
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.668269634246826e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29889079090207815
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 6.668269634246826e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--raw--inside_nonzero/results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "inside_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2986568750347942
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2983349999412894
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 6.249174475669861e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--raw--inside_zero/results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "before_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29610950010828674
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.041169374948367476
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 6.249174475669861e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--raw--before_nonzero/results",
+    "incorrect_acceptance": true,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "before_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.34953483287245035
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.03839370794594288
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 6.249174475669861e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--raw--before_zero/results",
+    "incorrect_acceptance": true,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "positive"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.2515027821064e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2987164999358356
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 8.328352123498917e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29612283408641815
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 8.328352123498917e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--raw--positive/results",
+    "incorrect_acceptance": false,
+    "positive_preserved": true,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "negative"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.499475032091141e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29728412511758506
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false,
+          "error": "Validation failed: authored negative"
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 5.41098415851593e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 0,
+          "num_invalid_runs": 1,
+          "all_validation_errors": [
+            "authored negative"
+          ]
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2984553331043571
+    },
+    "returned": {
+      "correct": {
+        "correct": false,
+        "error": "Validation failed: authored negative"
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 5.41098415851593e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 0,
+        "num_invalid_runs": 1,
+        "all_validation_errors": [
+          "authored negative"
+        ]
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--raw--negative/results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": true
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29866424994543195
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2950432919897139
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pr150_helper--fresh_exit_schema--inside_nonzero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.670597940683365e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.3533148330170661
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29800916695967317
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pr150_helper--fresh_exit_schema--inside_zero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "before_nonzero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 5.830079317092896e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29835308413021266
+    },
+    "target": {
+      "returncode": 7,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.041394917061552405
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pr150_helper--fresh_exit_schema--before_nonzero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "before_zero"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.670597940683365e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2922965839970857
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false
+        },
+        "metrics": {},
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.04137179208919406
+    },
+    "returned": {
+      "correct": {
+        "correct": false
+      },
+      "metrics": {
+        "combined_score": 0
+      }
+    },
+    "target_results": "cells/pr150_helper--fresh_exit_schema--before_zero/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "positive"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 7.080379873514175e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29826924996450543
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 6.658956408500671e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.29832391696982086
+    },
+    "returned": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 6.658956408500671e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--fresh_exit_schema--positive/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": true,
+    "negative_preserved": false
+  },
+  {
+    "cell": {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "negative"
+    },
+    "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+    "primer": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": true,
+          "error": null
+        },
+        "metrics": {
+          "combined_score": 0.1,
+          "execution_time_mean": 6.249174475669861e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 1,
+          "num_invalid_runs": 0,
+          "all_validation_errors": []
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2969575410243124
+    },
+    "target": {
+      "returncode": 0,
+      "raw": {
+        "correct": {
+          "correct": false,
+          "error": "Validation failed: authored negative"
+        },
+        "metrics": {
+          "combined_score": 0.9,
+          "execution_time_mean": 7.080379873514175e-07,
+          "execution_time_std": 0.0,
+          "num_valid_runs": 0,
+          "num_invalid_runs": 1,
+          "all_validation_errors": [
+            "authored negative"
+          ]
+        },
+        "stdout_log": "",
+        "stderr_log": ""
+      },
+      "duration_seconds": 0.2985952910967171
+    },
+    "returned": {
+      "correct": {
+        "correct": false,
+        "error": "Validation failed: authored negative"
+      },
+      "metrics": {
+        "combined_score": 0.9,
+        "execution_time_mean": 7.080379873514175e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 0,
+        "num_invalid_runs": 1,
+        "all_validation_errors": [
+          "authored negative"
+        ]
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "target_results": "cells/pr150_helper--fresh_exit_schema--negative/fresh-results",
+    "incorrect_acceptance": false,
+    "positive_preserved": false,
+    "negative_preserved": true
+  }
+]

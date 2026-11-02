@@ -1,0 +1,68 @@
+{
+  "cell": {
+    "helper": "pinned",
+    "policy": "raw",
+    "mode": "before_nonzero"
+  },
+  "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0",
+  "primer": {
+    "returncode": 0,
+    "raw": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 7.08969309926033e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "duration_seconds": 0.2968912918586284
+  },
+  "target": {
+    "returncode": 7,
+    "raw": {
+      "correct": {
+        "correct": true,
+        "error": null
+      },
+      "metrics": {
+        "combined_score": 0.1,
+        "execution_time_mean": 7.08969309926033e-07,
+        "execution_time_std": 0.0,
+        "num_valid_runs": 1,
+        "num_invalid_runs": 0,
+        "all_validation_errors": []
+      },
+      "stdout_log": "",
+      "stderr_log": ""
+    },
+    "duration_seconds": 0.04152670898474753
+  },
+  "returned": {
+    "correct": {
+      "correct": true,
+      "error": null
+    },
+    "metrics": {
+      "combined_score": 0.1,
+      "execution_time_mean": 7.08969309926033e-07,
+      "execution_time_std": 0.0,
+      "num_valid_runs": 1,
+      "num_invalid_runs": 0,
+      "all_validation_errors": []
+    },
+    "stdout_log": "",
+    "stderr_log": ""
+  },
+  "target_results": "cells/pinned--raw--before_nonzero/results",
+  "incorrect_acceptance": true,
+  "positive_preserved": false,
+  "negative_preserved": false
+}

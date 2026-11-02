@@ -86,9 +86,18 @@ def verify_evidence(root: Path):
         summary, analysis = finish_audit(root, controlled, frozen["plan_hash"])
         controlled_result = {"trials": summary["trial_count"], "source_pools": analysis["source_pool_count"],
                              "plan_hash": frozen["plan_hash"], "native_agent_main_study": False}
+    native_result = None
+    if (root / "evidence/native-initialization-013/file-manifest.json").is_file():
+        from .native_replay import verify_native_study
+        native_result = verify_native_study(root / "evidence/native-initialization-013")
+    standard_result = None
+    if (root / "evidence/standard-wrapper-014/file-manifest.json").is_file():
+        from .standard_replay import verify_standard_wrapper
+        standard_result = verify_standard_wrapper(root / "evidence/standard-wrapper-014")
     return {"schema": "agentqa.evidence-verification.v1", "coding_traces": traces,
             "publication_bundles": bundles, "upstream_source_cases": len(seen),
             "frozen_candidates": len(pool["candidates"]), "broader_qualification": qualification,
             "controlled_transfer_audit": controlled_result,
+            "native_initialization_study": native_result, "standard_helper_boundary": standard_result,
             "new_execution_or_model_calls": 0, "independent_audit": False,
             "scope": "Integrity/replay checks of retained evidence; controlled transfer is distinct from a native-agent main audit; no authenticity against full-store replacement"}

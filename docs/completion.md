@@ -1,3 +1,7 @@
+# Native follow-up completion
+
+The later authorized N1/N2 improvement is verified separately in `evidence/native-followup-validation.json`, `docs/native-followup-results.md` and `docs/handover.md`. It adds native initialization/archive consequences, simple baselines and a credited prior-helper boundary comparison, with no new inference. The original generated-repair selector claim remains unresolved. Private publication is verified at closeout. The previous controlled-pilot closeout below is preserved as history.
+
 # Completed bounded pilot delivery
 
 2 November 2026. The native Google Doc, local report source, integrated replay, runnable prototype, full controlled audit grid, measured figures, dependency/source manifests and handover are delivered. See `docs/handover.md` and `evidence/completion.json` for the artifact map and claim boundaries.

@@ -1,0 +1,26 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "attempt_id": "c713bcc3a2b14b2a88acfd93477c12fb",
+  "inputs": {
+    "evaluator": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/native-initialization-013/cells/completed--bound--metrics_only/evaluate.py",
+      "sha256": "9d3cc011a4159f4fa1ae99bf4634cc12d6e9be81b46e25b605b6e72be0af10ca",
+      "bytes": 897
+    },
+    "program": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/native-initialization-013/cells/completed--bound--metrics_only/native/gen_0/main.py",
+      "sha256": "8413f4324c5c6745c0347ac9dd4729ad526143010015e8c4e489bd53b742e24d",
+      "bytes": 140
+    }
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "shinka_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a"
+  },
+  "timeout_seconds": 10,
+  "launch_command_hash": "cdb1e82b13e799735ce88905a80dededf44e3acf95740968998630579a4f9855",
+  "publication": [
+    "metrics.json",
+    "correct.json"
+  ]
+}

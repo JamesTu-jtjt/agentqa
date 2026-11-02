@@ -84,7 +84,7 @@ The current prototype is packaged and checked. Final reproduction must be repeat
 
 ## Final native Google Doc and recorded demonstration
 
-The final report is the native Google Doc linked in `docs/google-doc-status.json`; the local source is `report/final-report.md`. It uses the Neuroevolution report's EB Garamond typography, semantic headings, five native tables and three embedded measured figures. `docs/google-doc-qa.json` records exact native text/table readback, image identities, owner-only permissions and browser layout checks. No final PDF report is generated or exported. Offline verification checks the recorded native readback; it does not independently contact Google Drive or prove the current online revision has not changed.
+The final report is the native Google Doc linked in `docs/google-doc-status.json`; the local source is `report/final-report.md`. It uses the Neuroevolution report's EB Garamond typography, semantic headings, seven native tables and four embedded measured figures, plus an archived unchanged C1 tab. `docs/google-doc-qa.json` records exact native text/table readback, image identities, owner-only permissions and browser layout checks. No final PDF report is generated or exported. Offline verification checks the recorded native readback; it does not independently contact Google Drive or prove the current online revision has not changed.
 
 `report/google-doc-source.json` preserves portable text/style/table/image blocks prepared by `scripts/prepare_google_doc.py`. To recreate a document through the Google Drive connector: create a native Doc, insert the prepared text/styles, insert tables at the markers in descending index order, read actual cell indexes, fill cells in descending order, then resolve image markers and insert local PNGs through the connector's image sidecar. Read back all text, tables and inline objects before calling it complete. Keep the user's existing sharing state; publication to Google Docs does not authorize public access.
 
@@ -106,3 +106,18 @@ The final offline export/wheel check is executable. Download the public developm
 ```
 
 The output directory must be new. The check creates a fresh noneditable wheel environment, runs the offline tests, verifies all saved evidence, regenerates the audit CSV/table and byte-identical final HTML, and checks the Google Doc source against the recorded native readback. It neither opens Google Docs nor executes candidates or models. The optional Shinka environment and Docker are unnecessary for these saved-record checks. `evidence/final-validation.json` records the completed final check and input identities; the source archive used for that check precedes its own validation record and final publication metadata.
+
+
+## Native follow-up N1/N2
+
+The current replay is `report/demo-native/index.html`; earlier `demo/` and `demo-final/` remain historical. The current installed `verify-evidence` also verifies 56 native databases/WALs, seven additional receipts and 24 standard-helper cells. It makes no evaluator/model calls and never imports Shinka. Primary database/WAL hashes are checked; volatile `-shm` read marks are excluded under the recorded replay amendment. Replay uses temporary copies and leaves source artifacts unchanged.
+
+Rebuild the N1 table and measured PNG/SVG without native execution:
+
+```sh
+MPLCONFIGDIR=/tmp/agentqa-mpl XDG_CACHE_HOME=/tmp/agentqa-cache .venv/bin/python scripts/analyze_native_study.py --output runs/my-native-analysis
+```
+
+Optional actual reruns require the separate pinned Shinka checkout/environment described in the README, not the core wheel. Use new output directories. Run `scripts/run_native_study.py --freeze --output runs/new-native-study` in that environment, commit/review the plan, then run the same command without `--freeze`. The fixed study permits no models and 105 evaluator processes, including seven deliberate interrupted primers. The shipped `evidence/native-initialization-013/` refuses overwriting/resampling. N2's recipe is `scripts/check_standard_wrapper.py`; its freeze expects the preserved public PR helper copied from `evidence/standard-wrapper-014/pr150_helper.py` into ignored `scratch/pr150-wrap_eval.py`. Execute with `PYTHONDONTWRITEBYTECODE=1`, as in the recorded run. It uses 48 authored evaluator processes and tests isolated helpers, not the complete PR.
+
+The new clean noneditable-wheel verification is recorded separately in `evidence/native-followup-validation.json`. Historical `evidence/final-validation.json` belongs to the earlier C1 delivery and is not evidence for later source changes. All 80 target cells were retained; the three experimental inference calls remain fully consumed.

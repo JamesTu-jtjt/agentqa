@@ -1,0 +1,8 @@
+{
+  "cell": {
+    "helper": "pr150_helper",
+    "policy": "fresh_exit_schema",
+    "mode": "before_zero"
+  },
+  "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0"
+}

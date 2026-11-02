@@ -1,0 +1,9 @@
+{
+  "correct": {
+    "correct": true,
+    "error": null
+  },
+  "metrics": {},
+  "stdout_log": "{\"mode\": \"correct_only\", \"score\": 0.9, \"correct\": true, \"phase\": \"target\"}\n",
+  "stderr_log": ""
+}
