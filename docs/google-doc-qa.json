@@ -1,0 +1,74 @@
+{
+  "document_id": "1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU",
+  "url": "https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk",
+  "main_paragraphs_verified": 95,
+  "native_tables": 5,
+  "table_cells_verified": 84,
+  "inline_figures": [
+    {
+      "id": "kix.204ltmxxl1xa",
+      "size": {
+        "height": {
+          "magnitude": 166.1211225997046,
+          "unit": "PT"
+        },
+        "width": {
+          "magnitude": 432.00000000000006,
+          "unit": "PT"
+        }
+      },
+      "has_image": true
+    },
+    {
+      "id": "kix.c0bbjyh36ur5",
+      "size": {
+        "height": {
+          "magnitude": 238.9787234042553,
+          "unit": "PT"
+        },
+        "width": {
+          "magnitude": 431.99999999999994,
+          "unit": "PT"
+        }
+      },
+      "has_image": true
+    },
+    {
+      "id": "kix.yklczikfnp07",
+      "size": {
+        "height": {
+          "magnitude": 268.0421052631579,
+          "unit": "PT"
+        },
+        "width": {
+          "magnitude": 432,
+          "unit": "PT"
+        }
+      },
+      "has_image": true
+    }
+  ],
+  "caption_count": 3,
+  "source_text_matches": true,
+  "table_cells_match": true,
+  "revision": "AHj4eMTf4ZSfrwrA87B6r2YYyBuaoLW62DatinR9vztulkxhcxBwfgljSonFbfpj0Nsu0xHM6oJGypgv1HUdiBNarGhnjXR-82prvykjDPs",
+  "final_pdf": false,
+  "document_title": "Sakana Part 2 - AgentQA: Metamorphic Validation of Agent Repairs",
+  "layout_review": {
+    "native_google_docs_browser": true,
+    "areas": [
+      "Opening title, disclosure and abstract",
+      "Results table kept on one page",
+      "All three measured figures and captions"
+    ],
+    "native_pages_observed": 12,
+    "no_clipping_observed_in_reviewed_areas": true,
+    "page_break_headings": [
+      "4. Controlled transfer results",
+      "5. Grounded result-attribution case"
+    ],
+    "pdf_export": false
+  },
+  "owner_only": true,
+  "folder_verified": true
+}

@@ -52,3 +52,7 @@ If a shorter deadline is supplied, prioritize M1–M4 plus a small, explicitly e
 **90% scope amendment:** After the exhausted three-call pilot failed to yield a discriminating generated pool, C1 prospectively froze a small controlled transfer audit using unchanged cached policies and previously recorded selection decisions. The complete 36-trial audit is reported separately in `docs/checkpoint-090.md`; it does not satisfy the original native-agent M5–M7 study. Final delivery can close this explicitly inconclusive pilot without further inference. Broader native-agent claims remain deferred rather than silently counted complete.
 
 At each active work session, Codex records the current milestone, completed TODO IDs and evidence, unresolved issues, spend so far, and the next executable step in `status.md`. Progress updates occur during active work; this plan does not create a reminder or background automation.
+
+## Final delivery
+
+James requested completion, then specified a native Google Doc like Neuroevolution instead of a PDF. The [final report](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), local source, native table/figure readback, integrated replay, evidence and private-repository handover complete the bounded controlled pilot. No PDF is a final deliverable. The original native-agent main study remains separately unperformed; no additional inference allowance was used.

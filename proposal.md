@@ -173,3 +173,7 @@ The main unresolved novelty question is whether validated, mechanism-directed fa
 7. [Towards end-to-end automation of AI research](https://www.nature.com/articles/s41586-026-10265-5).
 8. [The Agentic Scientist](https://pub.sakana.ai/agentic-scientist/).
 9. [Digital Red Queen: Adversarial Program Evolution in Core War with LLMs](https://arxiv.org/abs/2601.03335).
+
+## Implementation closeout, 2 November 2026
+
+The original proposal above remains the research rationale. Within the small three-call allowance, generated repairs did not produce a discriminating pool. Amendment C1 therefore completed a separately frozen controlled template-transfer pilot; all selectors tied. The final report is the [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), with local source in `report/final-report.md`. This closes the bounded prototype/report deliverable, not the larger native-agent study or a confirmed selector-benefit claim. See `docs/handover.md` for preserved limitations and deferred work.

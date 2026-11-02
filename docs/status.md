@@ -2,9 +2,9 @@
 
 Updated: 2 November 2026.
 
-**Progress:** Approximately **90%** of bounded controlled-pilot implementation/delivery effort. The original native-agent main study remains incomplete. See `docs/checkpoint-090.md`; final report/replay/package handover remains.
+**Delivery status:** The bounded C1 controlled-pilot package is complete: final native Google Doc and local report source, integrated recorded replay, scientific figures, runnable source, evidence and handover. Final clean verification is in `evidence/final-validation.json`; native Google Doc checks are in `docs/google-doc-qa.json`; delivery scope/accounting is in `evidence/completion.json`. Private publication is verified at closeout. The original native-agent main study remains unperformed and separately deferred; this is not 100% completion of that broader research program.
 
-**Milestone:** Amendment C1 is complete: prospectively frozen controlled template-transfer audit, all 36 trials retained and replayed, descriptive analysis and figure. It uses the existing generated pool and recorded matched selector decisions. The broader native-agent main study remains unperformed; final pilot delivery remains.
+**Scientific result:** Both unchanged generated repairs passed 9/9 controlled cases; parent 3/9. All three matched selectors chose the same repair; observed selector advantage is zero. One authored source pool, no interval or equivalence claim. No naturally observed semantic model failure was confirmed.
 
 **Implementation owner:** Codex.
 
@@ -123,9 +123,11 @@ The proposal remains the research rationale. These documents operationalize it; 
 
 The 90% bounded delivery checkpoint is reached. Preserve all outcomes and reuse the resolved model/access choice if James resumes; the inference allowance remains exhausted. Work stops after private publication verification; no background process or automation continues.
 
-## Next action
+## Final handover
 
-At the next authorized continuation, finish **C95/D80/D85** for the explicitly inconclusive controlled pilot: concise final report/appendix, integrate the actual C1 result into the replay, rerun final package reproduction and hand over. Do not reopen C1 for tuning or reset the inference ledger. The original **B51/B52/B54 and X60–R73** native-agent research requires a separate feasible scope/allowance decision; its missing evidence is not hidden by this delivery estimate.
+**C95/D80/D85** are delivered for the controlled pilot: `report/final-report.md`, [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), `report/demo-final/index.html`, `docs/handover.md`, and final reproduction/publication records. The Google Doc matches the Neuroevolution report style and contains five native tables and three embedded figures; source text and table cells were verified by native readback. The replay has verified publication tabs and three actual controlled audit examples, with no external assets/network. The temporary preview server is stopped.
+
+No further action is scheduled. Do not reopen C1 for tuning or reset the inference ledger. The original **B51/B52/B54 and X60-R73** native-agent research requires a separate feasible scope/allowance decision. Final delivery reports this missing evidence directly rather than claiming the original hypothesis was established.
 
 ## Session log
 
@@ -138,3 +140,4 @@ At the next authorized continuation, finish **C95/D80/D85** for the explicitly i
 | 2026-11-02 | Requested 70% checkpoint: grounded upstream source, tested publication adapter, pre-audit analysis and working evidence report; no inference | `docs/checkpoint-070.md`, `evidence/upstream-source-006/`, `evidence/bound-shinka-007/`, `evidence/bound-shinka-008/`, `evidence/preaudit-analysis-010/`, `report/figures/upstream-004/` | Stop here; on resumption, generated candidate diversity and feasible final study |
 | 2026-11-02 | Requested 80% checkpoint and private publication: twenty broader cases, portable verifier, replay, scanned archive and clean wheel/export check | `docs/checkpoint-080.md`, `evidence/publication-qualification-011/`, `evidence/clean-reproduction-080.json`, `report/demo/`, private GitHub repository | Stop after publication confirmation; main research gates remain open |
 | 2026-11-02 | C1 / next checkpoint: frozen controlled transfer audit | Freeze commit `7ae8dd0`, `evidence/controlled-transfer-012/`, `docs/checkpoint-090.md`; 36 trials, both repairs 9/9, selector differences zero | Final inconclusive pilot report/replay/package handover; no new inference |
+| 2026-11-02 | Final bounded pilot delivery at James's request | `report/final-report.md`, native Google Doc, `report/demo-final/`, `docs/handover.md`, final clean-export/publication verification | Complete; no background work. Original native-agent main study deferred. |

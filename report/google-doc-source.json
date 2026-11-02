@@ -1,0 +1,2920 @@
+{
+  "schema": "agentqa.google-doc-source.v1",
+  "source_sha256": "753e012068f9442fe598da6689ab6cc8664150545e319fe0c435487b1837cba8",
+  "text": "Beyond the Repaired Example\nMetamorphic validation of agent repairs: a controlled pilot\nJames Tu | Cornell University | Sakana AI research exercise | 2 November 2026\nAI assistance. Codex implemented the prototype, ran the recorded experiments, analyzed outcomes and assisted report writing. James supplied research direction and resource constraints. No independent human review is claimed.\nAbstract. Self-improving coding systems need to distinguish a repair that fixes one example from a repair that preserves the underlying reliability obligation. We investigate whether test families organized around stale verification evidence improve selection among model-generated repairs. AgentQA records actual execution, binds passing evidence to a declared content footprint, and grades functional correctness separately from freshness. A three-call GPT-6.1 Sol feasibility pilot produced two source-conditioned policies, but neither failed the development family. We therefore prospectively froze a separately labeled controlled transfer audit rather than searching indefinitely for a favorable pool. Both unchanged repairs passed all nine new cases; the authored parent passed three. All three matched selectors had selected the same repair, yielding zero observed selector advantage. Separately, six authored fault/reuse scenarios reproduced three stale or mixed result attributions through an unchanged pinned ShinkaEvolve scheduler. An authored attempt-bound adapter rejected incomplete evidence in subsequent qualification. The deliverable is a runnable QA prototype, reproducible evidence and an explicitly inconclusive selection result; it is not a completed native-agent evolution study.\n1. Research question and scope\nCan valid metamorphic families built around a known failure mechanism select repairs that transfer better than source-only retesting or generic variation, at matched evaluation budgets? The proposed contribution is selection value under valid transformations. Merely generating variants, adding provenance checks or fixing an authored example would not answer that question.\nThe initial failure class is stale verification evidence: passing tests for one source/test/configuration state are used to justify completion after a relevant change. The QA target is the connection between a claim and its execution evidence. A function can be correct while the evidence supporting completion is stale; conversely, a fresh weak test can pass while the function is wrong.\nThis pilot targets the reliability infrastructure around agent improvement. It aligns with empirical agent evolution and automated research [1-3], while holding the model-generated candidate pool fixed to isolate selection. The completed controlled audit evaluates cached completion policies after authored repairs. It does not test models autonomously repairing new repositories, discover natural model failure rates, or run a complete Sakana evolutionary search.\nDelivered. An execution/replay core, isolated generated-program workers, frozen candidate/attempt registries, matched selectors, a bounded editable coding workflow, a real pinned scheduler bridge, source-grounded publication diagnostics, a completed controlled audit, and a self-contained demonstration. No positive result is required or claimed.\n2. Positioning and measurement contract\nClosest work and novelty boundary\nThe AI Scientist automates stages of the research lifecycle [1]. DGM maintains an archive of agents and empirically evaluates self-modifications [2]; ShinkaEvolve evolves executable programs using feedback [3]. AgentQA concerns the trustworthiness and generalization of acceptance evidence, rather than introducing a new archive sampler or mutation algorithm.\nAgentAssay already studies agent metamorphic relations and regression testing [4]. SyncMind studies recovery from evolving collaborative repository states [5], and SWE-Touch injects validated conflicting edits during coding [6]. Thus neither agent metamorphic testing nor shared-workspace changes constitute a new contribution here.\nHarnessFix connects failed traces to scoped harness repairs [7]. Self-Harness combines failure mining, candidate harness changes and regression validation [8]. A recent failure-feedback study distinguishes directed repair, transfer and net held-out change [9]. These precedents motivate a common-pool comparison with separate source, selection and audit roles. Agentic Scientist documentation also describes provenance consistency checks [10]. A freshness architecture alone is not a first-in-field claim.\nThe remaining research hypothesis is that mechanism-directed, applicability-validated families improve which generated repair is selected, beyond source-only or generic checks. The present pool does not supply evidence for that hypothesis. The review is targeted, not an exhaustive novelty certification.\nExecutable contract\nA footprint hashes the declared source, visible tests, configuration and runtime identity. Fresh evidence requires an actual passing visible execution whose before/after footprint equals the final footprint. Functional correctness comes from evaluator-owned assertions. The primary endpoint is:\nverified = declared completion AND functional correctness AND fresh evidence\nRefusal is not successful completion. Failed tests and modified-during-test executions cannot become passing evidence because a model prints a success message. Exact restoration of tested content can reuse its receipt in the bounded deterministic world; unrelated documentation does not invalidate it. This contract does not cover undeclared external services, hidden dependencies, arbitrary environment nondeterminism or concurrent histories beyond observed states.\nHost-owned, hash-chained records retain state, actual test status and completion. Replay checks integrity against frozen trace tips, not authenticity against an attacker replacing the entire store. Generated policy/controller code and generated task modules run only in Docker without host mounts, network or credentials, with bounded CPU/memory/processes/output/time. Trusted local subprocess fixtures execute authored code only. The boundary and oracle are separate from candidate-editable resources.\n3. Design and prospective controls\nFeasibility before the audit\nThree serial subscription inference calls used GPT-6.1 Sol with a 120-second bound per invocation. The first generated two completion-policy repairs from an authored always-complete parent and one authored clamp failure. Both policies inspect verification provenance. One unseeded policy and one stateful controller were generated in the remaining calls. No naturally observed semantic freshness failure was confirmed. Three original worker timeouts were preserved as infrastructure-inconclusive; an unchanged-program diagnostic later passed after startup and execution timing were separated.\nThe stateful workflow supports source edits, actual execution, configuration changes, compaction and handoff. Its generated controller passed six cases; an authored stale control failed two. The model generated a controller program once, not a new inference at every action. These feasibility outcomes do not establish realistic agent repair performance.\n[FIGURE_0]\nWorkflow figure. Six cases per controller: the generated controller and authored reference pass all six; the authored stale control passes four. These are bounded deterministic workflows, not fresh model reasoning at every step.\nMatched selection on a common pool\nThe frozen pool contains the authored parent and both generated repairs. Every candidate received six selection slots per method and the same two unchanged-footprint regression controls. Eligibility requires no regression relative to the parent; ranking uses verified completion, then incremental API cost, then candidate ID. Parent retention is allowed. All three methods selected repair 00.\n[TABLE_0]\nRepeated deterministic inputs equalize slots, not independent model samples. The 60 development trials and unfavorable lack of repair diversity remain preserved.\nControlled transfer amendment C1\nThe exhausted allowance was not reset. C1 narrowed the next experiment to unchanged cached policies on three separately authored templates: text normalization, discounted integer-cent totals and blocked-node graph reachability. Each has a source repair after weak passing tests, a configuration change after verification, and an unrelated-documentation control: nine cases total. Templates differ from clamp, while the provenance interface and failure mechanism remain shared.\nBefore executing any new case, all development traces were replayed and selector decisions recomputed. The plan froze programs, decisions, templates, contract, analysis, dependencies, runtime/image, limits and retry rules. Commit 7ae8dd0 was pushed privately before outcomes existed. The three candidates and a nonselectable authored rerun reference produce 36 trials. Reservations precede execution; completed trials are replayed on resume, and interrupted unknown trials cannot silently resample. All declared slots are required; unreconciled infrastructure prevents comparison.\nThe paired unit is the one source pool. The three templates are not three generation pools. Cases receive equal weights; no interval is reported with this sample size. The same implementer authored both splits, so separation is procedural, not human blinding.\n4. Controlled transfer results\n[TABLE_1]\n[FIGURE_1]\nFigure 1. Each template contributes two freshness-sensitive cases and one unchanged control. The reference is authored and not selectable. Counts describe this fixed controlled suite, not population rates.\nBoth repairs reached the ceiling. Source-only, generic and failure-family selection had all chosen repair 00 before audit execution. Failure-family minus either baseline is therefore 0 percentage points. Equal outcomes do not establish equivalence, and the identical selected ID prevents this pool from identifying selection value.\nThe parent's six failures separate correctness from evidence: the authored implementations passed functional checks, but completion reused old visible receipts. In the text case, repair 00 instead verified the changed implementation before completing. In a documentation control it completed immediately with a still-current receipt. Each generated repair requested six fresh verifications; the authored rerun reference requested nine. Including setup, those are 15 versus 18 visible executions, a local tool-count observation rather than a realistic efficiency estimate.\nAll 36 trials were retained, with no retries, exclusions or infrastructure-inconclusive slots. They used 57 completed Docker workers, 59.54 summed worker seconds and confirmed cleanup. Each trace replayed before normalization. No additional inference was used. The result supports narrow completion-policy transfer after authored repairs; it does not support a mechanism-guided selector advantage.\n5. Grounded result-attribution case\nExisting scheduler behavior, a separate endpoint\nThe upstream diagnostic uses unchanged ShinkaEvolve code at revision 8adc053a2ce4511ad2ac310e004c530a73fb974a. Fixed authored evaluators submit actual local jobs. A prior job publishes score 1 and correctness true; a changed request then reuses or replaces the result directory. The endpoint is valid attribution to the current request, not coding-agent verified completion.\n[TABLE_2]\n[FIGURE_2]\nPublication figure. The pinned source diagnostic and four current authored adapter checks use distinct result-attribution endpoints. Broader twenty-case qualification is reported separately below.\nResult files are loaded independently and lack an attempt binding at this public scheduler boundary. A return-code-only guard would address exit 7 but miss zero-exit nonpublication and partial publication. The scenarios demonstrate mechanism-level counterexamples to a narrow guard; they are not model-generated repair comparisons.\nThree of six deliberately selected scenarios violated the attribution contract. This is not a prevalence estimate, an observed model reasoning error, a security exploit, or evidence that published Sakana results are invalid. Normal exclusive proposal directories reduce exposure. Full native evolution, restart reachability and database promotion were not reproduced. Source copies, hashes and license attribution are preserved.\nAuthored attempt-bound adapter\nThe local adapter creates a fresh attempt directory and binds a host receipt to request identity, declared input hashes, runtime, exact launch-command hash, actual process status and complete publication artifacts. It rejects nonzero, absent, partial, malformed, changed-input and tampered evidence. A complete negative evaluation can remain valid evidence; validity and correctness are distinct.\nFour real scheduler checks matched their contracts. A broader fixed qualification added 20 authored cases spanning positive/negative results, publication ordering, invalid score types/duplicate keys, input changes and absent output, across two layouts. All 20 contracts matched and all ten renamed pairs preserved verdicts. These are qualification cases from an authored producer, not independent source pools or an audit of model agents.\nThe adapter is a local proof of concept, not an upstream merged fix or a sandbox for arbitrary evaluators. Before/after hashing cannot prove the absence of transient changes that are restored, and undeclared inputs remain outside the guarantee. This diagnostic motivates stronger acceptance contracts but does not turn the null selector result into a positive one.\n6. Interpretation, resources and conclusion\nWhat the evidence supports\nThe prototype can separate functional failure, stale evidence, refusal and infrastructure uncertainty; execute cached generated policies in isolation; preserve candidate ancestry and all attempts; and freeze/replay a complete selection-to-audit chain. The controlled audit shows that the two generated policies transfer across these small authored templates. The pinned scheduler diagnostic demonstrates an existing public-API attribution behavior under specified fault/reuse conditions, and the authored adapter qualifies one concrete remedy.\nThe original selection hypothesis remains inconclusive. Explicit fingerprints make the completion decision easy, both repairs reach the ceiling, and every selector chooses the same candidate. Neither more deterministic repetitions nor relabeling authored controls as generated repairs would resolve this limitation. No source-conditioned native-agent pool with useful behavioral variation was obtained within the allowance.\nLimits and conditions for a larger study\nThe pilot has one authored source, one model backbone and generated programs making deterministic actions. Fixtures, repairs to task implementations and audit templates are authored. It lacks natural semantic source failures, live model reasoning per tool step, multiple real repositories, independent human diagnosis, long-run evolution and a complete native Sakana run. Strong functional oracles here do not solve test adequacy in realistic projects. The recorded audit is now opened and cannot be reused for tuning while retaining a held-out claim.\nA larger study would need a separately bounded discovery/generation allowance, realistic qualified source failures, unchanged common repair pools, all three matched selectors and a new audit sealed before selection. Generation failures and unsuccessful candidates must remain; no positive result is required. This is future work, not silently completed work or additional spending authorization.\nResource and reproducibility accounting\n[TABLE_3]\nWorker sums exclude orchestration/fixture/analysis time. Original infrastructure-inconclusive attempts remain. Offline tests and clean noneditable wheel reproduction validate implementation; they are not independent scientific replications. Exact package versions, image digest, upstream revision, input/output/code hashes, scripts and recorded evidence accompany the private repository.\nConclusion. This completed pilot delivers a reproducible QA apparatus and a concrete result-attribution diagnostic. Its central comparison found no observed selector advantage. The appropriate next scientific question is whether mechanism-directed selection adds value on realistic, behaviorally diverse agent repairs; the present evidence does not answer it.\nReferences\nPrimary sources checked 2 November 2026. Versioned papers are cited where available. This is a targeted review; no exhaustive novelty certification is claimed.\n[1] Lu et al. Towards end-to-end automation of AI research. Nature 651, 914-919 (2026). Version of record; open full text.\n[2] Zhang et al. Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents. arXiv:2505.22954v3. Paper.\n[3] Lange, Imajuku and Cetin. ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution. arXiv:2509.19349v1. Paper.\n[4] AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows. Technical report, arXiv:2603.02601v1, section 6.1. Paper.\n[5] Guo et al. SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering. arXiv:2502.06994v2. Paper.\n[6] Tan et al. Benchmarking Coding Agents When Users Touch the Code. arXiv:2608.02499v1. Paper.\n[7] Chen et al. From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws. arXiv:2606.06324v2. Paper.\n[8] Zhang et al. Self-Harness: Harnesses That Improve Themselves. arXiv:2606.09498v3. Paper.\n[9] He. Does Failure Feedback Direct Agent Self-Modification? arXiv:2610.14662v1. Paper.\n[10] Sakana AI. AI-Scientist-v3 usage guide. Source-evidence consistency and review handling; accessed 2 November 2026. Official documentation.\nImplementation source and attribution\nThe grounded diagnostic preserves unmodified relevant files from the official ShinkaEvolve repository at the exact revision in section 5. The Apache license and file-level hashes are included under evidence/upstream-source-006/upstream-source/ and third_party/. No upstream code was changed or submitted.\nAI assistance disclosure\nJames Tu supplied research direction and resource constraints. Codex implemented the prototype, orchestrated experiments, analyzed records and assisted report writing. The three experimental inference calls are separately logged; ordinary coding/report work is not misreported as additional experimental subjects. No independent human review, external submission or peer review is claimed.\nAppendix: audit and artifact map\nFrozen identities\nC1 plan hash:\nfddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3\nCandidate-pool hash:\n3984309eae4921b0679c4807a2ed56b584193b498e11defaf228baa4a5d7c34e\nFreeze commit 7ae8dd0 contains the plan and snapshots but no audit trials. It was pushed before execution. Candidate generation predates template authorship. All methods selected repair 00 before opening outcomes. Current manifests preserve historical snapshots rather than pretending subsequent code changes were part of an earlier freeze.\nGenerated repair 00, unchanged\ndef choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    if (current and evidence.get('fingerprint') == current\n            and evidence.get('status') == 'passed'):\n        return 'complete'\n    return 'verify'\nReproduction entry points\nagentqa verify-evidence --root .\npython -m pytest\npython scripts/build_repro_bundle.py --output dist/my-reproduction.zip\nThese commands verify saved evidence and package files; the tests use authored fixtures. No new inference is required. Docker is needed for new generated-program execution, not saved replay. The lifetime experimental allowance is exhausted; cloning or deleting a ledger does not reset it. Exact CLI/environment setup is in docs/reproduction.md.\n[TABLE_4]\nPrivate repository: JamesTu-jtjt/agentqa. The original native-agent main study remains unperformed.\n",
+  "blocks": [
+    {
+      "kind": "title",
+      "text": "Beyond the Repaired Example",
+      "styles": [],
+      "start": 1,
+      "end": 28
+    },
+    {
+      "kind": "subtitle",
+      "text": "Metamorphic validation of agent repairs: a controlled pilot",
+      "styles": [],
+      "start": 29,
+      "end": 88
+    },
+    {
+      "kind": "body",
+      "text": "James Tu | Cornell University | Sakana AI research exercise | 2 November 2026",
+      "styles": [],
+      "start": 89,
+      "end": 166
+    },
+    {
+      "kind": "body",
+      "text": "AI assistance. Codex implemented the prototype, ran the recorded experiments, analyzed outcomes and assisted report writing. James supplied research direction and resource constraints. No independent human review is claimed.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 14,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 167,
+      "end": 391
+    },
+    {
+      "kind": "body",
+      "text": "Abstract. Self-improving coding systems need to distinguish a repair that fixes one example from a repair that preserves the underlying reliability obligation. We investigate whether test families organized around stale verification evidence improve selection among model-generated repairs. AgentQA records actual execution, binds passing evidence to a declared content footprint, and grades functional correctness separately from freshness. A three-call GPT-6.1 Sol feasibility pilot produced two source-conditioned policies, but neither failed the development family. We therefore prospectively froze a separately labeled controlled transfer audit rather than searching indefinitely for a favorable pool. Both unchanged repairs passed all nine new cases; the authored parent passed three. All three matched selectors had selected the same repair, yielding zero observed selector advantage. Separately, six authored fault/reuse scenarios reproduced three stale or mixed result attributions through an unchanged pinned ShinkaEvolve scheduler. An authored attempt-bound adapter rejected incomplete evidence in subsequent qualification. The deliverable is a runnable QA prototype, reproducible evidence and an explicitly inconclusive selection result; it is not a completed native-agent evolution study.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 9,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 392,
+      "end": 1693
+    },
+    {
+      "kind": "h1",
+      "text": "1. Research question and scope",
+      "styles": [],
+      "start": 1694,
+      "end": 1724
+    },
+    {
+      "kind": "body",
+      "text": "Can valid metamorphic families built around a known failure mechanism select repairs that transfer better than source-only retesting or generic variation, at matched evaluation budgets? The proposed contribution is selection value under valid transformations. Merely generating variants, adding provenance checks or fixing an authored example would not answer that question.",
+      "styles": [],
+      "start": 1725,
+      "end": 2099
+    },
+    {
+      "kind": "body",
+      "text": "The initial failure class is stale verification evidence: passing tests for one source/test/configuration state are used to justify completion after a relevant change. The QA target is the connection between a claim and its execution evidence. A function can be correct while the evidence supporting completion is stale; conversely, a fresh weak test can pass while the function is wrong.",
+      "styles": [
+        {
+          "start": 29,
+          "end": 56,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 2100,
+      "end": 2488
+    },
+    {
+      "kind": "body",
+      "text": "This pilot targets the reliability infrastructure around agent improvement. It aligns with empirical agent evolution and automated research [1-3], while holding the model-generated candidate pool fixed to isolate selection. The completed controlled audit evaluates cached completion policies after authored repairs. It does not test models autonomously repairing new repositories, discover natural model failure rates, or run a complete Sakana evolutionary search.",
+      "styles": [],
+      "start": 2489,
+      "end": 2953
+    },
+    {
+      "kind": "body",
+      "text": "Delivered. An execution/replay core, isolated generated-program workers, frozen candidate/attempt registries, matched selectors, a bounded editable coding workflow, a real pinned scheduler bridge, source-grounded publication diagnostics, a completed controlled audit, and a self-contained demonstration. No positive result is required or claimed.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 2954,
+      "end": 3300
+    },
+    {
+      "kind": "h1",
+      "text": "2. Positioning and measurement contract",
+      "styles": [],
+      "start": 3301,
+      "end": 3340
+    },
+    {
+      "kind": "h2",
+      "text": "Closest work and novelty boundary",
+      "styles": [],
+      "start": 3341,
+      "end": 3374
+    },
+    {
+      "kind": "body",
+      "text": "The AI Scientist automates stages of the research lifecycle [1]. DGM maintains an archive of agents and empirically evaluates self-modifications [2]; ShinkaEvolve evolves executable programs using feedback [3]. AgentQA concerns the trustworthiness and generalization of acceptance evidence, rather than introducing a new archive sampler or mutation algorithm.",
+      "styles": [],
+      "start": 3375,
+      "end": 3734
+    },
+    {
+      "kind": "body",
+      "text": "AgentAssay already studies agent metamorphic relations and regression testing [4]. SyncMind studies recovery from evolving collaborative repository states [5], and SWE-Touch injects validated conflicting edits during coding [6]. Thus neither agent metamorphic testing nor shared-workspace changes constitute a new contribution here.",
+      "styles": [],
+      "start": 3735,
+      "end": 4067
+    },
+    {
+      "kind": "body",
+      "text": "HarnessFix connects failed traces to scoped harness repairs [7]. Self-Harness combines failure mining, candidate harness changes and regression validation [8]. A recent failure-feedback study distinguishes directed repair, transfer and net held-out change [9]. These precedents motivate a common-pool comparison with separate source, selection and audit roles. Agentic Scientist documentation also describes provenance consistency checks [10]. A freshness architecture alone is not a first-in-field claim.",
+      "styles": [],
+      "start": 4068,
+      "end": 4573
+    },
+    {
+      "kind": "body",
+      "text": "The remaining research hypothesis is that mechanism-directed, applicability-validated families improve which generated repair is selected, beyond source-only or generic checks. The present pool does not supply evidence for that hypothesis. The review is targeted, not an exhaustive novelty certification.",
+      "styles": [
+        {
+          "start": 42,
+          "end": 137,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 4574,
+      "end": 4878
+    },
+    {
+      "kind": "h2",
+      "text": "Executable contract",
+      "styles": [],
+      "start": 4879,
+      "end": 4898
+    },
+    {
+      "kind": "body",
+      "text": "A footprint hashes the declared source, visible tests, configuration and runtime identity. Fresh evidence requires an actual passing visible execution whose before/after footprint equals the final footprint. Functional correctness comes from evaluator-owned assertions. The primary endpoint is:",
+      "styles": [],
+      "start": 4899,
+      "end": 5193
+    },
+    {
+      "kind": "code",
+      "text": "verified = declared completion AND functional correctness AND fresh evidence",
+      "styles": [],
+      "start": 5194,
+      "end": 5270
+    },
+    {
+      "kind": "body",
+      "text": "Refusal is not successful completion. Failed tests and modified-during-test executions cannot become passing evidence because a model prints a success message. Exact restoration of tested content can reuse its receipt in the bounded deterministic world; unrelated documentation does not invalidate it. This contract does not cover undeclared external services, hidden dependencies, arbitrary environment nondeterminism or concurrent histories beyond observed states.",
+      "styles": [],
+      "start": 5271,
+      "end": 5737
+    },
+    {
+      "kind": "body",
+      "text": "Host-owned, hash-chained records retain state, actual test status and completion. Replay checks integrity against frozen trace tips, not authenticity against an attacker replacing the entire store. Generated policy/controller code and generated task modules run only in Docker without host mounts, network or credentials, with bounded CPU/memory/processes/output/time. Trusted local subprocess fixtures execute authored code only. The boundary and oracle are separate from candidate-editable resources.",
+      "styles": [],
+      "start": 5738,
+      "end": 6240
+    },
+    {
+      "kind": "h1",
+      "text": "3. Design and prospective controls",
+      "styles": [],
+      "start": 6241,
+      "end": 6275
+    },
+    {
+      "kind": "h2",
+      "text": "Feasibility before the audit",
+      "styles": [],
+      "start": 6276,
+      "end": 6304
+    },
+    {
+      "kind": "body",
+      "text": "Three serial subscription inference calls used GPT-6.1 Sol with a 120-second bound per invocation. The first generated two completion-policy repairs from an authored always-complete parent and one authored clamp failure. Both policies inspect verification provenance. One unseeded policy and one stateful controller were generated in the remaining calls. No naturally observed semantic freshness failure was confirmed. Three original worker timeouts were preserved as infrastructure-inconclusive; an unchanged-program diagnostic later passed after startup and execution timing were separated.",
+      "styles": [],
+      "start": 6305,
+      "end": 6897
+    },
+    {
+      "kind": "body",
+      "text": "The stateful workflow supports source edits, actual execution, configuration changes, compaction and handoff. Its generated controller passed six cases; an authored stale control failed two. The model generated a controller program once, not a new inference at every action. These feasibility outcomes do not establish realistic agent repair performance.",
+      "styles": [],
+      "start": 6898,
+      "end": 7252
+    },
+    {
+      "kind": "image",
+      "text": "[FIGURE_0]",
+      "styles": [],
+      "start": 7253,
+      "end": 7263
+    },
+    {
+      "kind": "body",
+      "text": "Workflow figure. Six cases per controller: the generated controller and authored reference pass all six; the authored stale control passes four. These are bounded deterministic workflows, not fresh model reasoning at every step.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 16,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 7264,
+      "end": 7492
+    },
+    {
+      "kind": "h2",
+      "text": "Matched selection on a common pool",
+      "styles": [],
+      "start": 7493,
+      "end": 7527
+    },
+    {
+      "kind": "body",
+      "text": "The frozen pool contains the authored parent and both generated repairs. Every candidate received six selection slots per method and the same two unchanged-footprint regression controls. Eligibility requires no regression relative to the parent; ranking uses verified completion, then incremental API cost, then candidate ID. Parent retention is allowed. All three methods selected repair 00.",
+      "styles": [],
+      "start": 7528,
+      "end": 7920
+    },
+    {
+      "kind": "table",
+      "text": "[TABLE_0]",
+      "styles": [],
+      "start": 7921,
+      "end": 7930
+    },
+    {
+      "kind": "body",
+      "text": "Repeated deterministic inputs equalize slots, not independent model samples. The 60 development trials and unfavorable lack of repair diversity remain preserved.",
+      "styles": [],
+      "start": 7931,
+      "end": 8092
+    },
+    {
+      "kind": "h2",
+      "text": "Controlled transfer amendment C1",
+      "styles": [],
+      "start": 8093,
+      "end": 8125
+    },
+    {
+      "kind": "body",
+      "text": "The exhausted allowance was not reset. C1 narrowed the next experiment to unchanged cached policies on three separately authored templates: text normalization, discounted integer-cent totals and blocked-node graph reachability. Each has a source repair after weak passing tests, a configuration change after verification, and an unrelated-documentation control: nine cases total. Templates differ from clamp, while the provenance interface and failure mechanism remain shared.",
+      "styles": [],
+      "start": 8126,
+      "end": 8602
+    },
+    {
+      "kind": "body",
+      "text": "Before executing any new case, all development traces were replayed and selector decisions recomputed. The plan froze programs, decisions, templates, contract, analysis, dependencies, runtime/image, limits and retry rules. Commit 7ae8dd0 was pushed privately before outcomes existed. The three candidates and a nonselectable authored rerun reference produce 36 trials. Reservations precede execution; completed trials are replayed on resume, and interrupted unknown trials cannot silently resample. All declared slots are required; unreconciled infrastructure prevents comparison.",
+      "styles": [
+        {
+          "start": 230,
+          "end": 237,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 8603,
+      "end": 9183
+    },
+    {
+      "kind": "body",
+      "text": "The paired unit is the one source pool. The three templates are not three generation pools. Cases receive equal weights; no interval is reported with this sample size. The same implementer authored both splits, so separation is procedural, not human blinding.",
+      "styles": [
+        {
+          "start": 23,
+          "end": 38,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 9184,
+      "end": 9443
+    },
+    {
+      "kind": "h1",
+      "text": "4. Controlled transfer results",
+      "styles": [],
+      "start": 9444,
+      "end": 9474
+    },
+    {
+      "kind": "table",
+      "text": "[TABLE_1]",
+      "styles": [],
+      "start": 9475,
+      "end": 9484
+    },
+    {
+      "kind": "image",
+      "text": "[FIGURE_1]",
+      "styles": [],
+      "start": 9485,
+      "end": 9495
+    },
+    {
+      "kind": "body",
+      "text": "Figure 1. Each template contributes two freshness-sensitive cases and one unchanged control. The reference is authored and not selectable. Counts describe this fixed controlled suite, not population rates.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 9,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 9496,
+      "end": 9701
+    },
+    {
+      "kind": "body",
+      "text": "Both repairs reached the ceiling. Source-only, generic and failure-family selection had all chosen repair 00 before audit execution. Failure-family minus either baseline is therefore 0 percentage points. Equal outcomes do not establish equivalence, and the identical selected ID prevents this pool from identifying selection value.",
+      "styles": [
+        {
+          "start": 183,
+          "end": 202,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 9702,
+      "end": 10033
+    },
+    {
+      "kind": "body",
+      "text": "The parent's six failures separate correctness from evidence: the authored implementations passed functional checks, but completion reused old visible receipts. In the text case, repair 00 instead verified the changed implementation before completing. In a documentation control it completed immediately with a still-current receipt. Each generated repair requested six fresh verifications; the authored rerun reference requested nine. Including setup, those are 15 versus 18 visible executions, a local tool-count observation rather than a realistic efficiency estimate.",
+      "styles": [],
+      "start": 10034,
+      "end": 10605
+    },
+    {
+      "kind": "body",
+      "text": "All 36 trials were retained, with no retries, exclusions or infrastructure-inconclusive slots. They used 57 completed Docker workers, 59.54 summed worker seconds and confirmed cleanup. Each trace replayed before normalization. No additional inference was used. The result supports narrow completion-policy transfer after authored repairs; it does not support a mechanism-guided selector advantage.",
+      "styles": [],
+      "start": 10606,
+      "end": 11003
+    },
+    {
+      "kind": "h1",
+      "text": "5. Grounded result-attribution case",
+      "styles": [],
+      "start": 11004,
+      "end": 11039
+    },
+    {
+      "kind": "h2",
+      "text": "Existing scheduler behavior, a separate endpoint",
+      "styles": [],
+      "start": 11040,
+      "end": 11088
+    },
+    {
+      "kind": "body",
+      "text": "The upstream diagnostic uses unchanged ShinkaEvolve code at revision 8adc053a2ce4511ad2ac310e004c530a73fb974a. Fixed authored evaluators submit actual local jobs. A prior job publishes score 1 and correctness true; a changed request then reuses or replaces the result directory. The endpoint is valid attribution to the current request, not coding-agent verified completion.",
+      "styles": [
+        {
+          "start": 69,
+          "end": 109,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 11089,
+      "end": 11463
+    },
+    {
+      "kind": "table",
+      "text": "[TABLE_2]",
+      "styles": [],
+      "start": 11464,
+      "end": 11473
+    },
+    {
+      "kind": "image",
+      "text": "[FIGURE_2]",
+      "styles": [],
+      "start": 11474,
+      "end": 11484
+    },
+    {
+      "kind": "body",
+      "text": "Publication figure. The pinned source diagnostic and four current authored adapter checks use distinct result-attribution endpoints. Broader twenty-case qualification is reported separately below.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 19,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 11485,
+      "end": 11681
+    },
+    {
+      "kind": "body",
+      "text": "Result files are loaded independently and lack an attempt binding at this public scheduler boundary. A return-code-only guard would address exit 7 but miss zero-exit nonpublication and partial publication. The scenarios demonstrate mechanism-level counterexamples to a narrow guard; they are not model-generated repair comparisons.",
+      "styles": [],
+      "start": 11682,
+      "end": 12013
+    },
+    {
+      "kind": "body",
+      "text": "Three of six deliberately selected scenarios violated the attribution contract. This is not a prevalence estimate, an observed model reasoning error, a security exploit, or evidence that published Sakana results are invalid. Normal exclusive proposal directories reduce exposure. Full native evolution, restart reachability and database promotion were not reproduced. Source copies, hashes and license attribution are preserved.",
+      "styles": [],
+      "start": 12014,
+      "end": 12442
+    },
+    {
+      "kind": "h2",
+      "text": "Authored attempt-bound adapter",
+      "styles": [],
+      "start": 12443,
+      "end": 12473
+    },
+    {
+      "kind": "body",
+      "text": "The local adapter creates a fresh attempt directory and binds a host receipt to request identity, declared input hashes, runtime, exact launch-command hash, actual process status and complete publication artifacts. It rejects nonzero, absent, partial, malformed, changed-input and tampered evidence. A complete negative evaluation can remain valid evidence; validity and correctness are distinct.",
+      "styles": [],
+      "start": 12474,
+      "end": 12870
+    },
+    {
+      "kind": "body",
+      "text": "Four real scheduler checks matched their contracts. A broader fixed qualification added 20 authored cases spanning positive/negative results, publication ordering, invalid score types/duplicate keys, input changes and absent output, across two layouts. All 20 contracts matched and all ten renamed pairs preserved verdicts. These are qualification cases from an authored producer, not independent source pools or an audit of model agents.",
+      "styles": [],
+      "start": 12871,
+      "end": 13309
+    },
+    {
+      "kind": "body",
+      "text": "The adapter is a local proof of concept, not an upstream merged fix or a sandbox for arbitrary evaluators. Before/after hashing cannot prove the absence of transient changes that are restored, and undeclared inputs remain outside the guarantee. This diagnostic motivates stronger acceptance contracts but does not turn the null selector result into a positive one.",
+      "styles": [],
+      "start": 13310,
+      "end": 13674
+    },
+    {
+      "kind": "h1",
+      "text": "6. Interpretation, resources and conclusion",
+      "styles": [],
+      "start": 13675,
+      "end": 13718
+    },
+    {
+      "kind": "h2",
+      "text": "What the evidence supports",
+      "styles": [],
+      "start": 13719,
+      "end": 13745
+    },
+    {
+      "kind": "body",
+      "text": "The prototype can separate functional failure, stale evidence, refusal and infrastructure uncertainty; execute cached generated policies in isolation; preserve candidate ancestry and all attempts; and freeze/replay a complete selection-to-audit chain. The controlled audit shows that the two generated policies transfer across these small authored templates. The pinned scheduler diagnostic demonstrates an existing public-API attribution behavior under specified fault/reuse conditions, and the authored adapter qualifies one concrete remedy.",
+      "styles": [],
+      "start": 13746,
+      "end": 14289
+    },
+    {
+      "kind": "body",
+      "text": "The original selection hypothesis remains inconclusive. Explicit fingerprints make the completion decision easy, both repairs reach the ceiling, and every selector chooses the same candidate. Neither more deterministic repetitions nor relabeling authored controls as generated repairs would resolve this limitation. No source-conditioned native-agent pool with useful behavioral variation was obtained within the allowance.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 55,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 14290,
+      "end": 14713
+    },
+    {
+      "kind": "h2",
+      "text": "Limits and conditions for a larger study",
+      "styles": [],
+      "start": 14714,
+      "end": 14754
+    },
+    {
+      "kind": "body",
+      "text": "The pilot has one authored source, one model backbone and generated programs making deterministic actions. Fixtures, repairs to task implementations and audit templates are authored. It lacks natural semantic source failures, live model reasoning per tool step, multiple real repositories, independent human diagnosis, long-run evolution and a complete native Sakana run. Strong functional oracles here do not solve test adequacy in realistic projects. The recorded audit is now opened and cannot be reused for tuning while retaining a held-out claim.",
+      "styles": [],
+      "start": 14755,
+      "end": 15306
+    },
+    {
+      "kind": "body",
+      "text": "A larger study would need a separately bounded discovery/generation allowance, realistic qualified source failures, unchanged common repair pools, all three matched selectors and a new audit sealed before selection. Generation failures and unsuccessful candidates must remain; no positive result is required. This is future work, not silently completed work or additional spending authorization.",
+      "styles": [],
+      "start": 15307,
+      "end": 15702
+    },
+    {
+      "kind": "h2",
+      "text": "Resource and reproducibility accounting",
+      "styles": [],
+      "start": 15703,
+      "end": 15742
+    },
+    {
+      "kind": "table",
+      "text": "[TABLE_3]",
+      "styles": [],
+      "start": 15743,
+      "end": 15752
+    },
+    {
+      "kind": "body",
+      "text": "Worker sums exclude orchestration/fixture/analysis time. Original infrastructure-inconclusive attempts remain. Offline tests and clean noneditable wheel reproduction validate implementation; they are not independent scientific replications. Exact package versions, image digest, upstream revision, input/output/code hashes, scripts and recorded evidence accompany the private repository.",
+      "styles": [],
+      "start": 15753,
+      "end": 16140
+    },
+    {
+      "kind": "body",
+      "text": "Conclusion. This completed pilot delivers a reproducible QA apparatus and a concrete result-attribution diagnostic. Its central comparison found no observed selector advantage. The appropriate next scientific question is whether mechanism-directed selection adds value on realistic, behaviorally diverse agent repairs; the present evidence does not answer it.",
+      "styles": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "start": 16141,
+      "end": 16500
+    },
+    {
+      "kind": "h1",
+      "text": "References",
+      "styles": [],
+      "start": 16501,
+      "end": 16511
+    },
+    {
+      "kind": "body",
+      "text": "Primary sources checked 2 November 2026. Versioned papers are cited where available. This is a targeted review; no exhaustive novelty certification is claimed.",
+      "styles": [],
+      "start": 16512,
+      "end": 16671
+    },
+    {
+      "kind": "body",
+      "text": "[1] Lu et al. Towards end-to-end automation of AI research. Nature 651, 914-919 (2026). Version of record; open full text.",
+      "styles": [
+        {
+          "start": 14,
+          "end": 59,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 88,
+          "end": 105,
+          "style": {
+            "link": {
+              "url": "https://www.nature.com/articles/s41586-026-10265-5"
+            }
+          }
+        },
+        {
+          "start": 107,
+          "end": 121,
+          "style": {
+            "link": {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13017497/"
+            }
+          }
+        }
+      ],
+      "start": 16672,
+      "end": 16794
+    },
+    {
+      "kind": "body",
+      "text": "[2] Zhang et al. Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents. arXiv:2505.22954v3. Paper.",
+      "styles": [
+        {
+          "start": 17,
+          "end": 85,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 106,
+          "end": 111,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2505.22954v3"
+            }
+          }
+        }
+      ],
+      "start": 16795,
+      "end": 16907
+    },
+    {
+      "kind": "body",
+      "text": "[3] Lange, Imajuku and Cetin. ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution. arXiv:2509.19349v1. Paper.",
+      "styles": [
+        {
+          "start": 30,
+          "end": 102,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 123,
+          "end": 128,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2509.19349v1"
+            }
+          }
+        }
+      ],
+      "start": 16908,
+      "end": 17037
+    },
+    {
+      "kind": "body",
+      "text": "[4] AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows. Technical report, arXiv:2603.02601v1, section 6.1. Paper.",
+      "styles": [
+        {
+          "start": 4,
+          "end": 92,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 144,
+          "end": 149,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2603.02601v1"
+            }
+          }
+        }
+      ],
+      "start": 17038,
+      "end": 17188
+    },
+    {
+      "kind": "body",
+      "text": "[5] Guo et al. SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering. arXiv:2502.06994v2. Paper.",
+      "styles": [
+        {
+          "start": 15,
+          "end": 100,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 121,
+          "end": 126,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2502.06994v2"
+            }
+          }
+        }
+      ],
+      "start": 17189,
+      "end": 17316
+    },
+    {
+      "kind": "body",
+      "text": "[6] Tan et al. Benchmarking Coding Agents When Users Touch the Code. arXiv:2608.02499v1. Paper.",
+      "styles": [
+        {
+          "start": 15,
+          "end": 68,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 89,
+          "end": 94,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2608.02499v1"
+            }
+          }
+        }
+      ],
+      "start": 17317,
+      "end": 17412
+    },
+    {
+      "kind": "body",
+      "text": "[7] Chen et al. From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws. arXiv:2606.06324v2. Paper.",
+      "styles": [
+        {
+          "start": 16,
+          "end": 104,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 125,
+          "end": 130,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2606.06324v2"
+            }
+          }
+        }
+      ],
+      "start": 17413,
+      "end": 17544
+    },
+    {
+      "kind": "body",
+      "text": "[8] Zhang et al. Self-Harness: Harnesses That Improve Themselves. arXiv:2606.09498v3. Paper.",
+      "styles": [
+        {
+          "start": 17,
+          "end": 65,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 86,
+          "end": 91,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2606.09498v3"
+            }
+          }
+        }
+      ],
+      "start": 17545,
+      "end": 17637
+    },
+    {
+      "kind": "body",
+      "text": "[9] He. Does Failure Feedback Direct Agent Self-Modification? arXiv:2610.14662v1. Paper.",
+      "styles": [
+        {
+          "start": 8,
+          "end": 61,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 82,
+          "end": 87,
+          "style": {
+            "link": {
+              "url": "https://arxiv.org/html/2610.14662v1"
+            }
+          }
+        }
+      ],
+      "start": 17638,
+      "end": 17726
+    },
+    {
+      "kind": "body",
+      "text": "[10] Sakana AI. AI-Scientist-v3 usage guide. Source-evidence consistency and review handling; accessed 2 November 2026. Official documentation.",
+      "styles": [
+        {
+          "start": 16,
+          "end": 44,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "start": 120,
+          "end": 142,
+          "style": {
+            "link": {
+              "url": "https://github.com/SakanaAI/AI-Scientist-v3/blob/main/docs/usage.md"
+            }
+          }
+        }
+      ],
+      "start": 17727,
+      "end": 17870
+    },
+    {
+      "kind": "h2",
+      "text": "Implementation source and attribution",
+      "styles": [],
+      "start": 17871,
+      "end": 17908
+    },
+    {
+      "kind": "body",
+      "text": "The grounded diagnostic preserves unmodified relevant files from the official ShinkaEvolve repository at the exact revision in section 5. The Apache license and file-level hashes are included under evidence/upstream-source-006/upstream-source/ and third_party/. No upstream code was changed or submitted.",
+      "styles": [
+        {
+          "start": 78,
+          "end": 101,
+          "style": {
+            "link": {
+              "url": "https://github.com/SakanaAI/ShinkaEvolve"
+            }
+          }
+        },
+        {
+          "start": 198,
+          "end": 243,
+          "style": {
+            "weightedFontFamily": {
+              "fontFamily": "Courier New"
+            },
+            "fontSize": {
+              "magnitude": 9,
+              "unit": "PT"
+            }
+          }
+        },
+        {
+          "start": 248,
+          "end": 260,
+          "style": {
+            "weightedFontFamily": {
+              "fontFamily": "Courier New"
+            },
+            "fontSize": {
+              "magnitude": 9,
+              "unit": "PT"
+            }
+          }
+        }
+      ],
+      "start": 17909,
+      "end": 18213
+    },
+    {
+      "kind": "h2",
+      "text": "AI assistance disclosure",
+      "styles": [],
+      "start": 18214,
+      "end": 18238
+    },
+    {
+      "kind": "body",
+      "text": "James Tu supplied research direction and resource constraints. Codex implemented the prototype, orchestrated experiments, analyzed records and assisted report writing. The three experimental inference calls are separately logged; ordinary coding/report work is not misreported as additional experimental subjects. No independent human review, external submission or peer review is claimed.",
+      "styles": [],
+      "start": 18239,
+      "end": 18628
+    },
+    {
+      "kind": "h1",
+      "text": "Appendix: audit and artifact map",
+      "styles": [],
+      "start": 18629,
+      "end": 18661
+    },
+    {
+      "kind": "h2",
+      "text": "Frozen identities",
+      "styles": [],
+      "start": 18662,
+      "end": 18679
+    },
+    {
+      "kind": "body",
+      "text": "C1 plan hash:",
+      "styles": [],
+      "start": 18680,
+      "end": 18693
+    },
+    {
+      "kind": "code",
+      "text": "fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3",
+      "styles": [],
+      "start": 18694,
+      "end": 18758
+    },
+    {
+      "kind": "body",
+      "text": "Candidate-pool hash:",
+      "styles": [],
+      "start": 18759,
+      "end": 18779
+    },
+    {
+      "kind": "code",
+      "text": "3984309eae4921b0679c4807a2ed56b584193b498e11defaf228baa4a5d7c34e",
+      "styles": [],
+      "start": 18780,
+      "end": 18844
+    },
+    {
+      "kind": "body",
+      "text": "Freeze commit 7ae8dd0 contains the plan and snapshots but no audit trials. It was pushed before execution. Candidate generation predates template authorship. All methods selected repair 00 before opening outcomes. Current manifests preserve historical snapshots rather than pretending subsequent code changes were part of an earlier freeze.",
+      "styles": [
+        {
+          "start": 14,
+          "end": 21,
+          "style": {
+            "weightedFontFamily": {
+              "fontFamily": "Courier New"
+            },
+            "fontSize": {
+              "magnitude": 9,
+              "unit": "PT"
+            }
+          }
+        }
+      ],
+      "start": 18845,
+      "end": 19185
+    },
+    {
+      "kind": "h2",
+      "text": "Generated repair 00, unchanged",
+      "styles": [],
+      "start": 19186,
+      "end": 19216
+    },
+    {
+      "kind": "code",
+      "text": "def choose_action(observation):",
+      "styles": [],
+      "start": 19217,
+      "end": 19248
+    },
+    {
+      "kind": "code",
+      "text": "    evidence = observation.get('evidence') or {}",
+      "styles": [],
+      "start": 19249,
+      "end": 19297
+    },
+    {
+      "kind": "code",
+      "text": "    current = observation.get('current_fingerprint')",
+      "styles": [],
+      "start": 19298,
+      "end": 19350
+    },
+    {
+      "kind": "code",
+      "text": "    if (current and evidence.get('fingerprint') == current",
+      "styles": [],
+      "start": 19351,
+      "end": 19409
+    },
+    {
+      "kind": "code",
+      "text": "            and evidence.get('status') == 'passed'):",
+      "styles": [],
+      "start": 19410,
+      "end": 19462
+    },
+    {
+      "kind": "code",
+      "text": "        return 'complete'",
+      "styles": [],
+      "start": 19463,
+      "end": 19488
+    },
+    {
+      "kind": "code",
+      "text": "    return 'verify'",
+      "styles": [],
+      "start": 19489,
+      "end": 19508
+    },
+    {
+      "kind": "h2",
+      "text": "Reproduction entry points",
+      "styles": [],
+      "start": 19509,
+      "end": 19534
+    },
+    {
+      "kind": "code",
+      "text": "agentqa verify-evidence --root .",
+      "styles": [],
+      "start": 19535,
+      "end": 19567
+    },
+    {
+      "kind": "code",
+      "text": "python -m pytest",
+      "styles": [],
+      "start": 19568,
+      "end": 19584
+    },
+    {
+      "kind": "code",
+      "text": "python scripts/build_repro_bundle.py --output dist/my-reproduction.zip",
+      "styles": [],
+      "start": 19585,
+      "end": 19655
+    },
+    {
+      "kind": "body",
+      "text": "These commands verify saved evidence and package files; the tests use authored fixtures. No new inference is required. Docker is needed for new generated-program execution, not saved replay. The lifetime experimental allowance is exhausted; cloning or deleting a ledger does not reset it. Exact CLI/environment setup is in docs/reproduction.md.",
+      "styles": [
+        {
+          "start": 323,
+          "end": 343,
+          "style": {
+            "weightedFontFamily": {
+              "fontFamily": "Courier New"
+            },
+            "fontSize": {
+              "magnitude": 9,
+              "unit": "PT"
+            }
+          }
+        }
+      ],
+      "start": 19656,
+      "end": 20000
+    },
+    {
+      "kind": "table",
+      "text": "[TABLE_4]",
+      "styles": [],
+      "start": 20001,
+      "end": 20010
+    },
+    {
+      "kind": "body",
+      "text": "Private repository: JamesTu-jtjt/agentqa. The original native-agent main study remains unperformed.",
+      "styles": [
+        {
+          "start": 20,
+          "end": 40,
+          "style": {
+            "link": {
+              "url": "https://github.com/JamesTu-jtjt/agentqa"
+            }
+          }
+        }
+      ],
+      "start": 20011,
+      "end": 20110
+    }
+  ],
+  "tables": [
+    {
+      "marker": "[TABLE_0]",
+      "rows": [
+        [
+          "Selector",
+          "Six selection slots per candidate"
+        ],
+        [
+          "Source-only",
+          "Source identity repeated six times"
+        ],
+        [
+          "Generic",
+          "Identity, consistent renaming and irrelevant observations, twice each"
+        ],
+        [
+          "Failure-family",
+          "Identity, renaming, noise, compaction, handoff and cached evidence"
+        ]
+      ]
+    },
+    {
+      "marker": "[TABLE_1]",
+      "rows": [
+        [
+          "Policy",
+          "Verified / cases",
+          "Functional",
+          "Fresh",
+          "Refusals"
+        ],
+        [
+          "Authored parent",
+          "3 / 9",
+          "9 / 9",
+          "3 / 9",
+          "0"
+        ],
+        [
+          "Generated repair 00",
+          "9 / 9",
+          "9 / 9",
+          "9 / 9",
+          "0"
+        ],
+        [
+          "Generated repair 01",
+          "9 / 9",
+          "9 / 9",
+          "9 / 9",
+          "0"
+        ],
+        [
+          "Authored rerun reference",
+          "9 / 9",
+          "9 / 9",
+          "9 / 9",
+          "0"
+        ]
+      ]
+    },
+    {
+      "marker": "[TABLE_2]",
+      "rows": [
+        [
+          "Authored scenario",
+          "Observed scheduler result",
+          "Attribution"
+        ],
+        [
+          "Exit 7; reuse old directory",
+          "Prior success and score 1",
+          "Stale"
+        ],
+        [
+          "Exit 7; fresh directory",
+          "No prior success available",
+          "Rejected"
+        ],
+        [
+          "Exit 0; no publication; reuse",
+          "Prior success and score 1",
+          "Stale"
+        ],
+        [
+          "Metrics only; reuse",
+          "New score 0.25 plus old correctness",
+          "Mixed"
+        ],
+        [
+          "Complete publication; reuse",
+          "New success and score 0.25",
+          "Current"
+        ],
+        [
+          "Complete publication; fresh",
+          "New success and score 0.25",
+          "Current"
+        ]
+      ]
+    },
+    {
+      "marker": "[TABLE_3]",
+      "rows": [
+        [
+          "Stage",
+          "Recorded resource"
+        ],
+        [
+          "All experimental inference",
+          "3 Codex subscription calls; no separately billed API calls"
+        ],
+        [
+          "Reported tokens",
+          "27,232 input; 2,458 output; reasoning field recorded separately"
+        ],
+        [
+          "Subscription dollar cost",
+          "Unavailable, not zero"
+        ],
+        [
+          "Stateful workflow",
+          "18 trials; 152 workers; 109.13 worker seconds"
+        ],
+        [
+          "C1 controlled audit",
+          "36 trials; 57 workers; 59.54 worker seconds"
+        ],
+        [
+          "Retained replay coverage",
+          "179 coding traces; 28 publication receipts"
+        ]
+      ]
+    },
+    {
+      "marker": "[TABLE_4]",
+      "rows": [
+        [
+          "Artifact",
+          "Repository path"
+        ],
+        [
+          "Controlled plan, snapshots, full grid",
+          "`evidence/controlled-transfer-012/`"
+        ],
+        [
+          "Development selection and frozen pool",
+          "`evidence/development-comparison-001/`"
+        ],
+        [
+          "Source diagnostic and adapter checks",
+          "`evidence/upstream-source-006/`, `evidence/bound-shinka-008/`"
+        ],
+        [
+          "Broader publication qualification",
+          "`evidence/publication-qualification-011/`"
+        ],
+        [
+          "Measured figures, CSV and tables",
+          "`report/figures/`"
+        ],
+        [
+          "Final recorded demonstration",
+          "`report/demo-final/index.html`"
+        ],
+        [
+          "Full procedure and accounting",
+          "`docs/reproduction.md`, `docs/budget.md`"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "marker": "[FIGURE_0]",
+      "alt": "Stateful workflow outcomes",
+      "path": "report/figures/workflow-003/workflow-outcomes.png"
+    },
+    {
+      "marker": "[FIGURE_1]",
+      "alt": "Controlled transfer: one source pool",
+      "path": "report/figures/controlled-transfer-012/controlled-transfer.png"
+    },
+    {
+      "marker": "[FIGURE_2]",
+      "alt": "Source attribution and attempt-bound adapter",
+      "path": "report/figures/upstream-004/publication-qualification.png"
+    }
+  ],
+  "initial_requests": [
+    {
+      "insertText": {
+        "location": {
+          "index": 1,
+          "tabId": "t.0"
+        },
+        "text": "Beyond the Repaired Example\nMetamorphic validation of agent repairs: a controlled pilot\nJames Tu | Cornell University | Sakana AI research exercise | 2 November 2026\nAI assistance. Codex implemented the prototype, ran the recorded experiments, analyzed outcomes and assisted report writing. James supplied research direction and resource constraints. No independent human review is claimed.\nAbstract. Self-improving coding systems need to distinguish a repair that fixes one example from a repair that preserves the underlying reliability obligation. We investigate whether test families organized around stale verification evidence improve selection among model-generated repairs. AgentQA records actual execution, binds passing evidence to a declared content footprint, and grades functional correctness separately from freshness. A three-call GPT-6.1 Sol feasibility pilot produced two source-conditioned policies, but neither failed the development family. We therefore prospectively froze a separately labeled controlled transfer audit rather than searching indefinitely for a favorable pool. Both unchanged repairs passed all nine new cases; the authored parent passed three. All three matched selectors had selected the same repair, yielding zero observed selector advantage. Separately, six authored fault/reuse scenarios reproduced three stale or mixed result attributions through an unchanged pinned ShinkaEvolve scheduler. An authored attempt-bound adapter rejected incomplete evidence in subsequent qualification. The deliverable is a runnable QA prototype, reproducible evidence and an explicitly inconclusive selection result; it is not a completed native-agent evolution study.\n1. Research question and scope\nCan valid metamorphic families built around a known failure mechanism select repairs that transfer better than source-only retesting or generic variation, at matched evaluation budgets? The proposed contribution is selection value under valid transformations. Merely generating variants, adding provenance checks or fixing an authored example would not answer that question.\nThe initial failure class is stale verification evidence: passing tests for one source/test/configuration state are used to justify completion after a relevant change. The QA target is the connection between a claim and its execution evidence. A function can be correct while the evidence supporting completion is stale; conversely, a fresh weak test can pass while the function is wrong.\nThis pilot targets the reliability infrastructure around agent improvement. It aligns with empirical agent evolution and automated research [1-3], while holding the model-generated candidate pool fixed to isolate selection. The completed controlled audit evaluates cached completion policies after authored repairs. It does not test models autonomously repairing new repositories, discover natural model failure rates, or run a complete Sakana evolutionary search.\nDelivered. An execution/replay core, isolated generated-program workers, frozen candidate/attempt registries, matched selectors, a bounded editable coding workflow, a real pinned scheduler bridge, source-grounded publication diagnostics, a completed controlled audit, and a self-contained demonstration. No positive result is required or claimed.\n2. Positioning and measurement contract\nClosest work and novelty boundary\nThe AI Scientist automates stages of the research lifecycle [1]. DGM maintains an archive of agents and empirically evaluates self-modifications [2]; ShinkaEvolve evolves executable programs using feedback [3]. AgentQA concerns the trustworthiness and generalization of acceptance evidence, rather than introducing a new archive sampler or mutation algorithm.\nAgentAssay already studies agent metamorphic relations and regression testing [4]. SyncMind studies recovery from evolving collaborative repository states [5], and SWE-Touch injects validated conflicting edits during coding [6]. Thus neither agent metamorphic testing nor shared-workspace changes constitute a new contribution here.\nHarnessFix connects failed traces to scoped harness repairs [7]. Self-Harness combines failure mining, candidate harness changes and regression validation [8]. A recent failure-feedback study distinguishes directed repair, transfer and net held-out change [9]. These precedents motivate a common-pool comparison with separate source, selection and audit roles. Agentic Scientist documentation also describes provenance consistency checks [10]. A freshness architecture alone is not a first-in-field claim.\nThe remaining research hypothesis is that mechanism-directed, applicability-validated families improve which generated repair is selected, beyond source-only or generic checks. The present pool does not supply evidence for that hypothesis. The review is targeted, not an exhaustive novelty certification.\nExecutable contract\nA footprint hashes the declared source, visible tests, configuration and runtime identity. Fresh evidence requires an actual passing visible execution whose before/after footprint equals the final footprint. Functional correctness comes from evaluator-owned assertions. The primary endpoint is:\nverified = declared completion AND functional correctness AND fresh evidence\nRefusal is not successful completion. Failed tests and modified-during-test executions cannot become passing evidence because a model prints a success message. Exact restoration of tested content can reuse its receipt in the bounded deterministic world; unrelated documentation does not invalidate it. This contract does not cover undeclared external services, hidden dependencies, arbitrary environment nondeterminism or concurrent histories beyond observed states.\nHost-owned, hash-chained records retain state, actual test status and completion. Replay checks integrity against frozen trace tips, not authenticity against an attacker replacing the entire store. Generated policy/controller code and generated task modules run only in Docker without host mounts, network or credentials, with bounded CPU/memory/processes/output/time. Trusted local subprocess fixtures execute authored code only. The boundary and oracle are separate from candidate-editable resources.\n3. Design and prospective controls\nFeasibility before the audit\nThree serial subscription inference calls used GPT-6.1 Sol with a 120-second bound per invocation. The first generated two completion-policy repairs from an authored always-complete parent and one authored clamp failure. Both policies inspect verification provenance. One unseeded policy and one stateful controller were generated in the remaining calls. No naturally observed semantic freshness failure was confirmed. Three original worker timeouts were preserved as infrastructure-inconclusive; an unchanged-program diagnostic later passed after startup and execution timing were separated.\nThe stateful workflow supports source edits, actual execution, configuration changes, compaction and handoff. Its generated controller passed six cases; an authored stale control failed two. The model generated a controller program once, not a new inference at every action. These feasibility outcomes do not establish realistic agent repair performance.\n[FIGURE_0]\nWorkflow figure. Six cases per controller: the generated controller and authored reference pass all six; the authored stale control passes four. These are bounded deterministic workflows, not fresh model reasoning at every step.\nMatched selection on a common pool\nThe frozen pool contains the authored parent and both generated repairs. Every candidate received six selection slots per method and the same two unchanged-footprint regression controls. Eligibility requires no regression relative to the parent; ranking uses verified completion, then incremental API cost, then candidate ID. Parent retention is allowed. All three methods selected repair 00.\n[TABLE_0]\nRepeated deterministic inputs equalize slots, not independent model samples. The 60 development trials and unfavorable lack of repair diversity remain preserved.\nControlled transfer amendment C1\nThe exhausted allowance was not reset. C1 narrowed the next experiment to unchanged cached policies on three separately authored templates: text normalization, discounted integer-cent totals and blocked-node graph reachability. Each has a source repair after weak passing tests, a configuration change after verification, and an unrelated-documentation control: nine cases total. Templates differ from clamp, while the provenance interface and failure mechanism remain shared.\nBefore executing any new case, all development traces were replayed and selector decisions recomputed. The plan froze programs, decisions, templates, contract, analysis, dependencies, runtime/image, limits and retry rules. Commit 7ae8dd0 was pushed privately before outcomes existed. The three candidates and a nonselectable authored rerun reference produce 36 trials. Reservations precede execution; completed trials are replayed on resume, and interrupted unknown trials cannot silently resample. All declared slots are required; unreconciled infrastructure prevents comparison.\nThe paired unit is the one source pool. The three templates are not three generation pools. Cases receive equal weights; no interval is reported with this sample size. The same implementer authored both splits, so separation is procedural, not human blinding.\n4. Controlled transfer results\n[TABLE_1]\n[FIGURE_1]\nFigure 1. Each template contributes two freshness-sensitive cases and one unchanged control. The reference is authored and not selectable. Counts describe this fixed controlled suite, not population rates.\nBoth repairs reached the ceiling. Source-only, generic and failure-family selection had all chosen repair 00 before audit execution. Failure-family minus either baseline is therefore 0 percentage points. Equal outcomes do not establish equivalence, and the identical selected ID prevents this pool from identifying selection value.\nThe parent's six failures separate correctness from evidence: the authored implementations passed functional checks, but completion reused old visible receipts. In the text case, repair 00 instead verified the changed implementation before completing. In a documentation control it completed immediately with a still-current receipt. Each generated repair requested six fresh verifications; the authored rerun reference requested nine. Including setup, those are 15 versus 18 visible executions, a local tool-count observation rather than a realistic efficiency estimate.\nAll 36 trials were retained, with no retries, exclusions or infrastructure-inconclusive slots. They used 57 completed Docker workers, 59.54 summed worker seconds and confirmed cleanup. Each trace replayed before normalization. No additional inference was used. The result supports narrow completion-policy transfer after authored repairs; it does not support a mechanism-guided selector advantage.\n5. Grounded result-attribution case\nExisting scheduler behavior, a separate endpoint\nThe upstream diagnostic uses unchanged ShinkaEvolve code at revision 8adc053a2ce4511ad2ac310e004c530a73fb974a. Fixed authored evaluators submit actual local jobs. A prior job publishes score 1 and correctness true; a changed request then reuses or replaces the result directory. The endpoint is valid attribution to the current request, not coding-agent verified completion.\n[TABLE_2]\n[FIGURE_2]\nPublication figure. The pinned source diagnostic and four current authored adapter checks use distinct result-attribution endpoints. Broader twenty-case qualification is reported separately below.\nResult files are loaded independently and lack an attempt binding at this public scheduler boundary. A return-code-only guard would address exit 7 but miss zero-exit nonpublication and partial publication. The scenarios demonstrate mechanism-level counterexamples to a narrow guard; they are not model-generated repair comparisons.\nThree of six deliberately selected scenarios violated the attribution contract. This is not a prevalence estimate, an observed model reasoning error, a security exploit, or evidence that published Sakana results are invalid. Normal exclusive proposal directories reduce exposure. Full native evolution, restart reachability and database promotion were not reproduced. Source copies, hashes and license attribution are preserved.\nAuthored attempt-bound adapter\nThe local adapter creates a fresh attempt directory and binds a host receipt to request identity, declared input hashes, runtime, exact launch-command hash, actual process status and complete publication artifacts. It rejects nonzero, absent, partial, malformed, changed-input and tampered evidence. A complete negative evaluation can remain valid evidence; validity and correctness are distinct.\nFour real scheduler checks matched their contracts. A broader fixed qualification added 20 authored cases spanning positive/negative results, publication ordering, invalid score types/duplicate keys, input changes and absent output, across two layouts. All 20 contracts matched and all ten renamed pairs preserved verdicts. These are qualification cases from an authored producer, not independent source pools or an audit of model agents.\nThe adapter is a local proof of concept, not an upstream merged fix or a sandbox for arbitrary evaluators. Before/after hashing cannot prove the absence of transient changes that are restored, and undeclared inputs remain outside the guarantee. This diagnostic motivates stronger acceptance contracts but does not turn the null selector result into a positive one.\n6. Interpretation, resources and conclusion\nWhat the evidence supports\nThe prototype can separate functional failure, stale evidence, refusal and infrastructure uncertainty; execute cached generated policies in isolation; preserve candidate ancestry and all attempts; and freeze/replay a complete selection-to-audit chain. The controlled audit shows that the two generated policies transfer across these small authored templates. The pinned scheduler diagnostic demonstrates an existing public-API attribution behavior under specified fault/reuse conditions, and the authored adapter qualifies one concrete remedy.\nThe original selection hypothesis remains inconclusive. Explicit fingerprints make the completion decision easy, both repairs reach the ceiling, and every selector chooses the same candidate. Neither more deterministic repetitions nor relabeling authored controls as generated repairs would resolve this limitation. No source-conditioned native-agent pool with useful behavioral variation was obtained within the allowance.\nLimits and conditions for a larger study\nThe pilot has one authored source, one model backbone and generated programs making deterministic actions. Fixtures, repairs to task implementations and audit templates are authored. It lacks natural semantic source failures, live model reasoning per tool step, multiple real repositories, independent human diagnosis, long-run evolution and a complete native Sakana run. Strong functional oracles here do not solve test adequacy in realistic projects. The recorded audit is now opened and cannot be reused for tuning while retaining a held-out claim.\nA larger study would need a separately bounded discovery/generation allowance, realistic qualified source failures, unchanged common repair pools, all three matched selectors and a new audit sealed before selection. Generation failures and unsuccessful candidates must remain; no positive result is required. This is future work, not silently completed work or additional spending authorization.\nResource and reproducibility accounting\n[TABLE_3]\nWorker sums exclude orchestration/fixture/analysis time. Original infrastructure-inconclusive attempts remain. Offline tests and clean noneditable wheel reproduction validate implementation; they are not independent scientific replications. Exact package versions, image digest, upstream revision, input/output/code hashes, scripts and recorded evidence accompany the private repository.\nConclusion. This completed pilot delivers a reproducible QA apparatus and a concrete result-attribution diagnostic. Its central comparison found no observed selector advantage. The appropriate next scientific question is whether mechanism-directed selection adds value on realistic, behaviorally diverse agent repairs; the present evidence does not answer it.\nReferences\nPrimary sources checked 2 November 2026. Versioned papers are cited where available. This is a targeted review; no exhaustive novelty certification is claimed.\n[1] Lu et al. Towards end-to-end automation of AI research. Nature 651, 914-919 (2026). Version of record; open full text.\n[2] Zhang et al. Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents. arXiv:2505.22954v3. Paper.\n[3] Lange, Imajuku and Cetin. ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution. arXiv:2509.19349v1. Paper.\n[4] AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows. Technical report, arXiv:2603.02601v1, section 6.1. Paper.\n[5] Guo et al. SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering. arXiv:2502.06994v2. Paper.\n[6] Tan et al. Benchmarking Coding Agents When Users Touch the Code. arXiv:2608.02499v1. Paper.\n[7] Chen et al. From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws. arXiv:2606.06324v2. Paper.\n[8] Zhang et al. Self-Harness: Harnesses That Improve Themselves. arXiv:2606.09498v3. Paper.\n[9] He. Does Failure Feedback Direct Agent Self-Modification? arXiv:2610.14662v1. Paper.\n[10] Sakana AI. AI-Scientist-v3 usage guide. Source-evidence consistency and review handling; accessed 2 November 2026. Official documentation.\nImplementation source and attribution\nThe grounded diagnostic preserves unmodified relevant files from the official ShinkaEvolve repository at the exact revision in section 5. The Apache license and file-level hashes are included under evidence/upstream-source-006/upstream-source/ and third_party/. No upstream code was changed or submitted.\nAI assistance disclosure\nJames Tu supplied research direction and resource constraints. Codex implemented the prototype, orchestrated experiments, analyzed records and assisted report writing. The three experimental inference calls are separately logged; ordinary coding/report work is not misreported as additional experimental subjects. No independent human review, external submission or peer review is claimed.\nAppendix: audit and artifact map\nFrozen identities\nC1 plan hash:\nfddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3\nCandidate-pool hash:\n3984309eae4921b0679c4807a2ed56b584193b498e11defaf228baa4a5d7c34e\nFreeze commit 7ae8dd0 contains the plan and snapshots but no audit trials. It was pushed before execution. Candidate generation predates template authorship. All methods selected repair 00 before opening outcomes. Current manifests preserve historical snapshots rather than pretending subsequent code changes were part of an earlier freeze.\nGenerated repair 00, unchanged\ndef choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    if (current and evidence.get('fingerprint') == current\n            and evidence.get('status') == 'passed'):\n        return 'complete'\n    return 'verify'\nReproduction entry points\nagentqa verify-evidence --root .\npython -m pytest\npython scripts/build_repro_bundle.py --output dist/my-reproduction.zip\nThese commands verify saved evidence and package files; the tests use authored fixtures. No new inference is required. Docker is needed for new generated-program execution, not saved replay. The lifetime experimental allowance is exhausted; cloning or deleting a ledger does not reset it. Exact CLI/environment setup is in docs/reproduction.md.\n[TABLE_4]\nPrivate repository: JamesTu-jtjt/agentqa. The original native-agent main study remains unperformed.\n"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 1,
+          "endIndex": 20111,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "NORMAL_TEXT",
+          "alignment": "JUSTIFIED",
+          "lineSpacing": 110,
+          "spaceAbove": {
+            "magnitude": 0,
+            "unit": "PT"
+          },
+          "spaceBelow": {
+            "magnitude": 6,
+            "unit": "PT"
+          }
+        },
+        "fields": "namedStyleType,alignment,lineSpacing,spaceAbove,spaceBelow"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 1,
+          "endIndex": 20110,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "EB Garamond"
+          },
+          "fontSize": {
+            "magnitude": 11,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 1,
+          "endIndex": 28,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "TITLE",
+          "keepWithNext": true,
+          "alignment": "CENTER"
+        },
+        "fields": "namedStyleType,keepWithNext,alignment"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 1,
+          "endIndex": 28,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 30,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 29,
+          "endIndex": 88,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "SUBTITLE",
+          "keepWithNext": true,
+          "alignment": "CENTER"
+        },
+        "fields": "namedStyleType,keepWithNext,alignment"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 29,
+          "endIndex": 88,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 167,
+          "endIndex": 181,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 392,
+          "endIndex": 401,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 1694,
+          "endIndex": 1724,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 1694,
+          "endIndex": 1724,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 2129,
+          "endIndex": 2156,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 2954,
+          "endIndex": 2964,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 3301,
+          "endIndex": 3340,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 3301,
+          "endIndex": 3340,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 3341,
+          "endIndex": 3374,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 3341,
+          "endIndex": 3374,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 4616,
+          "endIndex": 4711,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 4879,
+          "endIndex": 4898,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 4879,
+          "endIndex": 4898,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 5194,
+          "endIndex": 5270,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 6241,
+          "endIndex": 6275,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 6241,
+          "endIndex": 6275,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 6276,
+          "endIndex": 6304,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 6276,
+          "endIndex": 6304,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 7264,
+          "endIndex": 7280,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 7493,
+          "endIndex": 7527,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 7493,
+          "endIndex": 7527,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 8093,
+          "endIndex": 8125,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 8093,
+          "endIndex": 8125,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 8833,
+          "endIndex": 8840,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 9207,
+          "endIndex": 9222,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 9444,
+          "endIndex": 9474,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 9444,
+          "endIndex": 9474,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 9496,
+          "endIndex": 9505,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 9885,
+          "endIndex": 9904,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 11004,
+          "endIndex": 11039,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 11004,
+          "endIndex": 11039,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 11040,
+          "endIndex": 11088,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 11040,
+          "endIndex": 11088,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 11158,
+          "endIndex": 11198,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 11485,
+          "endIndex": 11504,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 12443,
+          "endIndex": 12473,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 12443,
+          "endIndex": 12473,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 13675,
+          "endIndex": 13718,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 13675,
+          "endIndex": 13718,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 13719,
+          "endIndex": 13745,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 13719,
+          "endIndex": 13745,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 14290,
+          "endIndex": 14345,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 14714,
+          "endIndex": 14754,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 14714,
+          "endIndex": 14754,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 15703,
+          "endIndex": 15742,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 15703,
+          "endIndex": 15742,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16141,
+          "endIndex": 16152,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 16501,
+          "endIndex": 16511,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16501,
+          "endIndex": 16511,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16686,
+          "endIndex": 16731,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16760,
+          "endIndex": 16777,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://www.nature.com/articles/s41586-026-10265-5"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16779,
+          "endIndex": 16793,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13017497/"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16812,
+          "endIndex": 16880,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16901,
+          "endIndex": 16906,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2505.22954v3"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 16938,
+          "endIndex": 17010,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17031,
+          "endIndex": 17036,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2509.19349v1"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17042,
+          "endIndex": 17130,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17182,
+          "endIndex": 17187,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2603.02601v1"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17204,
+          "endIndex": 17289,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17310,
+          "endIndex": 17315,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2502.06994v2"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17332,
+          "endIndex": 17385,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17406,
+          "endIndex": 17411,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2608.02499v1"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17429,
+          "endIndex": 17517,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17538,
+          "endIndex": 17543,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2606.06324v2"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17562,
+          "endIndex": 17610,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17631,
+          "endIndex": 17636,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2606.09498v3"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17646,
+          "endIndex": 17699,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17720,
+          "endIndex": 17725,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://arxiv.org/html/2610.14662v1"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17743,
+          "endIndex": 17771,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "bold": true
+        },
+        "fields": "bold"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17847,
+          "endIndex": 17869,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://github.com/SakanaAI/AI-Scientist-v3/blob/main/docs/usage.md"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 17871,
+          "endIndex": 17908,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17871,
+          "endIndex": 17908,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 17987,
+          "endIndex": 18010,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://github.com/SakanaAI/ShinkaEvolve"
+          }
+        },
+        "fields": "link"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18107,
+          "endIndex": 18152,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18157,
+          "endIndex": 18169,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 18214,
+          "endIndex": 18238,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18214,
+          "endIndex": 18238,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 18629,
+          "endIndex": 18661,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_1",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18629,
+          "endIndex": 18661,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 20,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 18662,
+          "endIndex": 18679,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18662,
+          "endIndex": 18679,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18694,
+          "endIndex": 18758,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18780,
+          "endIndex": 18844,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 18859,
+          "endIndex": 18866,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 19186,
+          "endIndex": 19216,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19186,
+          "endIndex": 19216,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19217,
+          "endIndex": 19248,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19249,
+          "endIndex": 19297,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19298,
+          "endIndex": 19350,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19351,
+          "endIndex": 19409,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19410,
+          "endIndex": 19462,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19463,
+          "endIndex": 19488,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19489,
+          "endIndex": 19508,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateParagraphStyle": {
+        "range": {
+          "startIndex": 19509,
+          "endIndex": 19534,
+          "tabId": "t.0"
+        },
+        "paragraphStyle": {
+          "namedStyleType": "HEADING_2",
+          "keepWithNext": true
+        },
+        "fields": "namedStyleType,keepWithNext"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19509,
+          "endIndex": 19534,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "fontSize": {
+            "magnitude": 16,
+            "unit": "PT"
+          }
+        },
+        "fields": "fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19535,
+          "endIndex": 19567,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19568,
+          "endIndex": 19584,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19585,
+          "endIndex": 19655,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 19979,
+          "endIndex": 19999,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "weightedFontFamily": {
+            "fontFamily": "Courier New"
+          },
+          "fontSize": {
+            "magnitude": 9,
+            "unit": "PT"
+          }
+        },
+        "fields": "weightedFontFamily,fontSize"
+      }
+    },
+    {
+      "updateTextStyle": {
+        "range": {
+          "startIndex": 20031,
+          "endIndex": 20051,
+          "tabId": "t.0"
+        },
+        "textStyle": {
+          "link": {
+            "url": "https://github.com/JamesTu-jtjt/agentqa"
+          }
+        },
+        "fields": "link"
+      }
+    }
+  ],
+  "style_reference": "Neuroevolution report: EB Garamond 11, justified 110 percent lines, native headings/tables/figures",
+  "final_pdf": false
+}

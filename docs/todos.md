@@ -1,3 +1,5 @@
+> Final delivery note, 2 November 2026: the bounded C1 pilot and its report/replay/package are complete. Original native-agent main-study items B51/B52/B54 and X60-R73 below remain unperformed and are deferred to a separately scoped study. Their unchecked boxes are intentional; they are not hidden inside the delivery completion estimate.
+
 # Implementation TODOs
 
 Owner: Codex unless explicitly marked James. Unchecked items may be planned or partial; consult `status.md` for work in progress. Mark an item complete only after recording evidence in `status.md` or a linked run manifest. Task IDs are stable across sessions.
@@ -75,12 +77,12 @@ Owner: Codex unless explicitly marked James. Unchecked items may be planned or p
 
 ## M8 — Delivery · Day 8 · depends on R70–R73
 
-- [ ] **D80** Draft the research report and appendix. Acceptance: all empirical claims link to artifacts; methods/novelty/limitations are clear; no placeholders masquerade as findings. Target 6–8 main pages, not a claimed task requirement.
+- [x] **D80** Draft the research report and appendix for the completed controlled pilot (scope amendment C1). Acceptance: all empirical claims link to artifacts; methods/novelty/limitations are clear; no placeholders masquerade as findings. Target 6–8 main pages, not a claimed task requirement.
 - [x] **D81** Package the runnable proof of concept. Acceptance: documented install, offline demo, optional live run, and analysis commands are implemented and verified; pinned dependencies and upstream attribution included. Evidence: `docs/reproduction.md`, wheel install, replay/analysis commands, existing pilot/live integration. Complete for the current prototype; future main-study changes need revalidation.
 - [x] **D82** Package a sanitized reproduction bundle. Acceptance: manifests, candidate diffs, settings, traces/results, and costs are sufficient to regenerate tables; credentials and unrelated internal data are absent. Evidence: deterministic `build_repro_bundle.py`, explicit publication inventory and clean-export check. This packages completed prototype evidence, not unperformed main-study data.
 - [x] **D83** Produce the short demonstration replay. Acceptance: uses actual recorded outcomes and clearly distinguishes an illustrative control from a discovered agent repair. Evidence: `report/demo/index.html`; hashes and four tabs verified; authored/native limitations visible.
 - [x] **D84** Verify from a clean temporary checkout/export. Acceptance: meaningful tests pass; offline artifacts regenerate; documentation links and report figures resolve; no dependence on developer-only paths or untracked required files. Evidence: `evidence/clean-reproduction-080.json`; 124 tests, installed wheel, evidence replay, matching analysis and HTML. Repeat after future substantive changes.
-- [ ] **D85** Update README/status and hand over the package. Acceptance: precise file links, reproduction instructions, completion status, final spend, and remaining limitations. Remote publication/submission occurs only if separately requested.
+- [x] **D85** Update README/status and hand over the package. Acceptance: precise file links, reproduction instructions, completion status, final spend, and remaining limitations. Evidence: `docs/handover.md`, final validation record and verified private publication. Private GitHub publication was explicitly requested; no external submission or public release occurred.
 
 ## Amendment C1 — bounded controlled transfer pilot
 
@@ -91,7 +93,7 @@ This closes an explicitly narrower experiment at the next checkpoint. It does no
 - [x] **C92** Execute and retain the complete 36-trial grid without resampling or exclusions. Evidence: all reservations, result files and traces in `evidence/controlled-transfer-012/trials/`; 57 completed Docker workers, cleanup confirmed.
 - [x] **C93** Replay every result before normalization; require complete matched grids and a successful nonselectable authored reference. Evidence: `outcomes.json`, `analysis.json`, installed `verify-evidence`, and seven new protocol/boundary tests.
 - [x] **C94** Produce descriptive results and a measured scientific figure. Evidence: `report/figures/controlled-transfer-012/` with CSV/Markdown/PNG/SVG/PDF and provenance manifest. Both repairs 9/9, parent 3/9; selector differences zero; one source pool, no interval.
-- [ ] **C95** Final controlled-pilot report, replay integration and handover. Acceptance: main claim is explicitly inconclusive; final package reproduces and separates original unperformed main-study work from the completed pilot. This is the remaining bounded delivery scope.
+- [x] **C95** Final controlled-pilot report, replay integration and handover. Acceptance: main claim is explicitly inconclusive; final package reproduces and separates original unperformed main-study work from the completed pilot. Evidence: `report/final-report.md`, [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), `report/demo-final/`, `docs/handover.md` and final clean-export verification. The original main-study TODOs remain deferred.
 
 ## Deferred extensions
 

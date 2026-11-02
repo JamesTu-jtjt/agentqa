@@ -81,3 +81,28 @@ The archive includes Git-visible project source, documents, selected experimenta
 `dist/`, `scratch/` and `runs/` are ignored; generated archives and downloaded dependency wheels are local outputs, not automatically uploaded. The source repository contains the recipe and selected evidence needed to rebuild them. Upstream source copies retain their Apache-2.0 license and attribution.
 
 The current prototype is packaged and checked. Final reproduction must be repeated after any future main study or report changes. Native model-agent failure discovery, useful generated repair diversity, final selection/audit freeze and the main hypothesis remain unresolved.
+
+## Final native Google Doc and recorded demonstration
+
+The final report is the native Google Doc linked in `docs/google-doc-status.json`; the local source is `report/final-report.md`. It uses the Neuroevolution report's EB Garamond typography, semantic headings, five native tables and three embedded measured figures. `docs/google-doc-qa.json` records exact native text/table readback, image identities, owner-only permissions and browser layout checks. No final PDF report is generated or exported. Offline verification checks the recorded native readback; it does not independently contact Google Drive or prove the current online revision has not changed.
+
+`report/google-doc-source.json` preserves portable text/style/table/image blocks prepared by `scripts/prepare_google_doc.py`. To recreate a document through the Google Drive connector: create a native Doc, insert the prepared text/styles, insert tables at the markers in descending index order, read actual cell indexes, fill cells in descending order, then resolve image markers and insert local PNGs through the connector's image sidecar. Read back all text, tables and inline objects before calling it complete. Keep the user's existing sharing state; publication to Google Docs does not authorize public access.
+
+Rebuild the final self-contained replay into a new directory:
+
+```sh
+.venv/bin/python scripts/build_replay.py --output runs/my-final-replay/index.html
+```
+
+No browser server is needed to view the resulting file locally. The final replay was checked in the browser: three audit examples, unchanged controls and all retained publication tabs match their recorded outcomes. The temporary QA server was stopped.
+
+The final offline export/wheel check is executable. Download the public development wheels once if they are not cached; this is dependency retrieval, not model inference:
+
+```sh
+.venv/bin/python -m pip download -r requirements-dev.lock --dest scratch/wheelhouse
+.venv/bin/python -m pip wheel --no-build-isolation --no-deps . --wheel-dir scratch/wheels
+.venv/bin/python scripts/build_repro_bundle.py --output dist/my-final-source.zip
+.venv/bin/python scripts/reproduce_offline.py --archive dist/my-final-source.zip --wheel scratch/wheels/agentqa-0.1.0-py3-none-any.whl --wheelhouse scratch/wheelhouse --output /private/tmp/agentqa-clean-example
+```
+
+The output directory must be new. The check creates a fresh noneditable wheel environment, runs the offline tests, verifies all saved evidence, regenerates the audit CSV/table and byte-identical final HTML, and checks the Google Doc source against the recorded native readback. It neither opens Google Docs nor executes candidates or models. The optional Shinka environment and Docker are unnecessary for these saved-record checks. `evidence/final-validation.json` records the completed final check and input identities; the source archive used for that check precedes its own validation record and final publication metadata.

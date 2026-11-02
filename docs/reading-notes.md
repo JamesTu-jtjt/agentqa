@@ -33,3 +33,7 @@ The Nature-paper main methods have now been checked through PMC. Supplementary a
 [SyncMind / SyncBench](https://arxiv.org/html/2502.06994v2), sections 2–3, studies agent recovery from evolving repository states with executable verification. State awareness and recovery are established research topics. Our explicit execution-evidence contract and result-attribution case narrow the property being tested; they do not justify a first-in-field claim.
 
 The [Agentic Scientist usage guide](https://github.com/SakanaAI/AI-Scientist-v3/blob/main/docs/usage.md) already describes source-evidence/snapshot consistency checks and clearing stale review aliases. Provenance checks alone are therefore not a novel architectural contribution. The newly reproduced Shinka scheduler API behavior is a concrete QA case at a pinned revision, not evidence that all Sakana systems lack provenance enforcement. No benchmark reproduction or complete native agent experiment was run for this reading update.
+
+## Final report source check
+
+On 2 November 2026 the primary versioned DGM, ShinkaEvolve, AgentAssay, SyncMind, SWE-Touch, HarnessFix, Self-Harness and failure-feedback papers were reopened, along with the Nature version of record via PMC and official Agentic Scientist usage documentation. The final report cites the checked versions and narrows its conclusion to a completed controlled pilot with no observed selector advantage. No new first-in-field claim or exhaustive novelty certification is made.
