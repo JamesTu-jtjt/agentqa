@@ -19,11 +19,11 @@ Metamorphic validation of self-improving coding agents. This is Task 2 of the Sa
 
 The executable development core is implemented: trusted test records, content fingerprints, an independent completion oracle, seven family cases, authored controls, offline replay, selection rules, cost reservations, and an isolated Docker worker. Codex is the implementation owner; James owns research direction and resource choices.
 
-Implementation started on 2 November 2026. The real pinned ShinkaEvolve scheduler/evaluator bridge, immutable registry, and resumable matched-suite runner are implemented. A 60-trial development comparison selected the same repair under all three methods; there is no demonstrated selection advantage. An independent audit and confirmed naturally occurring semantic failures remain outstanding.
+**Progress: approximately 90% of bounded pilot delivery effort.** A controlled transfer audit of the existing model-generated repairs is complete. Both repairs passed all nine new cases across text normalization, discounted totals and graph reachability; the authored parent passed 3/9. All three previously frozen selectors chose the same repair, so the measured selector advantage is **zero**. This is one authored source pool: no confidence interval or equivalence claim. The original broader native-agent main study remains incomplete.
 
-**Progress: approximately 80%, stopped at the requested checkpoint.** The bounded coding workflow, grounded Shinka source case and publication adapter are implemented. Twenty broader authored publication cases matched their contracts; all ten renamed-layout pairs preserved their verdicts, including valid negative results. The suite passes 124 offline tests. A clean noneditable wheel install replays 143 coding traces and 28 publication receipts and regenerates the recorded demo. These remain development evidence; native model-agent source failures and selector advantage are not established.
+Amendment C1 explicitly narrows this experiment. Its plan, code, templates and selector decisions were committed/pushed before opening outcomes; all 36 trials were retained, without retries/exclusions. The suite passes 131 offline tests; the verifier replays 179 coding traces and 28 publication receipts. There is no confirmed naturally occurring model-agent semantic failure or demonstrated benefit from mechanism-guided selection. See the [90% checkpoint](docs/checkpoint-090.md), [controlled protocol](docs/controlled-audit-protocol.md), [measured results](report/figures/controlled-transfer-012/results.md) and [working report](report/working-report.md).
 
-All three allowed Codex calls are consumed; no new calls were made for the 70% or 80% work. Subscription dollar cost is unavailable. The main selector comparison remains unproven. See the [80% checkpoint](docs/checkpoint-080.md), [source diagnosis](docs/upstream-source-diagnosis.md), [working report](report/working-report.md) and [reproduction guide](docs/reproduction.md). Generated-pool diversity, final main-study freeze, independent audit and submission remain unfinished.
+No new model calls were used: the three-call Codex allowance remains exhausted. Subscription dollar cost is unavailable. The final 10% is the concise inconclusive pilot report, replay integration, final reproduction and handover. Full native Sakana evolution and the original larger experiment are separate unperformed work.
 
 Private GitHub repository: [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa), explicitly authorized by the user and separate from Neuroevolution.
 
@@ -66,6 +66,7 @@ The Codex pilot uses saved account authentication; it does not read or copy cred
 - [Candidate/split specification](docs/candidate-split-spec.md), [discovery protocol](docs/discovery-protocol.md), and [methods reading](docs/reading-notes.md).
 - [Stateful workflow protocol](docs/workflow-protocol.md), [generated-controller results](evidence/stateful-controller-005/summary.json), [workflow outcomes](report/figures/workflow-003/workflow-outcomes.png) and [recorded actions](report/figures/workflow-003/workflow-actions.png).
 - [Grounded upstream results](evidence/upstream-source-006/summary.json), [current adapter checks](evidence/bound-shinka-008/summary.json), [qualification figure](report/figures/upstream-004/publication-qualification.png), [analysis specification](docs/analysis-protocol.md) and [third-party attribution](third_party/NOTICE.md).
+- [Controlled transfer audit](evidence/controlled-transfer-012/summary.json), [frozen plan](evidence/controlled-transfer-012/plan.json), [measured results](report/figures/controlled-transfer-012/results.md) and [figure](report/figures/controlled-transfer-012/controlled-transfer.png). Both generated repairs 9/9; all selectors tied.
 - [Broader twenty-case qualification](evidence/publication-qualification-011/summary.json), [recorded HTML replay](report/demo/index.html), [clean reproduction](evidence/clean-reproduction-080.json) and [packaging instructions](docs/reproduction.md). Download/open the HTML locally; GitHub's source viewer does not execute it.
 
 Check and plot saved upstream/publication evidence without model calls or new evaluations:
@@ -129,6 +130,15 @@ scratch/shinka-venv/bin/python scripts/check_bound_shinka.py --output runs/my-bo
 ```sh
 .venv/bin/python scripts/build_comparison_figures.py evidence/development-comparison-001/summary.json --output runs/my-comparison-figures
 ```
+
+Replay the completed C1 audit and regenerate its tables/figure, with no Docker execution or inference:
+
+```sh
+.venv/bin/python scripts/run_controlled_audit.py verify --output evidence/controlled-transfer-012 --expected-hash fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3
+MPLCONFIGDIR=/tmp/agentqa-mpl XDG_CACHE_HOME=/tmp/agentqa-cache .venv/bin/python scripts/analyze_controlled_audit.py --audit evidence/controlled-transfer-012 --expected-hash fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3 --output runs/my-controlled-analysis
+```
+
+The audit's `run` mode checks current code/runtime against the frozen snapshot; later source changes can make that exact execution refuse. Its `verify` mode uses saved records and is read only. Use the included snapshot and protocol for historical exact execution; never delete reservations to retry an interrupted audit.
 
 ## Repository boundary
 

@@ -2,6 +2,8 @@
 
 Development specification, 2 November 2026. Final audit registration remains pending.
 
+Later amendment C1 adds a separate frozen runner and a completed controlled template-transfer pilot; see `controlled-audit-protocol.md` and `checkpoint-090.md`. The existing development runner still rejects audit phases. The original broader native-agent main-study registration remains pending.
+
 ## Candidates and generation attempts
 
 `CandidateRegistry` stores immutable program text/hash, a candidate ID, parent ID, source hash, origin, and provenance. Origin distinguishes authored controls, model-generated repairs, and unseeded model policies. A parent must already exist before a child is added. Program size is bounded; candidate code is never imported by the registry.

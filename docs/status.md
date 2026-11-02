@@ -2,9 +2,9 @@
 
 Updated: 2 November 2026.
 
-**Progress:** Approximately **80%** of expected implementation/delivery effort; stopped at James's requested checkpoint after private publication verification. See `docs/checkpoint-080.md`.
+**Progress:** Approximately **90%** of bounded controlled-pilot implementation/delivery effort. The original native-agent main study remains incomplete. See `docs/checkpoint-090.md`; final report/replay/package handover remains.
 
-**Milestone:** Core/pilot, grounded source, broader publication qualification, pre-audit analysis, recorded replay and clean prototype reproduction are delivered. Model-agent candidate diversity, final study sizing/freeze, matched selection, independent audit and final scientific delivery remain incomplete.
+**Milestone:** Amendment C1 is complete: prospectively frozen controlled template-transfer audit, all 36 trials retained and replayed, descriptive analysis and figure. It uses the existing generated pool and recorded matched selector decisions. The broader native-agent main study remains unperformed; final pilot delivery remains.
 
 **Implementation owner:** Codex.
 
@@ -14,7 +14,7 @@ Updated: 2 November 2026.
 
 **Allowance:** Three total persisted invocations, serial, at most 120 seconds each; **zero remain**.
 
-**Implementation / experiments:** Development comparison remains inconclusive. Existing upstream scheduler behavior reproduced under authored failure/reuse conditions. Independent audit and naturally observed model-agent failures remain outstanding.
+**Implementation / experiments:** Controlled transfer: both generated repairs 9/9; parent 3/9; every selector chose repair-00, so measured selector advantage is zero. One source pool, no interval. Grounded upstream diagnostics are a separate endpoint. Naturally observed model-agent failures and the original native-agent main audit remain outstanding.
 
 ## Completed
 
@@ -76,6 +76,15 @@ Initial checkpoint checks: all **49** recorded trials replayed with the expected
 
 The authorized GitHub destination is private. No public release, collaborator invitation, upstream issue/PR or submission is implied. Local fixture/publication adapters execute only authored evaluators; generated code remains in Docker. No background experiment or automation continues.
 
+### 90% checkpoint — controlled transfer, amendment C1
+
+- **C90–C94:** explicit scope amendment, zero-inference budget, replayed prior selection, committed/pushed freeze before execution, separate task templates, complete grid and descriptive reporting delivered. Freeze commit `7ae8dd0`; plan `fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3`.
+- **36 controlled audit trials:** text normalization, discounted totals and graph reachability, each with relevant source/config changes and an unchanged-footprint control. Parent 3/9 verified, both unchanged model-generated repairs 9/9, nonselectable authored rerun reference 9/9. All functionally correct; six parent completions lacked fresh evidence.
+- **No selector advantage:** source-only, generic and failure-family all previously selected `repair-00`; both paired differences zero. The one authored-source pool is the sampling unit, not nine cases or three templates. No confidence interval, equivalence or realistic-population claim.
+- **Execution:** 57 Docker workers, 59.54 summed worker seconds, all completed/cleanup confirmed; no exclusions/retries/infrastructure failures. All 179 retained coding traces and 28 publication receipts replay. Seven new boundary tests bring the offline suite to 131 passing, with three opt-in Docker cases skipped.
+- **Resources/scope:** zero new inference; allowance remains 3/3 consumed. C1 explicitly narrows the completed experiment; it does not silently mark the original native-agent main-study TODOs complete. Final 10% is the concise inconclusive pilot report, updated replay, final package check and handover.
+- Evidence: `docs/checkpoint-090.md`, `evidence/controlled-transfer-012/`, `report/figures/controlled-transfer-012/`. Clean-install/checkpoint records: `evidence/clean-reproduction-090.json`, `evidence/checkpoint-090.json`. The isolated noneditable wheel passed all 131 tests, replayed the complete evidence and regenerated identical audit CSV/table. Private publication is checked at closeout.
+
 ## Decisions
 
 | ID | Decision | Rationale |
@@ -96,6 +105,8 @@ The authorized GitHub destination is private. No public release, collaborator in
 | DEC-014 | Keep result-publication attribution separate from the coding completion endpoint. | A valid negative evaluation is not invalid evidence; a controlled scheduler qualification is not an agent-repair selector study. |
 | DEC-015 | Publish the reviewed prototype to James's private GitHub repository after explicit authorization. | Verify owner/privacy before upload; preserve project separation and exclude credentials/runtime/dependency directories. |
 | DEC-016 | Complete prototype packaging at 80% without implying that the main study succeeded. | Reproduction/replay are concrete deliverables; native candidate diversity, final audit and research conclusions remain open. |
+| DEC-017 | Complete a separately labeled controlled transfer pilot from unchanged cached repairs, with a committed freeze and zero new inference. | Preserves the exhausted allowance and unfavorable diversity finding while obtaining a complete bounded comparison. Does not replace the original native-agent main study. |
+| DEC-018 | Report zero selector advantage and withhold intervals for the one-source-pool pilot. | Identical selected IDs and ceiling-level repairs cannot demonstrate selection value, equivalence or population performance. |
 
 The proposal remains the research rationale. These documents operationalize it; they do not claim that proposed APIs, failure frequencies, or improvements have been verified.
 
@@ -110,11 +121,11 @@ The proposal remains the research rationale. These documents operationalize it; 
 | Remote repository / publication destination | Resolved: authorized private `JamesTu-jtjt/agentqa`. | Keep private; no collaborator or public-release authorization. |
 | Additional human review | No reviewer assigned. | Record actual review method during source-diagnosis validation; never imply review occurred. |
 
-The requested 80% checkpoint is reached. No background work or automation is running. Preserve all outcomes and reuse the resolved model/access choice if James resumes; the inference allowance remains exhausted.
+The 90% bounded delivery checkpoint is reached. Preserve all outcomes and reuse the resolved model/access choice if James resumes; the inference allowance remains exhausted. Work stops after private publication verification; no background process or automation continues.
 
 ## Next action
 
-When James resumes: use the grounded source to resolve **B51/B52/B54** and qualify a useful source-conditioned generated pool. Prepare a concrete small allowance before new inference, then freeze the final source/audit templates and protocol, complete selection, and only then open audit outcomes. An explicitly controlled/inconclusive report is an alternative scope decision. Do not substitute authored adapter tests for model-repair transfer, or count infrastructure timeouts as semantic failures. Broader native agent integration/evolution remains unperformed.
+At the next authorized continuation, finish **C95/D80/D85** for the explicitly inconclusive controlled pilot: concise final report/appendix, integrate the actual C1 result into the replay, rerun final package reproduction and hand over. Do not reopen C1 for tuning or reset the inference ledger. The original **B51/B52/B54 and X60–R73** native-agent research requires a separate feasible scope/allowance decision; its missing evidence is not hidden by this delivery estimate.
 
 ## Session log
 
@@ -126,3 +137,4 @@ When James resumes: use the grounded source to resolve **B51/B52/B54** and quali
 | 2026-11-02 | Requested 50% checkpoint: stateful editable workflow, 12 real control trials and six generated-controller trials; final pilot call consumed | `docs/checkpoint-050.md`, `docs/workflow-protocol.md`, `evidence/workflow-controls-004/`, `evidence/stateful-controller-005/`, `report/figures/workflow-003/` | Stop here; on resumption, realistically grounded sources and final scope |
 | 2026-11-02 | Requested 70% checkpoint: grounded upstream source, tested publication adapter, pre-audit analysis and working evidence report; no inference | `docs/checkpoint-070.md`, `evidence/upstream-source-006/`, `evidence/bound-shinka-007/`, `evidence/bound-shinka-008/`, `evidence/preaudit-analysis-010/`, `report/figures/upstream-004/` | Stop here; on resumption, generated candidate diversity and feasible final study |
 | 2026-11-02 | Requested 80% checkpoint and private publication: twenty broader cases, portable verifier, replay, scanned archive and clean wheel/export check | `docs/checkpoint-080.md`, `evidence/publication-qualification-011/`, `evidence/clean-reproduction-080.json`, `report/demo/`, private GitHub repository | Stop after publication confirmation; main research gates remain open |
+| 2026-11-02 | C1 / next checkpoint: frozen controlled transfer audit | Freeze commit `7ae8dd0`, `evidence/controlled-transfer-012/`, `docs/checkpoint-090.md`; 36 trials, both repairs 9/9, selector differences zero | Final inconclusive pilot report/replay/package handover; no new inference |

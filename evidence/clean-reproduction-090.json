@@ -1,0 +1,90 @@
+{
+  "schema": "agentqa.clean-reproduction.v1",
+  "source_archive_sha256": "3d47181eb1b8052c2fe485351f1313fa9c1aaa338336f3505f6a18859ed689e4",
+  "wheel_sha256": "d06bfe7097afe87d8ddcbf611ef3e0906f2fa47d982f53c08ef9fb9b8ffb89db",
+  "steps": [
+    {
+      "step": "dependencies",
+      "returncode": 0
+    },
+    {
+      "step": "wheel_install",
+      "returncode": 0
+    },
+    {
+      "step": "installed_location",
+      "returncode": 0
+    },
+    {
+      "step": "tests",
+      "returncode": 0
+    },
+    {
+      "step": "evidence",
+      "returncode": 0
+    },
+    {
+      "step": "audit_replay",
+      "returncode": 0
+    },
+    {
+      "step": "audit_figure",
+      "returncode": 0
+    }
+  ],
+  "offline_tests": "131 passed, 3 opt-in Docker skipped",
+  "isolated_noneditable_wheel_install": true,
+  "evidence": {
+    "schema": "agentqa.evidence-verification.v1",
+    "coding_traces": 179,
+    "publication_bundles": 28,
+    "upstream_source_cases": 6,
+    "frozen_candidates": 3,
+    "broader_qualification": {
+      "cases": 20,
+      "contract_matches": 20,
+      "renaming_pairs": 10,
+      "renaming_pairs_invariant": 10,
+      "model_calls": 0,
+      "independent_audit": false
+    },
+    "controlled_transfer_audit": {
+      "trials": 36,
+      "source_pools": 1,
+      "plan_hash": "fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3",
+      "native_agent_main_study": false
+    },
+    "new_execution_or_model_calls": 0,
+    "independent_audit": false,
+    "scope": "Integrity/replay checks of retained evidence; controlled transfer is distinct from a native-agent main audit; no authenticity against full-store replacement"
+  },
+  "controlled_audit_csv_and_table_match": true,
+  "new_model_or_candidate_executions": 0,
+  "core_file_hashes": {
+    "__init__.py": "e35a5c9731f32a7cbd29fcb1de72d2c4b1ad95367c936a70ef4b0b8c8997dc51",
+    "agent.py": "b9cec15d9fbadde4894bab59cd5a191f5b08f4c9fb7be5cd7727cd889bae327f",
+    "analysis.py": "c77f294939ffc20a590a80f8ec4ddb90b42859a587bb3c264a6345af74639de6",
+    "bundles.py": "6b766fbc70392ad8d76226264c512b4d2275fdf40e7fabb0cc911323357e4b89",
+    "cli.py": "348dbc64076a1705426b46ba8be84a92e1d08015a3bda53f75d49bcfecd70e21",
+    "codex_backend.py": "2a604b10048b8616fb5c2506b0af04111e9484d9c892c4f7c8f675e0a3a6d671",
+    "comparison.py": "4e5f10ca06c9bff88b41ee856a620ad4fbe2738f4bbd6f5e7b8228c8cdc230bf",
+    "contracts.py": "3e72c0442ef4112c8e107e99e1fad19e1f04b7d9e4cc1b3c0408c3554c5ac4cf",
+    "controlled_audit.py": "6328eafdb5b6e131d994acb8cacfb5e7bb70a6a4343b968a1378906b923671d3",
+    "demo.py": "e473731dc20a0f3c5b0f307dbf21c7662e4f4a9546b41ba0153aef7c3b76e962",
+    "distribution.py": "59ddeb9c52a4a5541ed6bfa26e98d6e367d59c2c98477dcd9b82feee2cdac92c",
+    "environment.py": "0faf96695695e2e8ee7a8e5c218145dc36a964fafa4760ec5fe80f0f7cfb4cce",
+    "evaluation.py": "5f6ee9276a9439264e6f60d328e4630f03244f3556ef3a913f829ae86b5cc177",
+    "evidence.py": "c5d45a25387f61bc336beaaff9d39e83e7610eb15317312fb9e934bff2ccc435",
+    "families.py": "617b1521397382e50c7e7a1f3febe44a96b9141ea37836621b9005d80e88a4fc",
+    "generated_policy.py": "f55fe85ff81fe4ffa136de37f4497d8eec5242dab3d007234b154fde09e77399",
+    "ledger.py": "6438977f1b923c3ce8ba35b54ab50139ab32cefbba5df7a49a2e4fecd341ae28",
+    "publication_qualification.py": "17a46edee256fb29db11b2a47bea9ee9b321a9a81112eae46c1f906dba74854b",
+    "recorder.py": "1438edfdc0ea102b1ff7b453e6057f214d8ca52cbc07ad7ed0b99ee68bad0095",
+    "registry.py": "ed914a68549b3da97aec4d8b2520678606867e4f639afa1cae8261c39ae893ae",
+    "sandbox.py": "7705a6fb56c171179780b1993170255b4535741ed1c6038897aaa92c7382debf",
+    "selection.py": "5724b0271830a1b44b0c6ffba507433af126c91853f07d2b40587d94b1a99f89",
+    "shinka_bridge.py": "72e053a0331eea18c87b343df435d438fe7782ecd528c7c5ea17bbf26ecc1dc7",
+    "workflow.py": "641148fdaccc23af3cb5bbfcfcfd0bedb2a9745c2732bb6107a31e6ff101effe"
+  },
+  "scope": "C1 controlled-pilot reproduction; original native-agent main study remains unperformed; 80 percent HTML retained as historical development replay"
+}

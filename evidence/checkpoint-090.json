@@ -1,0 +1,82 @@
+{
+  "schema": "agentqa.checkpoint.v1",
+  "checkpoint_percent": 90,
+  "progress_scope": "bounded controlled-pilot implementation/delivery effort; original native-agent main study incomplete",
+  "audit_plan_hash": "fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3",
+  "freeze_commit": "7ae8dd0",
+  "freeze_pushed_before_execution": true,
+  "coding_trace_verification": {
+    "schema": "agentqa.evidence-verification.v1",
+    "coding_traces": 179,
+    "publication_bundles": 28,
+    "upstream_source_cases": 6,
+    "frozen_candidates": 3,
+    "broader_qualification": {
+      "cases": 20,
+      "contract_matches": 20,
+      "renaming_pairs": 10,
+      "renaming_pairs_invariant": 10,
+      "model_calls": 0,
+      "independent_audit": false
+    },
+    "controlled_transfer_audit": {
+      "trials": 36,
+      "source_pools": 1,
+      "plan_hash": "fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3",
+      "native_agent_main_study": false
+    },
+    "new_execution_or_model_calls": 0,
+    "independent_audit": false,
+    "scope": "Integrity/replay checks of retained evidence; controlled transfer is distinct from a native-agent main audit; no authenticity against full-store replacement"
+  },
+  "controlled_trials": 36,
+  "worker_count": 57,
+  "worker_seconds": 59.54374437290244,
+  "new_inference_calls": 0,
+  "lifetime_inference_calls": 3,
+  "remaining_inference_calls": 0,
+  "usage": {
+    "input_tokens": 27232,
+    "output_tokens": 2458,
+    "subscription_cost_usd": null
+  },
+  "all_worker_cleanup_confirmed": true,
+  "selector_differences": {
+    "generic": {
+      "by_source_pool": {
+        "pilot-pool-001": 0
+      },
+      "difference": 0,
+      "interval": null,
+      "reason": "fewer_than_five_source_pools",
+      "source_pool_count": 1
+    },
+    "source-only": {
+      "by_source_pool": {
+        "pilot-pool-001": 0
+      },
+      "difference": 0,
+      "interval": null,
+      "reason": "fewer_than_five_source_pools",
+      "source_pool_count": 1
+    }
+  },
+  "source_pool_count": 1,
+  "natural_model_semantic_failure_found": false,
+  "native_agent_main_study_completed": false,
+  "offline_tests": {
+    "passed": 131,
+    "opt_in_docker_skipped": 3
+  },
+  "remaining_bounded_delivery": [
+    "final concise report/appendix",
+    "C1 replay integration",
+    "final package reproduction",
+    "handover"
+  ],
+  "clean_noneditable_wheel_reproduction": true,
+  "clean_wheel_sha256": "d06bfe7097afe87d8ddcbf611ef3e0906f2fa47d982f53c08ef9fb9b8ffb89db",
+  "documentation_links_valid": true,
+  "figure_manifest_valid": true,
+  "freeze_commit_contains_no_audit_trials": true
+}

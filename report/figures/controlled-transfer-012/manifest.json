@@ -1,0 +1,20 @@
+{
+  "schema": "agentqa.controlled-audit-figure.v1",
+  "audit_plan_hash": "fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3",
+  "analysis_hash": "1e43aafc141732d1945240850f32f9f75f694706d703ded6f37b02fff6332c31",
+  "script_sha256": "aade61603ea658f80a1dd638b5ba29d86107d2af12dd168abc4cb2b0251c5db8",
+  "inputs": {
+    "plan.json": "9a9a1ae1797060fdf979e58cb3c75800fc746dfd187172f8c7b0e42c703d6094",
+    "summary.json": "03bd7b6f2313cd77f3cabc385f397d168fe4c5a1e0f20897288dce3bbf05589c",
+    "outcomes.json": "b4c2c2f3dfdc62c86679e586b6f878c7e86f73fb57e32308ff30c02f3ba58ac2",
+    "analysis.json": "1a6d65891e4f65a3e110897a0a75dbea5995117bbf9a109bdf4282607e8ae3aa"
+  },
+  "outputs": {
+    "controlled-transfer.pdf": "70006e8b3fd8b5996cdc79024742499585a09c55d38e26ad1615006005e15b62",
+    "controlled-transfer.png": "e42aa3350edfad56d41e8db45da74c6cceec0c22b55981778942315953abc6c3",
+    "controlled-transfer.svg": "247e3a95639679ae72414bf625eda1d4f2336a8f36d3ae55948798b38ab870ae",
+    "results.md": "799a6f0de4664072d7087540cb07a9136b1eed5126f3f7acae03869d585ddfa8",
+    "trials.csv": "440a5b1a6bd23b76e48e6abe93b2dc10291d5fe36addfcdc1bf8d070e62af5e6"
+  },
+  "new_model_calls": 0
+}

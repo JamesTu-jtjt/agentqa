@@ -13,7 +13,7 @@ Updated 2 November 2026. James requested GPT-6.1 Sol through his Codex account w
 | Authored references / controls | 0 invocations | 35 original controls plus 12 stateful trials; no generated failures implied. |
 | Upstream integration reference | 0 invocations | Two cached-policy trials through the actual pinned Shinka scheduler. |
 | Generation retries / new contingency calls | 0 invocations | No inference retries. The worker diagnostic reused a cached program; original failures remain. |
-| Independent audit | 0 pilot invocations / not started | Deferred to a separately frozen, feasible main study; no audit outcomes used. |
+| Original native-agent main audit | 0 pilot invocations / not started | Deferred; the separately labeled C1 controlled pilot uses cached programs and does not complete this main study. |
 | **Total / remaining** | **3 / 0** | **27,232 input / 2,458 output tokens** reported across three completed calls. |
 
 Reasoning-output fields sum to 1,227 tokens and are separately recorded; do not add them to the output-token field as though they were disjoint. The durable ledger is `runs/codex-pilot.sqlite3`; a sanitized accounting export accompanies the 50% checkpoint. Failed or timed-out invocations would consume the same allowance. Removing the ledger or cloning the repository does not reset the authorized lifetime cap.
@@ -23,6 +23,8 @@ The stateful workflow used 152 local container invocations across 18 trials, tot
 The 50%→70% stage used **zero additional inference calls**. The grounded source/adapter track ran 18 local authored evaluator processes: four priming runs, six changed-request probe runs, and eight adapter checks across the preserved initial/current versions. These process jobs are separate from coding-agent episodes and unit-test subprocesses. Total source-track wall time was not fully instrumented (priming runtimes were not retained), so no complete timing/cost estimate is invented. All prior usage and failed outcomes remain preserved.
 
 The 70%→80% stage also used **zero additional inference calls**. Twenty further fixed authored scheduler processes qualified the publication adapter; all twenty contracts and ten renamed pairs matched. Clean reproduction, replay, packaging and private GitHub publication do not consume model calls. They do not establish a completed main study.
+
+The 80%→90% stage used **zero additional inference calls**. Amendment C1 froze and ran 36 controlled template-transfer trials using the existing parent, two unchanged generated repairs and one nonselectable authored reference. All 57 Docker workers completed with cleanup, totaling 59.54 worker seconds; this excludes host fixture/orchestration/analysis time. Every slot is retained, with no retries or exclusions. All three selectors remained tied. This is a controlled cached-policy pilot, not the originally proposed native-agent main audit. The same lifetime inference ledger remains exhausted at 3/3.
 
 ## Main study: deferred scope, not spending authorization
 

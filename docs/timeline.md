@@ -49,4 +49,6 @@ If a shorter deadline is supplied, prioritize M1–M4 plus a small, explicitly e
 
 ## Progress cadence
 
+**90% scope amendment:** After the exhausted three-call pilot failed to yield a discriminating generated pool, C1 prospectively froze a small controlled transfer audit using unchanged cached policies and previously recorded selection decisions. The complete 36-trial audit is reported separately in `docs/checkpoint-090.md`; it does not satisfy the original native-agent M5–M7 study. Final delivery can close this explicitly inconclusive pilot without further inference. Broader native-agent claims remain deferred rather than silently counted complete.
+
 At each active work session, Codex records the current milestone, completed TODO IDs and evidence, unresolved issues, spend so far, and the next executable step in `status.md`. Progress updates occur during active work; this plan does not create a reminder or background automation.

@@ -82,6 +82,17 @@ Owner: Codex unless explicitly marked James. Unchecked items may be planned or p
 - [x] **D84** Verify from a clean temporary checkout/export. Acceptance: meaningful tests pass; offline artifacts regenerate; documentation links and report figures resolve; no dependence on developer-only paths or untracked required files. Evidence: `evidence/clean-reproduction-080.json`; 124 tests, installed wheel, evidence replay, matching analysis and HTML. Repeat after future substantive changes.
 - [ ] **D85** Update README/status and hand over the package. Acceptance: precise file links, reproduction instructions, completion status, final spend, and remaining limitations. Remote publication/submission occurs only if separately requested.
 
+## Amendment C1 — bounded controlled transfer pilot
+
+This closes an explicitly narrower experiment at the next checkpoint. It does not mark the original native-agent main-study items B51/B52/B54 or X60–R73 complete.
+
+- [x] **C90** Record the scope amendment and zero-inference budget before opening new outcomes. Evidence: `docs/controlled-audit-protocol.md`.
+- [x] **C91** Replay the existing matched selection, freeze unchanged programs/decisions and separate task templates, and commit/push before execution. Evidence: `docs/controlled-audit-freeze.md`, commit `7ae8dd0`, `evidence/controlled-transfer-012/plan.json` and preserved snapshots.
+- [x] **C92** Execute and retain the complete 36-trial grid without resampling or exclusions. Evidence: all reservations, result files and traces in `evidence/controlled-transfer-012/trials/`; 57 completed Docker workers, cleanup confirmed.
+- [x] **C93** Replay every result before normalization; require complete matched grids and a successful nonselectable authored reference. Evidence: `outcomes.json`, `analysis.json`, installed `verify-evidence`, and seven new protocol/boundary tests.
+- [x] **C94** Produce descriptive results and a measured scientific figure. Evidence: `report/figures/controlled-transfer-012/` with CSV/Markdown/PNG/SVG/PDF and provenance manifest. Both repairs 9/9, parent 3/9; selector differences zero; one source pool, no interval.
+- [ ] **C95** Final controlled-pilot report, replay integration and handover. Acceptance: main claim is explicitly inconclusive; final package reproduces and separates original unperformed main-study work from the completed pilot. This is the remaining bounded delivery scope.
+
 ## Deferred extensions
 
 - [ ] Sequential evolution with repeated acceptance decisions, after the one-step result is understood.

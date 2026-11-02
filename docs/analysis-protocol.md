@@ -2,6 +2,8 @@
 
 Version 1, 2 November 2026. Implementation: `src/agentqa/analysis.py`; qualification: `tests/test_analysis.py`. Tests use explicitly synthetic data. **No independent audit has been opened, no final audit plan has been registered, and this document is not a completed main-study freeze.**
 
+**Later C1 amendment:** The original statement above records this specification's pre-audit state. At 90%, the unchanged analysis implementation was frozen before, and applied to, a completed controlled template-transfer pilot. Its plan/results are in `evidence/controlled-transfer-012/`; `docs/controlled-audit-protocol.md` defines the narrower scope. This is one authored source pool with cached generated policies, not a final native-agent main-study freeze. No audit outcome was used to change the policies or the already recorded selector decisions.
+
 ## Main question and immutable inputs
 
 The main question remains whether failure-mechanism-directed families select model-generated repairs that transfer better than source-only and generic selection, under matched budgets. The pilot has not produced a discriminating generated pool. The new upstream case supplies realistic execution evidence, but its repair is authored and cannot establish model-repair generalization.

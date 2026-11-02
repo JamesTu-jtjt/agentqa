@@ -16,11 +16,24 @@ python3 -m venv .venv
 .venv/bin/agentqa verify-evidence --root .
 ```
 
-Validated with Python 3.13.5 on macOS ARM64. The installed core uses the standard library. The lock adds test/figure dependencies. The 80% clean check installs a noneditable wheel into a new isolated environment, runs all 124 offline tests (three opt-in Docker tests skip), verifies saved evidence, regenerates the publication figure/analysis, and rebuilds a byte-identical HTML replay. See `evidence/clean-reproduction-080.json` for the tested wheel and source-code hashes. Cross-platform byte-identical scientific figure export is not claimed.
+Validated with Python 3.13.5 on macOS ARM64. The installed core uses the standard library. The lock adds test/figure dependencies. The historical 80% clean check installed a noneditable wheel, passed 124 offline tests and rebuilt a byte-identical development replay; its package identities remain in `evidence/clean-reproduction-080.json`. The 90% clean check covers the changed package and completed C1 controlled audit: 131 offline tests (three opt-in Docker tests skip), 179 coding traces, 28 publication receipts and matching regenerated audit CSV/table. See `evidence/clean-reproduction-090.json` for the new wheel/source identities. No new model or candidate execution is required. Cross-platform byte-identical scientific figure export is not claimed.
 
 ## Recorded evidence and replay
 
-`agentqa verify-evidence --root .` checks 143 coding traces, 28 publication receipts, the frozen three-candidate pilot pool, the six pinned-source diagnostic cases, and the twenty-case publication qualification. It checks existing records; it does not rerun the original model, task or native scheduler. Hashes detect drift against manifests, not malicious replacement of the entire evidence store.
+`agentqa verify-evidence --root .` checks 179 coding traces, 28 publication receipts, the frozen three-candidate pilot pool, the six pinned-source diagnostic cases, and the twenty-case publication qualification. The 36 C1 traces are included in 179, not added again. It replays the original matched selector decisions, validates the C1 snapshot and complete outcome grid, and reproduces descriptive analysis. It checks existing records; it does not rerun the original model, task or native scheduler. Hashes detect drift against manifests, not malicious replacement of the entire evidence store.
+
+## Controlled pilot C1
+
+The committed freeze precedes all audit outcomes (`7ae8dd0`). The original native-agent main study remains unperformed; C1 is a separately labeled controlled template-transfer pilot using cached policies. Verify it without Docker or inference:
+
+```sh
+.venv/bin/python scripts/run_controlled_audit.py verify --output evidence/controlled-transfer-012 --expected-hash fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3
+MPLCONFIGDIR=/tmp/agentqa-mpl XDG_CACHE_HOME=/tmp/agentqa-cache .venv/bin/python scripts/analyze_controlled_audit.py --audit evidence/controlled-transfer-012 --expected-hash fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3 --output runs/my-controlled-analysis
+```
+
+The analysis requires the entire original development comparison, its traces, frozen pool and C1 snapshots, all included in the bundle. The CSV and Markdown table regenerate exactly. Figure formats PNG/SVG/PDF and an input/output/script hash manifest accompany the recorded results. `verify` never creates missing final outputs or executes candidates. Exact historical execution requires the preserved source/runtime snapshot and existing Docker isolation; `run` refuses changed code/runtime or an interrupted reservation without a result. Do not erase the original trial directory to resample an unfavorable or interrupted outcome.
+
+Both generated policies passed 9/9, parent 3/9 and nonselectable authored reference 9/9. All three previously selected IDs are identical; selector differences are zero. One source pool warrants descriptive results only, not a confidence interval or equivalence claim. The 80% HTML replay is preserved as a historical development artifact; the final delivery checkpoint will integrate C1 into a new replay.
 
 Open `report/demo/index.html` in a browser. It is a self-contained page with no external assets, network requests, task execution or model calls. Tabs replay the actual failed/no-publication/partial/complete publisher cases; a separate timeline shows recorded controller actions around a configuration handoff. Limits and authored-versus-generated origins are visible in the page.
 
