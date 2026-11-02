@@ -1,0 +1,311 @@
+{
+  "schema": "agentqa.native-initialization.v1",
+  "upstream_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+  "source_hashes": {
+    "scripts/run_native_study.py": "f7e57b02ae2594e510abb62d9586851de534cedba1adc0f399615c1e11894be1",
+    "src/agentqa/native_study.py": "e65a839722ac0b261fcd239e41bdcc1eacec0072238b23e1f4e2f2cafd43d53d",
+    "src/agentqa/bundles.py": "6b766fbc70392ad8d76226264c512b4d2275fdf40e7fabb0cc911323357e4b89",
+    "src/agentqa/contracts.py": "3e72c0442ef4112c8e107e99e1fad19e1f04b7d9e4cc1b3c0408c3554c5ac4cf",
+    "docs/native-followup-protocol.md": "f7bf5411ebfce43717745a66e509fb8e374b5ef7cfdcd731de950cd25b3c2219",
+    "tests/test_native_study.py": "9c56e37297d2cee11df7093205f1bd2eb941aed33df2587cfbb3e274140a8a0a"
+  },
+  "upstream_hashes": {
+    "shinka/core/async_runner.py": "153a6e1b9a7bdb673767bd3109de085c2f4e60cae07a0107858c5318f7557fed",
+    "shinka/core/config.py": "c1ef2fab4b9707b5e2d6d280ec4bcf383d0fb99ad4b570501f6333bc411bf39e",
+    "shinka/database/dbase.py": "8179b5dc05c8863978b7d7c37d38210b12eb2f7d79343319c7d6c9eedf579b1b",
+    "shinka/database/async_dbase.py": "2dce0625e4b9d47c3e48a65dfd0da7b564a4a237e17367de17c2e8144a33bd20",
+    "shinka/launch/scheduler.py": "c32d0682ac0c572d01dc10b49887cb54eb7d6b6ba760ba74c132465a1366266b",
+    "shinka/launch/local.py": "16eccbc364b642383ad8c77034a06645f1f2b7d0e9bd71862ceb5db7f99c6a48",
+    "shinka/utils/general.py": "350c68cd1d223362779f8b4a968b477c27d6031c2e5e1c4b5149f3bb010edb0c",
+    "LICENSE": "c3e5b1c26607caf7208d5a105c113fe240630bb873fdb8ca5b4c2e32c721ddaf"
+  },
+  "cells": [
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "correct_only"
+    },
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "positive"
+    },
+    {
+      "history": "fresh",
+      "policy": "upstream",
+      "mode": "negative"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "correct_only"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "positive"
+    },
+    {
+      "history": "completed",
+      "policy": "upstream",
+      "mode": "negative"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "correct_only"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "positive"
+    },
+    {
+      "history": "interrupted",
+      "policy": "upstream",
+      "mode": "negative"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "correct_only"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "positive"
+    },
+    {
+      "history": "completed",
+      "policy": "exit_only",
+      "mode": "negative"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "correct_only"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "positive"
+    },
+    {
+      "history": "completed",
+      "policy": "schema_only",
+      "mode": "negative"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "correct_only"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "positive"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_only",
+      "mode": "negative"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "correct_only"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "positive"
+    },
+    {
+      "history": "completed",
+      "policy": "fresh_exit_schema",
+      "mode": "negative"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "nonzero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "zero_empty"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "metrics_only"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "correct_only"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "full_then_nonzero"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "positive"
+    },
+    {
+      "history": "completed",
+      "policy": "bound",
+      "mode": "negative"
+    }
+  ],
+  "evaluator_hash": "3bff1b8f26874517e780dde590e82d9bb11ce9d1386cb7c8e397494726510845",
+  "model_calls": 0,
+  "max_evaluator_processes": 105,
+  "retry_policy": "none",
+  "native_target_generations": 1,
+  "python": "3.13.5",
+  "plan_hash": "fc55f4e1c1ada0c79ce61bc7ebc33ff03f2b170bd3592d7804c68e486d7ce139"
+}

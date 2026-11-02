@@ -2,6 +2,8 @@
 
 Updated: 2 November 2026.
 
+**Active follow-up N1:** James authorized substantive improvement after the original controlled-pilot closeout. Native initialization/restart reachability and minimal defenses are now being implemented under `docs/native-followup-protocol.md`, with zero additional model calls. Previous completion/validation records below describe the preserved pilot package; they do not yet verify the N1 changes. The original generated-repair selector hypothesis remains unresolved.
+
 **Delivery status:** The bounded C1 controlled-pilot package is complete: final native Google Doc and local report source, integrated recorded replay, scientific figures, runnable source, evidence and handover. Final clean verification is in `evidence/final-validation.json`; native Google Doc checks are in `docs/google-doc-qa.json`; delivery scope/accounting is in `evidence/completion.json`. Private publication is verified at closeout. The original native-agent main study remains unperformed and separately deferred; this is not 100% completion of that broader research program.
 
 **Scientific result:** Both unchanged generated repairs passed 9/9 controlled cases; parent 3/9. All three matched selectors chose the same repair; observed selector advantage is zero. One authored source pool, no interval or equivalence claim. No naturally observed semantic model failure was confirmed.

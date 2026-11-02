@@ -95,6 +95,14 @@ This closes an explicitly narrower experiment at the next checkpoint. It does no
 - [x] **C94** Produce descriptive results and a measured scientific figure. Evidence: `report/figures/controlled-transfer-012/` with CSV/Markdown/PNG/SVG/PDF and provenance manifest. Both repairs 9/9, parent 3/9; selector differences zero; one source pool, no interval.
 - [x] **C95** Final controlled-pilot report, replay integration and handover. Acceptance: main claim is explicitly inconclusive; final package reproduces and separates original unperformed main-study work from the completed pilot. Evidence: `report/final-report.md`, [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), `report/demo-final/`, `docs/handover.md` and final clean-export verification. The original main-study TODOs remain deferred.
 
+## N1 — native reachability and minimal defenses
+
+- [ ] **N100** Freeze the native-run protocol, exact cells, adapters and analysis before execution.
+- [ ] **N101** Execute the full native initialization/restart/interruption grid, preserving every attempt and actual database consequences.
+- [ ] **N102** Compare simple defenses and receipts on the fixed grid; retain negative evidence and null differences.
+- [ ] **N103** Independently replay native database/artifact records, add regression checks and generate measured figures.
+- [ ] **N104** Update the report/Google Doc, reproduction, handover and private repository; preserve prior pilot artifacts and exhausted allowance.
+
 ## Deferred extensions
 
 - [ ] Sequential evolution with repeated acceptance decisions, after the one-step result is understood.

@@ -1,5 +1,7 @@
 # Project timeline
 
+**Resumed follow-up, 2 November:** N1 proceeds through protocol freeze, native reachability, simple-defense comparison, evidence replay and report update, in that dependency order. It is a bounded zero-inference extension after the controlled-pilot delivery. Existing milestone estimates below remain historical; the model-repair main study is still deferred.
+
 Planning date and implementation kickoff: 2 November 2026. Implementation owner: Codex. Research/resource owner: James. The first session delivered the local measurement core, family controls, container worker, and a one-invocation Codex feasibility pilot. See `status.md` for actual completion; the table below remains the original baseline estimate.
 
 **Baseline: eight working days from implementation kickoff, plus up to two contingency days.** These are planning blocks, not a promise of eight days of continuous agent activity. No deadline has been supplied and nothing is scheduled automatically. Calendar dates will be assigned once kickoff and any deadline are known. Faster completion is appropriate when a milestone is satisfied; a date never overrides an unresolved validity issue.
