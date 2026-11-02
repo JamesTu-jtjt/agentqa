@@ -1,0 +1,139 @@
+{
+  "schema": "agentqa.standard-wrapper.v1",
+  "upstream_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+  "pr150_head": "7f6b67e20cd44821dd9d7df0d15d5905cefe43d8",
+  "helpers": {
+    "pinned": "a043101117e4135f3616c3327d456fb8ca8ad1ade2b1a606867665c8d0a05ef9",
+    "pr150_helper": "a7afbd385946fb6bd231494c595a61b148a3f134f0b0cc5c1281f524ba164197"
+  },
+  "script_sha256": "c11c0a0e836e7452176ec85a0dc63e297e6b6c80ab9a978cc4185e8cd88f886f",
+  "protocol_sha256": "0a4cc7c214def9f7a08525374dc9db91f2b431ef0602944109801b4d5c0192f1",
+  "evaluator": "import argparse, importlib.util, json, pathlib, runpy, sys\np=argparse.ArgumentParser()\np.add_argument('--program_path',required=True)\np.add_argument('--results_dir',required=True)\np.add_argument('--helper',required=True)\na=p.parse_args()\ns=runpy.run_path(a.program_path)['STATE']\nif s['mode'].startswith('before_'):\n    sys.exit(7 if s['mode']=='before_nonzero' else 0)\nspec=importlib.util.spec_from_file_location('n2_exact_upstream_helper',a.helper)\nhelper=importlib.util.module_from_spec(spec)\nspec.loader.exec_module(helper)\nhelper.run_shinka_eval(program_path=a.program_path,results_dir=a.results_dir,\n    experiment_fn_name='run_trial',num_runs=1,get_experiment_kwargs=lambda _: {},\n    aggregate_metrics_fn=lambda outputs: {'combined_score':outputs[0]['score']},\n    validate_fn=lambda out: (out['correct'],None if out['correct'] else 'authored negative'),\n    run_workers=1,verbose=False)\n",
+  "cells": [
+    {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "inside_nonzero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "inside_zero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "before_nonzero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "before_zero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "positive"
+    },
+    {
+      "helper": "pinned",
+      "policy": "raw",
+      "mode": "negative"
+    },
+    {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_nonzero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_zero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "before_nonzero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "before_zero"
+    },
+    {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "positive"
+    },
+    {
+      "helper": "pinned",
+      "policy": "fresh_exit_schema",
+      "mode": "negative"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "inside_nonzero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "inside_zero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "before_nonzero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "before_zero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "positive"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "raw",
+      "mode": "negative"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_nonzero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "inside_zero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "before_nonzero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "before_zero"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "positive"
+    },
+    {
+      "helper": "pr150_helper",
+      "policy": "fresh_exit_schema",
+      "mode": "negative"
+    }
+  ],
+  "max_evaluator_processes": 48,
+  "model_calls": 0,
+  "retry_policy": "none",
+  "scope": "Isolated helper modules, not the complete PR or native runner",
+  "plan_hash": "dac6db34c9369be3610d48fe4f26e54d7276a4ac626dc2e5694405cf1f5735c0"
+}
