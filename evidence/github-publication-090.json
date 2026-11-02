@@ -1,0 +1,15 @@
+{
+  "schema": "agentqa.private-publication.v1",
+  "checkpoint": 90,
+  "repository": "JamesTu-jtjt/agentqa",
+  "url": "https://github.com/JamesTu-jtjt/agentqa",
+  "source_commit": "afb905cd237566d268482f296fcd6f43e5643074",
+  "remote_source_commit_verified": "afb905cd237566d268482f296fcd6f43e5643074",
+  "branch": "james-tu/agentqa",
+  "privacy_before_upload": "PRIVATE",
+  "privacy_after_upload": "PRIVATE",
+  "default_branch": "james-tu/agentqa",
+  "freeze_commit_pushed_before_audit": "7ae8dd0",
+  "new_model_calls": 0,
+  "scope": "Controlled-pilot checkpoint only; original native-agent main study incomplete; excludes Neuroevolution, credentials and runtime environments"
+}
