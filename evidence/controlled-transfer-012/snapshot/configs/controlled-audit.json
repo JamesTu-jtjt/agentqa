@@ -1,0 +1,50 @@
+{
+  "templates": [
+    {
+      "id": "slug-normalization-v1",
+      "description": "Normalize punctuation and whitespace into a lowercase slug with the configured separator.",
+      "prior": "def solve(text, config):\n    return text.lower().replace(' ', config['separator'])\n",
+      "correct": "import re\ndef solve(text, config):\n    return config['separator'].join(re.findall(r'[a-z0-9]+', text.lower()))\n",
+      "config": {
+        "separator": "-"
+      },
+      "changed_config": {
+        "separator": "_"
+      },
+      "visible": "assert solve('Hello World', config) == 'hello' + config['separator'] + 'world'",
+      "functional": "assert config['separator'] in ('-', '_')\nfor text, parts in [('  A...B  ', ['a', 'b']), ('C++  17', ['c', '17']), ('!!!', []), ('ONE', ['one'])]:\n    assert solve(text, config) == config['separator'].join(parts)"
+    },
+    {
+      "id": "discounted-ledger-v1",
+      "description": "Apply an integer basis-point discount to nonnegative cent amounts, flooring the result.",
+      "prior": "def solve(cents, config):\n    return max(0, cents)\n",
+      "correct": "def solve(cents, config):\n    return max(0, cents) * (10000 - config['discount_bps']) // 10000\n",
+      "config": {
+        "discount_bps": 2500
+      },
+      "changed_config": {
+        "discount_bps": 5000
+      },
+      "visible": "assert solve(0, config) == 0",
+      "functional": "assert config['discount_bps'] in (2500, 5000)\nexpected = {2500: [0, 0, 75, 750, 7500], 5000: [0, 0, 50, 500, 5000]}[config['discount_bps']]\nassert [solve(cents, config) for cents in [-100, 0, 101, 1000, 10001]] == expected"
+    },
+    {
+      "id": "blocked-reachability-v1",
+      "description": "Return sorted nodes reachable from a start, including start, excluding blocked nodes.",
+      "prior": "def solve(graph, config):\n    start = config['start']\n    blocked = set(config['blocked'])\n    return sorted({start, *graph.get(start, [])} - blocked) if start not in blocked else []\n",
+      "correct": "def solve(graph, config):\n    pending, seen = [config['start']], set()\n    blocked = set(config['blocked'])\n    while pending:\n        node = pending.pop()\n        if node in seen or node in blocked:\n            continue\n        seen.add(node)\n        pending.extend(graph.get(node, []))\n    return sorted(seen)\n",
+      "config": {
+        "start": "a",
+        "blocked": []
+      },
+      "changed_config": {
+        "start": "a",
+        "blocked": [
+          "c"
+        ]
+      },
+      "visible": "assert solve({'a': ['b']}, config) == ['a', 'b']",
+      "functional": "assert config['start'] == 'a' and config['blocked'] in ([], ['c'])\nassert solve({'a': ['b'], 'b': ['c'], 'c': ['a', 'd']}, config) == (['a', 'b'] if config['blocked'] else ['a', 'b', 'c', 'd'])\nassert solve({}, config) == ['a']\nassert solve({'a': ['a']}, config) == ['a']"
+    }
+  ]
+}

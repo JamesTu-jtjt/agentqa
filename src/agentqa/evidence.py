@@ -6,6 +6,7 @@ from pathlib import Path
 
 from .bundles import verify_bundle
 from .contracts import digest, safe_path
+from .controlled_audit import finish_audit
 from .publication_qualification import validate_qualification
 from .recorder import replay
 from .registry import validate_pool
@@ -78,8 +79,16 @@ def verify_evidence(root: Path):
     if seen != set(declared):
         raise ValueError("Incomplete source cases")
     qualification = validate_qualification(root / "evidence/publication-qualification-011")
+    controlled = root / "evidence/controlled-transfer-012"
+    controlled_result = None
+    if (controlled / "summary.json").is_file():
+        frozen = _plan(controlled)
+        summary, analysis = finish_audit(root, controlled, frozen["plan_hash"])
+        controlled_result = {"trials": summary["trial_count"], "source_pools": analysis["source_pool_count"],
+                             "plan_hash": frozen["plan_hash"], "native_agent_main_study": False}
     return {"schema": "agentqa.evidence-verification.v1", "coding_traces": traces,
             "publication_bundles": bundles, "upstream_source_cases": len(seen),
             "frozen_candidates": len(pool["candidates"]), "broader_qualification": qualification,
+            "controlled_transfer_audit": controlled_result,
             "new_execution_or_model_calls": 0, "independent_audit": False,
-            "scope": "Integrity/replay checks of development data; no authenticity against full-store replacement"}
+            "scope": "Integrity/replay checks of retained evidence; controlled transfer is distinct from a native-agent main audit; no authenticity against full-store replacement"}
