@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "evidence/upstream-source-006/summary.json": "5f0116650a947c090c50d92c92912b64f4b6b5e3a145edf59efceaa5a5edd468",
+    "evidence/bound-shinka-008/summary.json": "1c303020acad8cdd775a7398fb5a964c852a5405a21dfd5f4c87c3d8fabb2fa5"
+  },
+  "script_sha256": "50d9b5ea60a020a9c5007dbb890bdd1fa24ca4503a31dcdbc6aed15b0bcbd0ed",
+  "outputs": {
+    "publication-qualification.pdf": "189bec42e9a7a78b961af38ffd4a861ce6f0df86005dafd703bd58f32ba5524d",
+    "publication-qualification.png": "a35a42d6cd56cbb1ac4402bf93fa5e301915917c34aa514b2b6e41bb9f617fc1",
+    "analysis.json": "9925baa05df58f2fa95f1b034f6422345c6f5c52fb6e7386693e41090adc9633",
+    "publication-qualification.svg": "43434a1a13e9c0840e5bc6d6cbf79df64814dc7db2dbf6ccdbe8b3552eb2d750"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "agentqa.bound-check.v1",
+  "upstream_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+  "cases": [
+    [
+      "nonzero",
+      "fail",
+      false
+    ],
+    [
+      "zero-no-publication",
+      "no_publish",
+      false
+    ],
+    [
+      "partial-publication",
+      "partial",
+      false
+    ],
+    [
+      "normal-publication",
+      "pass",
+      true
+    ]
+  ],
+  "evaluator_hash": "a1540b88b66f6a8533263e959cba6cbf82172005d59c3a2cc7c100aeb9425680",
+  "inference_calls": 0,
+  "retry_policy": "none",
+  "source_hashes": {
+    "bundles.py": "6b766fbc70392ad8d76226264c512b4d2275fdf40e7fabb0cc911323357e4b89",
+    "check_bound_shinka.py": "55bf93bfba4c34387e784aaa1a95e8cd369aecf96d118f8161602d9f7fb24c53"
+  },
+  "plan_hash": "bad49f9c7513378d2f0b28a8a674df8f063c503592a3c4d6991df7ad3a152a8a"
+}

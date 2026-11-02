@@ -1,0 +1,24 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "attempt_id": "8e6dc3fd4d014a8cb33cf4ae188dd0af",
+  "request_hash": "b8377759bba0bf73dd4c0bf43690da644be8bf1f523f1a6c2307df295a2bb948",
+  "status": "completed",
+  "returncode": 0,
+  "inputs_after": {
+    "evaluator": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/bound-shinka-007/authored_evaluator.py",
+      "sha256": "b2e57cdbe85e807f68919fd6bc7f4936405e0cec320819d62475ad9444b9ee2d",
+      "bytes": 756
+    },
+    "program": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/bound-shinka-007/zero-no-publication-program.json",
+      "sha256": "4336671b963fd6a0f5228832f9990f71d9349f44dd697ef4184fa98daa6f40c0",
+      "bytes": 59
+    }
+  },
+  "artifact_hashes": {},
+  "result_hash": null,
+  "publication_error": "FileNotFoundError",
+  "execution_error": null,
+  "duration_seconds": 0.6962572080083191
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Require passing evidence for the current footprint",
+  "program": "def choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    if (current and evidence.get('fingerprint') == current\n            and evidence.get('status') == 'passed'):\n        return 'complete'\n    return 'verify'\n",
+  "rationale": "Verifies when evidence is missing, failed, or stale. The source example triggers verification because its fingerprints differ."
+}

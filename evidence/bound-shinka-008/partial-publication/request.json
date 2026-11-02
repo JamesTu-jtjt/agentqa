@@ -1,0 +1,26 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "attempt_id": "1d23bc7e73bc4088816a96531d070800",
+  "inputs": {
+    "evaluator": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/bound-shinka-008/authored_evaluator.py",
+      "sha256": "b2e57cdbe85e807f68919fd6bc7f4936405e0cec320819d62475ad9444b9ee2d",
+      "bytes": 756
+    },
+    "program": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/bound-shinka-008/partial-publication-program.json",
+      "sha256": "2a0fb6f4859982703c61eeceb157d73841153f7a468dce4bd8c1dd455b6caabd",
+      "bytes": 56
+    }
+  },
+  "runtime": {
+    "shinka_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+    "python": "3.13.5"
+  },
+  "timeout_seconds": 10,
+  "launch_command_hash": "9f549d0f4a5e1c0382fa905342e08663fc7a5b3881e473a5c7d2da8deedc8010",
+  "publication": [
+    "metrics.json",
+    "correct.json"
+  ]
+}

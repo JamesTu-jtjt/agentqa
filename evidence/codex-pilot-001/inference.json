@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "response": {
+    "candidates": [
+      {
+        "name": "Require passing evidence for the current footprint",
+        "program": "def choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    if (current and evidence.get('fingerprint') == current\n            and evidence.get('status') == 'passed'):\n        return 'complete'\n    return 'verify'\n",
+        "rationale": "Verifies when evidence is missing, failed, or stale. The source example triggers verification because its fingerprints differ."
+      },
+      {
+        "name": "Require an identified, current passing record",
+        "program": "def choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    valid = (\n        bool(evidence.get('record_id'))\n        and bool(current)\n        and evidence.get('fingerprint') == current\n        and evidence.get('status') == 'passed'\n    )\n    return 'complete' if valid else 'verify'\n",
+        "rationale": "Also requires an identifiable verification record. Both candidates request fresh verification after edits and complete once the updated evidence passes on the current footprint."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 9064,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 376,
+    "reasoning_output_tokens": 112
+  },
+  "returncode": 0,
+  "duration_seconds": 14.495926833013073,
+  "stderr": "",
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a19d1f-880b-7d01-b16e-b5c7266abdd8"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "error",
+        "message": "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+      }
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_1",
+        "type": "agent_message",
+        "text": "{\"candidates\":[{\"name\":\"Require passing evidence for the current footprint\",\"program\":\"def choose_action(observation):\\n    evidence = observation.get('evidence') or {}\\n    current = observation.get('current_fingerprint')\\n    if (current and evidence.get('fingerprint') == current\\n            and evidence.get('status') == 'passed'):\\n        return 'complete'\\n    return 'verify'\\n\",\"rationale\":\"Verifies when evidence is missing, failed, or stale. The source example triggers verification because its fingerprints differ.\"},{\"name\":\"Require an identified, current passing record\",\"program\":\"def choose_action(observation):\\n    evidence = observation.get('evidence') or {}\\n    current = observation.get('current_fingerprint')\\n    valid = (\\n        bool(evidence.get('record_id'))\\n        and bool(current)\\n        and evidence.get('fingerprint') == current\\n        and evidence.get('status') == 'passed'\\n    )\\n    return 'complete' if valid else 'verify'\\n\",\"rationale\":\"Also requires an identifiable verification record. Both candidates request fresh verification after edits and complete once the updated evidence passes on the current footprint.\"}]}"
+      }
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 9064,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 376,
+        "reasoning_output_tokens": 112
+      }
+    }
+  ]
+}

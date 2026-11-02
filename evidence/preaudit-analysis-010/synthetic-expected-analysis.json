@@ -1,0 +1,127 @@
+{
+  "schema": "agentqa.audit-analysis.v1",
+  "plan_hash": "f58a374b57a7ef45a9e423c52873dc83fb2c9c55a225a33883c1f64d1adc4026",
+  "status": "complete",
+  "source_pool_count": 1,
+  "audit_trial_count": 2,
+  "weighting": "repeat-within-case, cases-within-pool, equal-source-pool",
+  "by_pool": {
+    "synthetic-pool": {
+      "candidates": {
+        "parent": {
+          "metrics": {
+            "verified": 0,
+            "completed": 1,
+            "functional": 0,
+            "fresh": 0,
+            "refusal": 0,
+            "stale_completion": 1
+          },
+          "trials": 1,
+          "cases": 1,
+          "raw_counts": {
+            "verified": 0,
+            "completed": 1,
+            "functional": 0,
+            "fresh": 0,
+            "refusal": 0,
+            "stale_completion": 1
+          },
+          "cost": {
+            "known_api_cost_usd": "0",
+            "unknown_cost_trials": 1,
+            "complete": false,
+            "includes_generation": false
+          }
+        },
+        "repair": {
+          "metrics": {
+            "verified": 1,
+            "completed": 1,
+            "functional": 1,
+            "fresh": 1,
+            "refusal": 0,
+            "stale_completion": 0
+          },
+          "trials": 1,
+          "cases": 1,
+          "raw_counts": {
+            "verified": 1,
+            "completed": 1,
+            "functional": 1,
+            "fresh": 1,
+            "refusal": 0,
+            "stale_completion": 0
+          },
+          "cost": {
+            "known_api_cost_usd": "0",
+            "unknown_cost_trials": 1,
+            "complete": false,
+            "includes_generation": false
+          }
+        }
+      },
+      "parent": "parent",
+      "decisions": {
+        "source-only": "parent",
+        "generic": "parent",
+        "failure-family": "repair"
+      },
+      "oracle_best_verified": 1,
+      "oracle_label": "Post-hoc candidate-pool ceiling; not an executable selector"
+    }
+  },
+  "selector_macro": {
+    "source-only": {
+      "verified": 0,
+      "completed": 1,
+      "functional": 0,
+      "fresh": 0,
+      "refusal": 0,
+      "stale_completion": 1
+    },
+    "generic": {
+      "verified": 0,
+      "completed": 1,
+      "functional": 0,
+      "fresh": 0,
+      "refusal": 0,
+      "stale_completion": 1
+    },
+    "failure-family": {
+      "verified": 1,
+      "completed": 1,
+      "functional": 1,
+      "fresh": 1,
+      "refusal": 0,
+      "stale_completion": 0
+    }
+  },
+  "family_minus_baseline": {
+    "source-only": {
+      "difference": 1,
+      "by_source_pool": {
+        "synthetic-pool": 1
+      },
+      "source_pool_count": 1,
+      "interval": null,
+      "reason": "fewer_than_five_source_pools"
+    },
+    "generic": {
+      "difference": 1,
+      "by_source_pool": {
+        "synthetic-pool": 1
+      },
+      "source_pool_count": 1,
+      "interval": null,
+      "reason": "fewer_than_five_source_pools"
+    }
+  },
+  "cost_all_audited_candidates": {
+    "known_api_cost_usd": "0",
+    "unknown_cost_trials": 2,
+    "complete": false,
+    "includes_generation": false
+  },
+  "scope": "SYNTHETIC DEMONSTRATION ONLY; not real selection or independent audit"
+}

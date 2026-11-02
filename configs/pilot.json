@@ -1,0 +1,21 @@
+{
+  "schema": "agentqa.pilot-plan.v1",
+  "status": "pilot_completed_allowance_exhausted",
+  "requested_model": "GPT-6.1 Sol",
+  "provider": "codex_cli_saved_chatgpt_login",
+  "api_model_id": "gpt-6.1-sol",
+  "max_codex_invocations": 3,
+  "completed_codex_invocations": 3,
+  "remaining_codex_invocations": 0,
+  "timeout_seconds_per_invocation": 120,
+  "reasoning_effort": "low",
+  "subscription_dollar_cost": "unavailable",
+  "pilot_cap_usd": null,
+  "total_cap_usd": null,
+  "max_actions_per_stateful_episode": 12,
+  "max_concurrent_episodes": 1,
+  "inference_retry_allowance": 0,
+  "prices_verified_at": null,
+  "reserve_audit_before_main_run": true,
+  "notes": "All three lifetime invocations completed; no remaining inference allowance. User requested stopping at 50% project progress. Cached local evaluation and analysis do not consume inference. Dollar caps are null because no separate API route is used; this is not unlimited spending. Main study remains deferred."
+}

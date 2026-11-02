@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "response": {
+    "program": "def choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    if (current is not None\n            and evidence.get('record_id')\n            and evidence.get('status') == 'passed'\n            and evidence.get('fingerprint') == current):\n        return 'complete'\n    return 'verify'\n",
+    "rationale": "Complete only when an actual passing verification record matches the current repository and runtime fingerprint; otherwise execute the visible verification entry point. History and carrier do not establish freshness. This uses 'passed' as the successful evidence status."
+  },
+  "usage": {
+    "input_tokens": 8914,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 420,
+    "reasoning_output_tokens": 270
+  },
+  "returncode": 0,
+  "duration_seconds": 22.656385041074827,
+  "stderr": "",
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a19d59-14e7-7051-9b7b-297648c52c55"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "error",
+        "message": "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+      }
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_1",
+        "type": "agent_message",
+        "text": "{\"program\":\"def choose_action(observation):\\n    evidence = observation.get('evidence') or {}\\n    current = observation.get('current_fingerprint')\\n    if (current is not None\\n            and evidence.get('record_id')\\n            and evidence.get('status') == 'passed'\\n            and evidence.get('fingerprint') == current):\\n        return 'complete'\\n    return 'verify'\\n\",\"rationale\":\"Complete only when an actual passing verification record matches the current repository and runtime fingerprint; otherwise execute the visible verification entry point. History and carrier do not establish freshness. This uses 'passed' as the successful evidence status.\"}"
+      }
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 8914,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 420,
+        "reasoning_output_tokens": 270
+      }
+    }
+  ]
+}

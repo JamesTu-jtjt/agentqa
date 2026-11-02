@@ -1,0 +1,47 @@
+{
+  "schema": "agentqa.upstream-probe-plan.v1",
+  "upstream_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+  "source_hashes": {
+    "shinka/launch/local.py": "16eccbc364b642383ad8c77034a06645f1f2b7d0e9bd71862ceb5db7f99c6a48",
+    "shinka/launch/scheduler.py": "c32d0682ac0c572d01dc10b49887cb54eb7d6b6ba760ba74c132465a1366266b",
+    "shinka/utils/general.py": "350c68cd1d223362779f8b4a968b477c27d6031c2e5e1c4b5149f3bb010edb0c"
+  },
+  "evaluator_sha256": "b2e57cdbe85e807f68919fd6bc7f4936405e0cec320819d62475ad9444b9ee2d",
+  "cases": [
+    [
+      "nonzero-reused",
+      "fail",
+      true
+    ],
+    [
+      "nonzero-fresh",
+      "fail",
+      false
+    ],
+    [
+      "zero-no-publication",
+      "no_publish",
+      true
+    ],
+    [
+      "partial-publication",
+      "partial",
+      true
+    ],
+    [
+      "normal-publication",
+      "pass",
+      true
+    ],
+    [
+      "normal-fresh",
+      "pass",
+      false
+    ]
+  ],
+  "inference_calls": 0,
+  "scope": "Public scheduler API under authored rerun/failure conditions; not observed native agent behavior",
+  "retry_policy": "none",
+  "expected_contract": "Never attribute old/mixed result files to a changed evaluation request",
+  "plan_hash": "cf39dc24f9103d7e017a3fe88d10270aeb8f88f24699fb5c7ac34265afa139b7"
+}

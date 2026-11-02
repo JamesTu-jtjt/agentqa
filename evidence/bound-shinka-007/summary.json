@@ -1,0 +1,64 @@
+{
+  "schema": "agentqa.bound-check.v1",
+  "plan_hash": "fd923cb60d4794dd9f25fd256d638e696ab82afb2b2815c8eab1f238f20c2f54",
+  "results": [
+    {
+      "case": "nonzero",
+      "expected_valid": false,
+      "bundle": "nonzero",
+      "schema": "agentqa.evaluation-bundle.v1",
+      "request_hash": "4bc3629aa688d483fc76ec1154f501b687dcb4f751fb458e94325aedb3e9f12f",
+      "receipt_hash": "d432518a1a70d4acdcd4400383e9812c73813b04dead240384b67dc1138b4074",
+      "verdict": {
+        "valid": false,
+        "correct": false,
+        "score": null,
+        "reason": "execution_not_successful"
+      }
+    },
+    {
+      "case": "zero-no-publication",
+      "expected_valid": false,
+      "bundle": "zero-no-publication",
+      "schema": "agentqa.evaluation-bundle.v1",
+      "request_hash": "b8377759bba0bf73dd4c0bf43690da644be8bf1f523f1a6c2307df295a2bb948",
+      "receipt_hash": "b83389f414ae918fab6bd26efffa18072c6d7925ad431a9b79d38ae97e4855da",
+      "verdict": {
+        "valid": false,
+        "correct": false,
+        "score": null,
+        "reason": "incomplete_or_invalid_publication"
+      }
+    },
+    {
+      "case": "partial-publication",
+      "expected_valid": false,
+      "bundle": "partial-publication",
+      "schema": "agentqa.evaluation-bundle.v1",
+      "request_hash": "dd67f2560964466193193fde13797f8922fa296abdae3961e19e6e321ebd7034",
+      "receipt_hash": "c4dc0b0f635c5af12e941e148adafac63f7c3b6a9843487e0a107846055c9505",
+      "verdict": {
+        "valid": false,
+        "correct": false,
+        "score": null,
+        "reason": "incomplete_or_invalid_publication"
+      }
+    },
+    {
+      "case": "normal-publication",
+      "expected_valid": true,
+      "bundle": "normal-publication",
+      "schema": "agentqa.evaluation-bundle.v1",
+      "request_hash": "b73d2a9ad0a8563d5c8bfd1114d78a23099786d33e098efb3c8f783e8e369317",
+      "receipt_hash": "60230164022b809e2ad959ba558d0dd490d7965fe9c857153a64783b2c0a456f",
+      "verdict": {
+        "valid": true,
+        "correct": true,
+        "score": 0.25,
+        "reason": "bound_result"
+      }
+    }
+  ],
+  "matches": 4,
+  "inference_calls": 0
+}

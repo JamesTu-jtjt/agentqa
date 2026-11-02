@@ -1,0 +1,84 @@
+{
+  "schema": "agentqa.workflow-pilot-plan.v1",
+  "mode": "generate",
+  "cases": [
+    {
+      "name": "baseline",
+      "transition": "none",
+      "module": "clamp.py",
+      "function": "clamp",
+      "config": "config.json",
+      "visible_test": "checks.json"
+    },
+    {
+      "name": "config",
+      "transition": "config",
+      "module": "clamp.py",
+      "function": "clamp",
+      "config": "config.json",
+      "visible_test": "checks.json"
+    },
+    {
+      "name": "source",
+      "transition": "source",
+      "module": "clamp.py",
+      "function": "clamp",
+      "config": "config.json",
+      "visible_test": "checks.json"
+    },
+    {
+      "name": "docs",
+      "transition": "docs",
+      "module": "clamp.py",
+      "function": "clamp",
+      "config": "config.json",
+      "visible_test": "checks.json"
+    },
+    {
+      "name": "handoff",
+      "transition": "handoff",
+      "module": "clamp.py",
+      "function": "clamp",
+      "config": "config.json",
+      "visible_test": "checks.json"
+    },
+    {
+      "name": "compaction",
+      "transition": "compaction",
+      "module": "clamp.py",
+      "function": "clamp",
+      "config": "config.json",
+      "visible_test": "checks.json"
+    }
+  ],
+  "max_actions": 12,
+  "generation_invocations": 1,
+  "origin": "unseeded-model-controller",
+  "independent_audit": false,
+  "retry_policy": "none; preserve every attempt",
+  "source_hashes": {
+    "__init__.py": "e35a5c9731f32a7cbd29fcb1de72d2c4b1ad95367c936a70ef4b0b8c8997dc51",
+    "agent.py": "b9cec15d9fbadde4894bab59cd5a191f5b08f4c9fb7be5cd7727cd889bae327f",
+    "cli.py": "39d601cd0f673a49f360f4a7140e618ff4442af1dfb6382847a6c7d9a83ea76e",
+    "codex_backend.py": "2a604b10048b8616fb5c2506b0af04111e9484d9c892c4f7c8f675e0a3a6d671",
+    "comparison.py": "4e5f10ca06c9bff88b41ee856a620ad4fbe2738f4bbd6f5e7b8228c8cdc230bf",
+    "contracts.py": "3e72c0442ef4112c8e107e99e1fad19e1f04b7d9e4cc1b3c0408c3554c5ac4cf",
+    "demo.py": "e473731dc20a0f3c5b0f307dbf21c7662e4f4a9546b41ba0153aef7c3b76e962",
+    "environment.py": "0faf96695695e2e8ee7a8e5c218145dc36a964fafa4760ec5fe80f0f7cfb4cce",
+    "evaluation.py": "5f6ee9276a9439264e6f60d328e4630f03244f3556ef3a913f829ae86b5cc177",
+    "families.py": "617b1521397382e50c7e7a1f3febe44a96b9141ea37836621b9005d80e88a4fc",
+    "generated_policy.py": "f55fe85ff81fe4ffa136de37f4497d8eec5242dab3d007234b154fde09e77399",
+    "ledger.py": "6438977f1b923c3ce8ba35b54ab50139ab32cefbba5df7a49a2e4fecd341ae28",
+    "recorder.py": "1438edfdc0ea102b1ff7b453e6057f214d8ca52cbc07ad7ed0b99ee68bad0095",
+    "registry.py": "ed914a68549b3da97aec4d8b2520678606867e4f639afa1cae8261c39ae893ae",
+    "sandbox.py": "7705a6fb56c171179780b1993170255b4535741ed1c6038897aaa92c7382debf",
+    "selection.py": "5724b0271830a1b44b0c6ffba507433af126c91853f07d2b40587d94b1a99f89",
+    "shinka_bridge.py": "72e053a0331eea18c87b343df435d438fe7782ecd528c7c5ea17bbf26ecc1dc7",
+    "workflow.py": "641148fdaccc23af3cb5bbfcfcfd0bedb2a9745c2732bb6107a31e6ff101effe",
+    "scripts/workflow_pilot.py": "d59831f543e3803ed4f74ff94b401d78b4af4ad136969fe105ae5c1e4b574f73",
+    "scripts/workflow_controls.py": "2948c2c0125583a8aaeab4ce013858f36f64f8e56bac83105d4da2647c703f3f"
+  },
+  "code_hash": "42527208a3c0ecd8906255aae1bf9f771d170b00146e68aa6f7d1a5d5450ab68",
+  "prompt_hash": "f9f924528f16dbe1174b59844870885f929ff431126dbd60cdd9c42d16be98ef",
+  "plan_hash": "9522462f498abda67e554e83b1d39af3047bbf2e8d3602991d42df5a0826be62"
+}

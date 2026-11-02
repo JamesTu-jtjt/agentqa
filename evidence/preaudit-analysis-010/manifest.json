@@ -1,0 +1,20 @@
+{
+  "schema": "agentqa.pre-audit-analysis-snapshot.v1",
+  "scope": "Development analysis qualification, not final main-study freeze",
+  "independent_audit_opened": false,
+  "model_calls": 0,
+  "snapshot_sha256": {
+    "src/agentqa/analysis.py": "c77f294939ffc20a590a80f8ec4ddb90b42859a587bb3c264a6345af74639de6",
+    "src/agentqa/contracts.py": "3e72c0442ef4112c8e107e99e1fad19e1f04b7d9e4cc1b3c0408c3554c5ac4cf",
+    "tests/test_analysis.py": "6db097319287c235d08a55adf5c825c255df26a82378528e3e5e6ed2599cad1f",
+    "scripts/analyze_audit.py": "e94f1fcd223671a01704fbc20d001644799f125e7f994c2898dfc570878d4e1e",
+    "docs/analysis-protocol.md": "b0185aebcdad9172f2fd1140543b1f5dfb10c0a72ff23c328ca7d559e06c3d0c",
+    "requirements-dev.lock": "08dcb03160b2ba7476961abd471cd1614b776e4a3f41c2742030d3d96f084f13",
+    "requirements-shinka.lock": "20c150f25204267faf822c05071c358c8b0e5ec0f1c057eed4a7853b5a8e6d17"
+  },
+  "synthetic_input_hashes": {
+    "synthetic-plan.json": "9d9d149b8486b64ca4840a9854146504c2780a5edb3b65c85aa2b67e706e247c",
+    "synthetic-outcomes.json": "cf4359a641e166c34a22a30daf4f349f6d8f10deedff0b9c49a8f5be9b3fe1de"
+  },
+  "manifest_hash": "a6bbd7e38c0feb566fd3505faa7aea0d0a9599fe7a99dda0823e47f64750488a"
+}

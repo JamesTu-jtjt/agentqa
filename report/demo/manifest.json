@@ -1,0 +1,15 @@
+{
+  "schema": "agentqa.replay-page.v1",
+  "model_calls": 0,
+  "executes_candidates": false,
+  "inputs": {
+    "evidence/upstream-source-006/summary.json": "5f0116650a947c090c50d92c92912b64f4b6b5e3a145edf59efceaa5a5edd468",
+    "evidence/bound-shinka-008/summary.json": "1c303020acad8cdd775a7398fb5a964c852a5405a21dfd5f4c87c3d8fabb2fa5",
+    "evidence/stateful-controller-005/summary.json": "e7e1b1bb155782d480fdc106b64a6ac3a888165feca383a19a4f0e7799be30d3",
+    "evidence/publication-qualification-011/summary.json": "f581fba9d187ed164f39bc55a5542d2d5ff5107b04fda23907804be5a95c8e1c",
+    "evidence/stateful-controller-005/traces/generated-config.jsonl": "cc79da1a92d78fdf40b7dd9a9671d6707810323649cad80c8259232f12108a76"
+  },
+  "script_sha256": "b5ad6594c71c94c9e4129ca728fa1109784fffe8fa21452b4a9734bfff425a62",
+  "html_sha256": "db9391b40a9bd287bf2a9ee8551c12e06d4f313a86633239efe51ff26b1e67d8",
+  "scope": "Recorded development evidence only"
+}

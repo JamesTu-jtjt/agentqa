@@ -1,0 +1,12 @@
+{
+  "scope": "development-only-not-independent-audit",
+  "replayed_trials": 60,
+  "worker_invocations": 96,
+  "matplotlib_version": "3.10.1",
+  "inputs": {
+    "summary.json": "fe24c9ec3dd57916e4eafb442de84efff968b826efb64b3c98b34b407c78f2f9",
+    "plan.json": "30dbd4d765bb9b547acb416520791eb64160aec453a151838e5cacbfb7533860",
+    "pool.json": "e2d2e7f52aa50db3df8c25a5c22087c767990b42c6fe94785991d0faa86d7c46",
+    "build_comparison_figures.py": "081edef8efa99741ae21cb70dbd11129b668fefa6f721e0a8cc4ff578015dbf7"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schema": "agentqa.publication-qualification.v1",
+  "cases": [
+    {
+      "case_id": "plain-positive",
+      "mode": "positive",
+      "layout": "plain",
+      "expected_valid": true,
+      "expected_correct": true
+    },
+    {
+      "case_id": "plain-negative",
+      "mode": "negative",
+      "layout": "plain",
+      "expected_valid": true,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-exit_after_publication",
+      "mode": "exit_after_publication",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-metrics_only",
+      "mode": "metrics_only",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-correct_only",
+      "mode": "correct_only",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-boolean_score",
+      "mode": "boolean_score",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-duplicate_key",
+      "mode": "duplicate_key",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-changed_program",
+      "mode": "changed_program",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-changed_config",
+      "mode": "changed_config",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "plain-no_publication",
+      "mode": "no_publication",
+      "layout": "plain",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-positive",
+      "mode": "positive",
+      "layout": "renamed",
+      "expected_valid": true,
+      "expected_correct": true
+    },
+    {
+      "case_id": "renamed-negative",
+      "mode": "negative",
+      "layout": "renamed",
+      "expected_valid": true,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-exit_after_publication",
+      "mode": "exit_after_publication",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-metrics_only",
+      "mode": "metrics_only",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-correct_only",
+      "mode": "correct_only",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-boolean_score",
+      "mode": "boolean_score",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-duplicate_key",
+      "mode": "duplicate_key",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-changed_program",
+      "mode": "changed_program",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-changed_config",
+      "mode": "changed_config",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    },
+    {
+      "case_id": "renamed-no_publication",
+      "mode": "no_publication",
+      "layout": "renamed",
+      "expected_valid": false,
+      "expected_correct": false
+    }
+  ],
+  "publisher_hash": "163eeecb3147f3f0bc5619c42a6a12f057fa57e8cb2dc246b650b488b35497e3",
+  "upstream_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+  "source_hashes": {
+    "bundles.py": "6b766fbc70392ad8d76226264c512b4d2275fdf40e7fabb0cc911323357e4b89",
+    "publication_qualification.py": "17a46edee256fb29db11b2a47bea9ee9b321a9a81112eae46c1f906dba74854b",
+    "contracts.py": "3e72c0442ef4112c8e107e99e1fad19e1f04b7d9e4cc1b3c0408c3554c5ac4cf",
+    "qualify_publication.py": "f9fb4264ffbe343349a4634aae9a3167cb516f36585e9a41e3b39e2dbf2332e5"
+  },
+  "retry_policy": "none",
+  "inference_calls": 0,
+  "max_processes": 20,
+  "scope": "Authored development qualification; not generated candidates or independent audit",
+  "plan_hash": "90d8d15bc4d380a2bbe136934b4df87632adcb9ff3e535c18057a7de9a49edd0"
+}

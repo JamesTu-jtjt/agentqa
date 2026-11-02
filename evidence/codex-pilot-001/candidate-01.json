@@ -1,0 +1,5 @@
+{
+  "name": "Require an identified, current passing record",
+  "program": "def choose_action(observation):\n    evidence = observation.get('evidence') or {}\n    current = observation.get('current_fingerprint')\n    valid = (\n        bool(evidence.get('record_id'))\n        and bool(current)\n        and evidence.get('fingerprint') == current\n        and evidence.get('status') == 'passed'\n    )\n    return 'complete' if valid else 'verify'\n",
+  "rationale": "Also requires an identifiable verification record. Both candidates request fresh verification after edits and complete once the updated evidence passes on the current footprint."
+}

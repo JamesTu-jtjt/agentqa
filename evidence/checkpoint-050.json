@@ -1,0 +1,1379 @@
+{
+  "schema": "agentqa.checkpoint.v1",
+  "date": "2026-11-02",
+  "estimated_progress_percent": 50,
+  "progress_basis": "Deliverable-effort estimate; see docs/checkpoint-050.md. Not a research success rate.",
+  "checks": {
+    "offline_pytest": {
+      "passed": 86,
+      "skipped_opt_in_docker": 3
+    },
+    "docker_pytest_file": {
+      "passed": 7,
+      "overlaps_offline_cases": 4
+    },
+    "trace_replays": 143,
+    "all_tips_and_verdicts_match": true,
+    "document_links_checked": 44,
+    "new_workflow_worker_hashes_checked": true,
+    "new_workflow_trials": 18,
+    "all_new_worker_cleanup_confirmed": true
+  },
+  "accounting": {
+    "model": "gpt-6.1-sol",
+    "route": "codex_cli_saved_chatgpt_login",
+    "max_invocations": 3,
+    "used_invocations": 3,
+    "remaining_invocations": 0,
+    "input_tokens": 27232,
+    "output_tokens": 2458,
+    "subscription_dollar_cost": null,
+    "separately_billed_api_calls": 0,
+    "invocations": [
+      {
+        "invocation_id": "generation-001",
+        "prompt_hash": "03a684352b4547ea09945ed5996024e658498c2ca2ffc4b0acb38e270c0b8aed",
+        "status": "completed",
+        "usage": {
+          "input_tokens": 9064,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 376,
+          "reasoning_output_tokens": 112
+        },
+        "duration_seconds": 14.495926833013073
+      },
+      {
+        "invocation_id": "unseeded-policy-002",
+        "prompt_hash": "b5647769520907a06c4ea883ae8987be750240c730e5fef9ab42d858a0e86659",
+        "status": "completed",
+        "usage": {
+          "input_tokens": 8914,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 420,
+          "reasoning_output_tokens": 270
+        },
+        "duration_seconds": 22.656385041074827
+      },
+      {
+        "invocation_id": "stateful-controller-003",
+        "prompt_hash": "cebf74d8e6173be70b6e45ecef2cdd06ab80596e9a9257b76066cc58784ce4d6",
+        "status": "completed",
+        "usage": {
+          "input_tokens": 9254,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1662,
+          "reasoning_output_tokens": 845
+        },
+        "duration_seconds": 55.20575033291243
+      }
+    ]
+  },
+  "workflow": {
+    "schema": "agentqa.workflow-analysis.v1",
+    "trials": 18,
+    "verified_by_candidate": {
+      "reference": 6,
+      "stale-control": 4,
+      "generated": 6
+    },
+    "worker_invocations": 152,
+    "worker_seconds": 109.13436759146862,
+    "infrastructure_inconclusive": 0,
+    "all_cleanup_confirmed": true
+  },
+  "independent_audit_opened": false,
+  "natural_semantic_failure_confirmed": false,
+  "selector_advantage_demonstrated": false,
+  "replays": [
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-identity.jsonl",
+      "tip": "399a0ef59a95df3881d97531736814f6725ada1de87b334727bd7fc7bc65a6f5",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-rename.jsonl",
+      "tip": "b3f45769d9c2082023d68237329bdd52b30a6f78c4938462b700cf9fccbc5638",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-noise.jsonl",
+      "tip": "aece0f8d15d88a58526b7c47bad91a9dbf776bb1eaa9cee2e0e99bf5e8f14b79",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-compaction.jsonl",
+      "tip": "cff3380a2fe7d8069393eb318fe2526907b62df09d37ab0bcc67dcfcf79752c6",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-handoff.jsonl",
+      "tip": "50001674d2ec5022d99e1de5ad7492c497689225dff2829ae04052f35eed98e2",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-cache.jsonl",
+      "tip": "e62a26156780082ffc9dd375a0274913f1b56a534662e509fdeb8504a22546cc",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-00-unchanged.jsonl",
+      "tip": "20464a7dbca15b6e3f56110bf666c2ca10b41e2cc6b965d9d5985b476ba01c42",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-identity.jsonl",
+      "tip": "865fbd35c7912037e4dd892a43ec67633698805788057c00dfa4752cc2963e00",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-rename.jsonl",
+      "tip": "9ecd449c46cdfc6ae7c648d5157a2e4ac06e190bd5e30774e488d8fd23ff5e9e",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-noise.jsonl",
+      "tip": "11d969b411be61b2f5a051045747a63a31e6d163d0c8ffb9cc1f853c9e01291a",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-compaction.jsonl",
+      "tip": "229fbfafaec6f4858ccbc23aecf95025ce307f6a29ecf6345e4a3c3f91df7d70",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-handoff.jsonl",
+      "tip": "3fbef828da08c4d6717a4ffc6c5bcfaf057f5aefbd7dfc9d1b7ccfb6ae6ea5e1",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-cache.jsonl",
+      "tip": "2ea3e347c06d06f4b54d5aad4dba2195d7792ce030f484ace26aad95d06d50a9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/codex-pilot-001/traces/candidate-01-unchanged.jsonl",
+      "tip": "9c48a2fc74e404ca146f81af50ec025681e1dd4d116da5841b422b42f9349934",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/7d263dba5d85a411195eab3b5f36934ddb5281d9698009b8544cbd98c27acc46/trace.jsonl",
+      "tip": "50ed8ac82309aa0ab5f34afa45aac6de7420bc35d60cc2d4bc5e6870b2a561c5",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/2cea37bf2ebb6349c1427cbec4ec59627374a0e39ba6e814dead83f22270d7e6/trace.jsonl",
+      "tip": "5d1db8c4fe9ce887d123d11764d654d9a159063903b520b0873b9444c689f2e6",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/cb71c18ebc4707aad667f50bea8c1c4b0ef719f3bc800b898d8b7440ba859be6/trace.jsonl",
+      "tip": "ccd1364905070748d4b12af9a76975af4c3e93a2ff301d3484ec889c6d097b40",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/f7c0d333800cc230dd8b421209e3f7c0deeb70358f53a75b42d925f803c0475f/trace.jsonl",
+      "tip": "bbb08b04b863d2e52accff91f0f3e9feddf786a8c0c6d7a0ce9e7c3731ce33e2",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/81f08a3e2d8fae50523e0cb4b2efffa786bef8c5547fef6c7b72184995ee93a4/trace.jsonl",
+      "tip": "9e568a82bd41f804b2f733b0de7b75acf8cb59e7862ad26ebaf21554e946408a",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/65e242a58c63098127bc3e53fe754c45c258a769ce935694e6ed50b8bc028a1e/trace.jsonl",
+      "tip": "cdd3506931be21613189f53c751db34da6f87ff6dff1544ddbaf1a1fc84dcb3e",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/180cb3a471229c9191432a2560b60031c96bf3bf668d122fb86453c1a22270d0/trace.jsonl",
+      "tip": "f8738764698b7830f43f508725cb4f618cd83e3c05625e2e4e10a94275333e6a",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/e26481397046958d7bee09e34ff51ba4da73847a6d5e14e751c4ea955a3ca229/trace.jsonl",
+      "tip": "2247284b2210bb2dab28ecbb274e0111640a2026bfc90fb198399c5d0e93029b",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/257c67afdf9f2a3ef50e41913c68818e4da7e13de30eeee3f9349840637fc582/trace.jsonl",
+      "tip": "e35fadb005730d239e7d7bb0ad008ce9163b029af0601729aecf91f30c1dd2c0",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/ecaa63f2a16dfc5bce0b4f951b35ec4bc2942349943478ed19e93b7a2529f235/trace.jsonl",
+      "tip": "8a5ba75046a74a6b24cda1bc018fe1e318be1817cedb428bf0e58e15724946a3",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/9a261efe9654de9b0c11eb25303bb2c380bcbe7ba171ec973a11650fa0d9729c/trace.jsonl",
+      "tip": "b3644d05609be3e078ac0b16626664b2b86c793312f72c1bf64e494609c1ab20",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/7e29a9724caa07f2a561027f9fb1d9fc4dbd1b81ed54f941793f16891a5befaf/trace.jsonl",
+      "tip": "f832c62321a4c55511dc6509db23fa2663756280ac74d602b613c223ce2f0af2",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/60f5ecab578fedb12aba37773f653cf1610dd663eb883b9e27640147fb91ad04/trace.jsonl",
+      "tip": "94b0c7422e0532cb44f26579e2ba660a7ce28cb7d6af268505c2bbbf39bf26d7",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/2be341b03912b4cad3d98c85ae98737cae147b0206433705251d9646d1f45c9f/trace.jsonl",
+      "tip": "4b64e3edc87021d3bf91efcdb5981f8fe98cbcd866b7a61b5b1091a34b80e4d5",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/409362401a337577bc3b2f5eabf496aa7cad4f9254a3e59a140f0307e6c52484/trace.jsonl",
+      "tip": "9c7005938aab1dc60feaf88f8eaa162457e2bd2bddb59907c3fbb599b4a8776b",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/68181c772a0fee77eb9a22ce9eac83c752ee9aefcacb1f6e4d925badfa27e7b1/trace.jsonl",
+      "tip": "98953059b146d120e3e218b858bdf0583033a12cb1e02ef53521a3b282f8b5cc",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/dacf8f4aab5b93ac4125c55d842009119106c7b29d493d1286cd3f3effef51b3/trace.jsonl",
+      "tip": "0b4bd768b19325e431ed46aaae4de5a7623cf4ef3d12c5c12fd995563c43db9b",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/a916e4a1cccb639cb9d8708e7d5b0a5819f0c0f45aab9fcb72cbb93da42f5200/trace.jsonl",
+      "tip": "2bdccf13befc3dd1d4e2f1c054ac9c4e5b6f5a7886202660a2d6693aa523126e",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/eedc6698b6555c068c4db06c0ed602543305d82a40f4a1497a36238cc4d1eebe/trace.jsonl",
+      "tip": "be63ab11e7b0df9d8d1de8d17c9be41870c3db9ea5f17a3e6548616b0e8223e9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/4fbb35e02d6a796a378a2dae9d64ad6f26cf893340051644aaa574b4d367938c/trace.jsonl",
+      "tip": "a1492a1aa04ed5e0fe126c8487a6e0eec831e0c422b1b1032adecf90d1828cde",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/2abfa9c9538e68798c9de9f66324cd5f4e39116aa5939aabe9368518c5b9b397/trace.jsonl",
+      "tip": "0fc07138c0bc4e848e2091410add330d2a982466771a24bb5d7e10ad33c58933",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/793205576bd39e767fa0d9c48c4d3491d3917ceef1ce71aaf0e85ad85e0f0c3e/trace.jsonl",
+      "tip": "8e8c47a47d30ca0b3913934446547dac65115851ee4b7992f11bef9dc92bf149",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/f3dc940a0958257b84eadc77698f84b4beaee838edb9b3bb4afd5cb8c779c9cb/trace.jsonl",
+      "tip": "5baa55b387253b4e8d73bacf7a9a0d48c3ae23a0e46a279da96f2bd1a55cbb65",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/469c1a0bdb541bacac2e48a0022e011e356ff14d114894d613f197c8653b3e97/trace.jsonl",
+      "tip": "d937604474c9db2bd4054dfc23b4b1f52fbae2bdc43313eb196dd09498d9864b",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/502d69c2efe9bcf5554f3f2b6082df901417428eafca06fcf36e8beb79f5a4d7/trace.jsonl",
+      "tip": "870711c643a206b85f21c5806a53d654d9382fe8bfd26cdc0a3f605c2c585ac9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/d9e1e947da3fc018691a6ace8b2bbe36349ab13c9f473ef34f74029092f0e321/trace.jsonl",
+      "tip": "44ffa8978b17364694287ace4723e85c005ff36f11bad19f829b2ee23943fef2",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/cb31a49979a997e1c4ec8fb2e9e651addddd7da53fd9ab8a91c15ee3b27ed6f1/trace.jsonl",
+      "tip": "a2cf21f8768113d55e1b83cfa96c97b5b58375586d483161bb2c8944bc4d8048",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/ecd03157b4530c0c1f548669dc4d1a7688252c2b1f30c00d9cdfa5e829bdd45f/trace.jsonl",
+      "tip": "4c1416dab2cd6e7b6450298b97ffbc71e5f6a66c20bebaff8ece4244580347b6",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/101eb4e4ee5da70ad317b44bb8ffa6ab22a67191f820a99560831e086848a31f/trace.jsonl",
+      "tip": "648f409b5ebe08bed86752766e3c40f2a7830e983b65fb04068886a5d0ba184a",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/950a93bf2caeee3966fcfaf903b8082d5d2b9875ebd90ffdf46e08669dd740c7/trace.jsonl",
+      "tip": "56e291bd41a74fae2dba75b1c1532e34d81fff5ab0a53d86a10eac3ab4bf7663",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/9cb10435d5f76568b081b284b8d19460ea3c90521988813c9051a4c72c4aefe8/trace.jsonl",
+      "tip": "19993f8b7accd5cf7c435e70020174f288bac0528c281e4152b342229743baf7",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/49f8c977dd44dae8fe5008d6dc102702bc51895fcf6edca385c89b34c67a16ab/trace.jsonl",
+      "tip": "611520a61824c7d471ccb60257f81e29cc7ac7d12f04768f34498d1294b8a9f9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/5f08a8fd5859e07602c38eb56d7bef2732eb2dab5795ee149d2eef18d7408867/trace.jsonl",
+      "tip": "dd2b217f86dfec52a06cc60967c9577b043128b381316d6cdb3d240b47a3484b",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/725440d81b33d593c65717c503e65ad89f3b5626134be68afebe90e4bd4f0ed9/trace.jsonl",
+      "tip": "e5623e039597d0d1496194b87570a18f4e25d00a638e1fd498373d1dea30de24",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/7a4569b1dc212e734ee82ba33c5e071f3bb99858a8972e34f8590dc297047e36/trace.jsonl",
+      "tip": "9a867848dc8767b63be3e2107f1aa8fef4c695c2f86e4de248d5fd22b91f2494",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/d1c71f0505301b96b23abda6386a2f8ccca4c35fab2f2e0d4b87760dddaff3d7/trace.jsonl",
+      "tip": "99b56ceda3d69ea046ee3c31dd2bad4a07e374afb2012de44f867be149d5a8f6",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/d19ad348f69faafd4a858a5f85286f58c0211b69897828e1cba213e58aac89a7/trace.jsonl",
+      "tip": "c44c47170d120ba5dfc2191ad500139335116ba241e385006c475f05d3966860",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/37d562e3151f7536a65ffe22f564ff2313710eeb5e83b597456f965ef118a662/trace.jsonl",
+      "tip": "e6c74b5be869c33fa1d1702156a9164ddf0eb8afd06ec78c342e365901a87776",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/13d98916b11aed6243609c52e8ef2fd4a7a85b6909ca5d6873e89fb9cec7849b/trace.jsonl",
+      "tip": "86368a75a3e5ec84bea63086182a055dbb31527ad098261813aeee145dcf99f1",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/fc5460fbeaa578f0e65e789903ea63a6779e9b43ed8d8efd35114ca4bd5fa207/trace.jsonl",
+      "tip": "2e70a99a0f9a7222e06003fa8e5cc0737420b2773f635da194d8019680a16db0",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/720c243bc57a7c79d3a317dd7633c6f4fa806e220a99a9b9384d66ce49e32157/trace.jsonl",
+      "tip": "ec7cd87d34da00f9010cb902bdfb1e7e1a9cb616daec39ed2bbb3a9f9a66135e",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/0fe99c52d4e93dcb85dacf724a251e1ecff6531429d7bfa965d18a8030b4b36f/trace.jsonl",
+      "tip": "8a6a302b2cbe0b52afeb727cd74ea0816cfaef541e29d63fd83d74725b6cba5b",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/72f5e6d19a7364e7dee8350c93eecaa76668c60c29775ad23aa3559b6be7d76b/trace.jsonl",
+      "tip": "3a4b3b19d9e398def7e83bc87f0896e70ab16bd11351bfffa4dc8d18d54540b4",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/985a21556fab3416024067187ba7329cc7e4766590b3f985b770367d6024975b/trace.jsonl",
+      "tip": "e4921109dbb6476f07845db34b9b1f8f89c446138e8ed5801bb6946a2f0e2aff",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/c7a1084550a18b4cb2040f6e1a486e5a31af0e08e8c9b5377f33e0351b35343c/trace.jsonl",
+      "tip": "ab2aee7c666e4e0366a22e13f8eba5ab7b61c1529e9ea09dd3ad82f232711c37",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/d1b1d9474cf1d8fc60d90f942dc17a701a0c72041c19ab20b23e53db9eb5b7f0/trace.jsonl",
+      "tip": "d722c049de44954adc4c2ed9d5059b75d84454870cf255663cfa0f5476f5b9e1",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/1841d7acca17691a18154df0d4596e14bd87616f1b52acbed0e5f60a650b5f3d/trace.jsonl",
+      "tip": "1ae6f95636b9c4fd4d9f482c0e0b0b8e19b9fa0f95253820c5aa99fd07b52d52",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/926b4436f0f5aeb7e708ae89d7302a0c7691ff54b4fa06b07432b4470d15b381/trace.jsonl",
+      "tip": "d6a72018d5e6c4819b4398e16f3e32c822945b13635bb6016cffdf09ca58a1d4",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/d60bc0f0b28a4ee4759df44365d4b68221255350f23bfa65105823aa41b84995/trace.jsonl",
+      "tip": "0537b728fd37e00d0760b1bf6259b83b8c4f135dcbdabc8af13b6b93e26a63b1",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/e5fd4f748d4b74f15ca9e7caa8bb0b6c394e1060f10e86aab983a8982232c8e4/trace.jsonl",
+      "tip": "cc092ff452791caaf0efc40502c8120428bd92b11201dc966c79a1eb936ddc75",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/422977db03f333c8a533feb43fc187aaee3c541457d5a7d4510af1ea3eeb32d3/trace.jsonl",
+      "tip": "31bdeafd878d32b9ce2ff589e93bde5bb2b33239277185ced1b87f5c3328711c",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/4361b5803b0d66fb8bcdbb9011a5b0b40848b072e7f85919579b1d146e8766d7/trace.jsonl",
+      "tip": "d9a2c7281b9c985785b92b3e21e250187e78db7b2ab8d1e74e5e0bd506645fb1",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/b6b722dde0374ad89cc6a245700027bc1e3a2d0a72afb0436fa1b6025a2feb0c/trace.jsonl",
+      "tip": "5ad71b21a8ef2139db269dc08e5fcb7986c1acb581583317213262993b46a697",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/a4a9c845d59da6f93dc867ea4164559659606fae7b29eebf92e3d91f83c3d207/trace.jsonl",
+      "tip": "b079df037893541692a93cd222c4c937fcc0b2eaa32ae03d25c231aa85a7c353",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/3c937f54f83c4963550859c8f83f4811a44d81c6c4e6b11403e0934d56bbc754/trace.jsonl",
+      "tip": "e89c6f494f93aaed1244e0a4f31a12805d38af5ad209fe53d76adbbf3bc2eae6",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/97c08d6fcf6222e796fb06d03262fb176d7306fde9f8d7abe5477842039e44e6/trace.jsonl",
+      "tip": "a549d68a9e7526e4fd88082fb0950ec3b160ebb2277c3789aab0a1467f4aa509",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/f56c2724faf70135769d3f663573b62b8c565f607070bcf4c5ad5acb101e56ae/trace.jsonl",
+      "tip": "30e4a00cac7fca76af29f3272686d88c0e804b99b234489076852626955bc9c9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/d7bb42d3521e233f364e9116af35250e3fa5b115ae3c882a0f611ff6eb77fadf/trace.jsonl",
+      "tip": "9b4a3d54f64ccd955f956d27df31914c3f811f6f3322aee970e27e5a2bbcd5a8",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/e71fce980a73acbbe2d56874c1be59ae65b9d6d2b2e6b72f6137bfbb3047cae5/trace.jsonl",
+      "tip": "f9c485bc110ba1f19a4df34dd2389620a77a84be90d124a74b68a2cf4157ce88",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/development-comparison-001/trials/bc80c6cd8eae6fe2d2d2e98f2fb84f8752ffa24f31b9f3f737c46c17955e4a1e/trace.jsonl",
+      "tip": "01caa95dd973a380632cfdea089d2529cbf1131009cf94feb630e97bd567668c",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/identity--trust_old.jsonl",
+      "tip": "b11ceea44abc48df198f5929483ba02742ffcd9c7c91c3c4540f8a4898153c43",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/identity--narrow_reminder.jsonl",
+      "tip": "086b59722750227982b6c3f4b9afd92634e1a5167afc8e72c468133be86482d3",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/identity--always_rerun.jsonl",
+      "tip": "332ebf54b77ca98c91110822513133374bb780457d0e49b4b00da2b1cbd6b20d",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/identity--provenance.jsonl",
+      "tip": "1565d92af70d1d375f65b6925fb9173cee3cdf8fe679f05ec4239781e6bb6695",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/identity--refuse.jsonl",
+      "tip": "0ec7e3039a554a63182c542d92c889f8e1307467df56dce2e1ea265221a0bb52",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/rename--trust_old.jsonl",
+      "tip": "a6fe2f346ab479a140a2ac1f4bc54434c79348b222f35e2f5d1bd58b314e2eca",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/rename--narrow_reminder.jsonl",
+      "tip": "528f7f7a0a03b6c15e7ec4f79a497e5be2fbd6b9b0fb1c59c933d8a25e2879c0",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/rename--always_rerun.jsonl",
+      "tip": "6b48a804fda10b16028fa678fc1f9fc7eb90a06ee15bdf0e97fa04728d7797d2",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/rename--provenance.jsonl",
+      "tip": "3c32336717af6809e6daf39dd6214ba991f6a91a0a45daafbc21a7f4f9a4d927",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/rename--refuse.jsonl",
+      "tip": "cb1cc1861909a1876804d1bdd76a256c29f9390fef3bd0ac621d9d291848f7b2",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/noise--trust_old.jsonl",
+      "tip": "8fd9bd5fbb12e41669884a088982eb9bd68017b5d1f6baa48690f5de30c2a830",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/noise--narrow_reminder.jsonl",
+      "tip": "48e4767f42abfea588daa1298b4cb828feeee608a8352d7fc2cf619442dc0e4a",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/noise--always_rerun.jsonl",
+      "tip": "7d8b0961dfc4b6bb6eb39c281a4bddafd3e36df20d348792a3d2a43daf0a6022",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/noise--provenance.jsonl",
+      "tip": "0bd97c15260f05da2bbe50a322a7ab33b9a82f8ee51b321d90f44e0eea8e9888",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/noise--refuse.jsonl",
+      "tip": "88eda3ee6c94e633c9c1a92db53073c690a1b056bb6f8fce4c0ddfa5bccd627b",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/compaction--trust_old.jsonl",
+      "tip": "e7a89bf290dda8604c89dadc948cf99c71708e150b9bf3e0eca7c1fc81128add",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/compaction--narrow_reminder.jsonl",
+      "tip": "62155e594e9043b45572487e67c66b398ce48ca3f524b36fe87f8149da1014fc",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/compaction--always_rerun.jsonl",
+      "tip": "c1d620ff42ca2a79bfbdd06acef9604a1830fea14a9aea67f26c1853a9002cf2",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/compaction--provenance.jsonl",
+      "tip": "5556de8af38f470d95ad7196bd88ac054e5202200b2cc58bffa71bcc42d050a9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/compaction--refuse.jsonl",
+      "tip": "b5bc97f4dda2df0ecc3b7b90a02949e82bf59e982e4666bd914f62465d337568",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/handoff--trust_old.jsonl",
+      "tip": "b0c7d3037a572648512a6687361d8f0c128f89cb773f838cef2909756e0be3a3",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/handoff--narrow_reminder.jsonl",
+      "tip": "92f1633115c64694111aa81b721b9ead99b95ed2e13114e5cfa8dae57de500f0",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/handoff--always_rerun.jsonl",
+      "tip": "52999c2335466eb028f415aacfae83bbacb513eb98faabb676b12a7e8c0acdb8",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/handoff--provenance.jsonl",
+      "tip": "aa4b5cecc4ac2587c2d16e2a260658992d6fabfa50808e1f839f5f4f1e39a460",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/handoff--refuse.jsonl",
+      "tip": "4499273500fed4575512696c2b9a425843470a77b76b5cb32dfc9c82787da95b",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/cache--trust_old.jsonl",
+      "tip": "c93d9b0187f33c77f90321514c65f16f24c0fcb1cd62096d073ab076195818ab",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/cache--narrow_reminder.jsonl",
+      "tip": "2259c040df4da3217143744805215a564b73fd0f388c81d8fbfb3cc65be83c04",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/cache--always_rerun.jsonl",
+      "tip": "e7bafce9bc398f21375d6aaa9cf18b631c424eac0ff490c105465bc3319c53aa",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/cache--provenance.jsonl",
+      "tip": "fc9085455cc608a7726c9601749713fbfd5c9873b64de8da64df85d7bac79209",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/cache--refuse.jsonl",
+      "tip": "3928c2afb2957a1c266d645415f3df653ac233b893e6fd327db08431d09f13e2",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/unchanged--trust_old.jsonl",
+      "tip": "3f95995d7f60a7fa1263ef479b1e10c34149a12fbfd02370484afb0fa45672ec",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/unchanged--narrow_reminder.jsonl",
+      "tip": "6fa2bb2064b7065e5b7c7e19897b11e19cc9c8f37c34baa6856490d20e76bac0",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/unchanged--always_rerun.jsonl",
+      "tip": "320388bcfa42cd2ef923cc6313c3659ae349d62e77122d8eba1f14eb06e121bd",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/unchanged--provenance.jsonl",
+      "tip": "51a3c04b844446ee1ab394e2938a99f113bbc5870d6d5dbb501b8bb0c43fbc29",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/offline-controls-001/traces/unchanged--refuse.jsonl",
+      "tip": "2fff26b3850ed6ed6ca76ba8f406c6bf0929ba3f8ca7e51a8d9e4b88197f6f03",
+      "completed": false,
+      "functional": true,
+      "fresh": true,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/shinka-bridge-001/traces/case-00.jsonl",
+      "tip": "f8f6474f78ebb5afa1deb68f786b83362fd111f909109af8bfc258e0288daeac",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/shinka-bridge-001/traces/case-01.jsonl",
+      "tip": "92adf48d687ead1a50d67de0268f7c037779514d9443720834d1e463e66017a3",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/stateful-controller-005/traces/generated-baseline.jsonl",
+      "tip": "397fd789d314cc8ad9bcc8e1f6a00e278f2a7012be13cee961967139fb641feb",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/stateful-controller-005/traces/generated-config.jsonl",
+      "tip": "c97681bc854acb2a0c53e170cc6baa5deb572364b63913dcba9aea6a851623a9",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/stateful-controller-005/traces/generated-source.jsonl",
+      "tip": "91d4a5fb9cc6732dc683db4c5af400b1d4e8d51395add1a90f1a7aa827c13854",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/stateful-controller-005/traces/generated-docs.jsonl",
+      "tip": "b57a993cd9b5d7a1503cfc81139d5d0705e3342bc0ff89e10b7c0f0fc68ae938",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/stateful-controller-005/traces/generated-handoff.jsonl",
+      "tip": "25af165aa869b92cca78e0434fb9669a6116fd7d05ee38c2aca30db80354cc87",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/stateful-controller-005/traces/generated-compaction.jsonl",
+      "tip": "3386aeeaa7870aa4d2953b26099f3fc8dea1ef3a166c8789f3c66d42ac8ad8c2",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/identity.jsonl",
+      "tip": "fc75bd158d16f70326146cf3b13f862c82003e324b1a0c5e662697b40640559c",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/rename.jsonl",
+      "tip": "fe034f5b7e445e155ee3f8804b4d1c21e43d4d456b22c55ce3465e9c40f3a5d7",
+      "completed": false,
+      "functional": true,
+      "fresh": true,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/noise.jsonl",
+      "tip": "8f65fd803d587a91ae2c1fc9bdfc1669c1753da40d24a017fa1f15a0bbd41cf5",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/compaction.jsonl",
+      "tip": "2518c953025e793fa3633376bc3567181ec623c7ab402b520438c5ef901381dc",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/handoff.jsonl",
+      "tip": "8eb01e85baba0d90266744f2bab4d4cad47d1c0b3076a6d2cf41f3471dfd65b6",
+      "completed": false,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "not_completed"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/cache.jsonl",
+      "tip": "1c3e4b0f5cb38e4dbc8e49f4df401ec9ddb81ff8fd7ecbe8af87abb3f1072a24",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-policy-002/traces/unchanged.jsonl",
+      "tip": "cba8b781a6ea845f5495c2da5bf1f84aee8d7abc6144c6d6c0fd156853b68b31",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/identity.jsonl",
+      "tip": "e3cea7031f14ce6c4a14829fb548e1ba93cd6ca01f65b68f9e67e86f31416b36",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/rename.jsonl",
+      "tip": "540a4ea14b34e01973339deeef2520cb382b36d7dba90999def07ebaf904700e",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/noise.jsonl",
+      "tip": "c1b77e7fad2b2fdde4867918ca7eaea990fb75ce3af9f6e4203968648076e87a",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/compaction.jsonl",
+      "tip": "076ae6b3632b4a8d99931fc2e56758e6407f34a95d139843a6f8b75627033e7f",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/handoff.jsonl",
+      "tip": "3b32c2719e0e22dc60bf6a872d9812e6e3945be128857c56da54b83741e359b3",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/cache.jsonl",
+      "tip": "db1c7f791805e66e81e37e9486c46e81933ee0cf139e5d66e4cd51811c7ffa4d",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/unseeded-worker-recheck-003/traces/unchanged.jsonl",
+      "tip": "e8210567a7b10d3ede5b562a2fc2e6bacc7a27fd2004fa21cbc87ce261c0a41a",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/reference-baseline.jsonl",
+      "tip": "632c4cbb66fac526f18502c6ba1b63f59825ab052985adc8a76e432f7997c99d",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/reference-config.jsonl",
+      "tip": "ff31da411ecfaeea82711c57d03d3828d82ce218e23caef4c1d7b051ee66fc28",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/reference-source.jsonl",
+      "tip": "8a4ad4ed1657b2c711bafab3d8cd1facef84da3561391833a130720538317b8b",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/reference-docs.jsonl",
+      "tip": "2bd307846bc84fde6b6ad6af680696e68383a938d8ff02878483272a490224d2",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/reference-handoff.jsonl",
+      "tip": "a8e6f92adda8e07705d3e59e2ac135d86f5faf7841e85c89138f5cb1970f5605",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/reference-compaction.jsonl",
+      "tip": "d1ce498ee1c4e34cfa1b6b8eb4867ff9211a1cd920cbece167e064d62d84b464",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/stale-control-baseline.jsonl",
+      "tip": "eb3bd30cf2b4c778e18a8ea73438b8d42c6e20ea970b8d5fd7013f92532fae49",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/stale-control-config.jsonl",
+      "tip": "dbe89540a1f8f46ef917f247e9d423f851e35adef148e27e0201fcd7ee89224d",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/stale-control-source.jsonl",
+      "tip": "2f612dd24c8fd25106e49f1e389a4ddc4fab0c4cb8d158cb1fded60b7db2f00f",
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/stale-control-docs.jsonl",
+      "tip": "3f090b99c6dae8dfe41dc3875d064edfba98b333f0dc0d9384263f5cbe340c68",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/stale-control-handoff.jsonl",
+      "tip": "69ad750c687540b8bfb29eba19feb5d9b7d1a8ce6f1af930148757fc9962f4a4",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "trace": "evidence/workflow-controls-004/traces/stale-control-compaction.jsonl",
+      "tip": "cb9fd5b59eda41ab910d0333ad924171c07bbf8c8288d10dbff5f238a49470d1",
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    }
+  ]
+}

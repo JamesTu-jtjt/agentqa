@@ -1,0 +1,38 @@
+{
+  "candidate": "repair-00",
+  "slot": "generic:5",
+  "trace": "trials/49f8c977dd44dae8fe5008d6dc102702bc51895fcf6edca385c89b34c67a16ab/trace.jsonl",
+  "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+  "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+  "trace_tip": "611520a61824c7d471ccb60257f81e29cc7ac7d12f04768f34498d1294b8a9f9",
+  "error": null,
+  "execution_error": false,
+  "visible_runs_including_setup": 2,
+  "worker_results": [
+    {
+      "status": "completed",
+      "returncode": 0,
+      "output": "{\"action\": \"verify\"}\n",
+      "duration_seconds": 0.6179589999374002,
+      "container_name": "agentqa-edbee38854ea40f097fb7dd7acc84c4b",
+      "cleanup_confirmed": true,
+      "failure_phase": null,
+      "startup_seconds": 0.2545598328579217
+    },
+    {
+      "status": "completed",
+      "returncode": 0,
+      "output": "{\"action\": \"complete\"}\n",
+      "duration_seconds": 0.5427984159905463,
+      "container_name": "agentqa-fa8382cfe1ab4f1e8d825af4b57f38d1",
+      "cleanup_confirmed": true,
+      "failure_phase": null,
+      "startup_seconds": 0.2177343328949064
+    }
+  ],
+  "completed": true,
+  "functional": true,
+  "fresh": true,
+  "verified": true,
+  "reason": "verified"
+}

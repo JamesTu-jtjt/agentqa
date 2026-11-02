@@ -1,0 +1,435 @@
+{
+  "schema": "agentqa.codex-pilot.v1",
+  "origin": "model-generated-repairs-of-authored-failure",
+  "model": "gpt-6.1-sol",
+  "codex_invocations": 1,
+  "usage": {
+    "input_tokens": 9064,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 376,
+    "reasoning_output_tokens": 112
+  },
+  "accounting": "Codex subscription; dollar cost unavailable",
+  "results": [
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "identity",
+      "trace": "traces/candidate-00-identity.jsonl",
+      "trace_tip": "399a0ef59a95df3881d97531736814f6725ada1de87b334727bd7fc7bc65a6f5",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.5283644159790128,
+          "container_name": "agentqa-f1812d09a2c24674b1b3fa639cbdb6a1",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.44254516693763435,
+          "container_name": "agentqa-4846430b67a64ddb8fc9f74779769bd6",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "rename",
+      "trace": "traces/candidate-00-rename.jsonl",
+      "trace_tip": "b3f45769d9c2082023d68237329bdd52b30a6f78c4938462b700cf9fccbc5638",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.3273987912107259,
+          "container_name": "agentqa-f782fbb9bc674192b3efd9bd86e692c6",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3279628329910338,
+          "container_name": "agentqa-d14d9546b2de480a86313b621e8a377c",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "noise",
+      "trace": "traces/candidate-00-noise.jsonl",
+      "trace_tip": "aece0f8d15d88a58526b7c47bad91a9dbf776bb1eaa9cee2e0e99bf5e8f14b79",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.32912241597659886,
+          "container_name": "agentqa-723d30c3d03c498fa03d13d8922c46c8",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.32323612505570054,
+          "container_name": "agentqa-ed815808e65c411a80a1b7180002c3fd",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "compaction",
+      "trace": "traces/candidate-00-compaction.jsonl",
+      "trace_tip": "cff3380a2fe7d8069393eb318fe2526907b62df09d37ab0bcc67dcfcf79752c6",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.31921966606751084,
+          "container_name": "agentqa-eaeca24c2d024e4bb89c768e1285ad7c",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.29862637515179813,
+          "container_name": "agentqa-796f79cfe12a45bdae110cd6d72d5af8",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "handoff",
+      "trace": "traces/candidate-00-handoff.jsonl",
+      "trace_tip": "50001674d2ec5022d99e1de5ad7492c497689225dff2829ae04052f35eed98e2",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.3600559579208493,
+          "container_name": "agentqa-8f8239a2ae824d2dbb48ecf8c71921d0",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3823657501488924,
+          "container_name": "agentqa-fe754716f20e493196f06fde96edf98d",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "cache",
+      "trace": "traces/candidate-00-cache.jsonl",
+      "trace_tip": "e62a26156780082ffc9dd375a0274913f1b56a534662e509fdeb8504a22546cc",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.284927082946524,
+          "container_name": "agentqa-6313699780cf44398e097508c6c7a02b",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3103034170344472,
+          "container_name": "agentqa-57b53e95fc3c421ca5010357288cae01",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-00",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "case": "unchanged",
+      "trace": "traces/candidate-00-unchanged.jsonl",
+      "trace_tip": "20464a7dbca15b6e3f56110bf666c2ca10b41e2cc6b965d9d5985b476ba01c42",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3018037499859929,
+          "container_name": "agentqa-f1c46f0cedd140f8a70744af76464bc1",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "identity",
+      "trace": "traces/candidate-01-identity.jsonl",
+      "trace_tip": "865fbd35c7912037e4dd892a43ec67633698805788057c00dfa4752cc2963e00",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.31555941607803106,
+          "container_name": "agentqa-9e5cd52d173049a7b29e5a470bc2f957",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3321314579807222,
+          "container_name": "agentqa-d8bc5316d85b42c29943a88cd725f74f",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "rename",
+      "trace": "traces/candidate-01-rename.jsonl",
+      "trace_tip": "9ecd449c46cdfc6ae7c648d5157a2e4ac06e190bd5e30774e488d8fd23ff5e9e",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.30155750014819205,
+          "container_name": "agentqa-351fdb8409db4412883fa0bd74d099ae",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3372076670639217,
+          "container_name": "agentqa-675a4efadcd54a2c84e4574163bb5bd5",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "noise",
+      "trace": "traces/candidate-01-noise.jsonl",
+      "trace_tip": "11d969b411be61b2f5a051045747a63a31e6d163d0c8ffb9cc1f853c9e01291a",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.31094437511637807,
+          "container_name": "agentqa-cc8bea8b260f43e3a39e82b9e2e2d4b4",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3068575409706682,
+          "container_name": "agentqa-5ff3205afbd44b9385d6e60e81194752",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "compaction",
+      "trace": "traces/candidate-01-compaction.jsonl",
+      "trace_tip": "229fbfafaec6f4858ccbc23aecf95025ce307f6a29ecf6345e4a3c3f91df7d70",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.3591797079425305,
+          "container_name": "agentqa-540c365df4e64cf989ba4c068b8990d4",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.36975912493653595,
+          "container_name": "agentqa-f185f5bc8fbe4e8ba729fec5f07e08b9",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "handoff",
+      "trace": "traces/candidate-01-handoff.jsonl",
+      "trace_tip": "3fbef828da08c4d6717a4ffc6c5bcfaf057f5aefbd7dfc9d1b7ccfb6ae6ea5e1",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.30772504094056785,
+          "container_name": "agentqa-f27c4ecbb8f444c4976ca4d93801069c",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.35228970902971923,
+          "container_name": "agentqa-2edfc123ce6149f0ae971d3798ee098b",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "cache",
+      "trace": "traces/candidate-01-cache.jsonl",
+      "trace_tip": "2ea3e347c06d06f4b54d5aad4dba2195d7792ce030f484ace26aad95d06d50a9",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.29069562489166856,
+          "container_name": "agentqa-89a4a58cb18949b0ac429d70ad3528d7",
+          "cleanup_confirmed": true
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.31022162502631545,
+          "container_name": "agentqa-294bfa5be96d451c86d8c008f6817112",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "candidate-01",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "case": "unchanged",
+      "trace": "traces/candidate-01-unchanged.jsonl",
+      "trace_tip": "9c48a2fc74e404ca146f81af50ec025681e1dd4d116da5841b422b42f9349934",
+      "error": null,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.3353125830180943,
+          "container_name": "agentqa-6800ab6ebb4d40cb9b10c7a0935bf4c3",
+          "cleanup_confirmed": true
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    }
+  ],
+  "scope": "Development-family feasibility pilot; no natural failures or independent audit"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "pool_id": "synthetic-pool",
+    "candidate": "parent",
+    "candidate_hash": "7c5fae77255b8f0e84f6c0fa21705a51625f49528c60227620ff9d7d8450e086",
+    "slot_id": "synthetic-slot",
+    "completed": true,
+    "functional": false,
+    "fresh": false,
+    "verified": false,
+    "refusal": false,
+    "infrastructure_error": false,
+    "api_cost_usd": null
+  },
+  {
+    "pool_id": "synthetic-pool",
+    "candidate": "repair",
+    "candidate_hash": "00f41b44a59fdf2b292f2541c7508d9023116f73fced25507599c640e690c41b",
+    "slot_id": "synthetic-slot",
+    "completed": true,
+    "functional": true,
+    "fresh": true,
+    "verified": true,
+    "refusal": false,
+    "infrastructure_error": false,
+    "api_cost_usd": null
+  }
+]

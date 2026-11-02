@@ -1,0 +1,29 @@
+{
+  "schema": "agentqa.audit-analysis-plan.v1",
+  "status": "selection_frozen",
+  "pools": [
+    {
+      "pool_id": "synthetic-pool",
+      "pool_hash": "268346f0cbc6aa8f5270768b3513b9da7c0b57a26fa6ffd7bfa0a5b35fb59a77",
+      "parent": "parent",
+      "candidates": {
+        "parent": "7c5fae77255b8f0e84f6c0fa21705a51625f49528c60227620ff9d7d8450e086",
+        "repair": "00f41b44a59fdf2b292f2541c7508d9023116f73fced25507599c640e690c41b"
+      },
+      "decisions": {
+        "source-only": "parent",
+        "generic": "parent",
+        "failure-family": "repair"
+      },
+      "audit_slots": [
+        {
+          "slot_id": "synthetic-slot",
+          "case_id": "synthetic-case",
+          "repeat": 0
+        }
+      ]
+    }
+  ],
+  "scope": "SYNTHETIC DEMONSTRATION ONLY; not real selection or independent audit",
+  "plan_hash": "f58a374b57a7ef45a9e423c52873dc83fb2c9c55a225a33883c1f64d1adc4026"
+}

@@ -1,0 +1,28 @@
+{
+  "candidate": "repair-00",
+  "slot": "regression:0",
+  "trace": "trials/13d98916b11aed6243609c52e8ef2fd4a7a85b6909ca5d6873e89fb9cec7849b/trace.jsonl",
+  "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+  "scenario_hash": "bab91f08b83af1e1794f5e4fb36b72e1b2222be81a0ccc50c1199a2efe31e971",
+  "trace_tip": "86368a75a3e5ec84bea63086182a055dbb31527ad098261813aeee145dcf99f1",
+  "error": null,
+  "execution_error": false,
+  "visible_runs_including_setup": 1,
+  "worker_results": [
+    {
+      "status": "completed",
+      "returncode": 0,
+      "output": "{\"action\": \"complete\"}\n",
+      "duration_seconds": 1.1614635419100523,
+      "container_name": "agentqa-7b7c72ef63df481e98eb860beeeb8ecb",
+      "cleanup_confirmed": true,
+      "failure_phase": null,
+      "startup_seconds": 0.3322390839457512
+    }
+  ],
+  "completed": true,
+  "functional": true,
+  "fresh": true,
+  "verified": true,
+  "reason": "verified"
+}

@@ -1,0 +1,8 @@
+{
+  "origin": "authored-controls-and-conceptual-design",
+  "model_calls": 0,
+  "summary_sha256": "09c7ff940ca71baa02d080833d2c8eea8fe07054f6a1fbf19d248e747c6e9ac0",
+  "script_sha256": "08e4553a02c934a6310f463aca140a0cee59aa66afb1af0d06872fdae302e1a1",
+  "matplotlib_version": "3.10.1",
+  "replayed_traces": 35
+}

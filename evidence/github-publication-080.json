@@ -1,0 +1,19 @@
+{
+  "schema": "agentqa.github-publication.v1",
+  "date": "2026-11-02",
+  "owner": "JamesTu-jtjt",
+  "repository": "agentqa",
+  "url": "https://github.com/JamesTu-jtjt/agentqa",
+  "visibility_before_upload": "PRIVATE",
+  "status": "private_repository_created_pending_initial_push",
+  "authorization": "User explicitly requested publishing this project to a private repository on their GitHub",
+  "branch": "james-tu/agentqa",
+  "excluded": [
+    "Neuroevolution",
+    "credentials",
+    "environments",
+    "runs",
+    "scratch",
+    "vendor"
+  ]
+}

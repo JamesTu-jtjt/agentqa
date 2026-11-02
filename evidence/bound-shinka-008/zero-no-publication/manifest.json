@@ -1,0 +1,11 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "request_hash": "58cbd6ad8f2e4866246a074cd5cd4ea1a9af5a34db541608076b765739654d20",
+  "receipt_hash": "ef48130d202b03bb9ca9a907f3d803136c3c32e36c54934112fc7e0873b65f52",
+  "verdict": {
+    "valid": false,
+    "correct": false,
+    "score": null,
+    "reason": "incomplete_or_invalid_publication"
+  }
+}

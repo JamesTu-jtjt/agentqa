@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "program": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "program",
+    "rationale"
+  ],
+  "additionalProperties": false
+}

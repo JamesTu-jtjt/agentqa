@@ -1,0 +1,2089 @@
+{
+  "schema": "agentqa.comparison.v1",
+  "scope": "development-only-not-independent-audit",
+  "plan_hash": "d88b3954fcaa9b051d23531c07cd17dc139b8fdba945f765de22afa1b06d6f1f",
+  "pool_hash": "3984309eae4921b0679c4807a2ed56b584193b498e11defaf228baa4a5d7c34e",
+  "trial_count": 60,
+  "decisions": {
+    "source-only": {
+      "selected": "repair-00",
+      "eligible": [
+        "repair-00",
+        "repair-01",
+        "parent"
+      ],
+      "excluded": [],
+      "rule": "verified-completion/cost/id.v1",
+      "slot_count": 6,
+      "regression_slot_count": 2
+    },
+    "generic": {
+      "selected": "repair-00",
+      "eligible": [
+        "repair-00",
+        "repair-01",
+        "parent"
+      ],
+      "excluded": [],
+      "rule": "verified-completion/cost/id.v1",
+      "slot_count": 6,
+      "regression_slot_count": 2
+    },
+    "failure-family": {
+      "selected": "repair-00",
+      "eligible": [
+        "repair-00",
+        "repair-01",
+        "parent"
+      ],
+      "excluded": [],
+      "rule": "verified-completion/cost/id.v1",
+      "slot_count": 6,
+      "regression_slot_count": 2
+    }
+  },
+  "results": [
+    {
+      "candidate": "parent",
+      "slot": "source-only:0",
+      "trace": "trials/7d263dba5d85a411195eab3b5f36934ddb5281d9698009b8544cbd98c27acc46/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "50ed8ac82309aa0ab5f34afa45aac6de7420bc35d60cc2d4bc5e6870b2a561c5",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 7.02408341714181,
+          "container_name": "agentqa-1124eb5bdb464f67a723b70d07b96964",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 3.583652292145416
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "source-only:1",
+      "trace": "trials/2cea37bf2ebb6349c1427cbec4ec59627374a0e39ba6e814dead83f22270d7e6/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "5d1db8c4fe9ce887d123d11764d654d9a159063903b520b0873b9444c689f2e6",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 13.155332874972373,
+          "container_name": "agentqa-f0f5c74182e24d50862002fc98ca4e03",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 5.539890833897516
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "source-only:2",
+      "trace": "trials/cb71c18ebc4707aad667f50bea8c1c4b0ef719f3bc800b898d8b7440ba859be6/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "ccd1364905070748d4b12af9a76975af4c3e93a2ff301d3484ec889c6d097b40",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 10.805051500210539,
+          "container_name": "agentqa-cafb07a7ef524f839d3ce7791468727d",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 5.959471625043079
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "source-only:3",
+      "trace": "trials/f7c0d333800cc230dd8b421209e3f7c0deeb70358f53a75b42d925f803c0475f/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "bbb08b04b863d2e52accff91f0f3e9feddf786a8c0c6d7a0ce9e7c3731ce33e2",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 10.892138124909252,
+          "container_name": "agentqa-e5820f6757d240b8a0d025b395a7b5a8",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 7.462205666815862
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "source-only:4",
+      "trace": "trials/81f08a3e2d8fae50523e0cb4b2efffa786bef8c5547fef6c7b72184995ee93a4/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "9e568a82bd41f804b2f733b0de7b75acf8cb59e7862ad26ebaf21554e946408a",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 8.293697708984837,
+          "container_name": "agentqa-c924a6eb21f34396ae2dcb1e53b53fb4",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 4.738287333864719
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "source-only:5",
+      "trace": "trials/65e242a58c63098127bc3e53fe754c45c258a769ce935694e6ed50b8bc028a1e/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "cdd3506931be21613189f53c751db34da6f87ff6dff1544ddbaf1a1fc84dcb3e",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 6.523163124918938,
+          "container_name": "agentqa-093d2d82ac0041bf9d75e60fefd5332b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 3.482560249976814
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "generic:0",
+      "trace": "trials/180cb3a471229c9191432a2560b60031c96bf3bf668d122fb86453c1a22270d0/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "f8738764698b7830f43f508725cb4f618cd83e3c05625e2e4e10a94275333e6a",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 3.550479416968301,
+          "container_name": "agentqa-4351fdbf80ae498582142b1b9d29f72b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 2.117904582992196
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "generic:1",
+      "trace": "trials/e26481397046958d7bee09e34ff51ba4da73847a6d5e14e751c4ea955a3ca229/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "2247284b2210bb2dab28ecbb274e0111640a2026bfc90fb198399c5d0e93029b",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 6.178117875009775,
+          "container_name": "agentqa-c14176f054df434a844b0752c614f557",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 3.977465249830857
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "generic:2",
+      "trace": "trials/257c67afdf9f2a3ef50e41913c68818e4da7e13de30eeee3f9349840637fc582/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "e35fadb005730d239e7d7bb0ad008ce9163b029af0601729aecf91f30c1dd2c0",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 5.449092500144616,
+          "container_name": "agentqa-06b83712011b423aa8f8be488ec30da4",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 3.6101110831368715
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "generic:3",
+      "trace": "trials/ecaa63f2a16dfc5bce0b4f951b35ec4bc2942349943478ed19e93b7a2529f235/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "8a5ba75046a74a6b24cda1bc018fe1e318be1817cedb428bf0e58e15724946a3",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 5.601868083002046,
+          "container_name": "agentqa-1c97b0b6c5514de6b20253d21f53e882",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 3.3631433330010623
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "generic:4",
+      "trace": "trials/9a261efe9654de9b0c11eb25303bb2c380bcbe7ba171ec973a11650fa0d9729c/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "b3644d05609be3e078ac0b16626664b2b86c793312f72c1bf64e494609c1ab20",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 6.639443916035816,
+          "container_name": "agentqa-82a6c9612e2a43af81973123a54f9aa5",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 4.207009958103299
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "generic:5",
+      "trace": "trials/7e29a9724caa07f2a561027f9fb1d9fc4dbd1b81ed54f941793f16891a5befaf/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "f832c62321a4c55511dc6509db23fa2663756280ac74d602b613c223ce2f0af2",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 5.4155036250595,
+          "container_name": "agentqa-2919e8ea3885435d931762470fa2f087",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 2.363607916980982
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "failure-family:0",
+      "trace": "trials/60f5ecab578fedb12aba37773f653cf1610dd663eb883b9e27640147fb91ad04/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "94b0c7422e0532cb44f26579e2ba660a7ce28cb7d6af268505c2bbbf39bf26d7",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 5.3237210419029,
+          "container_name": "agentqa-11f2ae3ef0a34f088651d4a9de0c37ff",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 2.538780333008617
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "failure-family:1",
+      "trace": "trials/2be341b03912b4cad3d98c85ae98737cae147b0206433705251d9646d1f45c9f/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "4b64e3edc87021d3bf91efcdb5981f8fe98cbcd866b7a61b5b1091a34b80e4d5",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 5.153857208089903,
+          "container_name": "agentqa-55bab0fd9f0644bfb39d292372a8b49a",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 3.6091685409191996
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "failure-family:2",
+      "trace": "trials/409362401a337577bc3b2f5eabf496aa7cad4f9254a3e59a140f0307e6c52484/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "9c7005938aab1dc60feaf88f8eaa162457e2bd2bddb59907c3fbb599b4a8776b",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 3.4309126250445843,
+          "container_name": "agentqa-c1f197dae931423e959ab8e3dfd2eea8",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 1.9664913329761475
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "failure-family:3",
+      "trace": "trials/68181c772a0fee77eb9a22ce9eac83c752ee9aefcacb1f6e4d925badfa27e7b1/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "cdcbb2f561f9be675bab3dce3b598ee2355a84ea56b5499de04d004c31269243",
+      "trace_tip": "98953059b146d120e3e218b858bdf0583033a12cb1e02ef53521a3b282f8b5cc",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 4.725116000045091,
+          "container_name": "agentqa-15f86f6caced47e78a9aff562116b795",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 1.4066926671657711
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "failure-family:4",
+      "trace": "trials/dacf8f4aab5b93ac4125c55d842009119106c7b29d493d1286cd3f3effef51b3/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "61de521457bdfa1b7bb016d5e73da77f11a245460336e800eb19ad079db2e149",
+      "trace_tip": "0b4bd768b19325e431ed46aaae4de5a7623cf4ef3d12c5c12fd995563c43db9b",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 14.125564875081182,
+          "container_name": "agentqa-0baa383d47f44ce7845618bee445456e",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 10.377595459111035
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "failure-family:5",
+      "trace": "trials/a916e4a1cccb639cb9d8708e7d5b0a5819f0c0f45aab9fcb72cbb93da42f5200/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "e05268cdefefc03d9234a3a1a9abd62ab5ba9e830f4c27c7b5aef1d715b6ddf6",
+      "trace_tip": "2bdccf13befc3dd1d4e2f1c054ac9c4e5b6f5a7886202660a2d6693aa523126e",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 2.387796332826838,
+          "container_name": "agentqa-585bf11f80be419ab15be347dd33a431",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 1.1531812909524888
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": false,
+      "verified": false,
+      "reason": "missing_fresh_evidence"
+    },
+    {
+      "candidate": "parent",
+      "slot": "regression:0",
+      "trace": "trials/eedc6698b6555c068c4db06c0ed602543305d82a40f4a1497a36238cc4d1eebe/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "bab91f08b83af1e1794f5e4fb36b72e1b2222be81a0ccc50c1199a2efe31e971",
+      "trace_tip": "be63ab11e7b0df9d8d1de8d17c9be41870c3db9ea5f17a3e6548616b0e8223e9",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.8882030420936644,
+          "container_name": "agentqa-c75f0820ce1b4ec88564ae190b650364",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4812602500896901
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "parent",
+      "slot": "regression:1",
+      "trace": "trials/4fbb35e02d6a796a378a2dae9d64ad6f26cf893340051644aaa574b4d367938c/trace.jsonl",
+      "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+      "scenario_hash": "e6c6fd8283d6d1716a312b22a078b770482a60ad082f3afe439e4ac9b69d8942",
+      "trace_tip": "a1492a1aa04ed5e0fe126c8487a6e0eec831e0c422b1b1032adecf90d1828cde",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.4139760420657694,
+          "container_name": "agentqa-7c85595d646144e9a1c46753c5efd67c",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.6464935420081019
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "source-only:0",
+      "trace": "trials/2abfa9c9538e68798c9de9f66324cd5f4e39116aa5939aabe9368518c5b9b397/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "0fc07138c0bc4e848e2091410add330d2a982466771a24bb5d7e10ad33c58933",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.9556076659355313,
+          "container_name": "agentqa-7b3534a252b74f52a2172342b598db1f",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5087367498781532
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.318528999807313,
+          "container_name": "agentqa-00af1f6b5d704d058714c3a490f707d6",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.6225008748006076
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "source-only:1",
+      "trace": "trials/793205576bd39e767fa0d9c48c4d3491d3917ceef1ce71aaf0e85ad85e0f0c3e/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "8e8c47a47d30ca0b3913934446547dac65115851ee4b7992f11bef9dc92bf149",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.749081457965076,
+          "container_name": "agentqa-6036ee58f7a4482483f1784afa6d6d94",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4067572080530226
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.7277538750786334,
+          "container_name": "agentqa-d65196e339e047289c1081685dddaada",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2877696661744267
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "source-only:2",
+      "trace": "trials/f3dc940a0958257b84eadc77698f84b4beaee838edb9b3bb4afd5cb8c779c9cb/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "5baa55b387253b4e8d73bacf7a9a0d48c3ae23a0e46a279da96f2bd1a55cbb65",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.5867843341547996,
+          "container_name": "agentqa-8fbfee0800394dcf913ceac55fb93685",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2532091671600938
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.629376667086035,
+          "container_name": "agentqa-b9f931001a104664918a9bada9dab448",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.23563700006343424
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "source-only:3",
+      "trace": "trials/469c1a0bdb541bacac2e48a0022e011e356ff14d114894d613f197c8653b3e97/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "d937604474c9db2bd4054dfc23b4b1f52fbae2bdc43313eb196dd09498d9864b",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.7374678337946534,
+          "container_name": "agentqa-2795ba057f514fa29a0d10c27f214587",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2547094998881221
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.0084998751990497,
+          "container_name": "agentqa-4ce5e3a8935f4a5c89dad0807f4af303",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5198289160616696
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "source-only:4",
+      "trace": "trials/502d69c2efe9bcf5554f3f2b6082df901417428eafca06fcf36e8beb79f5a4d7/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "870711c643a206b85f21c5806a53d654d9382fe8bfd26cdc0a3f605c2c585ac9",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6898640419822186,
+          "container_name": "agentqa-473a83bf7f574b1384127bc227de6a25",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3743750839494169
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6502776660490781,
+          "container_name": "agentqa-d188707177024194b6b121e1284a850a",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2739014159888029
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "source-only:5",
+      "trace": "trials/d9e1e947da3fc018691a6ace8b2bbe36349ab13c9f473ef34f74029092f0e321/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "44ffa8978b17364694287ace4723e85c005ff36f11bad19f829b2ee23943fef2",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.9268924999050796,
+          "container_name": "agentqa-6642a1ee3d494052af3d117c8d0490d8",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.35015129088424146
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.723438624991104,
+          "container_name": "agentqa-49712a30396649278ed8f1f7edddca22",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3812819169834256
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "generic:0",
+      "trace": "trials/cb31a49979a997e1c4ec8fb2e9e651addddd7da53fd9ab8a91c15ee3b27ed6f1/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "a2cf21f8768113d55e1b83cfa96c97b5b58375586d483161bb2c8944bc4d8048",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.7340783339459449,
+          "container_name": "agentqa-371e4c0d1911467a9f83cd12c52c188a",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2777360000181943
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.7625909170601517,
+          "container_name": "agentqa-e110aa86fff84ae09226df431a1cb30c",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.32325083389878273
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "generic:1",
+      "trace": "trials/ecd03157b4530c0c1f548669dc4d1a7688252c2b1f30c00d9cdfa5e829bdd45f/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "4c1416dab2cd6e7b6450298b97ffbc71e5f6a66c20bebaff8ece4244580347b6",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6607136658858508,
+          "container_name": "agentqa-64272c3282864093b474aa4289f1afc7",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2739887908101082
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.5794860001187772,
+          "container_name": "agentqa-1ecb9a441ea2437fb16696e3439f140a",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.24826545920222998
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "generic:2",
+      "trace": "trials/101eb4e4ee5da70ad317b44bb8ffa6ab22a67191f820a99560831e086848a31f/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "648f409b5ebe08bed86752766e3c40f2a7830e983b65fb04068886a5d0ba184a",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.7010123329237103,
+          "container_name": "agentqa-4653e13f2bdf4e46adfbf6f3b276618d",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3233584170229733
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.5500558749772608,
+          "container_name": "agentqa-3b83304113284989b626222d2623c2cf",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2164324999321252
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "generic:3",
+      "trace": "trials/950a93bf2caeee3966fcfaf903b8082d5d2b9875ebd90ffdf46e08669dd740c7/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "56e291bd41a74fae2dba75b1c1532e34d81fff5ab0a53d86a10eac3ab4bf7663",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.5788678331300616,
+          "container_name": "agentqa-910d49df56ac46ceb1d4ef9a5fdd0291",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2366223749704659
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.603549333056435,
+          "container_name": "agentqa-b38f0c8563aa448fb146d0034d910538",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.25179912499152124
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "generic:4",
+      "trace": "trials/9cb10435d5f76568b081b284b8d19460ea3c90521988813c9051a4c72c4aefe8/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "19993f8b7accd5cf7c435e70020174f288bac0528c281e4152b342229743baf7",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6296337088569999,
+          "container_name": "agentqa-93e9fd18327c408db4252ea85593726e",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2525089590344578
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.7308359579183161,
+          "container_name": "agentqa-d3ea6b35ac864eeeb7424ee00267645a",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.21396754193119705
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "generic:5",
+      "trace": "trials/49f8c977dd44dae8fe5008d6dc102702bc51895fcf6edca385c89b34c67a16ab/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "611520a61824c7d471ccb60257f81e29cc7ac7d12f04768f34498d1294b8a9f9",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6179589999374002,
+          "container_name": "agentqa-edbee38854ea40f097fb7dd7acc84c4b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2545598328579217
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.5427984159905463,
+          "container_name": "agentqa-fa8382cfe1ab4f1e8d825af4b57f38d1",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2177343328949064
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "failure-family:0",
+      "trace": "trials/5f08a8fd5859e07602c38eb56d7bef2732eb2dab5795ee149d2eef18d7408867/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "dd2b217f86dfec52a06cc60967c9577b043128b381316d6cdb3d240b47a3484b",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.74091412499547,
+          "container_name": "agentqa-f13388ccd5354354b624f15edb94a3a6",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4444455411285162
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6245489579159766,
+          "container_name": "agentqa-3d1c7dfdf02c413388c1878a57b46101",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.22654066584073007
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "failure-family:1",
+      "trace": "trials/725440d81b33d593c65717c503e65ad89f3b5626134be68afebe90e4bd4f0ed9/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "e5623e039597d0d1496194b87570a18f4e25d00a638e1fd498373d1dea30de24",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.651932458858937,
+          "container_name": "agentqa-d6d58c61112e44b5838f1368001af98c",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.22362712491303682
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.9872932089492679,
+          "container_name": "agentqa-678bf7fa0cc84673a80820ba81cb9fc0",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.31774570886045694
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "failure-family:2",
+      "trace": "trials/7a4569b1dc212e734ee82ba33c5e071f3bb99858a8972e34f8590dc297047e36/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "9a867848dc8767b63be3e2107f1aa8fef4c695c2f86e4de248d5fd22b91f2494",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.143580166157335,
+          "container_name": "agentqa-bf930ece804849e4acdc02c876a6829e",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5416274999734014
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.5910099581815302,
+          "container_name": "agentqa-5a625d1a871f41dfb9f5674760b5067b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4781200410798192
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "failure-family:3",
+      "trace": "trials/d1c71f0505301b96b23abda6386a2f8ccca4c35fab2f2e0d4b87760dddaff3d7/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "cdcbb2f561f9be675bab3dce3b598ee2355a84ea56b5499de04d004c31269243",
+      "trace_tip": "99b56ceda3d69ea046ee3c31dd2bad4a07e374afb2012de44f867be149d5a8f6",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.8197604171000421,
+          "container_name": "agentqa-f421eaaf66e547dcb496b868f4d889d7",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.36822554212994874
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.7540013331454247,
+          "container_name": "agentqa-baab9c7e1bc04a7f903c296f5e8fbffa",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2769324171822518
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "failure-family:4",
+      "trace": "trials/d19ad348f69faafd4a858a5f85286f58c0211b69897828e1cba213e58aac89a7/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "61de521457bdfa1b7bb016d5e73da77f11a245460336e800eb19ad079db2e149",
+      "trace_tip": "c44c47170d120ba5dfc2191ad500139335116ba241e385006c475f05d3966860",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.0877407919615507,
+          "container_name": "agentqa-09ec1a953b1d40cea3334283441f8c4f",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5161517499946058
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.8850082498975098,
+          "container_name": "agentqa-9282d26eb4e349b48f3b7d9ea60a47ee",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2870979169383645
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "failure-family:5",
+      "trace": "trials/37d562e3151f7536a65ffe22f564ff2313710eeb5e83b597456f965ef118a662/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "e05268cdefefc03d9234a3a1a9abd62ab5ba9e830f4c27c7b5aef1d715b6ddf6",
+      "trace_tip": "e6c74b5be869c33fa1d1702156a9164ddf0eb8afd06ec78c342e365901a87776",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.8197045000270009,
+          "container_name": "agentqa-e0d66f091711406582d530c607312d44",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3042224170640111
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.887352708959952,
+          "container_name": "agentqa-cf1250bb843c4578aae080bb407f785f",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.42375312512740493
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "regression:0",
+      "trace": "trials/13d98916b11aed6243609c52e8ef2fd4a7a85b6909ca5d6873e89fb9cec7849b/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "bab91f08b83af1e1794f5e4fb36b72e1b2222be81a0ccc50c1199a2efe31e971",
+      "trace_tip": "86368a75a3e5ec84bea63086182a055dbb31527ad098261813aeee145dcf99f1",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.1614635419100523,
+          "container_name": "agentqa-7b7c72ef63df481e98eb860beeeb8ecb",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3322390839457512
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-00",
+      "slot": "regression:1",
+      "trace": "trials/fc5460fbeaa578f0e65e789903ea63a6779e9b43ed8d8efd35114ca4bd5fa207/trace.jsonl",
+      "program_hash": "cff7979930e222f46a83177f652b2112bf88e07eb0eb1d4f9260a2379392767b",
+      "scenario_hash": "e6c6fd8283d6d1716a312b22a078b770482a60ad082f3afe439e4ac9b69d8942",
+      "trace_tip": "2e70a99a0f9a7222e06003fa8e5cc0737420b2773f635da194d8019680a16db0",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.704176333034411,
+          "container_name": "agentqa-74b612bbc65e4bfc9869d20943caad7b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 1.0817727919202298
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "source-only:0",
+      "trace": "trials/720c243bc57a7c79d3a317dd7633c6f4fa806e220a99a9b9384d66ce49e32157/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "ec7cd87d34da00f9010cb902bdfb1e7e1a9cb616daec39ed2bbb3a9f9a66135e",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.7958271249663085,
+          "container_name": "agentqa-c3361046abad4b809cd9344c8a46efe9",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4670096659101546
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.0107293331529945,
+          "container_name": "agentqa-d64d45713bdc4e20aa7a572d53eba6ca",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.46646962501108646
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "source-only:1",
+      "trace": "trials/0fe99c52d4e93dcb85dacf724a251e1ecff6531429d7bfa965d18a8030b4b36f/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "8a6a302b2cbe0b52afeb727cd74ea0816cfaef541e29d63fd83d74725b6cba5b",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.9489657920785248,
+          "container_name": "agentqa-49a9150e307b4dbcadfc2e1717a1dd29",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4913729589898139
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6214771668892354,
+          "container_name": "agentqa-371ebb9a914048b1bac874dc0b9943b9",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2736005838960409
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "source-only:2",
+      "trace": "trials/72f5e6d19a7364e7dee8350c93eecaa76668c60c29775ad23aa3559b6be7d76b/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "3a4b3b19d9e398def7e83bc87f0896e70ab16bd11351bfffa4dc8d18d54540b4",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.729122166056186,
+          "container_name": "agentqa-86647d74b7114409b149d279cc2fc6ea",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3750271250028163
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6527281668968499,
+          "container_name": "agentqa-f49be787e68840e8bc045ac55a3ab887",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.22594949998892844
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "source-only:3",
+      "trace": "trials/985a21556fab3416024067187ba7329cc7e4766590b3f985b770367d6024975b/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "e4921109dbb6476f07845db34b9b1f8f89c446138e8ed5801bb6946a2f0e2aff",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.8304283341858536,
+          "container_name": "agentqa-1099b1f3454046228a5d1c8725edfc78",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.44100429210811853
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6671138328965753,
+          "container_name": "agentqa-ccfe9730e12347e1b1240413033786ed",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2797644999809563
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "source-only:4",
+      "trace": "trials/c7a1084550a18b4cb2040f6e1a486e5a31af0e08e8c9b5377f33e0351b35343c/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "ab2aee7c666e4e0366a22e13f8eba5ab7b61c1529e9ea09dd3ad82f232711c37",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.5458702920004725,
+          "container_name": "agentqa-4e8eda992dac4b12919ec6ec06a21a65",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.21672866703011096
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6905494588427246,
+          "container_name": "agentqa-c10e5f43029c469b92197feaad13dac0",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.27125508384779096
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "source-only:5",
+      "trace": "trials/d1b1d9474cf1d8fc60d90f942dc17a701a0c72041c19ab20b23e53db9eb5b7f0/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "d722c049de44954adc4c2ed9d5059b75d84454870cf255663cfa0f5476f5b9e1",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6895234580151737,
+          "container_name": "agentqa-9d176f29fcaa4fa6bf0f23a44ba0392a",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.34807641594670713
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 2.9598243329674006,
+          "container_name": "agentqa-907d6ea68a4d4c1bb1cd1e9e70a0d3be",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2453767079859972
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "generic:0",
+      "trace": "trials/1841d7acca17691a18154df0d4596e14bd87616f1b52acbed0e5f60a650b5f3d/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "1ae6f95636b9c4fd4d9f482c0e0b0b8e19b9fa0f95253820c5aa99fd07b52d52",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.8640647081192583,
+          "container_name": "agentqa-f24e1b6362864ffc8dd4943042ebc27e",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5006962919142097
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6239915410988033,
+          "container_name": "agentqa-ebd9e12c6af2414dae86b463083a815b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2608797079883516
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "generic:1",
+      "trace": "trials/926b4436f0f5aeb7e708ae89d7302a0c7691ff54b4fa06b07432b4470d15b381/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "d6a72018d5e6c4819b4398e16f3e32c822945b13635bb6016cffdf09ca58a1d4",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.8008522500749677,
+          "container_name": "agentqa-8d717e419d3b46e2bca900fcf44bf964",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.30479762493632734
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 1.0476463332306594,
+          "container_name": "agentqa-dfa2f71faf73477f8f39b2f4aedd791b",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5266831661574543
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "generic:2",
+      "trace": "trials/d60bc0f0b28a4ee4759df44365d4b68221255350f23bfa65105823aa41b84995/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "0537b728fd37e00d0760b1bf6259b83b8c4f135dcbdabc8af13b6b93e26a63b1",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.026236749952659,
+          "container_name": "agentqa-a567abd358a346f4b1a42f01c571f3c5",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5919860419817269
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.950808749999851,
+          "container_name": "agentqa-ee76324e649e4c4c94395dbc7dde848e",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3947159578092396
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "generic:3",
+      "trace": "trials/e5fd4f748d4b74f15ca9e7caa8bb0b6c394e1060f10e86aab983a8982232c8e4/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "cc092ff452791caaf0efc40502c8120428bd92b11201dc966c79a1eb936ddc75",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.8707847909536213,
+          "container_name": "agentqa-a077d9824372453d8265882e7a101260",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.46435999986715615
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.9958044588565826,
+          "container_name": "agentqa-b085a623de96412689696d3d72cbbae9",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.5094580838922411
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "generic:4",
+      "trace": "trials/422977db03f333c8a533feb43fc187aaee3c541457d5a7d4510af1ea3eeb32d3/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "31bdeafd878d32b9ce2ff589e93bde5bb2b33239277185ced1b87f5c3328711c",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.7469940420705825,
+          "container_name": "agentqa-353ea3acbff2470ba69b2736c2694ea6",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.23979708412662148
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6150797919835895,
+          "container_name": "agentqa-54165b27fb00447f80d4fa150dda308f",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2592110000550747
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "generic:5",
+      "trace": "trials/4361b5803b0d66fb8bcdbb9011a5b0b40848b072e7f85919579b1d146e8766d7/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "d9a2c7281b9c985785b92b3e21e250187e78db7b2ab8d1e74e5e0bd506645fb1",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.8037040000781417,
+          "container_name": "agentqa-ebcbc7dde4df411da0aaddbd8d466f0e",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 1.3748119589872658
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.5781740420497954,
+          "container_name": "agentqa-8651c4ab0e39423eb44716ba264defc5",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.21514083305373788
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "failure-family:0",
+      "trace": "trials/b6b722dde0374ad89cc6a245700027bc1e3a2d0a72afb0436fa1b6025a2feb0c/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "49d40e6f7e881028b2faf0ad6a9e80494a1875dea673ff0d661ce889fc245c67",
+      "trace_tip": "5ad71b21a8ef2139db269dc08e5fcb7986c1acb581583317213262993b46a697",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.561049500014633,
+          "container_name": "agentqa-6f8e1aeb913e49f2835f0b3ec13e8144",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 1.205059165833518
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.670944832963869,
+          "container_name": "agentqa-9eb2e3e717e24107bf80ba85b49eb738",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2961610408965498
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "failure-family:1",
+      "trace": "trials/a4a9c845d59da6f93dc867ea4164559659606fae7b29eebf92e3d91f83c3d207/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+      "trace_tip": "b079df037893541692a93cd222c4c937fcc0b2eaa32ae03d25c231aa85a7c353",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6303753338288516,
+          "container_name": "agentqa-db38b09343694958b8c7c3ea92a9699f",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.25927045894786716
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 4.154709541937336,
+          "container_name": "agentqa-e4d4c015d6f64593abfd0d7fa26c8a88",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.2807043748907745
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "failure-family:2",
+      "trace": "trials/3c937f54f83c4963550859c8f83f4811a44d81c6c4e6b11403e0934d56bbc754/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "67833369124f57e357f1dbe90b2d6b9ae44a8d237ec36d5202ffef5e1044a7c2",
+      "trace_tip": "e89c6f494f93aaed1244e0a4f31a12805d38af5ad209fe53d76adbbf3bc2eae6",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.1735591671895236,
+          "container_name": "agentqa-86c6c31550ae4589bf59feebac1443c2",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.6753832080867141
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.9253576670307666,
+          "container_name": "agentqa-f7cdf2daa6db4baf81995520d72da493",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3002510420046747
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "failure-family:3",
+      "trace": "trials/97c08d6fcf6222e796fb06d03262fb176d7306fde9f8d7abe5477842039e44e6/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "cdcbb2f561f9be675bab3dce3b598ee2355a84ea56b5499de04d004c31269243",
+      "trace_tip": "a549d68a9e7526e4fd88082fb0950ec3b160ebb2277c3789aab0a1467f4aa509",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 1.3071831250563264,
+          "container_name": "agentqa-9693d94e8e62426c8e6051758919c4db",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.7162526661995798
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.9144724998623133,
+          "container_name": "agentqa-9a38dc20e8594827a1d3144671fc3694",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.514050249941647
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "failure-family:4",
+      "trace": "trials/f56c2724faf70135769d3f663573b62b8c565f607070bcf4c5ad5acb101e56ae/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "61de521457bdfa1b7bb016d5e73da77f11a245460336e800eb19ad079db2e149",
+      "trace_tip": "30e4a00cac7fca76af29f3272686d88c0e804b99b234489076852626955bc9c9",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.6559038329869509,
+          "container_name": "agentqa-e677b781c8b742e180dff5894174f988",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3263479578308761
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.808204332832247,
+          "container_name": "agentqa-df48c955ae1d43c7984fff1c695d29ff",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.4198248328175396
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "failure-family:5",
+      "trace": "trials/d7bb42d3521e233f364e9116af35250e3fa5b115ae3c882a0f611ff6eb77fadf/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "e05268cdefefc03d9234a3a1a9abd62ab5ba9e830f4c27c7b5aef1d715b6ddf6",
+      "trace_tip": "9b4a3d54f64ccd955f956d27df31914c3f811f6f3322aee970e27e5a2bbcd5a8",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 2,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"verify\"}\n",
+          "duration_seconds": 0.7317405410576612,
+          "container_name": "agentqa-c9e5f4d48bd94665b3f9b5390ab5d5a7",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.30532833305187523
+        },
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.8461735001765192,
+          "container_name": "agentqa-2c266b49cc0748389af74dd736d2db4f",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.3805232089944184
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "regression:0",
+      "trace": "trials/e71fce980a73acbbe2d56874c1be59ae65b9d6d2b2e6b72f6137bfbb3047cae5/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "bab91f08b83af1e1794f5e4fb36b72e1b2222be81a0ccc50c1199a2efe31e971",
+      "trace_tip": "f9c485bc110ba1f19a4df34dd2389620a77a84be90d124a74b68a2cf4157ce88",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6564039587974548,
+          "container_name": "agentqa-103d3d6a48b341758b9d2334645ede47",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.25259254197590053
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    },
+    {
+      "candidate": "repair-01",
+      "slot": "regression:1",
+      "trace": "trials/bc80c6cd8eae6fe2d2d2e98f2fb84f8752ffa24f31b9f3f737c46c17955e4a1e/trace.jsonl",
+      "program_hash": "00330cf797545d7765ae31bbc75b6122f4a2a51333f0c09ba1777b9fc42c4585",
+      "scenario_hash": "e6c6fd8283d6d1716a312b22a078b770482a60ad082f3afe439e4ac9b69d8942",
+      "trace_tip": "01caa95dd973a380632cfdea089d2529cbf1131009cf94feb630e97bd567668c",
+      "error": null,
+      "execution_error": false,
+      "visible_runs_including_setup": 1,
+      "worker_results": [
+        {
+          "status": "completed",
+          "returncode": 0,
+          "output": "{\"action\": \"complete\"}\n",
+          "duration_seconds": 0.6649462911300361,
+          "container_name": "agentqa-2e8dc4efb2904ded81f0bd4d54a93c05",
+          "cleanup_confirmed": true,
+          "failure_phase": null,
+          "startup_seconds": 0.25489625008776784
+        }
+      ],
+      "completed": true,
+      "functional": true,
+      "fresh": true,
+      "verified": true,
+      "reason": "verified"
+    }
+  ],
+  "inference_calls": 0,
+  "generation_subscription_cost_usd": null
+}

@@ -1,0 +1,11 @@
+{
+  "correct": {
+    "correct": true,
+    "error": null
+  },
+  "metrics": {
+    "combined_score": 0.25
+  },
+  "stdout_log": "",
+  "stderr_log": ""
+}

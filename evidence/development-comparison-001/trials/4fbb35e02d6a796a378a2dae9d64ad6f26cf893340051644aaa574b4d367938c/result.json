@@ -1,0 +1,28 @@
+{
+  "candidate": "parent",
+  "slot": "regression:1",
+  "trace": "trials/4fbb35e02d6a796a378a2dae9d64ad6f26cf893340051644aaa574b4d367938c/trace.jsonl",
+  "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+  "scenario_hash": "e6c6fd8283d6d1716a312b22a078b770482a60ad082f3afe439e4ac9b69d8942",
+  "trace_tip": "a1492a1aa04ed5e0fe126c8487a6e0eec831e0c422b1b1032adecf90d1828cde",
+  "error": null,
+  "execution_error": false,
+  "visible_runs_including_setup": 1,
+  "worker_results": [
+    {
+      "status": "completed",
+      "returncode": 0,
+      "output": "{\"action\": \"complete\"}\n",
+      "duration_seconds": 1.4139760420657694,
+      "container_name": "agentqa-7c85595d646144e9a1c46753c5efd67c",
+      "cleanup_confirmed": true,
+      "failure_phase": null,
+      "startup_seconds": 0.6464935420081019
+    }
+  ],
+  "completed": true,
+  "functional": true,
+  "fresh": true,
+  "verified": true,
+  "reason": "verified"
+}

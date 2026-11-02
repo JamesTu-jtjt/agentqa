@@ -1,0 +1,58 @@
+{
+  "schema": "agentqa.checkpoint.v1",
+  "date": "2026-11-02",
+  "estimated_progress_percent": 80,
+  "progress_basis": "Implementation/delivery effort estimate; research claim remains unproven",
+  "checks": {
+    "offline_pytest_passed": 124,
+    "opt_in_docker_skipped": 3,
+    "clean_noneditable_wheel_install": true,
+    "clean_export_tests_passed": 124,
+    "clean_figure_analysis_matches": true,
+    "clean_replay_html_byte_identical": true,
+    "core_hashes_match_clean_tested_wheel": true,
+    "replay_four_tabs_checked_in_browser": true,
+    "temporary_preview_server_stopped": true,
+    "local_document_links_checked": 89,
+    "evidence": {
+      "schema": "agentqa.evidence-verification.v1",
+      "coding_traces": 143,
+      "publication_bundles": 28,
+      "upstream_source_cases": 6,
+      "frozen_candidates": 3,
+      "broader_qualification": {
+        "cases": 20,
+        "contract_matches": 20,
+        "renaming_pairs": 10,
+        "renaming_pairs_invariant": 10,
+        "model_calls": 0,
+        "independent_audit": false
+      },
+      "new_execution_or_model_calls": 0,
+      "independent_audit": false,
+      "scope": "Integrity/replay checks of development data; no authenticity against full-store replacement"
+    }
+  },
+  "accounting": {
+    "new_model_calls": 0,
+    "total_model_calls": 3,
+    "remaining_allowance": 0,
+    "input_tokens": 27232,
+    "output_tokens": 2458,
+    "subscription_dollar_cost": null,
+    "new_authored_scheduler_processes": 20
+  },
+  "publication": {
+    "destination": "https://github.com/JamesTu-jtjt/agentqa",
+    "visibility_before_upload": "PRIVATE",
+    "owner_verified": "JamesTu-jtjt",
+    "receipt": "evidence/github-publication-080.json",
+    "file_count_scanned_before_commit": 778,
+    "secret_pattern_findings": []
+  },
+  "scope": {
+    "independent_audit_opened": false,
+    "selector_advantage_demonstrated": false,
+    "naturally_observed_model_failure": false
+  }
+}

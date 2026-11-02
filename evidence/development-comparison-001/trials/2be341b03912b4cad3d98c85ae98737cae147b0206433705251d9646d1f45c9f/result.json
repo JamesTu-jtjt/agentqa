@@ -1,0 +1,28 @@
+{
+  "candidate": "parent",
+  "slot": "failure-family:1",
+  "trace": "trials/2be341b03912b4cad3d98c85ae98737cae147b0206433705251d9646d1f45c9f/trace.jsonl",
+  "program_hash": "a130ba2e8b6f0c92c5beb265074b78006a3a5f07d04faf1531084bc1b08820e5",
+  "scenario_hash": "fbb276d3ce677285c8a2a6ff675ee7c437a310a0634af2aac7a9826f0ad6292a",
+  "trace_tip": "4b64e3edc87021d3bf91efcdb5981f8fe98cbcd866b7a61b5b1091a34b80e4d5",
+  "error": null,
+  "execution_error": false,
+  "visible_runs_including_setup": 1,
+  "worker_results": [
+    {
+      "status": "completed",
+      "returncode": 0,
+      "output": "{\"action\": \"complete\"}\n",
+      "duration_seconds": 5.153857208089903,
+      "container_name": "agentqa-55bab0fd9f0644bfb39d292372a8b49a",
+      "cleanup_confirmed": true,
+      "failure_phase": null,
+      "startup_seconds": 3.6091685409191996
+    }
+  ],
+  "completed": true,
+  "functional": true,
+  "fresh": false,
+  "verified": false,
+  "reason": "missing_fresh_evidence"
+}

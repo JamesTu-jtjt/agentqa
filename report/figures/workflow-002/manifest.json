@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "evidence/workflow-controls-004/summary.json": "9640a1e844d27f10168c132c79bde400338008d4198ef3b276bc32ac5a90bfa4",
+    "evidence/stateful-controller-005/summary.json": "e7e1b1bb155782d480fdc106b64a6ac3a888165feca383a19a4f0e7799be30d3"
+  },
+  "outputs": {
+    "workflow-outcomes.pdf": "a69472f99059b508422f84cc012cc78913e0df306fa865449ee0f2eac13f262c",
+    "workflow-outcomes.png": "5369d108f875d1eba3fad007512055813f607e993408fd2b19d9971ed64452fd",
+    "workflow-actions.svg": "b5307550dac5c4a6341825a4e287f16340a08468bb4b46523361bb77a1d29f43",
+    "analysis.json": "58b2c4f10fd348a2ceae6072e61e6666257cbb4d6d32f1d10ffaaaf0c93abd57",
+    "workflow-actions.pdf": "9b669dd3630ad7d0499c5414d068a67583ca659fcb75299841e66903ee54bfa0",
+    "workflow-actions.png": "0db0388c144588a719367871271e56f70de5526ae453e4c84e614498bc7a7fe2",
+    "workflow-outcomes.svg": "40bdda97fdbdb1fe2ecf68659e267ba580c3b7bdba2bc4e6f62fae5773c20320"
+  },
+  "script_sha256": "a76fdc9247199c462faa9c1c58e9daa7513dab20755d96576ab189f41e992e92",
+  "note": "All plotted traces replayed; no inference or candidate execution during analysis."
+}

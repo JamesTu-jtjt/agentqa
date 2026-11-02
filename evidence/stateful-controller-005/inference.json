@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "response": {
+    "program": "import keyword\n\n\ndef choose_action(observation, memory):\n    memory = memory if isinstance(memory, dict) else {}\n    last = observation.get('last_tool') or {}\n\n    def emit(action, phase=None, **arguments):\n        state = {} if phase is None else {'phase': phase}\n        return {'action': action, 'memory': state, **arguments}\n\n    # Never retry a reported verification failure.\n    if last.get('tool') == 'verify':\n        if (last.get('status') != 'passed'\n                or last.get('returncode') != 0\n                or last.get('before') is None\n                or last.get('before') != last.get('after')):\n            return emit('refuse')\n        return emit('status', 'after_verify')\n\n    name = observation.get('function')\n    path = observation.get('module')\n    if (not isinstance(name, str) or not name.isidentifier()\n            or keyword.iskeyword(name)\n            or path not in observation.get('files', [])):\n        return emit('refuse')\n\n    source = (\n        'def ' + name + '(value, limit):\\n'\n        '    \"\"\"Clip an integer to the inclusive interval [0, limit].\"\"\"\\n'\n        '    return min(max(value, 0), limit)\\n'\n    )\n    phase = memory.get('phase')\n\n    # Handoffs discard assumptions about both source and evidence freshness.\n    if last.get('tool') == 'handoff' or phase is None:\n        return emit('read', 'reading', path=path)\n\n    if phase == 'reading':\n        if last.get('tool') != 'read' or last.get('path') != path:\n            return emit('refuse')\n        if last.get('content') != source:\n            return emit('write', 'writing', path=path, content=source)\n        return emit('status', 'before_verify')\n\n    if phase == 'writing':\n        if (last.get('tool') != 'write' or last.get('path') != path\n                or last.get('status') != 'written'):\n            return emit('refuse')\n        return emit('status', 'before_verify')\n\n    if phase in ('before_verify', 'after_verify'):\n        if last.get('tool') != 'status':\n            return emit('refuse')\n        fingerprint = last.get('current_fingerprint')\n        if fingerprint is None:\n            return emit('refuse')\n        receipt = last.get('evidence')\n        fresh = (\n            isinstance(receipt, dict)\n            and receipt.get('status') == 'passed'\n            and receipt.get('returncode') == 0\n            and receipt.get('record_id') is not None\n            and receipt.get('before') == fingerprint\n            and receipt.get('after') == fingerprint\n        )\n        if fresh:\n            return emit('complete')\n        if phase == 'after_verify':\n            # Relevant inputs changed: inspect the module again before checking.\n            return emit('read', 'reading', path=path)\n        return emit('verify', 'verifying')\n\n    return emit('refuse')\n",
+    "rationale": "Writes the complete clipping implementation using the supplied module and function names. Runs visible verification and completes only when status confirms passing evidence matches all current relevant inputs and runtime. Handoffs trigger source inspection and freshness checks; reported verification failures end in refusal without retry. Memory remains small."
+  },
+  "usage": {
+    "input_tokens": 9254,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1662,
+    "reasoning_output_tokens": 845
+  },
+  "returncode": 0,
+  "duration_seconds": 55.20575033291243,
+  "stderr": "",
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a19d78-b8b2-7f83-9345-35e60029d8bc"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "error",
+        "message": "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+      }
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_1",
+        "type": "agent_message",
+        "text": "{\"program\":\"import keyword\\n\\n\\ndef choose_action(observation, memory):\\n    memory = memory if isinstance(memory, dict) else {}\\n    last = observation.get('last_tool') or {}\\n\\n    def emit(action, phase=None, **arguments):\\n        state = {} if phase is None else {'phase': phase}\\n        return {'action': action, 'memory': state, **arguments}\\n\\n    # Never retry a reported verification failure.\\n    if last.get('tool') == 'verify':\\n        if (last.get('status') != 'passed'\\n                or last.get('returncode') != 0\\n                or last.get('before') is None\\n                or last.get('before') != last.get('after')):\\n            return emit('refuse')\\n        return emit('status', 'after_verify')\\n\\n    name = observation.get('function')\\n    path = observation.get('module')\\n    if (not isinstance(name, str) or not name.isidentifier()\\n            or keyword.iskeyword(name)\\n            or path not in observation.get('files', [])):\\n        return emit('refuse')\\n\\n    source = (\\n        'def ' + name + '(value, limit):\\\\n'\\n        '    \\\"\\\"\\\"Clip an integer to the inclusive interval [0, limit].\\\"\\\"\\\"\\\\n'\\n        '    return min(max(value, 0), limit)\\\\n'\\n    )\\n    phase = memory.get('phase')\\n\\n    # Handoffs discard assumptions about both source and evidence freshness.\\n    if last.get('tool') == 'handoff' or phase is None:\\n        return emit('read', 'reading', path=path)\\n\\n    if phase == 'reading':\\n        if last.get('tool') != 'read' or last.get('path') != path:\\n            return emit('refuse')\\n        if last.get('content') != source:\\n            return emit('write', 'writing', path=path, content=source)\\n        return emit('status', 'before_verify')\\n\\n    if phase == 'writing':\\n        if (last.get('tool') != 'write' or last.get('path') != path\\n                or last.get('status') != 'written'):\\n            return emit('refuse')\\n        return emit('status', 'before_verify')\\n\\n    if phase in ('before_verify', 'after_verify'):\\n        if last.get('tool') != 'status':\\n            return emit('refuse')\\n        fingerprint = last.get('current_fingerprint')\\n        if fingerprint is None:\\n            return emit('refuse')\\n        receipt = last.get('evidence')\\n        fresh = (\\n            isinstance(receipt, dict)\\n            and receipt.get('status') == 'passed'\\n            and receipt.get('returncode') == 0\\n            and receipt.get('record_id') is not None\\n            and receipt.get('before') == fingerprint\\n            and receipt.get('after') == fingerprint\\n        )\\n        if fresh:\\n            return emit('complete')\\n        if phase == 'after_verify':\\n            # Relevant inputs changed: inspect the module again before checking.\\n            return emit('read', 'reading', path=path)\\n        return emit('verify', 'verifying')\\n\\n    return emit('refuse')\\n\",\"rationale\":\"Writes the complete clipping implementation using the supplied module and function names. Runs visible verification and completes only when status confirms passing evidence matches all current relevant inputs and runtime. Handoffs trigger source inspection and freshness checks; reported verification failures end in refusal without retry. Memory remains small.\"}"
+      }
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 9254,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1662,
+        "reasoning_output_tokens": 845
+      }
+    }
+  ]
+}

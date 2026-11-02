@@ -1,0 +1,31 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "attempt_id": "0d55d38edd5b48b8a95a2abbe13c3cd2",
+  "inputs": {
+    "config": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/publication-qualification-011/renamed-negative/task inputs/settings data.json",
+      "sha256": "ca502dec04523cdc33afece69a9b600d5b9bd022d453791cc693b6b372f808ad",
+      "bytes": 12
+    },
+    "evaluator": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/publication-qualification-011/renamed-negative/task inputs/evaluation tool.py",
+      "sha256": "8dc3f83805ecdea5368c566e3c0779750fee4a6c5fccf4a9f5e9dffd1fe79c53",
+      "bytes": 1173
+    },
+    "program": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/publication-qualification-011/renamed-negative/task inputs/request data.json",
+      "sha256": "5fe3de4f060c763af307b50a7f0a8e5adb3552c66b6af886ca3d8023d72a013e",
+      "bytes": 172
+    }
+  },
+  "runtime": {
+    "shinka_revision": "8adc053a2ce4511ad2ac310e004c530a73fb974a",
+    "python": "3.13.5"
+  },
+  "timeout_seconds": 10,
+  "launch_command_hash": "dc101d677b10baa98fd46af0c69c2f2d2c882294e5210a3ce9fc2982856034f7",
+  "publication": [
+    "metrics.json",
+    "correct.json"
+  ]
+}

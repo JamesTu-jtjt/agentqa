@@ -1,0 +1,30 @@
+{
+  "schema": "agentqa.evaluation-bundle.v1",
+  "attempt_id": "80cdadb1a9a94fcaa485bde5cfb8585e",
+  "request_hash": "6e1951081d4e6a304aa6b9c7c3bb683b7e07b2793ebbd520cd1e5674ba24020a",
+  "status": "completed",
+  "returncode": 0,
+  "inputs_after": {
+    "config": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/publication-qualification-011/plain-boolean_score/inputs/config.json",
+      "sha256": "ca502dec04523cdc33afece69a9b600d5b9bd022d453791cc693b6b372f808ad",
+      "bytes": 12
+    },
+    "evaluator": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/publication-qualification-011/plain-boolean_score/inputs/evaluate.py",
+      "sha256": "8dc3f83805ecdea5368c566e3c0779750fee4a6c5fccf4a9f5e9dffd1fe79c53",
+      "bytes": 1173
+    },
+    "program": {
+      "path": "/Users/james.tu/workspace/Interviews/Sakana/AgentQA/evidence/publication-qualification-011/plain-boolean_score/inputs/program.json",
+      "sha256": "18bc2670581fccc0dc6b0fdf7686c54f3dc01f887dfda82bcf88151fd0546419",
+      "bytes": 168
+    }
+  },
+  "artifact_hashes": {},
+  "result_hash": null,
+  "publication_error": "ValueError",
+  "execution_error": null,
+  "launch_command_hash_after": "c585297b9bcbac154d97b62a8b5e72a487f474e3bf7c3a3ba6d2c1185563e07d",
+  "duration_seconds": 0.08266216702759266
+}

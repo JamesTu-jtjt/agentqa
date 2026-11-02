@@ -1,0 +1,11 @@
+{
+  "schema": "agentqa.upstream-analysis.v1",
+  "source_cases": 6,
+  "source_false_attributions": 3,
+  "bound_checks": 4,
+  "bound_matches": 4,
+  "model_calls": 0,
+  "native_agent_failure": false,
+  "independent_audit": false,
+  "verification": "Source hashes/artifact facts checked; bound manifests replayed"
+}
