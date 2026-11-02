@@ -9,7 +9,7 @@
 - **Reproduction packaging:** deterministic source/evidence archive generation, explicit path/credential boundaries, a secret-pattern scan, hash manifests and meaningful tamper/path tests. The proposed upload contains project files only; the separate Neuroevolution task is untouched.
 - **Recorded demo:** a self-contained HTML replay shows the actual stale/partial/complete result cases and the generated controller's recorded handoff actions. All four scenario tabs were checked in the in-app browser; the desktop layout was inspected. The temporary local server was stopped.
 - **Clean reproduction:** a fresh environment installs the noneditable wheel, passes 124 offline tests, verifies all saved evidence, regenerates matching figure-analysis JSON and rebuilds a byte-identical HTML replay. Source/wheel hashes are recorded. This is a clean prototype check; no independent audit is implied.
-- **Private GitHub publication:** repository `JamesTu-jtjt/agentqa`, verified private before project upload. Publication/remote-commit verification is recorded separately after pushing. No collaborator access or public release is created.
+- **Private GitHub publication:** repository `JamesTu-jtjt/agentqa`, verified private before project upload. The source commit was pushed and matched the remote branch; `evidence/github-publication-080.json` records that verification. No collaborator access or public release is created.
 
 ## Evidence
 

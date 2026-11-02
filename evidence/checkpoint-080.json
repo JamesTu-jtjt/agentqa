@@ -48,7 +48,11 @@
     "owner_verified": "JamesTu-jtjt",
     "receipt": "evidence/github-publication-080.json",
     "file_count_scanned_before_commit": 778,
-    "secret_pattern_findings": []
+    "secret_pattern_findings": [],
+    "visibility_after_upload": "PRIVATE",
+    "published_source_commit": "9b9e0c24ce3fe135bdec26b6229ff37a7e93d29b",
+    "remote_source_commit_verified": true,
+    "default_branch": "james-tu/agentqa"
   },
   "scope": {
     "independent_audit_opened": false,

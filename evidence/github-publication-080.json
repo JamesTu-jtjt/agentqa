@@ -5,7 +5,7 @@
   "repository": "agentqa",
   "url": "https://github.com/JamesTu-jtjt/agentqa",
   "visibility_before_upload": "PRIVATE",
-  "status": "private_repository_created_pending_initial_push",
+  "status": "source_commit_pushed_and_verified",
   "authorization": "User explicitly requested publishing this project to a private repository on their GitHub",
   "branch": "james-tu/agentqa",
   "excluded": [
@@ -15,5 +15,10 @@
     "runs",
     "scratch",
     "vendor"
-  ]
+  ],
+  "visibility_after_upload": "PRIVATE",
+  "published_source_commit": "9b9e0c24ce3fe135bdec26b6229ff37a7e93d29b",
+  "remote_source_commit_verified": "9b9e0c24ce3fe135bdec26b6229ff37a7e93d29b",
+  "default_branch": "james-tu/agentqa",
+  "empty_after_upload": false
 }
