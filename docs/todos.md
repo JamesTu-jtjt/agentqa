@@ -101,7 +101,7 @@ This closes an explicitly narrower experiment at the next checkpoint. It does no
 - [x] **N101** Execute the full native initialization/restart/interruption grid, preserving every attempt and actual database consequences. Evidence: all 56 N1 cells, 105 evaluator processes, seven deliberate interruptions, actual SQLite/WAL state.
 - [x] **N102** Compare simple defenses and receipts on the fixed grid; retain negative evidence and null differences. Evidence: six-defense comparison, combined guard ties receipts; both valid controls preserved. N2 adds 24 exact-helper cells and 48 processes, crediting public PR #150.
 - [x] **N103** Independently replay native database/artifact records, add regression checks and generate measured figures. Evidence: `native_replay.py`, `standard_replay.py`, regression boundary tests, measured figure/table, explicit SQLite replay amendment. Independent means replay from recorded durable state, not independent human authorship.
-- [ ] **N104** Update the report/Google Doc, reproduction, handover and private repository; preserve prior pilot artifacts and exhausted allowance.
+- [x] **N104** Update the report/Google Doc, reproduction, handover and private repository; preserve prior pilot artifacts and exhausted allowance. Evidence: seven-table/four-figure native readback, unchanged archived C1 body, 145-test clean noneditable install, byte-identical new replay, and verified private source publication `90707dcb383c67b36fbc57080f2048d2c4c36056`.
 
 ## Deferred extensions
 

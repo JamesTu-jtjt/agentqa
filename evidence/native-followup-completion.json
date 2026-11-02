@@ -1,0 +1,43 @@
+{
+  "schema": "agentqa.native-followup-completion.v1",
+  "status": "complete_bounded_native_followup",
+  "date": "2026-11-02",
+  "verified_private_source_commit": "90707dcb383c67b36fbc57080f2048d2c4c36056",
+  "freeze_commits": {
+    "N1": "1c6a88d",
+    "N2": "9799639"
+  },
+  "experiments": {
+    "N1_target_cells": 56,
+    "N2_target_cells": 24,
+    "total_evaluator_processes": 153,
+    "deliberately_interrupted_primers": 7,
+    "infrastructure_inconclusive_target_cells": 0,
+    "retries": 0,
+    "exclusions": 0,
+    "new_model_calls": 0
+  },
+  "tests": "145 passed, 3 skipped in 17.93s",
+  "wheel_sha256": "8c76dd04ef26e5fc0fa987657edcff691202f47bfe616c5f8e83d00b5872571d",
+  "clean_validation": "evidence/native-followup-validation.json",
+  "report_url": "https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk",
+  "report_tab": "t.5mrxuo1ck2bn",
+  "archived_C1_body_unchanged": true,
+  "native_report_tables": 7,
+  "native_report_figures": 4,
+  "report_owner_only": true,
+  "final_pdf": false,
+  "demo": "report/demo-native/index.html",
+  "final_archive": "dist/agentqa-native-final.zip",
+  "known_limits": [
+    "Authored fault injection at one upstream revision; no natural failure rate",
+    "One-generation native initialization, not sampled long-run evolution",
+    "Exact isolated prior helper tested, not complete PR",
+    "Simple combined guard ties receipts; no receipt accuracy advantage",
+    "Original generated-repair selector hypothesis remains unresolved; new inference allowance required for additional generated pools"
+  ],
+  "private_repository": "https://github.com/JamesTu-jtjt/agentqa",
+  "no_background_model_or_automation": true,
+  "temporary_QA_server_stopped": true,
+  "no_upstream_or_external_submission": true
+}

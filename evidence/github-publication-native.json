@@ -1,0 +1,23 @@
+{
+  "schema": "agentqa.private-publication-native.v1",
+  "repository": "JamesTu-jtjt/agentqa",
+  "url": "https://github.com/JamesTu-jtjt/agentqa",
+  "visibility_verified": "PRIVATE",
+  "branch": "james-tu/agentqa",
+  "source_commit_verified_on_remote": "90707dcb383c67b36fbc57080f2048d2c4c36056",
+  "verification_date_utc": "2026-11-02",
+  "clean_validation": "evidence/native-followup-validation.json",
+  "completion": "evidence/native-followup-completion.json",
+  "archive": {
+    "path": "dist/agentqa-native-final.zip",
+    "file_count": 2773,
+    "total_bytes": 33588816,
+    "sha256": "ec7fb5849af988b03ad649576baa9bf68b11e97eb8f12aeb81582962d8a62d61",
+    "secret_pattern_findings": []
+  },
+  "archive_boundary": "The final source archive precedes this publication record and its metadata commit, avoiding a self-referential archive hash. Those final changes are bookkeeping only.",
+  "public_release": false,
+  "upstream_message_or_issue": false,
+  "external_submission": false,
+  "new_experimental_model_calls": 0
+}

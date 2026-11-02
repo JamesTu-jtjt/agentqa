@@ -1,6 +1,6 @@
 # Project timeline
 
-**Resumed follow-up, 2 November:** N1 proceeds through protocol freeze, native reachability, simple-defense comparison, evidence replay and report update, in that dependency order. It is a bounded zero-inference extension after the controlled-pilot delivery. Existing milestone estimates below remain historical; the model-repair main study is still deferred.
+**Completed follow-up, 2 November:** N1/N2 were frozen before execution, completed native/standard-helper comparisons, replayed durable evidence and updated the report/private repository. The clean noneditable install passed 145 tests with three optional Docker skips. This bounded extension used zero new inference. Existing milestone estimates below remain historical; the model-repair main study is still deferred.
 
 Planning date and implementation kickoff: 2 November 2026. Implementation owner: Codex. Research/resource owner: James. The first session delivered the local measurement core, family controls, container worker, and a one-invocation Codex feasibility pilot. See `status.md` for actual completion; the table below remains the original baseline estimate.
 
