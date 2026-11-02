@@ -1,0 +1,25 @@
+{
+  "schema": "agentqa.private-publication.v1",
+  "stage": "final bounded controlled-pilot delivery",
+  "repository": "JamesTu-jtjt/agentqa",
+  "url": "https://github.com/JamesTu-jtjt/agentqa",
+  "source_commit": "62c41687a377bdbff08080206eb3b07f965c2da9",
+  "remote_source_commit_verified": "62c41687a377bdbff08080206eb3b07f965c2da9",
+  "branch": "james-tu/agentqa",
+  "privacy_before_upload": "PRIVATE",
+  "privacy_after_upload": "PRIVATE",
+  "report_format": "native Google Doc",
+  "report_url": "https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk",
+  "final_pdf_report": false,
+  "final_archive_sha256": "8831aa988ad664d9c7c8d0f75a50c555d19fd43a8a65ae66e2bbbae29313a989",
+  "new_experimental_inference_calls": 0,
+  "original_native_agent_main_study_completed": false,
+  "excludes": [
+    "Neuroevolution",
+    "credentials",
+    "environments",
+    "scratch PDF drafts",
+    "transient runs",
+    "vendor checkout"
+  ]
+}
