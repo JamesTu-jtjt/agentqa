@@ -4,7 +4,7 @@
 
 ## Start here
 
-1. Read the existing [Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.5mrxuo1ck2bn). The revised report is first; the original C1 tab is preserved unchanged. `report/final-report.md` and `report/google-doc-source.json` match native readback: 112 text blocks, seven tables/143 cells, four embedded figures. Sharing remains owner-only. No final PDF was generated/exported.
+1. Read the existing [Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.8naog6er2au7). The concise report is first; the preceding native report and original C1 report are archived, with research ownership clarified. `report/final-report.md` and `report/google-doc-source.json` contain the revised 66 source blocks, four native tables and one measured figure. Sharing remains owner-only. No final PDF was generated/exported.
 2. Open `report/demo-native/index.html` locally. It replays the actual native database consequences and simple-defense comparison, alongside preserved publication, workflow and C1 cases. It performs no network/model/task execution. Earlier `demo/` and `demo-final/` remain historical.
 3. Read `docs/native-followup-results.md`, N1/N2 frozen protocols and source/PR attribution. Run the installed `agentqa verify-evidence --root .` to replay all saved records without Shinka, Docker or model calls.
 4. Follow `docs/reproduction.md`. `evidence/native-followup-validation.json` records clean noneditable-wheel verification. The earlier `evidence/final-validation.json` verifies the prior C1 package only.

@@ -58,3 +58,7 @@ At each active work session, Codex records the current milestone, completed TODO
 ## Final delivery
 
 James requested completion, then specified a native Google Doc like Neuroevolution instead of a PDF. The [final report](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), local source, native table/figure readback, integrated replay, evidence and private-repository handover complete the bounded controlled pilot. No PDF is a final deliverable. The original native-agent main study remains separately unperformed; no additional inference allowance was used.
+
+## Submission revision — 2 November 2026
+
+At James’s request, the main report now centers on native evaluation acceptance and minimal defenses. The nondiscriminating selector pilot is a compact inconclusive study. Research ownership now explicitly credits James with overall direction, system design, experimental exploration and refinement; Codex assistance remains disclosed. Earlier full native/C1 reports are archived. No new experimental inference or audit was run; all saved evidence replays and the existing test suite passes. Main tab: https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.8naog6er2au7

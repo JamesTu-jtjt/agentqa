@@ -111,3 +111,7 @@ This closes an explicitly narrower experiment at the next checkpoint. It does no
 - [ ] Automatically discovered relation programs rather than a bounded operator library.
 
 These items do not block the minimum submission.
+
+## Submission revision — 2 November 2026
+
+At James’s request, the main report now centers on native evaluation acceptance and minimal defenses. The nondiscriminating selector pilot is a compact inconclusive study. Research ownership now explicitly credits James with overall direction, system design, experimental exploration and refinement; Codex assistance remains disclosed. Earlier full native/C1 reports are archived. No new experimental inference or audit was run; all saved evidence replays and the existing test suite passes. Main tab: https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.8naog6er2au7

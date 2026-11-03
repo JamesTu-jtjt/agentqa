@@ -2,14 +2,20 @@
   "document_id": "1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU",
   "url": "https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk",
   "title": "Sakana Part 2 - AgentQA: Evaluation Integrity for Self-Improving Agents",
-  "report_tab": "t.5mrxuo1ck2bn",
+  "report_tab": "t.8naog6er2au7",
   "archive_tab": "t.0",
   "source": "report/final-report.md",
   "source_manifest": "report/google-doc-source.json",
   "format": "native Google Docs",
   "final_pdf": false,
-  "revision": "AHj4eMR0rdwh88aF2xcPtYcdK7CodvUFKL0mNsX8U7brFq5KnQtQloUSl3yQId1zKhUKuBKpB2YBx4U4giqARZSZI_haFQszyswyIsUE8Lg",
+  "revision": "AHj4eMRR_cGBlIYyD1Xj_AwXSpXIvR7VpEbnJP5cvn3i5yUBYwMoVDv8RCG5-L3O8HmHj67orz5s4EaHtIMYSVRjG-eRlrl0lD3dYQZowig",
   "owner_only": true,
   "readback_verified": true,
-  "scope": "C1 pilot preserved; N1 native initialization and N2 exact producer boundary; generated-repair selector study remains unresolved"
+  "scope": "Native acceptance boundaries and minimal defenses; original selector pilot remains inconclusive; research ownership clarified",
+  "archived_tabs": [
+    "t.5mrxuo1ck2bn",
+    "t.0"
+  ],
+  "native_tables": 4,
+  "inline_figures": 1
 }

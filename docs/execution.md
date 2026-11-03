@@ -4,7 +4,7 @@ This document translates the proposal into implementation responsibilities and r
 
 ## Ownership and boundaries
 
-Codex implements the code, tests, fixtures, experiment runners, analysis, report, and reproducibility package. James supplies research steering, any external deadline, and model/resource choices. Routine implementation decisions within the agreed scope belong to Codex. Review requests should concern a concrete unresolved choice or completed result rather than repeated permission to perform ordinary development.
+Codex implements the code, tests, fixtures, experiment runners, analysis, report, and reproducibility package. James leads overall research direction, system design, experimental exploration and refinement, and supplies deadlines and model/resource choices. Routine implementation decisions within the agreed scope belong to Codex. Review requests should concern a concrete unresolved choice or completed result rather than repeated permission to perform ordinary development.
 
 James authorized implementation and subsequently use of his Codex account with low usage. The route is saved ChatGPT authentication via Codex CLI, exact model `gpt-6.1-sol`, serial, with three persisted invocations and a 120-second runtime bound per invocation. All three have completed: repair generation, an unseeded-policy probe and a stateful-controller probe. The pilot allowance is exhausted. Dollar cost is unavailable for subscription use. A separate API route would require a monetary allowance; credentials alone do not authorize that route.
 

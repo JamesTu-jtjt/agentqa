@@ -1,3 +1,7 @@
+# Current report revision
+
+The concise main Google Doc leads with native acceptance boundaries, minimal defenses and prior-repair scope. James led overall research direction, system design, experimental exploration and refinement; Codex assisted implementation, orchestration, analysis and writing. The full preceding native report and original C1 pilot remain in archive tabs.
+
 # AgentQA: Beyond the Repaired Example
 
 Metamorphic validation of self-improving coding agents. This is Task 2 of the Sakana AI exercise and an independent Git repository, physically located beside `Neuroevolution/` inside the shared workspace.
@@ -17,7 +21,7 @@ Metamorphic validation of self-improving coding agents. This is Task 2 of the Sa
 
 ## Current state
 
-**Native follow-up verified.** The revised [Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.5mrxuo1ck2bn) leads with a native evaluation-integrity case study and preserves the original C1 report in an archive tab. Local [report](report/final-report.md), [native results](docs/native-followup-results.md) and [recorded demonstration](report/demo-native/index.html) contain the new evidence.
+**Native follow-up verified.** The revised [Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.8naog6er2au7) leads with a native evaluation-integrity case study and preserves the original C1 report in an archive tab. Local [report](report/final-report.md), [native results](docs/native-followup-results.md) and [recorded demonstration](report/demo-native/index.html) contain the new evidence.
 
 N1 executes 56 native initialization/restart/interruption cells. Failed or incomplete attempts can become correct archived/best programs under the authored restart conditions. Fresh directories plus actual exit and complete schema checks handle all five invalid conditions, matching bound receipts while preserving valid positive and negative results. N2 executes 24 standard-helper cells and credits public PR #150: its isolated helper protects failures after entry, while a consumer guard also covers the before-entry boundary. These are deterministic fault-injection findings, not spontaneous failure rates, a new bug class or long-run evolution results.
 

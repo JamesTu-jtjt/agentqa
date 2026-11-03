@@ -33,6 +33,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--source',type=Path,default=Path('report/final-report.md'))
     parser.add_argument('--output',type=Path,default=Path('report/google-doc-source.json'))
+    parser.add_argument('--tab-id', default='t.8naog6er2au7')
     args=parser.parse_args()
     lines=args.source.read_text().splitlines()
     blocks=[]; tables=[]; images=[]; code=False; index=0; first=True
@@ -64,7 +65,7 @@ def main():
     for block in blocks:
         block['start']=position;block['end']=position+units(block['text'])
         text+=block['text']+'\n';position=block['end']+1
-    tab='t.0'
+    tab=args.tab_id
     requests=[{'insertText':{'location':{'index':1,'tabId':tab},'text':text}},
       {'updateParagraphStyle':{'range':{'startIndex':1,'endIndex':position,'tabId':tab},'paragraphStyle':{'namedStyleType':'NORMAL_TEXT','alignment':'JUSTIFIED','lineSpacing':110,'spaceAbove':{'magnitude':0,'unit':'PT'},'spaceBelow':{'magnitude':6,'unit':'PT'}},'fields':'namedStyleType,alignment,lineSpacing,spaceAbove,spaceBelow'}},
       {'updateTextStyle':{'range':{'startIndex':1,'endIndex':position-1,'tabId':tab},'textStyle':{'weightedFontFamily':{'fontFamily':'EB Garamond'},'fontSize':{'magnitude':11,'unit':'PT'}},'fields':'weightedFontFamily,fontSize'}}]

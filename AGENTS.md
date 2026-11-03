@@ -1,7 +1,7 @@
 # AgentQA implementation instructions
 
 - This directory is its own Git repository. Run all Task 2 Git operations here; never stage Task 2 from the surrounding Sakana repository. Use `james-tu/` for new branches.
-- Codex owns implementation, testing, experiment orchestration, analysis, and documentation. James authorized implementation on 2 November 2026 and use of his signed-in Codex account with low usage. This file is not an instruction to schedule unattended work.
+- James owns overall research direction, system design, experimental exploration and refinement. Codex assists implementation, testing, experiment orchestration, analysis and documentation. James authorized implementation on 2 November 2026 and use of his signed-in Codex account with low usage. This file is not an instruction to schedule unattended work.
 - Read `docs/status.md`, the current milestone in `docs/timeline.md`, and its tasks in `docs/todos.md` before resuming work. Use `proposal.md` for the scientific question and `docs/execution.md` for experiment controls.
 - Preserve the Neuroevolution project and its artifacts. Do not import its environment, data, configurations, or Git history into this project.
 - Mark a TODO complete only when its acceptance condition is met, and record an artifact or command/result as evidence. Keep results, proposed work, and assumptions distinct.
