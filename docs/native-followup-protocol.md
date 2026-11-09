@@ -1,6 +1,6 @@
 # N1: native initialization reachability and minimal defenses
 
-2 November 2026. Declared before new native executions. James requested substantive improvement after the controlled pilot. This bounded follow-up uses **zero inference calls**; the original three-call allowance remains exhausted. It does not reopen C1 or manufacture generated repair diversity.
+2 November 2026. Declared before new native executions. This bounded follow-up uses **zero inference calls**; the original three-call allowance remains exhausted. It does not reopen C1 or manufacture generated repair diversity.
 
 ## Question and scope
 

@@ -1,4 +1,4 @@
-# Closest-work and integration checkpoint
+# Historical closest-work and integration review
 
 Reviewed during implementation kickoff, 2 November 2026. This is a bounded methods/interface review, not an exhaustive novelty certification.
 
@@ -16,4 +16,4 @@ That isolated evaluator boundary is now implemented in `agentqa.shinka_bridge` a
 
 The project currently contains no copied ShinkaEvolve implementation. Preserve upstream license/notices for any future vendoring. The standalone dependency-free measurement core does not need the framework's model SDKs or full scientific stack.
 
-The proposal already identifies [HarnessFix](https://arxiv.org/abs/2606.06324) and [Self-Harness](https://arxiv.org/abs/2606.09498) as direct overlap. A fuller method comparison and the required AI Scientist/Digital Red Queen reading remain part of S10 before the final research write-up. No "first" claim is justified by this checkpoint.
+The proposal already identifies [HarnessFix](https://arxiv.org/abs/2606.06324) and [Self-Harness](https://arxiv.org/abs/2606.09498) as direct overlap. These overlaps limit novelty claims. This historical review does not establish a priority claim.

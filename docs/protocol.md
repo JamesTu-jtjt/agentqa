@@ -50,8 +50,4 @@ The cost ledger stores integer micro-USD amounts. Reservations are transactional
 
 ## Live study prerequisites
 
-GPT-6.1 Sol is the user-selected model. James authorized saved Codex account use with low usage. The backend uses `codex exec`, exact model `gpt-6.1-sol`, a three-invocation persisted limit, serial execution, and a 120-second runtime bound. Two invocations have been used; one remains. Subscription dollar cost is unavailable. The source-conditioned repairs passed all seven initial cases; a separate unseeded-policy probe had infrastructure-inconclusive attempts and a linked diagnostic rerun. See checkpoint 2 for interpretation.
-
-Docker Desktop was started and the pinned worker image downloaded. Generated policy code executes in that worker with no host mounts; it only returns an action to the trusted authored-fixture controller. Startup has a separate bounded allowance and readiness marker before the execution timer begins. The local fixture subprocess backend remains restricted to authored code. A real ShinkaEvolve scheduler has exercised the external evaluator for pure policies; arbitrary multi-module harness evolution is not implemented.
-
-Before the main study: validate candidate isolation; identify natural source failures or declare a controlled-study fallback; freeze candidate and split registries; match selection budgets; prewrite analysis; reserve sufficient audit budget; and prevent audit feedback from reaching generation. Same-author fixture design must not be described as human blinding.
+The historical pilot used GPT-6.1 Sol through the Codex CLI with three serial invocations and a 120-second bound per invocation. Subscription dollar cost is unavailable. The completed accounting and original worker failures are preserved in [resources](budget.md) and the experimental records.

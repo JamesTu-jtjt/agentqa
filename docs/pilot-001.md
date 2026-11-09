@@ -1,4 +1,4 @@
-# Implementation checkpoint and first Codex pilot
+# First model-generated repair pilot
 
 Date: 2 November 2026. This is a development checkpoint, not the final research report.
 
@@ -8,7 +8,7 @@ The development environment uses Python 3.13.5 and a pinned Python container ima
 
 The authored reminder policy verifies after reading the explicit phrase that code was edited. It completes the source, renaming, noise, cache, and unchanged cases, but fails the compaction and handoff cases because the phrase is absent. A provenance-checking reference and an always-rerun reference complete all seven. A refusing reference completes none. These behaviors were deliberately specified as measurement controls.
 
-James then authorized use of his signed-in Codex account with low usage. One `codex exec` call using `gpt-6.1-sol`, low reasoning, returned two small `choose_action` programs from the original source failure. No development-family cases or audit results were included in that generation prompt.
+One `codex exec` call using `gpt-6.1-sol`, low reasoning, returned two small `choose_action` programs from the original source failure. No development-family cases or audit results were included in that generation prompt.
 
 Both generated policies check whether current evidence has a passing status and matches the current fingerprint; one also requires an identified record. Generated Python ran in a container with no host mounts, external network, provider credentials, or evaluator state. The trusted host controller interpreted the returned action and executed the corresponding authored fixture operation. Candidate code did not execute inside the host recorder.
 

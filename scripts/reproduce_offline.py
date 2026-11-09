@@ -73,24 +73,16 @@ def main():
     run("html_replay", [python, "-I", source / "scripts/build_replay.py", "--output", output / "replay/index.html"])
     if (output / "replay/index.html").read_bytes() != (source / "report/demo-native/index.html").read_bytes():
         raise ValueError("Final replay did not regenerate identically")
-    doc_source = json.loads((source / "report/google-doc-source.json").read_text())
-    doc_qa = json.loads((source / "docs/google-doc-qa.json").read_text())
-    if (doc_source["source_sha256"] != sha(source / "report/final-report.md")
-            or not doc_qa["source_text_matches"] or not doc_qa["table_cells_match"]
-            or doc_qa["native_tables"] != len(doc_source["tables"])
-            or len(doc_qa["inline_figures"]) != len(doc_source["images"])):
-        raise ValueError("Google Doc source/readback record mismatch")
     result = {"schema": "agentqa.final-reproduction.v1", "archive_sha256": archive_check["sha256"],
               "wheel_sha256": sha(wheel), "steps": steps, "isolated_noneditable_wheel": True,
               "tests": (output / "tests.log").read_text().strip().splitlines()[-1],
               "evidence": evidence, "audit_table_csv_match": True, "html_byte_identical": True,
-              "google_doc_source_and_native_readback_match": True,
-              "google_doc_live_rechecked_by_this_offline_run": False,
+              "report_sha256": sha(source / "report/final-report.md"),
               "final_pdf": False, "new_model_or_candidate_executions": 0,
               "core_file_hashes": {p.name: sha(p) for p in sorted((source / "src/agentqa").glob("*.py"))},
               "scope": "C1 pilot plus N1 native initialization and N2 isolated helper boundary; generated-repair main study unperformed"}
     (output / "result.json").write_text(json.dumps(result, indent=2) + "\n")
-    print(json.dumps({"result": str(output / "result.json"), "google_doc_source_matches": True,
+    print(json.dumps({"result": str(output / "result.json"), "saved_evidence_verified": True,
                       "html_matches": True, "new_inference_calls": 0}))
 
 

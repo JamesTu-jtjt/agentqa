@@ -1,151 +1,67 @@
-# Current report revision
+# AgentQA: Trustworthy Evaluation for Program Evolution
 
-The concise main Google Doc leads with native acceptance boundaries, minimal defenses and prior-repair scope. James led overall research direction, system design, experimental exploration and refinement; Codex assisted implementation, orchestration, analysis and writing. The full preceding native report and original C1 pilot remain in archive tabs.
+AgentQA studies how evaluation evidence can become detached from the program that produced it, and how simple checks prevent invalid results from entering an evolutionary search archive.
 
-# AgentQA: Beyond the Repaired Example
+In controlled ShinkaEvolve restart experiments, stale or incomplete result files caused changed programs to be recorded as correct, archived, and tracked as best. A guard combining a fresh directory for each attempt, a successful process exit, and complete output validation rejected every tested invalid condition while preserving legitimate positive and negative evaluations.
 
-Metamorphic validation of self-improving coding agents. This is Task 2 of the Sakana AI exercise and an independent Git repository, physically located beside `Neuroevolution/` inside the shared workspace.
+## Results
 
-**Question:** Can valid test families built around a known failure mechanism select agent repairs that transfer better than source-only retesting or generic variations?
+| Study | Design | Finding |
+| --- | --- | --- |
+| Native lifecycle (N1) | 56 target cases across initialization, restart, interruption, and defenses | All five invalid conditions were accepted in both restart histories under upstream behavior; the combined guard rejected all five. |
+| Standard helper (N2) | 24 cases comparing the pinned helper, a prior repair, and consumer checks | The prior helper repair protects attempts that enter it; consumer checks also cover failures before helper entry. |
+| Repair-selection pilot (C1) | Nine controlled transfer cases per policy | Both generated repairs passed 9/9; every selector chose the same repair. No selector advantage was established. |
 
-**Initial failure class:** Stale verification evidence—an agent treats old passing tests as verification of a changed repository state.
+These are deliberately introduced faults in bounded experiments. The results do not estimate natural failure rates or improvements in long-run search quality. N2 tests the isolated helper from upstream PR #150, rather than the complete PR. The original hypothesis about selecting better generated repairs remains unresolved.
 
-## Project documents
+![Native evaluation consequences and defenses](report/figures/native-initialization-013/native-consequences.png)
 
-- [Research proposal](proposal.md): hypothesis, novelty boundary, comparisons, and submission deliverables.
-- [Timeline](docs/timeline.md): eight working days of planned work, dependencies, milestone checks, and contingency choices.
-- [Implementation TODOs](docs/todos.md): ordered work items, acceptance criteria, and completion evidence.
-- [Implementation and experiment runbook](docs/execution.md): component boundaries, experiment controls, accounting, and handoff procedure.
-- [Decisions and current status](docs/status.md): assumptions, pending inputs, completed work, and the next action.
-- [Agent instructions](AGENTS.md): implementation conventions for Codex.
+## Read and explore
 
-## Current state
+- [Research report](report/final-report.md): methods, findings, attribution, and limitations.
+- [Native study results](docs/native-followup-results.md): detailed N1/N2 outcomes.
+- [Recorded interactive demonstration](report/demo-native/index.html): download or clone the repository, then open this file in a browser. It makes no network requests or model calls.
+- [Reproduction guide](docs/reproduction.md): installation, saved-evidence verification, and optional reruns.
+- [Research scope](docs/research-scope.md): completed studies and open questions.
+- [Third-party attribution](third_party/NOTICE.md): upstream source and licenses.
 
-**Native follow-up verified.** The revised [Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?tab=t.8naog6er2au7) leads with a native evaluation-integrity case study and preserves the original C1 report in an archive tab. Local [report](report/final-report.md), [native results](docs/native-followup-results.md) and [recorded demonstration](report/demo-native/index.html) contain the new evidence.
+## Quick start
 
-N1 executes 56 native initialization/restart/interruption cells. Failed or incomplete attempts can become correct archived/best programs under the authored restart conditions. Fresh directories plus actual exit and complete schema checks handle all five invalid conditions, matching bound receipts while preserving valid positive and negative results. N2 executes 24 standard-helper cells and credits public PR #150: its isolated helper protects failures after entry, while a consumer guard also covers the before-entry boundary. These are deterministic fault-injection findings, not spontaneous failure rates, a new bug class or long-run evolution results.
-
-The preserved controlled pilot remains inconclusive: both generated repairs pass 9/9; all three selectors choose the same repair; observed selector advantage is zero. No new experimental inference was used for N1/N2, and the three-call allowance remains exhausted. The original behaviorally diverse model-repair main study remains unperformed.
-
-The clean noneditable installation passed **145 tests**, with three optional Docker checks skipped. Saved verification covers 179 coding traces, 28 original publication receipts, 56 native databases and seven additional bound receipts, plus 24 exact-helper cases. Native replay uses temporary database/WAL copies and explicitly excludes volatile SQLite shared-memory coordination bytes. See [reproduction](docs/reproduction.md), the [replay amendment](docs/native-replay-amendment.md) and current validation record.
-
-Private GitHub repository: [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa), explicitly authorized by the user and separate from Neuroevolution.
-
-## Run the development core
-
-Validated on Python 3.13.5. Core execution uses only the standard library; the lock file includes tests and figure dependencies.
+Validated with Python 3.13.5 on macOS ARM64; the package requires Python 3.11 or later. The core has no third-party runtime dependencies. The development lock includes test and plotting tools.
 
 ```sh
+git clone https://github.com/JamesTu-jtjt/agentqa.git
+cd agentqa
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.lock
 .venv/bin/python -m pip install --no-build-isolation --no-deps -e .
 .venv/bin/python -m pytest
 .venv/bin/agentqa verify-evidence --root .
+```
+
+Saved-evidence verification requires no model access, Docker, or ShinkaEvolve installation. It checks 179 coding traces, 28 original publication receipts, 56 native databases/WAL records, seven additional bound receipts, and 24 helper cases. The historical clean installation passed 145 tests, with three optional Docker tests skipped.
+
+For a small authored demonstration:
+
+```sh
 .venv/bin/agentqa demo --output runs/my-offline-demo
-.venv/bin/python scripts/build_figures.py runs/my-offline-demo/summary.json --output runs/my-figures
 ```
 
-Demo output directories must not already exist. Replay a recorded trial without a model call:
+Use a new output directory for every experiment. Generated policies require the isolated Docker worker; the local subprocess evaluator is intended only for trusted authored code.
 
-```sh
-.venv/bin/agentqa replay evidence/offline-controls-001/traces/compaction--narrow_reminder.jsonl
-```
+## Repository map
 
-Docker integration checks are opt-in and require a running daemon and the pinned image. They exercise the container worker, not an entire evolutionary run:
+| Directory | Contents |
+| --- | --- |
+| `src/agentqa/` | Evidence contracts, replay, policy interfaces, and scheduler adapters |
+| `tests/` | Unit, integration, and replay checks |
+| `scripts/` | Experiment, analysis, visualization, and packaging entry points |
+| `docs/` | Study protocols, results, and reproduction instructions |
+| `evidence/` | Frozen plans, source snapshots, traces, results, and manifests |
+| `report/` | Research report, measured figures, and recorded demonstrations |
 
-```sh
-docker pull python@sha256:4c2cf9917bd1cbacc5e9b07320025bdb7cdf2df7b0ceaccb55e9dd7e30987419
-AGENTQA_DOCKER_TESTS=1 .venv/bin/python -m pytest tests/test_sandbox.py
-```
+Historical records retain original paths and identifiers because they participate in integrity checks. See the [disclosure audit](docs/public-disclosure-audit.md) for review scope and limitations.
 
-The Codex pilot uses saved account authentication; it does not read or copy credentials. `scripts/codex_pilot.py` requires a new output directory and preserves a fixed invocation ID in `runs/codex-pilot.sqlite3`, preventing an accidental second generation when rerun. Inspect the existing result rather than deleting the ledger to repeat it.
+## Research ownership
 
-## Development evidence and figures
-
-- [Authored controls](evidence/offline-controls-001/summary.json): 35 executed control trials, zero model calls; replayable traces included.
-- [Codex pilot](evidence/codex-pilot-001/summary.json): two model-generated policy repairs evaluated on the development family.
-- [Pilot interpretation](docs/pilot-001.md): actual findings, usage, and limits.
-- [Control outcome figure](report/figures/authored-control-outcomes.png) and [experimental design](report/figures/experimental-design.png); SVG/PDF copies and generation manifest accompany them.
-- [Matched comparison](evidence/development-comparison-001/summary.json), [outcome figure](report/figures/comparison-001/development-comparison.png), and [worker timing](report/figures/comparison-001/worker-timing.png).
-- [Candidate/split specification](docs/candidate-split-spec.md), [discovery protocol](docs/discovery-protocol.md), and [methods reading](docs/reading-notes.md).
-- [Stateful workflow protocol](docs/workflow-protocol.md), [generated-controller results](evidence/stateful-controller-005/summary.json), [workflow outcomes](report/figures/workflow-003/workflow-outcomes.png) and [recorded actions](report/figures/workflow-003/workflow-actions.png).
-- [Grounded upstream results](evidence/upstream-source-006/summary.json), [current adapter checks](evidence/bound-shinka-008/summary.json), [qualification figure](report/figures/upstream-004/publication-qualification.png), [analysis specification](docs/analysis-protocol.md) and [third-party attribution](third_party/NOTICE.md).
-- [Controlled transfer audit](evidence/controlled-transfer-012/summary.json), [frozen plan](evidence/controlled-transfer-012/plan.json), [measured results](report/figures/controlled-transfer-012/results.md) and [figure](report/figures/controlled-transfer-012/controlled-transfer.png). Both generated repairs 9/9; all selectors tied.
-- [Broader twenty-case qualification](evidence/publication-qualification-011/summary.json), [recorded HTML replay](report/demo/index.html), [clean reproduction](evidence/clean-reproduction-080.json) and [packaging instructions](docs/reproduction.md). Download/open the HTML locally; GitHub's source viewer does not execute it.
-
-Check and plot saved upstream/publication evidence without model calls or new evaluations:
-
-```sh
-MPLCONFIGDIR=/tmp/agentqa-mpl XDG_CACHE_HOME=/tmp/agentqa-cache .venv/bin/python scripts/analyze_upstream.py --source evidence/upstream-source-006 --bound evidence/bound-shinka-008 --output runs/my-publication-analysis
-```
-
-Run the pre-audit analysis's **synthetic demonstration** (not a real audit):
-
-```sh
-.venv/bin/python scripts/analyze_audit.py --plan evidence/preaudit-analysis-010/synthetic-plan.json --outcomes evidence/preaudit-analysis-010/synthetic-outcomes.json --output runs/my-synthetic-analysis.json
-```
-
-Reanalyze existing workflow evidence without model calls or Docker execution:
-
-```sh
-MPLCONFIGDIR=/tmp/agentqa-mpl XDG_CACHE_HOME=/tmp/agentqa-cache .venv/bin/python scripts/analyze_workflow.py evidence/workflow-controls-004 evidence/stateful-controller-005 --output runs/my-workflow-analysis
-```
-
-Run the authored stateful controls in fresh isolated workers (no inference):
-
-```sh
-.venv/bin/python scripts/workflow_pilot.py --mode controls --output runs/my-workflow-controls
-```
-
-The generation mode is not a routine reproduction step: the lifetime three-call pilot allowance is exhausted. Preserve the existing generated controller and accounting ledger.
-
-Build a deterministic, scanned source/evidence archive without model calls:
-
-```sh
-.venv/bin/python scripts/build_repro_bundle.py --output dist/agentqa-reproduction.zip
-```
-
-## ShinkaEvolve integration and comparison
-
-ShinkaEvolve is an optional integration dependency, isolated from the core environment. Install the official checkout at the recorded revision, then use `requirements-shinka.lock` in a separate environment. If the checkout is absent:
-
-```sh
-git clone https://github.com/SakanaAI/ShinkaEvolve.git vendor/ShinkaEvolve
-git -C vendor/ShinkaEvolve checkout 8adc053a2ce4511ad2ac310e004c530a73fb974a
-```
-
-```sh
-python3 -m venv scratch/shinka-venv
-scratch/shinka-venv/bin/python -m pip install -r requirements-shinka.lock
-scratch/shinka-venv/bin/python -m pip install --no-build-isolation --no-deps -e . -e vendor/ShinkaEvolve
-scratch/shinka-venv/bin/python scripts/check_shinka_bridge.py --program evidence/frozen-pool-001/repair-00.py --output runs/my-shinka-check
-.venv/bin/python scripts/run_comparison.py --pool evidence/frozen-pool-001/pool.json --output runs/my-comparison
-```
-
-Both commands execute cached policy programs in Docker and make no inference calls. New outputs require new directories. The comparison can resume its own unchanged plan and code; it refuses silent input changes or resampling of interrupted trials. Existing saved evidence can be replayed; use its included code snapshot when reproducing the exact frozen code hash after later development changes.
-
-The diagnostic source/adapter checks also use the optional Shinka environment. They execute fixed authored evaluators, not generated code, and require fresh output directories:
-
-```sh
-scratch/shinka-venv/bin/python scripts/probe_shinka_results.py --output runs/my-upstream-probe
-scratch/shinka-venv/bin/python scripts/check_bound_shinka.py --output runs/my-bound-check
-```
-
-```sh
-.venv/bin/python scripts/build_comparison_figures.py evidence/development-comparison-001/summary.json --output runs/my-comparison-figures
-```
-
-Replay the completed C1 audit and regenerate its tables/figure, with no Docker execution or inference:
-
-```sh
-.venv/bin/python scripts/run_controlled_audit.py verify --output evidence/controlled-transfer-012 --expected-hash fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3
-MPLCONFIGDIR=/tmp/agentqa-mpl XDG_CACHE_HOME=/tmp/agentqa-cache .venv/bin/python scripts/analyze_controlled_audit.py --audit evidence/controlled-transfer-012 --expected-hash fddddb72f75b21e6b98f89506ea7634c2ec348f76ee4e5e4a2ccd2d5c035ebb3 --output runs/my-controlled-analysis
-```
-
-The audit's `run` mode checks current code/runtime against the frozen snapshot; later source changes can make that exact execution refuse. Its `verify` mode uses saved records and is read only. Use the included snapshot and protocol for historical exact execution; never delete reservations to retry an interrupted audit.
-
-## Repository boundary
-
-Run all project and Git commands from this directory. The surrounding workspace ignores this repository, and Task 2 must not be added to the Neuroevolution history or registered as its submodule. The working branch is `james-tu/agentqa`; use `james-tu/` for subsequent branches. The authorized remote is the private `JamesTu-jtjt/agentqa` repository.
-
-The proposal is preserved at its original path. The local subprocess fixture runner is for trusted authored code only; generated policy functions execute through the container worker.
+James Tu led research direction, system design, experimental exploration, and refinement. Codex assisted implementation, experiment execution, analysis, visualization, and writing. The pilot used three recorded model calls; N1 and N2 used no additional inference.

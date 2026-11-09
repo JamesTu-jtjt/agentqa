@@ -203,7 +203,7 @@ A larger study would need a separately bounded discovery/generation allowance, r
 
 N1 added 105 evaluator processes and N2 added 48, with zero new model calls. All declared target cells completed; seven N1 primers were deliberately interrupted. Offline replay reads 56 actual native databases plus WAL files and seven additional bound receipts. The first replay updated volatile SQLite shared-memory read marks; the original manifest and explicit replay amendment are preserved. Durable database/WAL hashes remained unchanged, and replay now uses temporary copies. No experimental cell was rerun to repair verification.
 
-Worker sums exclude orchestration/fixture/analysis time. Original infrastructure-inconclusive attempts remain. Offline tests and clean noneditable wheel reproduction validate implementation; they are not independent scientific replications. Exact package versions, image digest, upstream revision, input/output/code hashes, scripts and recorded evidence accompany the private repository.
+Worker sums exclude orchestration/fixture/analysis time. Original infrastructure-inconclusive attempts remain. Offline tests and clean noneditable wheel reproduction validate implementation; they are not independent scientific replications. Exact package versions, image digest, upstream revision, input/output/code hashes, scripts and recorded evidence accompany the repository.
 
 **Conclusion.** Evaluation evidence can cross an attempt boundary and alter a native self-improvement archive under controlled faults. The strongest practical result is that fresh attempts, actual exit checks and complete schema validation jointly handle all tested native conditions while preserving valid negative evidence. A published producer repair works within its tested entry boundary, reinforcing the value of testing where a repair applies. This is a bounded empirical QA contribution, not a new cache-invalidation principle, a first harness-testing method, or evidence of improved model-repair selection.
 
@@ -303,4 +303,4 @@ These commands verify saved evidence and package files; the tests use authored f
 | Final recorded demonstration | `report/demo-native/index.html` |
 | Full procedure and accounting | `docs/reproduction.md`, `docs/budget.md` |
 
-Private repository: [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa). The original native-agent main study remains unperformed.
+Repository: [JamesTu-jtjt/agentqa](https://github.com/JamesTu-jtjt/agentqa). The original native-agent main study remains unperformed.

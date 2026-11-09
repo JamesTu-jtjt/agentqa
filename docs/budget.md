@@ -1,6 +1,6 @@
-# Pilot budget and study boundary
+# Recorded experimental resources
 
-Updated 2 November 2026. James requested GPT-6.1 Sol through his Codex account with low usage. The route uses saved ChatGPT authentication through Codex CLI, exact model `gpt-6.1-sol`, serial execution, and at most 120 seconds per invocation. The lifetime pilot allowance is **three invocations; all three are consumed**. Subscription dollar cost is unavailable, not zero. No separately billed API calls were made.
+The pilot used three sequential GPT-6.1 Sol calls with a 120-second bound per call. All outputs and failed worker attempts were retained. Subscription dollar cost is unavailable; no separately billed API calls were made. N1 and N2 used no additional inference.
 
 ## Actual allowance and usage
 
@@ -16,22 +16,4 @@ Updated 2 November 2026. James requested GPT-6.1 Sol through his Codex account w
 | Original native-agent main audit | 0 pilot invocations / not started | Deferred; the separately labeled C1 controlled pilot uses cached programs and does not complete this main study. |
 | **Total / remaining** | **3 / 0** | **27,232 input / 2,458 output tokens** reported across three completed calls. |
 
-Reasoning-output fields sum to 1,227 tokens and are separately recorded; do not add them to the output-token field as though they were disjoint. The durable ledger is `runs/codex-pilot.sqlite3`; a sanitized accounting export accompanies the 50% checkpoint. Failed or timed-out invocations would consume the same allowance. Removing the ledger or cloning the repository does not reset the authorized lifetime cap.
-
-The stateful workflow used 152 local container invocations across 18 trials, totaling 109.13 seconds of measured worker wall time. Its sole generation took 55.21 seconds. Worker sums exclude orchestration, analysis and plotting; these small deterministic tasks do not estimate the cost of realistic model-driven episodes.
-
-The 50%→70% stage used **zero additional inference calls**. The grounded source/adapter track ran 18 local authored evaluator processes: four priming runs, six changed-request probe runs, and eight adapter checks across the preserved initial/current versions. These process jobs are separate from coding-agent episodes and unit-test subprocesses. Total source-track wall time was not fully instrumented (priming runtimes were not retained), so no complete timing/cost estimate is invented. All prior usage and failed outcomes remain preserved.
-
-The 70%→80% stage also used **zero additional inference calls**. Twenty further fixed authored scheduler processes qualified the publication adapter; all twenty contracts and ten renamed pairs matched. Clean reproduction, replay, packaging and private GitHub publication do not consume model calls. They do not establish a completed main study.
-
-The 80%→90% stage used **zero additional inference calls**. Amendment C1 froze and ran 36 controlled template-transfer trials using the existing parent, two unchanged generated repairs and one nonselectable authored reference. All 57 Docker workers completed with cleanup, totaling 59.54 worker seconds; this excludes host fixture/orchestration/analysis time. Every slot is retained, with no retries or exclusions. All three selectors remained tied. This is a controlled cached-policy pilot, not the originally proposed native-agent main audit. The same lifetime inference ledger remains exhausted at 3/3.
-
-## Main study: deferred scope, not spending authorization
-
-The proposal's 1,572-episode example is not authorized by the pilot. The earlier 12-discovery/3-generation/8-validation sketch is superseded by the three-call allocation above. Repeated deterministic policy slots do not provide independent stochastic replications.
-
-Before additional model-driven work, define a realistic episode containing the actual model/tool loop, identify a reproducible semantic source failure, and measure its complete resource profile. Then choose common candidate pools and matched selector budgets, explicitly reserving parent/reference runs, regression checks, independent audit, failed generations, permitted infrastructure retries, and contingency. Preserve all three selectors and audit separation even if candidate breadth must shrink.
-
-Continued subscription inference needs a revised explicit invocation allowance. A separately billed API route would need a monetary cap and verified pricing. No API-key fallback is allowed. A negative feasibility result is not permission to expand the search indefinitely.
-
-`CodexBackend` enforces durable invocation counts, duplicate-ID refusal, exact model, saved-account route and runtime bounds. `Ledger` separately tests monetary reservations for a possible API route. Neither makes unknown subscription cost measurable.
+Reasoning tokens are recorded separately and must not be added to output tokens as though disjoint. The frozen ledgers and inference records preserve per-call accounting. Reproduction uses cached policies and saved evidence without further model calls.

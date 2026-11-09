@@ -24,9 +24,9 @@ The current ShinkaEvolve claim is a real pinned scheduler/evaluator integration 
 
 ## Remaining review
 
-The Nature-paper main methods have now been checked through PMC. Supplementary analyses and broader original repository interfaces can be examined as needed for the final submission. Keep version-of-record versus preprint distinctions and concrete source links in the report. Any new novelty claim needs an updated search, especially around stateful agent testing and repair transfer.
+The Nature-paper main methods have now been checked through PMC. Supplementary analyses and broader original repository interfaces can be examined for further research. Keep version-of-record versus preprint distinctions and concrete source links in the report. Any new novelty claim needs an updated search, especially around stateful agent testing and repair transfer.
 
-## 70% checkpoint: closer state-awareness work
+## Related state-awareness work
 
 [SWE-Touch](https://arxiv.org/html/2608.02499v1), sections 3–5, constructs validated conflicting user edits near task-critical code and injects them during coding-agent execution. It measures how agents recover and re-verify. Thus our handoff/configuration-change workload is a diagnostic vehicle, not a new shared-workspace benchmark contribution. The remaining proposed distinction is **selection among repairs using mechanism-directed valid families**, with matched generic/source-only baselines; that claim still needs evidence.
 

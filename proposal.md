@@ -1,7 +1,7 @@
 # Beyond the Repaired Example
 
 **Metamorphic Validation of Self-Improving Coding Agents**  
-Research proposal for Sakana AI's open-ended exercise · Draft, 1 November 2026
+Historical research proposal · 1 November 2026
 
 **Research question:** Can test families that preserve a known failure mechanism select agent modifications that generalize better than retesting the original failure or generating generic task variations, at a comparable evaluation budget?
 
@@ -17,13 +17,9 @@ The intended contribution is a **method for constructing valid failure families 
 
 The work is motivated by DGM's empirical selection of self-modifications [1]. A bounded ShinkaEvolve integration supplies candidate harness edits [2]. The original contribution would be the testing and selection method, rather than running either framework unchanged.
 
-## 2. Fit with the exercise and the applicant
+## 2. Research motivation
 
-The supplied exercise asks for study of the relevant Sakana work, an original and interesting contribution, and a report explaining the work. It explicitly accepts proof-of-concept results and takes resource constraints into account. It does not specify a report length, minimum benchmark score, model budget, or submission-file format in the provided pages.
-
-This proposal addresses the research themes of agentic coding and sample-efficient self-improvement. It builds on the applicant's experience in metamorphic testing, coding-agent evaluation, and production QA, with a particular focus on whether workflow state preserves the information needed for correct behavior.
-
-The report would briefly relate the project to the assigned reading: the AI Scientist's research workflow, ShinkaEvolve's program evolution, DGM's agent archive, and Digital Red Queen's changing competitive pressures. Detailed experimental dependence is limited to the coding-agent setting and ShinkaEvolve. The proof of concept does not require reproducing all these systems.
+The project connects metamorphic testing, coding-agent evaluation, and quality assurance for self-improving systems. This historical proposal describes the original hypothesis; completed studies and remaining limitations are summarized in [research scope](docs/research-scope.md).
 
 ## 3. Closest work and the novelty boundary
 
@@ -143,18 +139,9 @@ It is weakened if ordinary variations perform equally well, if source success al
 
 The result should explain at least one selection decision through an executable trace: what a narrow repair handled, which valid variation exposed its limitation, and whether the independent audit confirmed that distinction. A negative finding with a valid benchmark and clear accounting still provides a technically meaningful proof of concept; it must not be presented as evidence that the proposed selector works.
 
-## 10. Proposed submission deliverables
+## 10. Proposed research artifacts
 
-These are recommended ways to satisfy the exercise's original-work, proof-of-concept, and report expectations. Page counts and packaging are proposal choices, not requirements stated in the supplied brief.
-
-| Deliverable | Concrete contents |
-| --- | --- |
-| Research report | Approximately 6–8 main pages: motivation, related work and novelty boundary, method, validity assumptions, comparative results, costs, limitations, and conclusions. Appendix for contracts and scenario details. |
-| Runnable proof of concept | Small coding-agent environment, ShinkaEvolve adapter, family generator, validity checks, executable oracle, selectors, and audit runner, with pinned dependencies and a quick-start command. |
-| Reproduction bundle | Scenario/split manifests, source traces, candidate diffs, model settings, seeds where supported, raw results, analysis scripts, and complete resource accounting. Cached traces allow inspection without new model calls. |
-| Demonstration | One short replay showing a source failure, an apparently successful narrow repair, a valid related case that exposes its limitation, and the independent audit outcome. Use actual outcomes, including negative ones. |
-
-The report's central figures would compare source repair with unseen repair transfer, compare the three selectors on verified completion and cost, and show one trace-level explanation. This is sufficient for a focused research submission without a broad product interface or a full benchmark reproduction.
+The planned artifacts are an executable prototype, frozen experiment protocols, recorded evidence, a research report, measured figures, and reproduction instructions. Completed studies and their limitations are summarized in [research scope](docs/research-scope.md).
 
 ## 11. Scope and principal limitations
 
@@ -176,9 +163,9 @@ The main unresolved novelty question is whether validated, mechanism-directed fa
 
 ## Implementation closeout, 2 November 2026
 
-The original proposal above remains the research rationale. Within the small three-call allowance, generated repairs did not produce a discriminating pool. Amendment C1 therefore completed a separately frozen controlled template-transfer pilot; all selectors tied. The final report is the [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), with local source in `report/final-report.md`. This closes the bounded prototype/report deliverable, not the larger native-agent study or a confirmed selector-benefit claim. See `docs/handover.md` for preserved limitations and deferred work.
+The original proposal above remains the research rationale. Within the small three-call allowance, generated repairs did not produce a discriminating pool. Amendment C1 therefore completed a separately frozen controlled template-transfer pilot; all selectors tied. The final report is the [native Google Doc](https://docs.google.com/document/d/1PWLTiMZQauiNg97_Um4I8RGOWvUUI98Og9RCj9XRrBU/edit?usp=drivesdk), with local source in `report/final-report.md`. This closes the bounded prototype/report deliverable, not the larger native-agent study or a confirmed selector-benefit claim. See `docs/research-scope.md` for preserved limitations and deferred work.
 
 
 ## Post-pilot native follow-up: N1/N2
 
-After the controlled pilot's null selector result, James requested substantive improvement. The prospectively frozen native follow-up establishes initialization/restart/interruption consequences in a real Shinka runner and compares simple defenses. A second frozen study tests the standard helper and an existing public PR helper's entry boundary. See `docs/native-followup-results.md` and the revised Google Doc/report. The resulting submission is positioned as a bounded evaluation-integrity case study with a preserved inconclusive repair-selection pilot. This does not retroactively modify the original hypothesis, turn authored faults into natural model failures, or claim general selector benefit. Related upstream fixes and harness-testing literature are credited. No additional inference allowance was used.
+The controlled pilot's null selector result motivated a narrower native evaluation-integrity study. The prospectively frozen native follow-up establishes initialization/restart/interruption consequences in a real Shinka runner and compares simple defenses. A second frozen study tests the standard helper and an existing public PR helper's entry boundary. See `docs/native-followup-results.md` and the research report. The resulting report describes a bounded evaluation-integrity case study with a preserved inconclusive repair-selection pilot. This does not retroactively modify the original hypothesis, turn authored faults into natural model failures, or claim general selector benefit. Related upstream fixes and harness-testing literature are credited. No additional inference allowance was used.
